@@ -1,7 +1,7 @@
 // GeoLock.cpp : main project file.
 
 #include "stdafx.h"
-#include "Form1.h"
+#include "GeoLock.h"
 
 using namespace GeoLock;
 
