@@ -59,6 +59,8 @@ namespace GeoLock {
 	private: System::Windows::Forms::StatusStrip^  statusStrip1;
 	private: System::Windows::Forms::ToolStripStatusLabel^  toolStripStatusLabel1;
 	private: System::Windows::Forms::ToolStripStatusLabel^  toolStripStatusLabel2;
+	private: System::Windows::Forms::ToolStripMenuItem^  settingsToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  excludeExitNodesToolStripMenuItem;
 
 
 
@@ -78,6 +80,8 @@ namespace GeoLock {
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->fileToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->exitToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->settingsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->excludeExitNodesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->statusStrip1 = (gcnew System::Windows::Forms::StatusStrip());
 			this->toolStripStatusLabel1 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
 			this->toolStripStatusLabel2 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
@@ -88,10 +92,11 @@ namespace GeoLock {
 			// menuStrip1
 			// 
 			this->menuStrip1->BackColor = System::Drawing::SystemColors::Control;
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) {this->fileToolStripMenuItem});
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {this->fileToolStripMenuItem, 
+				this->settingsToolStripMenuItem});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(391, 24);
+			this->menuStrip1->Size = System::Drawing::Size(303, 24);
 			this->menuStrip1->TabIndex = 0;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
@@ -109,13 +114,27 @@ namespace GeoLock {
 			this->exitToolStripMenuItem->Text = L"Exit";
 			this->exitToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::exitToolStripMenuItem_Click);
 			// 
+			// settingsToolStripMenuItem
+			// 
+			this->settingsToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) {this->excludeExitNodesToolStripMenuItem});
+			this->settingsToolStripMenuItem->Name = L"settingsToolStripMenuItem";
+			this->settingsToolStripMenuItem->Size = System::Drawing::Size(61, 20);
+			this->settingsToolStripMenuItem->Text = L"Settings";
+			// 
+			// excludeExitNodesToolStripMenuItem
+			// 
+			this->excludeExitNodesToolStripMenuItem->Name = L"excludeExitNodesToolStripMenuItem";
+			this->excludeExitNodesToolStripMenuItem->Size = System::Drawing::Size(156, 22);
+			this->excludeExitNodesToolStripMenuItem->Text = L"Configuration...";
+			this->excludeExitNodesToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::excludeExitNodesToolStripMenuItem_Click);
+			// 
 			// statusStrip1
 			// 
 			this->statusStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {this->toolStripStatusLabel1, 
 				this->toolStripStatusLabel2});
-			this->statusStrip1->Location = System::Drawing::Point(0, 182);
+			this->statusStrip1->Location = System::Drawing::Point(0, 123);
 			this->statusStrip1->Name = L"statusStrip1";
-			this->statusStrip1->Size = System::Drawing::Size(391, 22);
+			this->statusStrip1->Size = System::Drawing::Size(303, 22);
 			this->statusStrip1->SizingGrip = false;
 			this->statusStrip1->TabIndex = 1;
 			this->statusStrip1->Text = L"statusStrip1";
@@ -136,7 +155,7 @@ namespace GeoLock {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(391, 204);
+			this->ClientSize = System::Drawing::Size(303, 145);
 			this->Controls->Add(this->statusStrip1);
 			this->Controls->Add(this->menuStrip1);
 			this->MainMenuStrip = this->menuStrip1;
@@ -158,6 +177,15 @@ namespace GeoLock {
 	private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e) {
 				 this->toolStripStatusLabel1->Text = L"IP: " + char2StringRef(ip);
 				 this->toolStripStatusLabel2->Text = L"Geolocation: " + char2StringRef(ct);
+			 }
+	private: System::Void excludeExitNodesToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			 	 ExitNode^ exitNodeDialog = gcnew ExitNode();
+				 try {
+					 exitNodeDialog->ShowDialog(this);
+				 }
+				 finally {
+					 delete exitNodeDialog;
+				 }
 			 }
 };
 }
