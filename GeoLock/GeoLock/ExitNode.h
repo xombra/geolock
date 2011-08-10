@@ -18,9 +18,6 @@ namespace GeoLock {
 		ExitNode(void)
 		{
 			InitializeComponent();
-			//
-			//TODO: Add the constructor code here
-			//
 		}
 
 	protected:
@@ -35,8 +32,6 @@ namespace GeoLock {
 			}
 		}
 	private: System::Windows::Forms::CheckedListBox^  excludedNodes;
-	protected: 
-
 	private: System::Windows::Forms::TabControl^  tabControl1;
 	private: System::Windows::Forms::TabPage^  tabPage1;
 	private: System::Windows::Forms::TabPage^  tabPage2;
@@ -49,12 +44,10 @@ namespace GeoLock {
 	private: Microsoft::VisualBasic::PowerPacks::ShapeContainer^  shapeContainer2;
 	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape2;
 	private: System::Windows::Forms::Label^  label4;
-	private: System::Windows::Forms::Button^  button1;
-	private: System::Windows::Forms::Button^  button2;
-
-
-
-	protected: 
+	private: System::Windows::Forms::Button^  okButton;
+	private: System::Windows::Forms::Button^  cancelButton;
+	private: System::Windows::Forms::Button^  clearAll;
+	private: System::Windows::Forms::Button^  selectAll;
 
 	private:
 		/// <summary>
@@ -73,18 +66,20 @@ namespace GeoLock {
 			this->excludedNodes = (gcnew System::Windows::Forms::CheckedListBox());
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+			this->clearAll = (gcnew System::Windows::Forms::Button());
+			this->selectAll = (gcnew System::Windows::Forms::Button());
+			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->shapeContainer1 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
 			this->lineShape1 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->preferredNodes = (gcnew System::Windows::Forms::CheckedListBox());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->lineShape2 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
-			this->shapeContainer2 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
 			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->preferredNodes = (gcnew System::Windows::Forms::CheckedListBox());
+			this->shapeContainer2 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
+			this->lineShape2 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
+			this->okButton = (gcnew System::Windows::Forms::Button());
+			this->cancelButton = (gcnew System::Windows::Forms::Button());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
@@ -92,6 +87,7 @@ namespace GeoLock {
 			// 
 			// excludedNodes
 			// 
+			this->excludedNodes->CheckOnClick = true;
 			this->excludedNodes->FormattingEnabled = true;
 			this->excludedNodes->Items->AddRange(gcnew cli::array< System::Object^  >(240) {L"AC", L"AD", L"AE", L"AF", L"AG", L"AI", L"AL", 
 				L"AM", L"AN", L"AO", L"AP", L"AQ", L"AR", L"AS", L"AT", L"AU", L"AW", L"AX", L"AZ", L"BA", L"BB", L"BD", L"BE", L"BF", L"BG", 
@@ -124,6 +120,8 @@ namespace GeoLock {
 			// 
 			// tabPage1
 			// 
+			this->tabPage1->Controls->Add(this->clearAll);
+			this->tabPage1->Controls->Add(this->selectAll);
 			this->tabPage1->Controls->Add(this->label2);
 			this->tabPage1->Controls->Add(this->label1);
 			this->tabPage1->Controls->Add(this->excludedNodes);
@@ -135,6 +133,34 @@ namespace GeoLock {
 			this->tabPage1->TabIndex = 0;
 			this->tabPage1->Text = L"Excluded Nodes";
 			this->tabPage1->UseVisualStyleBackColor = true;
+			// 
+			// clearAll
+			// 
+			this->clearAll->Location = System::Drawing::Point(107, 229);
+			this->clearAll->Name = L"clearAll";
+			this->clearAll->Size = System::Drawing::Size(75, 23);
+			this->clearAll->TabIndex = 5;
+			this->clearAll->Text = L"Clear All";
+			this->clearAll->UseVisualStyleBackColor = true;
+			this->clearAll->Click += gcnew System::EventHandler(this, &ExitNode::clearAll_Click);
+			// 
+			// selectAll
+			// 
+			this->selectAll->Location = System::Drawing::Point(107, 200);
+			this->selectAll->Name = L"selectAll";
+			this->selectAll->Size = System::Drawing::Size(75, 23);
+			this->selectAll->TabIndex = 4;
+			this->selectAll->Text = L"Select All";
+			this->selectAll->UseVisualStyleBackColor = true;
+			this->selectAll->Click += gcnew System::EventHandler(this, &ExitNode::selectAll_Click);
+			// 
+			// label2
+			// 
+			this->label2->Location = System::Drawing::Point(107, 26);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(143, 244);
+			this->label2->TabIndex = 3;
+			this->label2->Text = resources->GetString(L"label2.Text");
 			// 
 			// label1
 			// 
@@ -178,13 +204,22 @@ namespace GeoLock {
 			this->tabPage2->Text = L"Preferred Nodes";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
-			// label2
+			// label4
 			// 
-			this->label2->Location = System::Drawing::Point(107, 26);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(143, 244);
-			this->label2->TabIndex = 3;
-			this->label2->Text = resources->GetString(L"label2.Text");
+			this->label4->Location = System::Drawing::Point(107, 26);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(143, 244);
+			this->label4->TabIndex = 4;
+			this->label4->Text = resources->GetString(L"label4.Text");
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Location = System::Drawing::Point(7, 7);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(97, 13);
+			this->label3->TabIndex = 1;
+			this->label3->Text = L"Preferred Countries";
 			// 
 			// preferredNodes
 			// 
@@ -208,24 +243,6 @@ namespace GeoLock {
 			this->preferredNodes->Size = System::Drawing::Size(65, 244);
 			this->preferredNodes->TabIndex = 0;
 			// 
-			// label3
-			// 
-			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(7, 7);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(97, 13);
-			this->label3->TabIndex = 1;
-			this->label3->Text = L"Preferred Countries";
-			// 
-			// lineShape2
-			// 
-			this->lineShape2->BorderColor = System::Drawing::SystemColors::Highlight;
-			this->lineShape2->Name = L"lineShape2";
-			this->lineShape2->X1 = 104;
-			this->lineShape2->X2 = 258;
-			this->lineShape2->Y1 = 11;
-			this->lineShape2->Y2 = 11;
-			// 
 			// shapeContainer2
 			// 
 			this->shapeContainer2->Location = System::Drawing::Point(3, 3);
@@ -236,41 +253,42 @@ namespace GeoLock {
 			this->shapeContainer2->TabIndex = 2;
 			this->shapeContainer2->TabStop = false;
 			// 
-			// label4
+			// lineShape2
 			// 
-			this->label4->Location = System::Drawing::Point(107, 26);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(143, 244);
-			this->label4->TabIndex = 4;
-			this->label4->Text = resources->GetString(L"label4.Text");
+			this->lineShape2->BorderColor = System::Drawing::SystemColors::Highlight;
+			this->lineShape2->Name = L"lineShape2";
+			this->lineShape2->X1 = 104;
+			this->lineShape2->X2 = 258;
+			this->lineShape2->Y1 = 11;
+			this->lineShape2->Y2 = 11;
 			// 
-			// button1
+			// okButton
 			// 
-			this->button1->Location = System::Drawing::Point(121, 321);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
-			this->button1->TabIndex = 5;
-			this->button1->Text = L"OK";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &ExitNode::button1_Click);
+			this->okButton->Location = System::Drawing::Point(121, 321);
+			this->okButton->Name = L"okButton";
+			this->okButton->Size = System::Drawing::Size(75, 23);
+			this->okButton->TabIndex = 5;
+			this->okButton->Text = L"OK";
+			this->okButton->UseVisualStyleBackColor = true;
+			this->okButton->Click += gcnew System::EventHandler(this, &ExitNode::okButton_Click);
 			// 
-			// button2
+			// cancelButton
 			// 
-			this->button2->Location = System::Drawing::Point(202, 321);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(75, 23);
-			this->button2->TabIndex = 6;
-			this->button2->Text = L"Cancel";
-			this->button2->UseVisualStyleBackColor = true;
-			this->button2->Click += gcnew System::EventHandler(this, &ExitNode::button2_Click);
+			this->cancelButton->Location = System::Drawing::Point(202, 321);
+			this->cancelButton->Name = L"cancelButton";
+			this->cancelButton->Size = System::Drawing::Size(75, 23);
+			this->cancelButton->TabIndex = 6;
+			this->cancelButton->Text = L"Cancel";
+			this->cancelButton->UseVisualStyleBackColor = true;
+			this->cancelButton->Click += gcnew System::EventHandler(this, &ExitNode::cancelButton_Click);
 			// 
 			// ExitNode
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(287, 351);
-			this->Controls->Add(this->button2);
-			this->Controls->Add(this->button1);
+			this->Controls->Add(this->cancelButton);
+			this->Controls->Add(this->okButton);
 			this->Controls->Add(this->tabControl1);
 			this->Name = L"ExitNode";
 			this->Text = L"GeoLock Configuration";
@@ -283,11 +301,22 @@ namespace GeoLock {
 
 		}
 #pragma endregion
-	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
-				 Close();
-			 }
-	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-				 Close();
-			 }
+
+private: System::Void selectAll_Click(System::Object^  sender, System::EventArgs^  e) {
+			 for (int i=0;i<excludedNodes->Items->Count;i++) 
+				 excludedNodes->SetItemChecked(i,true);
+			 this->excludedNodes->ClearSelected();
+		 }
+private: System::Void clearAll_Click(System::Object^  sender, System::EventArgs^  e) {
+			 for (int i=0;i<excludedNodes->Items->Count;i++) 
+				 excludedNodes->SetItemChecked(i,false);
+			 this->excludedNodes->ClearSelected();
+		 }
+private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^  e) {
+			 Close();
+		 }
+private: System::Void cancelButton_Click(System::Object^  sender, System::EventArgs^  e) {
+			 Close();
+		 }
 };
 }
