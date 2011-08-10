@@ -1,0 +1,293 @@
+#pragma once
+
+namespace GeoLock {
+
+	using namespace System;
+	using namespace System::ComponentModel;
+	using namespace System::Collections;
+	using namespace System::Windows::Forms;
+	using namespace System::Data;
+	using namespace System::Drawing;
+
+	/// <summary>
+	/// Summary for ExitNode
+	/// </summary>
+	public ref class ExitNode : public System::Windows::Forms::Form
+	{
+	public:
+		ExitNode(void)
+		{
+			InitializeComponent();
+			//
+			//TODO: Add the constructor code here
+			//
+		}
+
+	protected:
+		/// <summary>
+		/// Clean up any resources being used.
+		/// </summary>
+		~ExitNode()
+		{
+			if (components)
+			{
+				delete components;
+			}
+		}
+	private: System::Windows::Forms::CheckedListBox^  excludedNodes;
+	protected: 
+
+	private: System::Windows::Forms::TabControl^  tabControl1;
+	private: System::Windows::Forms::TabPage^  tabPage1;
+	private: System::Windows::Forms::TabPage^  tabPage2;
+	private: System::Windows::Forms::Label^  label1;
+	private: Microsoft::VisualBasic::PowerPacks::ShapeContainer^  shapeContainer1;
+	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape1;
+	private: System::Windows::Forms::Label^  label2;
+	private: System::Windows::Forms::Label^  label3;
+	private: System::Windows::Forms::CheckedListBox^  preferredNodes;
+	private: Microsoft::VisualBasic::PowerPacks::ShapeContainer^  shapeContainer2;
+	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape2;
+	private: System::Windows::Forms::Label^  label4;
+	private: System::Windows::Forms::Button^  button1;
+	private: System::Windows::Forms::Button^  button2;
+
+
+
+	protected: 
+
+	private:
+		/// <summary>
+		/// Required designer variable.
+		/// </summary>
+		System::ComponentModel::Container ^components;
+
+#pragma region Windows Form Designer generated code
+		/// <summary>
+		/// Required method for Designer support - do not modify
+		/// the contents of this method with the code editor.
+		/// </summary>
+		void InitializeComponent(void)
+		{
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(ExitNode::typeid));
+			this->excludedNodes = (gcnew System::Windows::Forms::CheckedListBox());
+			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
+			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->shapeContainer1 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
+			this->lineShape1 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
+			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->preferredNodes = (gcnew System::Windows::Forms::CheckedListBox());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->lineShape2 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
+			this->shapeContainer2 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->tabControl1->SuspendLayout();
+			this->tabPage1->SuspendLayout();
+			this->tabPage2->SuspendLayout();
+			this->SuspendLayout();
+			// 
+			// excludedNodes
+			// 
+			this->excludedNodes->FormattingEnabled = true;
+			this->excludedNodes->Items->AddRange(gcnew cli::array< System::Object^  >(240) {L"AC", L"AD", L"AE", L"AF", L"AG", L"AI", L"AL", 
+				L"AM", L"AN", L"AO", L"AP", L"AQ", L"AR", L"AS", L"AT", L"AU", L"AW", L"AX", L"AZ", L"BA", L"BB", L"BD", L"BE", L"BF", L"BG", 
+				L"BH", L"BI", L"BJ", L"BM", L"BN", L"BO", L"BR", L"BS", L"BT", L"BV", L"BW", L"BY", L"BZ", L"CA", L"CD", L"CF", L"CG", L"CH", 
+				L"CI", L"CK", L"CL", L"CM", L"CN", L"CO", L"CR", L"CU", L"CV", L"CX", L"CY", L"CZ", L"DE", L"DJ", L"DK", L"DM", L"DO", L"DZ", 
+				L"EC", L"EE", L"EG", L"ER", L"ES", L"ET", L"EU", L"FI", L"FJ", L"FK", L"FM", L"FO", L"FR", L"GA", L"GB", L"GD", L"GE", L"GF", 
+				L"GH", L"GI", L"GL", L"GM", L"GN", L"GP", L"GQ", L"GR", L"GT", L"GU", L"GW", L"GY", L"HK", L"HM", L"HN", L"HR", L"HT", L"HU", 
+				L"ID", L"IE", L"IL", L"IM", L"IN", L"IO", L"IQ", L"IR", L"IS", L"IT", L"JE", L"JM", L"JO", L"JP", L"KE", L"KG", L"KH", L"KI", 
+				L"KM", L"KN", L"KP", L"KR", L"KW", L"KY", L"KZ", L"LA", L"LB", L"LC", L"LI", L"LK", L"LR", L"LS", L"LT", L"LU", L"LV", L"LY", 
+				L"MA", L"MC", L"MD", L"ME", L"MG", L"MH", L"MK", L"ML", L"MM", L"MN", L"MO", L"MP", L"MQ", L"MR", L"MS", L"MT", L"MU", L"MV", 
+				L"MW", L"MX", L"MY", L"MZ", L"NA", L"NC", L"NE", L"NF", L"NG", L"NI", L"NL", L"NO", L"NP", L"NR", L"NU", L"NZ", L"OM", L"PA", 
+				L"PE", L"PF", L"PG", L"PH", L"PK", L"PL", L"PM", L"PR", L"PS", L"PT", L"PW", L"PY", L"QA", L"RE", L"RO", L"RS", L"RU", L"RW", 
+				L"SA", L"SB", L"SC", L"SD", L"SE", L"SG", L"SI", L"SK", L"SL", L"SM", L"SN", L"SO", L"SR", L"ST", L"SV", L"SY", L"SZ", L"TC", 
+				L"TD", L"TG", L"TH", L"TJ", L"TK", L"TL", L"TM", L"TN", L"TO", L"TR", L"TT", L"TV", L"TW", L"TZ", L"UA", L"UG", L"UM", L"US", 
+				L"UY", L"UZ", L"VA", L"VC", L"VE", L"VG", L"VI", L"VN", L"VU", L"WF", L"WS", L"XX", L"YE", L"YT", L"ZA", L"ZM", L"ZW"});
+			this->excludedNodes->Location = System::Drawing::Point(21, 26);
+			this->excludedNodes->Name = L"excludedNodes";
+			this->excludedNodes->Size = System::Drawing::Size(65, 244);
+			this->excludedNodes->TabIndex = 0;
+			// 
+			// tabControl1
+			// 
+			this->tabControl1->Controls->Add(this->tabPage1);
+			this->tabControl1->Controls->Add(this->tabPage2);
+			this->tabControl1->Location = System::Drawing::Point(6, 7);
+			this->tabControl1->Name = L"tabControl1";
+			this->tabControl1->SelectedIndex = 0;
+			this->tabControl1->Size = System::Drawing::Size(276, 310);
+			this->tabControl1->TabIndex = 4;
+			// 
+			// tabPage1
+			// 
+			this->tabPage1->Controls->Add(this->label2);
+			this->tabPage1->Controls->Add(this->label1);
+			this->tabPage1->Controls->Add(this->excludedNodes);
+			this->tabPage1->Controls->Add(this->shapeContainer1);
+			this->tabPage1->Location = System::Drawing::Point(4, 22);
+			this->tabPage1->Name = L"tabPage1";
+			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage1->Size = System::Drawing::Size(268, 284);
+			this->tabPage1->TabIndex = 0;
+			this->tabPage1->Text = L"Excluded Nodes";
+			this->tabPage1->UseVisualStyleBackColor = true;
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(7, 7);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(98, 13);
+			this->label1->TabIndex = 1;
+			this->label1->Text = L"Excluded Countries";
+			// 
+			// shapeContainer1
+			// 
+			this->shapeContainer1->Location = System::Drawing::Point(3, 3);
+			this->shapeContainer1->Margin = System::Windows::Forms::Padding(0);
+			this->shapeContainer1->Name = L"shapeContainer1";
+			this->shapeContainer1->Shapes->AddRange(gcnew cli::array< Microsoft::VisualBasic::PowerPacks::Shape^  >(1) {this->lineShape1});
+			this->shapeContainer1->Size = System::Drawing::Size(262, 278);
+			this->shapeContainer1->TabIndex = 2;
+			this->shapeContainer1->TabStop = false;
+			// 
+			// lineShape1
+			// 
+			this->lineShape1->BorderColor = System::Drawing::SystemColors::Highlight;
+			this->lineShape1->Name = L"lineShape1";
+			this->lineShape1->X1 = 104;
+			this->lineShape1->X2 = 258;
+			this->lineShape1->Y1 = 11;
+			this->lineShape1->Y2 = 11;
+			// 
+			// tabPage2
+			// 
+			this->tabPage2->Controls->Add(this->label4);
+			this->tabPage2->Controls->Add(this->label3);
+			this->tabPage2->Controls->Add(this->preferredNodes);
+			this->tabPage2->Controls->Add(this->shapeContainer2);
+			this->tabPage2->Location = System::Drawing::Point(4, 22);
+			this->tabPage2->Name = L"tabPage2";
+			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage2->Size = System::Drawing::Size(268, 284);
+			this->tabPage2->TabIndex = 1;
+			this->tabPage2->Text = L"Preferred Nodes";
+			this->tabPage2->UseVisualStyleBackColor = true;
+			// 
+			// label2
+			// 
+			this->label2->Location = System::Drawing::Point(107, 26);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(143, 244);
+			this->label2->TabIndex = 3;
+			this->label2->Text = resources->GetString(L"label2.Text");
+			// 
+			// preferredNodes
+			// 
+			this->preferredNodes->FormattingEnabled = true;
+			this->preferredNodes->Items->AddRange(gcnew cli::array< System::Object^  >(240) {L"AC", L"AD", L"AE", L"AF", L"AG", L"AI", 
+				L"AL", L"AM", L"AN", L"AO", L"AP", L"AQ", L"AR", L"AS", L"AT", L"AU", L"AW", L"AX", L"AZ", L"BA", L"BB", L"BD", L"BE", L"BF", 
+				L"BG", L"BH", L"BI", L"BJ", L"BM", L"BN", L"BO", L"BR", L"BS", L"BT", L"BV", L"BW", L"BY", L"BZ", L"CA", L"CD", L"CF", L"CG", 
+				L"CH", L"CI", L"CK", L"CL", L"CM", L"CN", L"CO", L"CR", L"CU", L"CV", L"CX", L"CY", L"CZ", L"DE", L"DJ", L"DK", L"DM", L"DO", 
+				L"DZ", L"EC", L"EE", L"EG", L"ER", L"ES", L"ET", L"EU", L"FI", L"FJ", L"FK", L"FM", L"FO", L"FR", L"GA", L"GB", L"GD", L"GE", 
+				L"GF", L"GH", L"GI", L"GL", L"GM", L"GN", L"GP", L"GQ", L"GR", L"GT", L"GU", L"GW", L"GY", L"HK", L"HM", L"HN", L"HR", L"HT", 
+				L"HU", L"ID", L"IE", L"IL", L"IM", L"IN", L"IO", L"IQ", L"IR", L"IS", L"IT", L"JE", L"JM", L"JO", L"JP", L"KE", L"KG", L"KH", 
+				L"KI", L"KM", L"KN", L"KP", L"KR", L"KW", L"KY", L"KZ", L"LA", L"LB", L"LC", L"LI", L"LK", L"LR", L"LS", L"LT", L"LU", L"LV", 
+				L"LY", L"MA", L"MC", L"MD", L"ME", L"MG", L"MH", L"MK", L"ML", L"MM", L"MN", L"MO", L"MP", L"MQ", L"MR", L"MS", L"MT", L"MU", 
+				L"MV", L"MW", L"MX", L"MY", L"MZ", L"NA", L"NC", L"NE", L"NF", L"NG", L"NI", L"NL", L"NO", L"NP", L"NR", L"NU", L"NZ", L"OM", 
+				L"PA", L"PE", L"PF", L"PG", L"PH", L"PK", L"PL", L"PM", L"PR", L"PS", L"PT", L"PW", L"PY", L"QA", L"RE", L"RO", L"RS", L"RU", 
+				L"RW", L"SA", L"SB", L"SC", L"SD", L"SE", L"SG", L"SI", L"SK", L"SL", L"SM", L"SN", L"SO", L"SR", L"ST", L"SV", L"SY", L"SZ", 
+				L"TC", L"TD", L"TG", L"TH", L"TJ", L"TK", L"TL", L"TM", L"TN", L"TO", L"TR", L"TT", L"TV", L"TW", L"TZ", L"UA", L"UG", L"UM", 
+				L"US", L"UY", L"UZ", L"VA", L"VC", L"VE", L"VG", L"VI", L"VN", L"VU", L"WF", L"WS", L"XX", L"YE", L"YT", L"ZA", L"ZM", L"ZW"});
+			this->preferredNodes->Location = System::Drawing::Point(21, 26);
+			this->preferredNodes->Name = L"preferredNodes";
+			this->preferredNodes->Size = System::Drawing::Size(65, 244);
+			this->preferredNodes->TabIndex = 0;
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Location = System::Drawing::Point(7, 7);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(97, 13);
+			this->label3->TabIndex = 1;
+			this->label3->Text = L"Preferred Countries";
+			// 
+			// lineShape2
+			// 
+			this->lineShape2->BorderColor = System::Drawing::SystemColors::Highlight;
+			this->lineShape2->Name = L"lineShape2";
+			this->lineShape2->X1 = 104;
+			this->lineShape2->X2 = 258;
+			this->lineShape2->Y1 = 11;
+			this->lineShape2->Y2 = 11;
+			// 
+			// shapeContainer2
+			// 
+			this->shapeContainer2->Location = System::Drawing::Point(3, 3);
+			this->shapeContainer2->Margin = System::Windows::Forms::Padding(0);
+			this->shapeContainer2->Name = L"shapeContainer2";
+			this->shapeContainer2->Shapes->AddRange(gcnew cli::array< Microsoft::VisualBasic::PowerPacks::Shape^  >(1) {this->lineShape2});
+			this->shapeContainer2->Size = System::Drawing::Size(262, 278);
+			this->shapeContainer2->TabIndex = 2;
+			this->shapeContainer2->TabStop = false;
+			// 
+			// label4
+			// 
+			this->label4->Location = System::Drawing::Point(107, 26);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(143, 244);
+			this->label4->TabIndex = 4;
+			this->label4->Text = resources->GetString(L"label4.Text");
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(121, 321);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->TabIndex = 5;
+			this->button1->Text = L"OK";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &ExitNode::button1_Click);
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(202, 321);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(75, 23);
+			this->button2->TabIndex = 6;
+			this->button2->Text = L"Cancel";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &ExitNode::button2_Click);
+			// 
+			// ExitNode
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(287, 351);
+			this->Controls->Add(this->button2);
+			this->Controls->Add(this->button1);
+			this->Controls->Add(this->tabControl1);
+			this->Name = L"ExitNode";
+			this->Text = L"GeoLock Configuration";
+			this->tabControl1->ResumeLayout(false);
+			this->tabPage1->ResumeLayout(false);
+			this->tabPage1->PerformLayout();
+			this->tabPage2->ResumeLayout(false);
+			this->tabPage2->PerformLayout();
+			this->ResumeLayout(false);
+
+		}
+#pragma endregion
+	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+				 Close();
+			 }
+	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+				 Close();
+			 }
+};
+}
