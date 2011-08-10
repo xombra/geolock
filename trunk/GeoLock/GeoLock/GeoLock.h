@@ -8,13 +8,13 @@
 
 #using <system.dll>
 
-extern char* ip;
-extern char* ct;
+extern char *ip,*ct,*excludeExitNodes;
 
-System::String ^ char2StringRef( char * p) {
-	System::String^ str;
-	str = gcnew System::String(p);
-	return str;
+
+System::String ^ char2StringRef( char * p){ 
+	System::String ^ str; 
+	str = gcnew System::String(p); 
+	return str; 
 }
 
 namespace GeoLock {
@@ -53,7 +53,6 @@ namespace GeoLock {
 			}
 		}
 	private: System::Windows::Forms::MenuStrip^  menuStrip1;
-	protected: 
 	private: System::Windows::Forms::ToolStripMenuItem^  fileToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  exitToolStripMenuItem;
 	private: System::Windows::Forms::StatusStrip^  statusStrip1;
@@ -61,6 +60,7 @@ namespace GeoLock {
 	private: System::Windows::Forms::ToolStripStatusLabel^  toolStripStatusLabel2;
 	private: System::Windows::Forms::ToolStripMenuItem^  settingsToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  excludeExitNodesToolStripMenuItem;
+	private: System::Windows::Forms::Label^  excludeList;
 
 
 
@@ -85,6 +85,7 @@ namespace GeoLock {
 			this->statusStrip1 = (gcnew System::Windows::Forms::StatusStrip());
 			this->toolStripStatusLabel1 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
 			this->toolStripStatusLabel2 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
+			this->excludeList = (gcnew System::Windows::Forms::Label());
 			this->menuStrip1->SuspendLayout();
 			this->statusStrip1->SuspendLayout();
 			this->SuspendLayout();
@@ -151,11 +152,21 @@ namespace GeoLock {
 			this->toolStripStatusLabel2->Size = System::Drawing::Size(76, 17);
 			this->toolStripStatusLabel2->Text = L"Geolocation: ";
 			// 
+			// excludeList
+			// 
+			this->excludeList->AutoSize = true;
+			this->excludeList->Location = System::Drawing::Point(13, 28);
+			this->excludeList->Name = L"excludeList";
+			this->excludeList->Size = System::Drawing::Size(51, 13);
+			this->excludeList->TabIndex = 2;
+			this->excludeList->Text = L"Exclude: ";
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(303, 145);
+			this->Controls->Add(this->excludeList);
 			this->Controls->Add(this->statusStrip1);
 			this->Controls->Add(this->menuStrip1);
 			this->MainMenuStrip = this->menuStrip1;
@@ -177,6 +188,7 @@ namespace GeoLock {
 	private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e) {
 				 this->toolStripStatusLabel1->Text = L"IP: " + char2StringRef(ip);
 				 this->toolStripStatusLabel2->Text = L"Geolocation: " + char2StringRef(ct);
+				 this->excludeList->Text = L"Exclude: " + char2StringRef(excludeExitNodes);
 			 }
 	private: System::Void excludeExitNodesToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 			 	 ExitNode^ exitNodeDialog = gcnew ExitNode();
