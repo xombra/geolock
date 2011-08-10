@@ -1,10 +1,21 @@
 #include "stdafx.h"
 #include <iostream>
+#include "vcclr.h"
+
 #pragma comment(lib,"advapi32")
 #pragma comment(lib,"shell32.lib")
 #pragma once
 
 #using <system.dll>
+
+extern char* ip;
+extern char* ct;
+
+System::String ^ char2StringRef( char * p) {
+	System::String^ str;
+	str = gcnew System::String(p);
+	return str;
+}
 
 namespace GeoLock {
 
@@ -45,6 +56,10 @@ namespace GeoLock {
 	protected: 
 	private: System::Windows::Forms::ToolStripMenuItem^  fileToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  exitToolStripMenuItem;
+	private: System::Windows::Forms::StatusStrip^  statusStrip1;
+	private: System::Windows::Forms::ToolStripStatusLabel^  toolStripStatusLabel1;
+	private: System::Windows::Forms::ToolStripStatusLabel^  toolStripStatusLabel2;
+
 
 
 	private:
@@ -60,11 +75,14 @@ namespace GeoLock {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Form1::typeid));
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->fileToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->exitToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->statusStrip1 = (gcnew System::Windows::Forms::StatusStrip());
+			this->toolStripStatusLabel1 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
+			this->toolStripStatusLabel2 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
 			this->menuStrip1->SuspendLayout();
+			this->statusStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// menuStrip1
@@ -91,18 +109,44 @@ namespace GeoLock {
 			this->exitToolStripMenuItem->Text = L"Exit";
 			this->exitToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::exitToolStripMenuItem_Click);
 			// 
+			// statusStrip1
+			// 
+			this->statusStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {this->toolStripStatusLabel1, 
+				this->toolStripStatusLabel2});
+			this->statusStrip1->Location = System::Drawing::Point(0, 182);
+			this->statusStrip1->Name = L"statusStrip1";
+			this->statusStrip1->Size = System::Drawing::Size(391, 22);
+			this->statusStrip1->SizingGrip = false;
+			this->statusStrip1->TabIndex = 1;
+			this->statusStrip1->Text = L"statusStrip1";
+			// 
+			// toolStripStatusLabel1
+			// 
+			this->toolStripStatusLabel1->Name = L"toolStripStatusLabel1";
+			this->toolStripStatusLabel1->Size = System::Drawing::Size(22, 17);
+			this->toolStripStatusLabel1->Text = L"IP: ";
+			// 
+			// toolStripStatusLabel2
+			// 
+			this->toolStripStatusLabel2->Name = L"toolStripStatusLabel2";
+			this->toolStripStatusLabel2->Size = System::Drawing::Size(76, 17);
+			this->toolStripStatusLabel2->Text = L"Geolocation: ";
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(391, 204);
+			this->Controls->Add(this->statusStrip1);
 			this->Controls->Add(this->menuStrip1);
-			this->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(L"$this.Icon")));
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"Form1";
 			this->Text = L"GeoLock";
+			this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
+			this->statusStrip1->ResumeLayout(false);
+			this->statusStrip1->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -111,5 +155,9 @@ namespace GeoLock {
 	private: System::Void exitToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 				 Application::Exit();
 			 }
-	};
+	private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e) {
+				 this->toolStripStatusLabel1->Text = L"IP: " + char2StringRef(ip);
+				 this->toolStripStatusLabel2->Text = L"Geolocation: " + char2StringRef(ct);
+			 }
+};
 }
