@@ -40,20 +40,7 @@ String^ checkRegKey(LPCSTR location,LPCSTR key) {
 	return test;
 }
 
-[STAThreadAttribute]
-int main(array<System::String ^> ^args)
-{
-	// Enabling Windows XP visual effects before any controls are created
-	Application::EnableVisualStyles();
-	Application::SetCompatibleTextRenderingDefault(false);
-
-	String^ managedExclude = checkRegKey("Software\\GeoLock","excludedExitNodes");
-	String^ managedExit = checkRegKey("Software\\GeoLock","exitNodes");
-	excludeExitNodes = (char*)(void*)
-		Marshal::StringToHGlobalAnsi(managedExclude);
-	exitNodes = (char*)(void*)
-		Marshal::StringToHGlobalAnsi(managedExit);
-
+void updateIP() {
 	WebClient^ myWebClient = gcnew WebClient;
 	Uri^ siteUri = gcnew Uri("http://automation.whatismyip.com/n09230945.asp");
 	Stream^ ipStream = myWebClient->OpenRead(siteUri);
@@ -68,6 +55,23 @@ int main(array<System::String ^> ^args)
 	ct = (char*)(void*)
 		Marshal::StringToHGlobalAnsi(sr->ReadToEnd());
 	ctStream->Close();
+}
+
+[STAThreadAttribute]
+int main(array<System::String ^> ^args)
+{
+	// Enabling Windows XP visual effects before any controls are created
+	Application::EnableVisualStyles();
+	Application::SetCompatibleTextRenderingDefault(false);
+
+	String^ managedExclude = checkRegKey("Software\\GeoLock","excludedExitNodes");
+	String^ managedExit = checkRegKey("Software\\GeoLock","exitNodes");
+	excludeExitNodes = (char*)(void*)
+		Marshal::StringToHGlobalAnsi(managedExclude);
+	exitNodes = (char*)(void*)
+		Marshal::StringToHGlobalAnsi(managedExit);
+
+	updateIP();
 
 	// Create the main window and run it
 	Application::Run(gcnew Form1());
