@@ -1,14 +1,10 @@
 // GeoLock.cpp : main project file.
-
 #include "stdafx.h"
 #include "GeoLock.h"
 
 #using <system.dll>
 
 using namespace GeoLock;
-
-char *ip,*ct,*excludeExitNodes,*exitNodes;
-
 
 void writeRegKey(LPCSTR location,LPCSTR key,char* value) {
 	HKEY hKey = 0; char buf[255] = {0};
@@ -40,23 +36,6 @@ String^ checkRegKey(LPCSTR location,LPCSTR key) {
 	return test;
 }
 
-void updateIP() {
-	WebClient^ myWebClient = gcnew WebClient;
-	Uri^ siteUri = gcnew Uri("http://automation.whatismyip.com/n09230945.asp");
-	Stream^ ipStream = myWebClient->OpenRead(siteUri);
-	StreamReader^ sr = gcnew StreamReader(ipStream);
-	ip = (char*)(void*)
-		Marshal::StringToHGlobalAnsi(sr->ReadToEnd());
-	ipStream->Close();
-	String^ ctUriString = "http://api.wipmania.com/" + char2StringRef(ip);
-	Uri^ site2Uri = gcnew Uri(ctUriString);
-	Stream^ ctStream = myWebClient->OpenRead(site2Uri);
-	sr = gcnew StreamReader(ctStream);
-	ct = (char*)(void*)
-		Marshal::StringToHGlobalAnsi(sr->ReadToEnd());
-	ctStream->Close();
-}
-
 [STAThreadAttribute]
 int main(array<System::String ^> ^args)
 {
@@ -70,8 +49,6 @@ int main(array<System::String ^> ^args)
 		Marshal::StringToHGlobalAnsi(managedExclude);
 	exitNodes = (char*)(void*)
 		Marshal::StringToHGlobalAnsi(managedExit);
-
-	updateIP();
 
 	// Create the main window and run it
 	Application::Run(gcnew Form1());

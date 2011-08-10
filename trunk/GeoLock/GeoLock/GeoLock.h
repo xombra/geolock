@@ -8,13 +8,29 @@
 
 #using <system.dll>
 
-extern char *ip,*ct,*excludeExitNodes,*exitNodes;
-
+char *ip,*ct,*excludeExitNodes,*exitNodes;
 
 System::String ^ char2StringRef( char * p){ 
 	System::String ^ str; 
 	str = gcnew System::String(p); 
 	return str; 
+}
+
+void updateIP() {
+	WebClient^ myWebClient = gcnew WebClient;
+	Uri^ siteUri = gcnew Uri("http://automation.whatismyip.com/n09230945.asp");
+	Stream^ ipStream = myWebClient->OpenRead(siteUri);
+	StreamReader^ sr = gcnew StreamReader(ipStream);
+	ip = (char*)(void*)
+		Marshal::StringToHGlobalAnsi(sr->ReadToEnd());
+	ipStream->Close();
+	String^ ctUriString = "http://api.wipmania.com/" + char2StringRef(ip);
+	Uri^ site2Uri = gcnew Uri(ctUriString);
+	Stream^ ctStream = myWebClient->OpenRead(site2Uri);
+	sr = gcnew StreamReader(ctStream);
+	ct = (char*)(void*)
+		Marshal::StringToHGlobalAnsi(sr->ReadToEnd());
+	ctStream->Close();
 }
 
 namespace GeoLock {
@@ -63,6 +79,7 @@ namespace GeoLock {
 	private: System::Windows::Forms::Label^  excludeList;
 	private: System::Windows::Forms::Label^  preferNodes;
 	private: System::Windows::Forms::Timer^  timer;
+	private: System::Windows::Forms::Label^  timeStamp;
 	private: System::ComponentModel::IContainer^  components;
 
 
@@ -92,6 +109,7 @@ namespace GeoLock {
 			this->excludeList = (gcnew System::Windows::Forms::Label());
 			this->preferNodes = (gcnew System::Windows::Forms::Label());
 			this->timer = (gcnew System::Windows::Forms::Timer(this->components));
+			this->timeStamp = (gcnew System::Windows::Forms::Label());
 			this->menuStrip1->SuspendLayout();
 			this->statusStrip1->SuspendLayout();
 			this->SuspendLayout();
@@ -182,11 +200,21 @@ namespace GeoLock {
 			this->timer->Interval = 300000;
 			this->timer->Tick += gcnew System::EventHandler(this, &Form1::Form1_Load);
 			// 
+			// timeStamp
+			// 
+			this->timeStamp->AutoSize = true;
+			this->timeStamp->Location = System::Drawing::Point(16, 80);
+			this->timeStamp->Name = L"timeStamp";
+			this->timeStamp->Size = System::Drawing::Size(77, 13);
+			this->timeStamp->TabIndex = 4;
+			this->timeStamp->Text = L"Last Updated: ";
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(303, 145);
+			this->Controls->Add(this->timeStamp);
 			this->Controls->Add(this->preferNodes);
 			this->Controls->Add(this->excludeList);
 			this->Controls->Add(this->statusStrip1);
@@ -209,12 +237,14 @@ namespace GeoLock {
 			 }
 	private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e) {
 				 this->timer->Stop();
+				 updateIP();
 				 this->toolStripStatusLabel1->Text = L"IP: " + char2StringRef(ip);
 				 this->toolStripStatusLabel2->Text = L"Geolocation: " + char2StringRef(ct);
 				 if (strcmp("",excludeExitNodes)) this->excludeList->Text = L"Exclude: " + char2StringRef(excludeExitNodes);
 				 else this->excludeList->Text = L"Exclude: NONE";
 				 if (strcmp("",exitNodes)) this->preferNodes->Text = L"Prefer: " + char2StringRef(exitNodes);
 				 else this->preferNodes->Text = L"Prefer: NONE";
+				 this->timeStamp->Text = L"";
 				 this->timer->Start();
 			 }
 	private: System::Void excludeExitNodesToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
