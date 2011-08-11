@@ -243,10 +243,10 @@ namespace GeoLock {
 				 updateIP();
 				 this->toolStripStatusLabel1->Text = L"IP: " + char2StringRef(ip);
 				 this->toolStripStatusLabel2->Text = L"Geolocation: " + char2StringRef(ct);
-				 if (strcmp("",excludeExitNodes)) this->excludeList->Text = L"Exclude: " + char2StringRef(excludeExitNodes);
-				 else this->excludeList->Text = L"Exclude: NONE";
-				 if (strcmp("",exitNodes)) this->preferNodes->Text = L"Prefer: " + char2StringRef(exitNodes);
-				 else this->preferNodes->Text = L"Prefer: NONE";
+				 //if (strcmp("",excludeExitNodes)) this->excludeList->Text = L"Exclude: " + char2StringRef(excludeExitNodes);
+				 //else this->excludeList->Text = L"Exclude: NONE";
+				 //if (strcmp("",exitNodes)) this->preferNodes->Text = L"Prefer: " + char2StringRef(exitNodes);
+				 //else this->preferNodes->Text = L"Prefer: NONE";
 			 }
 	private: System::Void excludeExitNodesToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 			 	 ExitNode^ exitNodeDialog = gcnew ExitNode();
