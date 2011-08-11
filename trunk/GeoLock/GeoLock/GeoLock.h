@@ -188,7 +188,7 @@ namespace GeoLock {
 			// preferNodes
 			// 
 			this->preferNodes->AutoSize = true;
-			this->preferNodes->Location = System::Drawing::Point(13, 56);
+			this->preferNodes->Location = System::Drawing::Point(12, 56);
 			this->preferNodes->Name = L"preferNodes";
 			this->preferNodes->Size = System::Drawing::Size(38, 13);
 			this->preferNodes->TabIndex = 3;
@@ -199,11 +199,12 @@ namespace GeoLock {
 			this->timer->Enabled = true;
 			this->timer->Interval = 300000;
 			this->timer->Tick += gcnew System::EventHandler(this, &Form1::Form1_Load);
+			this->timer->Start();
 			// 
 			// timeStamp
 			// 
 			this->timeStamp->AutoSize = true;
-			this->timeStamp->Location = System::Drawing::Point(16, 80);
+			this->timeStamp->Location = System::Drawing::Point(12, 78);
 			this->timeStamp->Name = L"timeStamp";
 			this->timeStamp->Size = System::Drawing::Size(77, 13);
 			this->timeStamp->TabIndex = 4;
@@ -236,7 +237,9 @@ namespace GeoLock {
 				 Application::Exit();
 			 }
 	private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e) {
-				 this->timer->Stop();
+				 SYSTEMTIME lt;
+				 GetLocalTime(&lt);
+				 this->timeStamp->Text = L"Last Updated: " + lt.wMonth + "/" + lt.wDay + "/" + lt.wYear + " - " + lt.wHour + ":" + lt.wMinute + ":" + lt.wSecond;
 				 updateIP();
 				 this->toolStripStatusLabel1->Text = L"IP: " + char2StringRef(ip);
 				 this->toolStripStatusLabel2->Text = L"Geolocation: " + char2StringRef(ct);
@@ -244,8 +247,6 @@ namespace GeoLock {
 				 else this->excludeList->Text = L"Exclude: NONE";
 				 if (strcmp("",exitNodes)) this->preferNodes->Text = L"Prefer: " + char2StringRef(exitNodes);
 				 else this->preferNodes->Text = L"Prefer: NONE";
-				 this->timeStamp->Text = L"";
-				 this->timer->Start();
 			 }
 	private: System::Void excludeExitNodesToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 			 	 ExitNode^ exitNodeDialog = gcnew ExitNode();
