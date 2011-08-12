@@ -19,18 +19,29 @@ System::String ^ char2StringRef( char * p){
 void updateIP() {
 	WebClient^ myWebClient = gcnew WebClient;
 	Uri^ siteUri = gcnew Uri("http://automation.whatismyip.com/n09230945.asp");
-	Stream^ ipStream = myWebClient->OpenRead(siteUri);
-	StreamReader^ sr = gcnew StreamReader(ipStream);
-	ip = (char*)(void*)
-		Marshal::StringToHGlobalAnsi(sr->ReadToEnd());
-	ipStream->Close();
-	String^ ctUriString = "http://api.wipmania.com/" + char2StringRef(ip);
-	Uri^ site2Uri = gcnew Uri(ctUriString);
-	Stream^ ctStream = myWebClient->OpenRead(site2Uri);
-	sr = gcnew StreamReader(ctStream);
-	ct = (char*)(void*)
-		Marshal::StringToHGlobalAnsi(sr->ReadToEnd());
-	ctStream->Close();
+	try {
+		Stream^ ipStream = myWebClient->OpenRead(siteUri);
+		StreamReader^ sr = gcnew StreamReader(ipStream);
+		ip = (char*)(void*)
+			Marshal::StringToHGlobalAnsi(sr->ReadToEnd());
+		ipStream->Close();
+	}
+	catch (WebException ^ex) {
+		MessageBox::Show("Tor is not running or is not properly configured","Connection Error");
+		Application::Exit();
+	}
+	try {
+		String^ ctUriString = "http://api.wipmania.com/" + char2StringRef(ip);
+		Uri^ site2Uri = gcnew Uri(ctUriString);
+		Stream^ ctStream = myWebClient->OpenRead(site2Uri);
+		StreamReader^ sm = gcnew StreamReader(ctStream);
+		ct = (char*)(void*)
+			Marshal::StringToHGlobalAnsi(sm->ReadToEnd());
+		ctStream->Close();
+	}
+	catch (WebException ^ex) {
+		Application::Exit();
+	}
 }
 
 namespace GeoLock {
