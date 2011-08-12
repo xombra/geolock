@@ -19,6 +19,7 @@
     <None Include="app.ico">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeoLock.cpp">
