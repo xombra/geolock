@@ -1,5 +1,9 @@
 #pragma once
 
+extern char *excludeExitNodes,*exitNodes;
+extern System::String^ char2StringRef(char* p);
+extern void writeRegKey(LPCSTR location,LPCSTR key,char* value);
+
 namespace GeoLock {
 
 	using namespace System;
@@ -8,6 +12,7 @@ namespace GeoLock {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::Runtime::InteropServices;
 
 	/// <summary>
 	/// Summary for ExitNode
@@ -18,6 +23,18 @@ namespace GeoLock {
 		ExitNode(void)
 		{
 			InitializeComponent();
+			String^ managedExcluded = char2StringRef(excludeExitNodes);
+			array<String^>^ excludedList = managedExcluded->Split(',');
+			for(int i=0;i<excludedList->Length;i++) {
+				int index = this->excludedNodes->FindString(excludedList[i]);
+				if (index != -1) this->excludedNodes->SetItemChecked(index,true);
+			}
+			String^ managedExit = char2StringRef(exitNodes);
+			array<String^>^ exitList = managedExit->Split(',');
+			for(int i=0;i<exitList->Length;i++) {
+				int index = this->preferredNodes->FindString(exitList[i]);
+				if (index != -1) this->preferredNodes->SetItemChecked(index,true);
+			}
 		}
 
 	protected:
@@ -313,6 +330,14 @@ private: System::Void clearAll_Click(System::Object^  sender, System::EventArgs^
 			 this->excludedNodes->ClearSelected();
 		 }
 private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^  e) {
+			 String^ toBeExcluded = "";
+			 IEnumerator^ counter = excludedNodes->CheckedItems->GetEnumerator();
+			 while (counter->MoveNext()) {
+				 Object^ itemChecked = safe_cast<Object^>(counter->Current);
+				 toBeExcluded += itemChecked + ",";
+			 }
+			 toBeExcluded = toBeExcluded->Trim(',');
+			 writeRegKey("Software\\GeoLock","excludedExitNodes",(char*)(void*)Marshal::StringToHGlobalAnsi(toBeExcluded));
 			 Close();
 		 }
 private: System::Void cancelButton_Click(System::Object^  sender, System::EventArgs^  e) {

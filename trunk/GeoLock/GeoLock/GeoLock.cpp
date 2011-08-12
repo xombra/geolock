@@ -7,7 +7,7 @@
 using namespace GeoLock;
 
 void writeRegKey(LPCSTR location,LPCSTR key,char* value) {
-	HKEY hKey = 0; char buf[255] = {0};
+	HKEY hKey = 0; char* buf = value;
 	DWORD dwType = REG_SZ; DWORD dwBufSize = sizeof(buf);
 	/*if location exists*/
 	if (RegOpenKeyA(HKEY_CURRENT_USER,location,&hKey) == ERROR_SUCCESS) {
