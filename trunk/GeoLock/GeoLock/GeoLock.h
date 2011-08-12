@@ -8,7 +8,26 @@
 
 #using <system.dll>
 
-char *ip,*ct,*excludeExitNodes,*exitNodes;
+char *ip,*ct;
+
+String^ checkRegKey(LPCSTR location,LPCSTR key) {
+	String^ test; char *temp;
+	HKEY hKey = 0; char buf[1024] = {0};
+	DWORD dwType = REG_SZ; DWORD dwBufSize = sizeof(buf);
+	/*if location exists*/
+	if (RegOpenKeyA(HKEY_CURRENT_USER,location,&hKey) == ERROR_SUCCESS) {
+		/*and if key exists*/
+		if (RegQueryValueExA(hKey,key,0,&dwType, (BYTE*)buf, &dwBufSize) == ERROR_SUCCESS) {
+			temp = &buf[0];
+			test = gcnew System::String(temp,0,sizeof(buf));
+			for(int i=0;i<sizeof(buf);i++) printf(&buf[i]);
+		}
+		else MessageBox::Show("A registry key is missing\nYou should reinstall GeoLock","Alert");
+		RegCloseKey(hKey);
+	}
+	else MessageBox::Show("A registry key is missing\nYou should reinstall GeoLock","Alert");
+	return test;
+}
 
 System::String ^ char2StringRef( char * p){ 
 	System::String ^ str; 
@@ -72,13 +91,10 @@ namespace GeoLock {
 		Form1(void)
 		{
 			InitializeComponent();
-			if (strcmp("",excludeExitNodes)) this->excludeList->Text = L"Exclude: " + char2StringRef(excludeExitNodes);
-			else this->excludeList->Text = L"Exclude: NONE";
-			if (strcmp("",exitNodes)) this->preferNodes->Text = L"Prefer: " + char2StringRef(exitNodes);
-			else this->preferNodes->Text = L"Prefer: NONE";
-			//
-			//TODO: Add the constructor code here
-			//
+			String^ managedExclude = checkRegKey("Software\\GeoLock","excludedExitNodes");
+			String^ managedExit = checkRegKey("Software\\GeoLock","exitNodes");
+			this->excludeList->Text = L"Exclude: " + managedExclude;
+			this->preferNodes->Text = L"Prefer: " + managedExit;
 		}
 
 	protected:
@@ -202,19 +218,19 @@ namespace GeoLock {
 			// 
 			// excludeList
 			// 
-			this->excludeList->AutoSize = true;
+			this->excludeList->AutoEllipsis = true;
 			this->excludeList->Location = System::Drawing::Point(12, 32);
 			this->excludeList->Name = L"excludeList";
-			this->excludeList->Size = System::Drawing::Size(51, 13);
+			this->excludeList->Size = System::Drawing::Size(279, 13);
 			this->excludeList->TabIndex = 2;
 			this->excludeList->Text = L"Exclude: ";
 			// 
 			// preferNodes
 			// 
-			this->preferNodes->AutoSize = true;
+			this->preferNodes->AutoEllipsis = true;
 			this->preferNodes->Location = System::Drawing::Point(12, 56);
 			this->preferNodes->Name = L"preferNodes";
-			this->preferNodes->Size = System::Drawing::Size(38, 13);
+			this->preferNodes->Size = System::Drawing::Size(279, 13);
 			this->preferNodes->TabIndex = 3;
 			this->preferNodes->Text = L"Prefer:";
 			// 
@@ -274,6 +290,14 @@ namespace GeoLock {
 				 }
 				 finally {
 					 delete exitNodeDialog;
+					 String^ managedExclude = checkRegKey("Software\\GeoLock","excludedExitNodes");
+					 String^ managedExit = checkRegKey("Software\\GeoLock","exitNodes");
+					 char *excludeExitNodes = (char*)(void*)
+						Marshal::StringToHGlobalAnsi(managedExclude);
+					 char *exitNodes = (char*)(void*)
+						Marshal::StringToHGlobalAnsi(managedExit);
+					 this->excludeList->Text = L"Exclude: " + char2StringRef(excludeExitNodes);
+					 this->preferNodes->Text = L"Prefer: " + char2StringRef(exitNodes);
 				 }
 			 }
 };

@@ -1,8 +1,8 @@
 #pragma once
 
-extern char *excludeExitNodes,*exitNodes;
 extern System::String^ char2StringRef(char* p);
 extern void writeRegKey(LPCSTR location,LPCSTR key,char* value);
+extern System::String^ checkRegKey(LPCSTR location,LPCSTR key);
 
 namespace GeoLock {
 
@@ -23,13 +23,13 @@ namespace GeoLock {
 		ExitNode(void)
 		{
 			InitializeComponent();
-			String^ managedExcluded = char2StringRef(excludeExitNodes);
+			String^ managedExcluded = checkRegKey("Software\\GeoLock","excludedExitNodes");
 			array<String^>^ excludedList = managedExcluded->Split(',');
 			for(int i=0;i<excludedList->Length;i++) {
 				int index = this->excludedNodes->FindString(excludedList[i]);
 				if (index != -1) this->excludedNodes->SetItemChecked(index,true);
 			}
-			String^ managedExit = char2StringRef(exitNodes);
+			String^ managedExit = checkRegKey("Software\\GeoLock","exitNodes");
 			array<String^>^ exitList = managedExit->Split(',');
 			for(int i=0;i<exitList->Length;i++) {
 				int index = this->preferredNodes->FindString(exitList[i]);
@@ -65,6 +65,10 @@ namespace GeoLock {
 	private: System::Windows::Forms::Button^  cancelButton;
 	private: System::Windows::Forms::Button^  clearAll;
 	private: System::Windows::Forms::Button^  selectAll;
+	private: System::Windows::Forms::Button^  SelectAllPre;
+
+	private: System::Windows::Forms::Button^  ClearAllPre;
+
 
 	private:
 		/// <summary>
@@ -90,6 +94,8 @@ namespace GeoLock {
 			this->shapeContainer1 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
 			this->lineShape1 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+			this->ClearAllPre = (gcnew System::Windows::Forms::Button());
+			this->SelectAllPre = (gcnew System::Windows::Forms::Button());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->preferredNodes = (gcnew System::Windows::Forms::CheckedListBox());
@@ -209,6 +215,8 @@ namespace GeoLock {
 			// 
 			// tabPage2
 			// 
+			this->tabPage2->Controls->Add(this->ClearAllPre);
+			this->tabPage2->Controls->Add(this->SelectAllPre);
 			this->tabPage2->Controls->Add(this->label4);
 			this->tabPage2->Controls->Add(this->label3);
 			this->tabPage2->Controls->Add(this->preferredNodes);
@@ -221,11 +229,31 @@ namespace GeoLock {
 			this->tabPage2->Text = L"Preferred Nodes";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
+			// ClearAllPre
+			// 
+			this->ClearAllPre->Location = System::Drawing::Point(107, 229);
+			this->ClearAllPre->Name = L"ClearAllPre";
+			this->ClearAllPre->Size = System::Drawing::Size(75, 23);
+			this->ClearAllPre->TabIndex = 6;
+			this->ClearAllPre->Text = L"Clear All";
+			this->ClearAllPre->UseVisualStyleBackColor = true;
+			this->ClearAllPre->Click += gcnew System::EventHandler(this, &ExitNode::ClearAllPre_Click);
+			// 
+			// SelectAllPre
+			// 
+			this->SelectAllPre->Location = System::Drawing::Point(107, 200);
+			this->SelectAllPre->Name = L"SelectAllPre";
+			this->SelectAllPre->Size = System::Drawing::Size(75, 23);
+			this->SelectAllPre->TabIndex = 5;
+			this->SelectAllPre->Text = L"Select All";
+			this->SelectAllPre->UseVisualStyleBackColor = true;
+			this->SelectAllPre->Click += gcnew System::EventHandler(this, &ExitNode::SelectAllPre_Click);
+			// 
 			// label4
 			// 
 			this->label4->Location = System::Drawing::Point(107, 26);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(143, 244);
+			this->label4->Size = System::Drawing::Size(143, 167);
 			this->label4->TabIndex = 4;
 			this->label4->Text = resources->GetString(L"label4.Text");
 			// 
@@ -240,6 +268,7 @@ namespace GeoLock {
 			// 
 			// preferredNodes
 			// 
+			this->preferredNodes->CheckOnClick = true;
 			this->preferredNodes->FormattingEnabled = true;
 			this->preferredNodes->Items->AddRange(gcnew cli::array< System::Object^  >(240) {L"AC", L"AD", L"AE", L"AF", L"AG", L"AI", 
 				L"AL", L"AM", L"AN", L"AO", L"AP", L"AQ", L"AR", L"AS", L"AT", L"AU", L"AW", L"AX", L"AZ", L"BA", L"BB", L"BD", L"BE", L"BF", 
@@ -329,6 +358,16 @@ private: System::Void clearAll_Click(System::Object^  sender, System::EventArgs^
 				 excludedNodes->SetItemChecked(i,false);
 			 this->excludedNodes->ClearSelected();
 		 }
+private: System::Void SelectAllPre_Click(System::Object^  sender, System::EventArgs^  e) {
+			 for (int i=0;i<preferredNodes->Items->Count;i++) 
+			 preferredNodes->SetItemChecked(i,true);
+			 this->preferredNodes->ClearSelected();
+		 }
+private: System::Void ClearAllPre_Click(System::Object^  sender, System::EventArgs^  e) {
+			 for (int i=0;i<preferredNodes->Items->Count;i++) 
+			 preferredNodes->SetItemChecked(i,false);
+			 this->preferredNodes->ClearSelected();
+		 }
 private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^  e) {
 			 String^ toBeExcluded = "";
 			 IEnumerator^ counter = excludedNodes->CheckedItems->GetEnumerator();
@@ -336,8 +375,18 @@ private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^
 				 Object^ itemChecked = safe_cast<Object^>(counter->Current);
 				 toBeExcluded += itemChecked + ",";
 			 }
-			 toBeExcluded = toBeExcluded->Trim(',');
+			 if (toBeExcluded->Length > 2) toBeExcluded = toBeExcluded->Remove(toBeExcluded->Length-1);					//remove trailing comma
+			 else toBeExcluded = "NONE";
 			 writeRegKey("Software\\GeoLock","excludedExitNodes",(char*)(void*)Marshal::StringToHGlobalAnsi(toBeExcluded));
+			 String^ toBePreferred = "";
+			 IEnumerator^ counter2 = preferredNodes->CheckedItems->GetEnumerator();
+			 while (counter2->MoveNext()) {
+				 Object^ itemChecked = safe_cast<Object^>(counter2->Current);
+				 toBePreferred += itemChecked + ",";
+			 }
+			 if (toBePreferred->Length > 2) toBePreferred = toBePreferred->Remove(toBePreferred->Length-1);
+			 else toBePreferred = "NONE";
+			 writeRegKey("Software\\GeoLock","exitNodes",(char*)(void*)Marshal::StringToHGlobalAnsi(toBePreferred));
 			 Close();
 		 }
 private: System::Void cancelButton_Click(System::Object^  sender, System::EventArgs^  e) {
