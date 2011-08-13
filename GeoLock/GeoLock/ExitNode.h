@@ -24,7 +24,7 @@ namespace GeoLock {
 		{
 			InitializeComponent();
 			String^ managedExcluded = checkRegKey("Software\\GeoLock","excludedExitNodes");
-			array<String^>^ excludedList = managedExcluded->Split(',');
+			array<String^>^ excludedList = managedExcluded->Split(',');	
 			for(int i=0;i<excludedList->Length;i++) {
 				int index = this->excludedNodes->FindString(excludedList[i]);
 				if (index != -1) this->excludedNodes->SetItemChecked(index,true);
@@ -375,8 +375,7 @@ private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^
 				 Object^ itemChecked = safe_cast<Object^>(counter->Current);
 				 toBeExcluded += itemChecked + ",";
 			 }
-			 if (toBeExcluded->Length > 2) toBeExcluded = toBeExcluded->Remove(toBeExcluded->Length-1);					//remove trailing comma
-			 else toBeExcluded = "NONE";
+			 if (toBeExcluded->Length < 2) toBeExcluded = "NONE";
 			 writeRegKey("Software\\GeoLock","excludedExitNodes",(char*)(void*)Marshal::StringToHGlobalAnsi(toBeExcluded));
 			 String^ toBePreferred = "";
 			 IEnumerator^ counter2 = preferredNodes->CheckedItems->GetEnumerator();
@@ -384,8 +383,7 @@ private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^
 				 Object^ itemChecked = safe_cast<Object^>(counter2->Current);
 				 toBePreferred += itemChecked + ",";
 			 }
-			 if (toBePreferred->Length > 2) toBePreferred = toBePreferred->Remove(toBePreferred->Length-1);
-			 else toBePreferred = "NONE";
+			 if (toBePreferred->Length < 2) toBePreferred = "NONE";
 			 writeRegKey("Software\\GeoLock","exitNodes",(char*)(void*)Marshal::StringToHGlobalAnsi(toBePreferred));
 			 Close();
 		 }
