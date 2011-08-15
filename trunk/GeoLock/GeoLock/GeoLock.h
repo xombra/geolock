@@ -1,12 +1,6 @@
 #include "stdafx.h"
-#include <iostream>
-#include "vcclr.h"
 
-#pragma comment(lib,"advapi32")
-#pragma comment(lib,"shell32.lib")
 #pragma once
-
-#using <system.dll>
 
 char *ip,*ct;
 

@@ -373,13 +373,14 @@ private: System::Void ClearAllPre_Click(System::Object^  sender, System::EventAr
 private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^  e) {
 			 System::Configuration::Configuration ^config = 
 				 System::Configuration::ConfigurationManager::OpenExeConfiguration(System::Configuration::ConfigurationUserLevel::None);
-			 String ^toBeExcluded,^toBePreferred = "";
+			 String ^toBeExcluded = gcnew System::String("");
+		     String ^toBePreferred = gcnew System::String("");
 			 IEnumerator^ counter = excludedNodes->CheckedItems->GetEnumerator();
 			 while (counter->MoveNext()) {
 				 Object^ itemChecked = safe_cast<Object^>(counter->Current);
 				 toBeExcluded += itemChecked + ",";
 			 }
-			 toBeExcluded = toBeExcluded->Remove(toBeExcluded->Length-1);
+			 if (toBeExcluded->Length > 0) toBeExcluded = toBeExcluded->Remove(toBeExcluded->Length-1);
 			 config->AppSettings->Settings->Remove("excludedExitNodes");
 			 config->AppSettings->Settings->Add("excludedExitNodes",toBeExcluded);
 			 IEnumerator^ counter2 = preferredNodes->CheckedItems->GetEnumerator();
@@ -387,7 +388,7 @@ private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^
 				 Object^ itemChecked = safe_cast<Object^>(counter2->Current);
 				 toBePreferred += itemChecked + ",";
 			 }
-			 toBePreferred = toBePreferred->Remove(toBePreferred->Length-1);
+			 if (toBePreferred->Length > 0) toBePreferred = toBePreferred->Remove(toBePreferred->Length-1);
 			 config->AppSettings->Settings->Remove("exitNodes");
 			 config->AppSettings->Settings->Add("exitNodes",toBePreferred);
 			 config->Save(System::Configuration::ConfigurationSaveMode::Modified);
