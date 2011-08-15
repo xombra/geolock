@@ -23,15 +23,19 @@ namespace GeoLock {
 			InitializeComponent();
 			String^ managedExcluded = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
 			String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
-			array<String^>^ excludedList = managedExcluded->Split(',');	
-			for(int i=0;i<excludedList->Length;i++) {
-				int index = this->excludedNodes->FindString(excludedList[i]);
-				if (index != -1) this->excludedNodes->SetItemChecked(index,true);
+			array<String^>^ excludedList = managedExcluded->Split(',');
+			if (excludedList[0] != "") {
+				for(int i=0;i<excludedList->Length;i++) {
+					int index = this->excludedNodes->FindString(excludedList[i]);
+					if (index != -1) this->excludedNodes->SetItemChecked(index,true);
+				}
 			}
 			array<String^>^ exitList = managedExit->Split(',');
-			for(int i=0;i<exitList->Length;i++) {
-				int index = this->preferredNodes->FindString(exitList[i]);
-				if (index != -1) this->preferredNodes->SetItemChecked(index,true);
+			if (exitList[0] != "") {
+				for(int i=0;i<exitList->Length;i++) {
+					int index = this->preferredNodes->FindString(exitList[i]);
+					if (index != -1) this->preferredNodes->SetItemChecked(index,true);
+				}
 			}
 		}
 
