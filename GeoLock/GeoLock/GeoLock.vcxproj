@@ -224,6 +224,7 @@
     <None Include="icons\LC.png" />
     <None Include="icons\LI.png" />
     <None Include="icons\LK.png" />
+    <None Include="icons\Locked.png" />
     <None Include="icons\LR.png" />
     <None Include="icons\LS.png" />
     <None Include="icons\LT.png" />
@@ -260,6 +261,7 @@
     <None Include="icons\NI.png" />
     <None Include="icons\NL.png" />
     <None Include="icons\NO.png" />
+    <None Include="icons\Not Locked.png" />
     <None Include="icons\NP.png" />
     <None Include="icons\NR.png" />
     <None Include="icons\NU.png" />

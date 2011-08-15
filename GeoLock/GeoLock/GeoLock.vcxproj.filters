@@ -728,6 +728,12 @@
     <None Include="icons\ZW.png">
       <Filter>Icons</Filter>
     </None>
+    <None Include="icons\Locked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\Not Locked.png">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeoLock.cpp">
