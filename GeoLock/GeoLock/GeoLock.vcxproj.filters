@@ -747,10 +747,10 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GeoLock.h">
+    <ClInclude Include="ExitNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ExitNode.h">
+    <ClInclude Include="GeoLockWin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -760,10 +760,10 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="GeoLock.resX">
+    <EmbeddedResource Include="ExitNode.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="ExitNode.resx">
+    <EmbeddedResource Include="GeoLockWin.resX">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

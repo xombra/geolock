@@ -1,7 +1,7 @@
 // GeoLock.cpp : main project file.
 #include "stdafx.h"
 #include "ExitNode.h"
-#include "GeoLock.h"
+#include "GeoLockWin.h"
 
 using namespace GeoLock;
 
@@ -13,6 +13,6 @@ int main(array<System::String ^> ^args)
 	Application::SetCompatibleTextRenderingDefault(false);
 
 	// Create the main window and run it
-	Application::Run(gcnew Form1());
+	Application::Run(gcnew GeoLockWin());
 	return 0;
 }

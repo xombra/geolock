@@ -1,5 +1,3 @@
-#include "stdafx.h"
-
 #pragma once
 
 char *ip,*ct;
@@ -57,10 +55,10 @@ namespace GeoLock {
 	using namespace System::Data;
 	using namespace System::Drawing;
 
-	public ref class Form1 : public System::Windows::Forms::Form
+	public ref class GeoLockWin : public System::Windows::Forms::Form
 	{
 	public:
-		Form1(void)
+		GeoLockWin(void)
 		{
 			InitializeComponent();
 			String^ managedExclude = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
@@ -72,7 +70,7 @@ namespace GeoLock {
 		}
 
 	protected:
-		~Form1()
+		~GeoLockWin()
 		{
 			if (components)
 			{
@@ -98,7 +96,7 @@ namespace GeoLock {
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
-			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Form1::typeid));
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->fileToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->exitToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -140,7 +138,7 @@ namespace GeoLock {
 			this->exitToolStripMenuItem->Name = L"exitToolStripMenuItem";
 			this->exitToolStripMenuItem->Size = System::Drawing::Size(92, 22);
 			this->exitToolStripMenuItem->Text = L"Exit";
-			this->exitToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::exitToolStripMenuItem_Click);
+			this->exitToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::exitToolStripMenuItem_Click);
 			// 
 			// settingsToolStripMenuItem
 			// 
@@ -154,7 +152,7 @@ namespace GeoLock {
 			this->excludeExitNodesToolStripMenuItem->Name = L"excludeExitNodesToolStripMenuItem";
 			this->excludeExitNodesToolStripMenuItem->Size = System::Drawing::Size(156, 22);
 			this->excludeExitNodesToolStripMenuItem->Text = L"Configuration...";
-			this->excludeExitNodesToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::excludeExitNodesToolStripMenuItem_Click);
+			this->excludeExitNodesToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::excludeExitNodesToolStripMenuItem_Click);
 			// 
 			// statusStrip1
 			// 
@@ -201,7 +199,7 @@ namespace GeoLock {
 			// 
 			this->timer->Enabled = true;
 			this->timer->Interval = 300000;
-			this->timer->Tick += gcnew System::EventHandler(this, &Form1::Form1_Load);
+			this->timer->Tick += gcnew System::EventHandler(this, &GeoLockWin::GeoLockWin_Load);
 			// 
 			// timeStamp
 			// 
@@ -214,13 +212,13 @@ namespace GeoLock {
 			// 
 			// pictureBox1
 			// 
-			this->pictureBox1->Location = System::Drawing::Point(283, 110);
+			this->pictureBox1->Location = System::Drawing::Point(282, 114);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(20, 20);
+			this->pictureBox1->Size = System::Drawing::Size(18, 12);
 			this->pictureBox1->TabIndex = 5;
 			this->pictureBox1->TabStop = false;
 			// 
-			// Form1
+			// GeoLockWin
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -232,9 +230,11 @@ namespace GeoLock {
 			this->Controls->Add(this->statusStrip1);
 			this->Controls->Add(this->menuStrip1);
 			this->MainMenuStrip = this->menuStrip1;
-			this->Name = L"Form1";
+			this->MaximumSize = System::Drawing::Size(319, 169);
+			this->MinimumSize = System::Drawing::Size(319, 169);
+			this->Name = L"GeoLockWin";
 			this->Text = L"GeoLock";
-			this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
+			this->Load += gcnew System::EventHandler(this, &GeoLockWin::GeoLockWin_Load);
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
 			this->statusStrip1->ResumeLayout(false);
@@ -248,13 +248,15 @@ namespace GeoLock {
 	private: System::Void exitToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 				 Application::Exit();
 			 }
-	private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e) {
-				 //updateIP();
+	private: System::Void GeoLockWin_Load(System::Object^  sender, System::EventArgs^  e) {
+				 System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
+				 updateIP();
 				 SYSTEMTIME lt;
 				 GetLocalTime(&lt);
 				 this->timeStamp->Text = L"Last Updated: " + getPrettyDate(lt);
 				 this->toolStripStatusLabel1->Text = L"IP: " + char2StringRef(ip);
 				 this->toolStripStatusLabel2->Text = L"Geolocation: " + char2StringRef(ct);
+				 this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(char2StringRef(ct))));
 			 }
 	private: System::Void excludeExitNodesToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 			 	 ExitNode^ exitNodeDialog = gcnew ExitNode();
