@@ -57,9 +57,6 @@ namespace GeoLock {
 	using namespace System::Data;
 	using namespace System::Drawing;
 
-	/// <summary>
-	/// Summary for Form1
-	/// </summary>
 	public ref class Form1 : public System::Windows::Forms::Form
 	{
 	public:
@@ -75,9 +72,6 @@ namespace GeoLock {
 		}
 
 	protected:
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
 		~Form1()
 		{
 			if (components)
@@ -97,24 +91,14 @@ namespace GeoLock {
 	private: System::Windows::Forms::Label^  preferNodes;
 	private: System::Windows::Forms::Timer^  timer;
 	private: System::Windows::Forms::Label^  timeStamp;
+	private: System::Windows::Forms::PictureBox^  pictureBox1;
 	private: System::ComponentModel::IContainer^  components;
 
-
-
-	private:
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-
-
 #pragma region Windows Form Designer generated code
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Form1::typeid));
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->fileToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->exitToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -127,8 +111,10 @@ namespace GeoLock {
 			this->preferNodes = (gcnew System::Windows::Forms::Label());
 			this->timer = (gcnew System::Windows::Forms::Timer(this->components));
 			this->timeStamp = (gcnew System::Windows::Forms::Label());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->menuStrip1->SuspendLayout();
 			this->statusStrip1->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// menuStrip1
@@ -226,11 +212,20 @@ namespace GeoLock {
 			this->timeStamp->TabIndex = 4;
 			this->timeStamp->Text = L"Last Updated: ";
 			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->Location = System::Drawing::Point(283, 110);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(20, 20);
+			this->pictureBox1->TabIndex = 5;
+			this->pictureBox1->TabStop = false;
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(303, 131);
+			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->timeStamp);
 			this->Controls->Add(this->preferNodes);
 			this->Controls->Add(this->excludeList);
@@ -244,6 +239,7 @@ namespace GeoLock {
 			this->menuStrip1->PerformLayout();
 			this->statusStrip1->ResumeLayout(false);
 			this->statusStrip1->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
