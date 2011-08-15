@@ -208,7 +208,7 @@ namespace GeoLock {
 			// timer
 			// 
 			this->timer->Enabled = true;
-			this->timer->Interval = 300000;
+			this->timer->Interval = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["updateFreq"])*60*1000);
 			this->timer->Tick += gcnew System::EventHandler(this, &GeoLockWin::GeoLockWin_Load);
 			// 
 			// timeStamp
@@ -328,7 +328,7 @@ namespace GeoLock {
 			 }
 	private: System::Void GeoLockWin_Load(System::Object^  sender, System::EventArgs^  e) {
 				 System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
-				 updateIP();
+				 //updateIP();
 				 SYSTEMTIME lt;
 				 GetLocalTime(&lt);
 				 this->timeStamp->Text = L"Last Updated: " + getPrettyDate(lt);
