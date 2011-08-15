@@ -20,6 +20,8 @@ namespace GeoLock {
 			InitializeComponent();
 			String^ managedExcluded = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
 			String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
+			String^ updateFreq = System::Configuration::ConfigurationManager::AppSettings["updateFreq"];
+
 			array<String^>^ excludedList = managedExcluded->Split(',');
 			if (excludedList[0] != "") {
 				for(int i=0;i<excludedList->Length;i++) {
@@ -34,6 +36,7 @@ namespace GeoLock {
 					if (index != -1) this->preferredNodes->SetItemChecked(index,true);
 				}
 			}
+			this->updateIn->Text = updateFreq;
 		}
 
 	protected:
@@ -63,6 +66,21 @@ namespace GeoLock {
 	private: System::Windows::Forms::Button^  selectAll;
 	private: System::Windows::Forms::Button^  SelectAllPre;
 	private: System::Windows::Forms::Button^  ClearAllPre;
+	private: System::Windows::Forms::TabPage^  tabPage3;
+	private: System::Windows::Forms::Label^  label5;
+	private: Microsoft::VisualBasic::PowerPacks::ShapeContainer^  shapeContainer3;
+	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape3;
+	private: System::Windows::Forms::Label^  label7;
+	private: System::Windows::Forms::TextBox^  updateIn;
+
+	private: System::Windows::Forms::Label^  label6;
+
+
+
+
+
+
+
 	private: System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
@@ -86,11 +104,19 @@ namespace GeoLock {
 			this->preferredNodes = (gcnew System::Windows::Forms::CheckedListBox());
 			this->shapeContainer2 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
 			this->lineShape2 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
+			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->updateIn = (gcnew System::Windows::Forms::TextBox());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->shapeContainer3 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
+			this->lineShape3 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->okButton = (gcnew System::Windows::Forms::Button());
 			this->cancelButton = (gcnew System::Windows::Forms::Button());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
+			this->tabPage3->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// excludedNodes
@@ -120,6 +146,7 @@ namespace GeoLock {
 			// 
 			this->tabControl1->Controls->Add(this->tabPage1);
 			this->tabControl1->Controls->Add(this->tabPage2);
+			this->tabControl1->Controls->Add(this->tabPage3);
 			this->tabControl1->Location = System::Drawing::Point(6, 7);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
@@ -293,6 +320,74 @@ namespace GeoLock {
 			this->lineShape2->Y1 = 11;
 			this->lineShape2->Y2 = 11;
 			// 
+			// tabPage3
+			// 
+			this->tabPage3->Controls->Add(this->label7);
+			this->tabPage3->Controls->Add(this->updateIn);
+			this->tabPage3->Controls->Add(this->label6);
+			this->tabPage3->Controls->Add(this->label5);
+			this->tabPage3->Controls->Add(this->shapeContainer3);
+			this->tabPage3->Location = System::Drawing::Point(4, 22);
+			this->tabPage3->Name = L"tabPage3";
+			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage3->Size = System::Drawing::Size(268, 284);
+			this->tabPage3->TabIndex = 2;
+			this->tabPage3->Text = L"Advanced";
+			this->tabPage3->UseVisualStyleBackColor = true;
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Location = System::Drawing::Point(178, 36);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(88, 13);
+			this->label7->TabIndex = 4;
+			this->label7->Text = L"minute(s). [1-300]";
+			// 
+			// updateIn
+			// 
+			this->updateIn->Location = System::Drawing::Point(98, 33);
+			this->updateIn->Name = L"updateIn";
+			this->updateIn->Size = System::Drawing::Size(76, 20);
+			this->updateIn->TabIndex = 3;
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Location = System::Drawing::Point(11, 36);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(84, 13);
+			this->label6->TabIndex = 2;
+			this->label6->Text = L"Update IP every";
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Location = System::Drawing::Point(7, 7);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(95, 13);
+			this->label5->TabIndex = 0;
+			this->label5->Text = L"Update Frequency";
+			// 
+			// shapeContainer3
+			// 
+			this->shapeContainer3->Location = System::Drawing::Point(3, 3);
+			this->shapeContainer3->Margin = System::Windows::Forms::Padding(0);
+			this->shapeContainer3->Name = L"shapeContainer3";
+			this->shapeContainer3->Shapes->AddRange(gcnew cli::array< Microsoft::VisualBasic::PowerPacks::Shape^  >(1) {this->lineShape3});
+			this->shapeContainer3->Size = System::Drawing::Size(262, 278);
+			this->shapeContainer3->TabIndex = 1;
+			this->shapeContainer3->TabStop = false;
+			// 
+			// lineShape3
+			// 
+			this->lineShape3->BorderColor = System::Drawing::SystemColors::Highlight;
+			this->lineShape3->Name = L"lineShape3";
+			this->lineShape3->X1 = 101;
+			this->lineShape3->X2 = 258;
+			this->lineShape3->Y1 = 11;
+			this->lineShape3->Y2 = 11;
+			// 
 			// okButton
 			// 
 			this->okButton->Location = System::Drawing::Point(121, 321);
@@ -328,6 +423,8 @@ namespace GeoLock {
 			this->tabPage1->PerformLayout();
 			this->tabPage2->ResumeLayout(false);
 			this->tabPage2->PerformLayout();
+			this->tabPage3->ResumeLayout(false);
+			this->tabPage3->PerformLayout();
 			this->ResumeLayout(false);
 
 		}
@@ -374,6 +471,16 @@ private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^
 			 if (toBePreferred->Length > 0) toBePreferred = toBePreferred->Remove(toBePreferred->Length-1);
 			 config->AppSettings->Settings->Remove("exitNodes");
 			 config->AppSettings->Settings->Add("exitNodes",toBePreferred);
+			 int temp = 5;
+			 try {
+				 temp = System::Int32::Parse(this->updateIn->Text);
+			 }
+			 catch (Exception^ ex) {
+				 temp = 1;
+			 }
+			 if (temp > 300) temp = 300;
+			 config->AppSettings->Settings->Remove("updateFreq");
+			 config->AppSettings->Settings->Add("updateFreq",temp.ToString());
 			 config->Save(System::Configuration::ConfigurationSaveMode::Modified);
 			 System::Configuration::ConfigurationManager::RefreshSection("appSettings");
 			 Close();
