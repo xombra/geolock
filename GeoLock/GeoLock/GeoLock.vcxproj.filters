@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Icons">
+      <UniqueIdentifier>{781d5569-8468-4771-911b-08497157227a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -20,6 +23,711 @@
       <Filter>Resource Files</Filter>
     </None>
     <None Include="app.config" />
+    <None Include="icons\AD.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\AE.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\AF.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\AG.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\AI.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\AL.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\AM.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\AN.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\AO.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\AQ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\AR.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\AS.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\AT.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\AU.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\AW.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\AX.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\AZ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BA.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BB.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BD.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BE.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BF.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BG.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BH.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BI.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BJ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BM.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BN.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BO.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BR.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BS.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BT.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BV.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BW.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BY.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\BZ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\CA.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\CD.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\CF.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\CG.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\CH.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\CI.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\CK.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\CL.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\CM.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\CN.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\CO.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\CR.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\CU.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\CV.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\CY.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\CZ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\DE.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\DJ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\DK.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\DM.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\DO.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\DZ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\EC.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\EE.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\EG.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\ER.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\ES.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\ET.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\EU.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\FI.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\FJ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\FK.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\FM.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\FO.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\FR.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\GA.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\GB.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\GD.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\GE.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\GF.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\GH.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\GI.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\GL.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\GM.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\GN.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\GP.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\GQ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\GR.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\GT.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\GU.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\GW.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\GY.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\HK.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\HM.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\HN.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\HR.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\HT.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\HU.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\ID.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\IE.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\IL.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\IM.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\IN.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\IO.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\IQ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\IR.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\IS.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\IT.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\JE.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\JM.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\JO.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\JP.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\KE.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\KG.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\KH.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\KI.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\KM.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\KN.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\KP.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\KR.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\KW.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\KY.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\KZ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\LA.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\LB.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\LC.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\LI.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\LK.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\LR.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\LS.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\LT.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\LU.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\LV.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\LY.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MA.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MC.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MD.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\ME.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MG.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MH.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MK.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\ML.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MM.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MN.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MO.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MP.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MQ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MR.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MS.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MT.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MU.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MV.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MW.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MX.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MY.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\MZ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\NA.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\NC.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\NE.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\NF.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\NG.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\NI.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\NL.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\NO.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\NP.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\NR.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\NU.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\NZ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\OM.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\PA.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\PE.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\PF.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\PG.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\PH.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\PK.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\PL.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\PR.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\PS.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\PT.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\PW.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\PY.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\QA.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\RE.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\RO.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\RS.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\RU.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\RW.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\SA.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\SB.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\SC.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\SD.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\SE.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\SG.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\SI.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\SK.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\SL.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\SM.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\SN.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\SO.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\SR.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\ST.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\SV.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\SY.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\SZ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\TC.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\TD.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\TG.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\TH.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\TJ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\TK.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\TL.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\TM.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\TN.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\TO.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\TR.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\TT.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\TV.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\TW.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\TZ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\UA.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\UG.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\UM.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\US.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\UY.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\UZ.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\VA.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\VC.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\VE.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\VG.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\VI.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\VN.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\VU.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\WF.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\WS.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\YE.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\YT.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\ZA.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\ZM.png">
+      <Filter>Icons</Filter>
+    </None>
+    <None Include="icons\ZW.png">
+      <Filter>Icons</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeoLock.cpp">

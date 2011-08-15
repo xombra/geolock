@@ -12,9 +12,6 @@ namespace GeoLock {
 	using namespace System::Drawing;
 	using namespace System::Runtime::InteropServices;
 
-	/// <summary>
-	/// Summary for ExitNode
-	/// </summary>
 	public ref class ExitNode : public System::Windows::Forms::Form
 	{
 	public:
@@ -40,9 +37,6 @@ namespace GeoLock {
 		}
 
 	protected:
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
 		~ExitNode()
 		{
 			if (components)
@@ -68,21 +62,10 @@ namespace GeoLock {
 	private: System::Windows::Forms::Button^  clearAll;
 	private: System::Windows::Forms::Button^  selectAll;
 	private: System::Windows::Forms::Button^  SelectAllPre;
-
 	private: System::Windows::Forms::Button^  ClearAllPre;
-
-
-	private:
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-		System::ComponentModel::Container ^components;
+	private: System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(ExitNode::typeid));
