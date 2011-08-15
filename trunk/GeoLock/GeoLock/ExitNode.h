@@ -1,8 +1,6 @@
 #pragma once
 
 extern System::String^ char2StringRef(char* p);
-extern void writeRegKey(LPCSTR location,LPCSTR key,char* value);
-extern System::String^ checkRegKey(LPCSTR location,LPCSTR key);
 
 namespace GeoLock {
 
@@ -23,13 +21,13 @@ namespace GeoLock {
 		ExitNode(void)
 		{
 			InitializeComponent();
-			String^ managedExcluded = checkRegKey("Software\\GeoLock","excludedExitNodes");
+			String^ managedExcluded = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
+			String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
 			array<String^>^ excludedList = managedExcluded->Split(',');	
 			for(int i=0;i<excludedList->Length;i++) {
 				int index = this->excludedNodes->FindString(excludedList[i]);
 				if (index != -1) this->excludedNodes->SetItemChecked(index,true);
 			}
-			String^ managedExit = checkRegKey("Software\\GeoLock","exitNodes");
 			array<String^>^ exitList = managedExit->Split(',');
 			for(int i=0;i<exitList->Length;i++) {
 				int index = this->preferredNodes->FindString(exitList[i]);
@@ -360,31 +358,36 @@ private: System::Void clearAll_Click(System::Object^  sender, System::EventArgs^
 		 }
 private: System::Void SelectAllPre_Click(System::Object^  sender, System::EventArgs^  e) {
 			 for (int i=0;i<preferredNodes->Items->Count;i++) 
-			 preferredNodes->SetItemChecked(i,true);
+				preferredNodes->SetItemChecked(i,true);
 			 this->preferredNodes->ClearSelected();
 		 }
 private: System::Void ClearAllPre_Click(System::Object^  sender, System::EventArgs^  e) {
 			 for (int i=0;i<preferredNodes->Items->Count;i++) 
-			 preferredNodes->SetItemChecked(i,false);
+				preferredNodes->SetItemChecked(i,false);
 			 this->preferredNodes->ClearSelected();
 		 }
 private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^  e) {
-			 String^ toBeExcluded = "";
+			 System::Configuration::Configuration ^config = 
+				 System::Configuration::ConfigurationManager::OpenExeConfiguration(System::Configuration::ConfigurationUserLevel::None);
+			 String ^toBeExcluded,^toBePreferred = "";
 			 IEnumerator^ counter = excludedNodes->CheckedItems->GetEnumerator();
 			 while (counter->MoveNext()) {
 				 Object^ itemChecked = safe_cast<Object^>(counter->Current);
 				 toBeExcluded += itemChecked + ",";
 			 }
-			 if (toBeExcluded->Length < 2) toBeExcluded = "NONE";
-			 writeRegKey("Software\\GeoLock","excludedExitNodes",(char*)(void*)Marshal::StringToHGlobalAnsi(toBeExcluded));
-			 String^ toBePreferred = "";
+			 toBeExcluded = toBeExcluded->Remove(toBeExcluded->Length-1);
+			 config->AppSettings->Settings->Remove("excludedExitNodes");
+			 config->AppSettings->Settings->Add("excludedExitNodes",toBeExcluded);
 			 IEnumerator^ counter2 = preferredNodes->CheckedItems->GetEnumerator();
 			 while (counter2->MoveNext()) {
 				 Object^ itemChecked = safe_cast<Object^>(counter2->Current);
 				 toBePreferred += itemChecked + ",";
 			 }
-			 if (toBePreferred->Length < 2) toBePreferred = "NONE";
-			 writeRegKey("Software\\GeoLock","exitNodes",(char*)(void*)Marshal::StringToHGlobalAnsi(toBePreferred));
+			 toBePreferred = toBePreferred->Remove(toBePreferred->Length-1);
+			 config->AppSettings->Settings->Remove("exitNodes");
+			 config->AppSettings->Settings->Add("exitNodes",toBePreferred);
+			 config->Save(System::Configuration::ConfigurationSaveMode::Modified);
+			 System::Configuration::ConfigurationManager::RefreshSection("appSettings");
 			 Close();
 		 }
 private: System::Void cancelButton_Click(System::Object^  sender, System::EventArgs^  e) {

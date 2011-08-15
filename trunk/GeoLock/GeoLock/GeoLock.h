@@ -10,25 +10,6 @@
 
 char *ip,*ct;
 
-String^ checkRegKey(LPCSTR location,LPCSTR key) {
-	String^ test; char *temp;
-	HKEY hKey = 0; char buf[1024] = {0};
-	DWORD dwType = REG_SZ; DWORD dwBufSize = sizeof(buf);
-	/*if location exists*/
-	if (RegOpenKeyA(HKEY_CURRENT_USER,location,&hKey) == ERROR_SUCCESS) {
-		/*and if key exists*/
-		if (RegQueryValueExA(hKey,key,0,&dwType, (BYTE*)buf, &dwBufSize) == ERROR_SUCCESS) {
-			temp = &buf[0];
-			test = gcnew System::String(temp,0,sizeof(buf));
-			for(int i=0;i<sizeof(buf);i++) printf(&buf[i]);
-		}
-		else MessageBox::Show("A registry key is missing\nYou should reinstall GeoLock","Alert");
-		RegCloseKey(hKey);
-	}
-	else MessageBox::Show("A registry key is missing\nYou should reinstall GeoLock","Alert");
-	return test;
-}
-
 System::String ^ char2StringRef( char * p){ 
 	System::String ^ str; 
 	str = gcnew System::String(p); 
@@ -91,10 +72,12 @@ namespace GeoLock {
 		Form1(void)
 		{
 			InitializeComponent();
-			String^ managedExclude = checkRegKey("Software\\GeoLock","excludedExitNodes");
-			String^ managedExit = checkRegKey("Software\\GeoLock","exitNodes");
-			this->excludeList->Text = L"Exclude: " + managedExclude;
-			this->preferNodes->Text = L"Prefer: " + managedExit;
+			String^ managedExclude = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
+			String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
+			if (managedExclude->Length > 0) this->excludeList->Text = L"Exclude: " + managedExclude;
+			else this->excludeList->Text = L"Exclude: NONE";
+			if (managedExit->Length > 0) this->preferNodes->Text = L"Prefer: " + managedExit;
+			else this->preferNodes->Text = L"Prefer: NONE";
 		}
 
 	protected:
@@ -290,14 +273,12 @@ namespace GeoLock {
 				 }
 				 finally {
 					 delete exitNodeDialog;
-					 String^ managedExclude = checkRegKey("Software\\GeoLock","excludedExitNodes");
-					 String^ managedExit = checkRegKey("Software\\GeoLock","exitNodes");
-					 char *excludeExitNodes = (char*)(void*)
-						Marshal::StringToHGlobalAnsi(managedExclude);
-					 char *exitNodes = (char*)(void*)
-						Marshal::StringToHGlobalAnsi(managedExit);
-					 this->excludeList->Text = L"Exclude: " + char2StringRef(excludeExitNodes);
-					 this->preferNodes->Text = L"Prefer: " + char2StringRef(exitNodes);
+					 String^ managedExclude = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
+					 String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
+					 if (managedExclude->Length > 0) this->excludeList->Text = L"Exclude: " + managedExclude;
+					 else this->excludeList->Text = L"Exclude: NONE";
+					 if (managedExit->Length > 0) this->preferNodes->Text = L"Prefer: " + managedExit;
+					 else this->preferNodes->Text = L"Prefer: NONE";
 				 }
 			 }
 };

@@ -6,17 +6,6 @@
 
 using namespace GeoLock;
 
-void writeRegKey(LPCSTR location,LPCSTR key,char* value) {
-	HKEY hKey = 0; char* buf = value;
-	DWORD dwType = REG_SZ;
-	/*if location exists*/
-	if (RegOpenKeyA(HKEY_CURRENT_USER,location,&hKey) == ERROR_SUCCESS) {
-		/*and if key exists*/
-		RegSetValueExA(hKey,key,0,dwType, (BYTE*)buf, 1024);
-		RegCloseKey(hKey);
-	}
-}
-
 [STAThreadAttribute]
 int main(array<System::String ^> ^args)
 {
