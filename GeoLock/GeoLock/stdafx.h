@@ -5,9 +5,6 @@
 
 // TODO: reference additional headers your program requires here
 #include <Windows.h>
-#include <shellapi.h>
-#include <ShlObj.h>
-#include "ExitNode.h"
 
 	using namespace System;
 	using namespace System::Text;

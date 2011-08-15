@@ -1,8 +1,7 @@
 // GeoLock.cpp : main project file.
 #include "stdafx.h"
+#include "ExitNode.h"
 #include "GeoLock.h"
-
-#using <system.dll>
 
 using namespace GeoLock;
 
