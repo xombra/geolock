@@ -28,14 +28,15 @@ System::String ^ getPrettyDate(SYSTEMTIME lt) {
 
 void updateIP() {
 	WebClient^ myWebClient = gcnew WebClient;
-	Uri^ siteUri = gcnew Uri("http://api.wipmania.com/");
+	
+	Uri^ siteUri = gcnew Uri("http://automation.whatismyip.com/n09230945.asp");
 	try {
 		Stream^ ipStream = myWebClient->OpenRead(siteUri);
 		StreamReader^ sr = gcnew StreamReader(ipStream);
 		ip = (char*)(void*)
 			Marshal::StringToHGlobalAnsi(sr->ReadToEnd());
 		ipStream->Close();
-		cleanString('<');
+		//cleanString('<');
 	}
 	catch (WebException ^ex) {
 		MessageBox::Show("Tor is not running or is not properly configured","Connection Error");
@@ -328,7 +329,7 @@ namespace GeoLock {
 			 }
 	private: System::Void GeoLockWin_Load(System::Object^  sender, System::EventArgs^  e) {
 				 System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
-				 //updateIP();
+				 updateIP();
 				 SYSTEMTIME lt;
 				 GetLocalTime(&lt);
 				 this->timeStamp->Text = L"Last Updated: " + getPrettyDate(lt);
