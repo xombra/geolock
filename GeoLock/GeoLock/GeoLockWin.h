@@ -395,6 +395,17 @@ namespace GeoLock {
 			 }
 	private: System::Void forceUpdateToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 				     getNewIdentity();
+					 System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
+					 updateIP();
+					 SYSTEMTIME lt;
+					 GetLocalTime(&lt);
+					 this->timeStamp->Text = L"Last Updated: " + getPrettyDate(lt);
+					 this->toolStripLabel1->Text = L"IP: " + char2StringRef(ip);
+					 this->toolStripLabel2->Text = char2StringRef(ct); this->toolStripButton1->Text = char2StringRef(ct);
+					 String^ acceptState = getAcceptState(char2StringRef(ct));
+					 this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(char2StringRef(ct))));
+					 this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
+					 this->toolStripButton2->Text = acceptState;
 		     }
 };
 }
