@@ -19,3 +19,4 @@
 	using namespace System::Threading;
 	using namespace System::Runtime::InteropServices;
 	using namespace System::Diagnostics;
+	using namespace System::Net::Sockets;
