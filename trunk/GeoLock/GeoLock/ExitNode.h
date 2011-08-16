@@ -342,7 +342,7 @@ namespace GeoLock {
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(88, 13);
 			this->label7->TabIndex = 4;
-			this->label7->Text = L"minute(s). [1-300]";
+			this->label7->Text = L"minutes. [5-300]";
 			// 
 			// updateIn
 			// 
@@ -476,7 +476,7 @@ private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^
 				 temp = System::Int32::Parse(this->updateIn->Text);
 			 }
 			 catch (Exception^ ex) {
-				 temp = 1;
+				 temp = 5;
 			 }
 			 if (temp > 300) temp = 300;
 			 config->AppSettings->Settings->Remove("updateFreq");
