@@ -26,6 +26,29 @@ System::String ^ getPrettyDate(SYSTEMTIME lt) {
 	return lt.wMonth + "/" + tempD + "/" + lt.wYear + " - " + tempH + ":" + tempM + ":" + tempS;
 }
 
+void getNewIdentity() {
+	TcpClient^ tcpSocket;
+	tcpSocket = gcnew TcpClient();
+	IPEndPoint^ serverEP = gcnew IPEndPoint(IPAddress::Parse("127.0.0.1"),9051);
+	NetworkStream^ netStream;
+	try {
+		tcpSocket->Connect(serverEP);
+		netStream = tcpSocket->GetStream();
+		if (netStream->CanWrite) {
+			ASCIIEncoding^ encoder = gcnew ASCIIEncoding();
+			array<Byte>^ sendBytes = encoder->GetBytes("AUTHENTICATE\r\n");
+			netStream->Write( sendBytes, 0, sendBytes->Length );
+			sendBytes = encoder->GetBytes("signal NEWNYM\r\n");
+			netStream->Write( sendBytes, 0, sendBytes->Length );
+		}
+		netStream->Close();
+		tcpSocket->Close();
+	}
+	catch (Exception^ ex) {
+		MessageBox::Show("GeoLock was unable to connect to Tor. Please check your configuration.","Error");
+	}
+}
+
 void updateIP() {
 	WebClient^ myWebClient = gcnew WebClient;
 	
@@ -39,7 +62,7 @@ void updateIP() {
 		//cleanString('<');
 	}
 	catch (WebException ^ex) {
-		MessageBox::Show("Tor is not running or is not properly configured","Connection Error");
+		MessageBox::Show("Tor is not running or is not properly configured.","Connection Error");
 		Application::Exit();
 	}
 	try {
@@ -69,6 +92,7 @@ namespace GeoLock {
 
 	using namespace System;
 	using namespace System::Net;
+	using namespace System::Net::Sockets;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
 	using namespace System::Windows::Forms;
@@ -119,6 +143,7 @@ namespace GeoLock {
 	private: Microsoft::VisualBasic::PowerPacks::ShapeContainer^  shapeContainer1;
 	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape1;
 	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape2;
+	private: System::Windows::Forms::ToolStripMenuItem^  forceUpdateToolStripMenuItem;
 
 	private: System::ComponentModel::IContainer^  components;
 
@@ -129,6 +154,7 @@ namespace GeoLock {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->fileToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->forceUpdateToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->exitToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->settingsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->excludeExitNodesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -162,15 +188,23 @@ namespace GeoLock {
 			// 
 			// fileToolStripMenuItem
 			// 
-			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) {this->exitToolStripMenuItem});
+			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {this->forceUpdateToolStripMenuItem, 
+				this->exitToolStripMenuItem});
 			this->fileToolStripMenuItem->Name = L"fileToolStripMenuItem";
 			this->fileToolStripMenuItem->Size = System::Drawing::Size(37, 20);
 			this->fileToolStripMenuItem->Text = L"File";
 			// 
+			// forceUpdateToolStripMenuItem
+			// 
+			this->forceUpdateToolStripMenuItem->Name = L"forceUpdateToolStripMenuItem";
+			this->forceUpdateToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->forceUpdateToolStripMenuItem->Text = L"Force Update";
+			this->forceUpdateToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::forceUpdateToolStripMenuItem_Click);
+			// 
 			// exitToolStripMenuItem
 			// 
 			this->exitToolStripMenuItem->Name = L"exitToolStripMenuItem";
-			this->exitToolStripMenuItem->Size = System::Drawing::Size(92, 22);
+			this->exitToolStripMenuItem->Size = System::Drawing::Size(152, 22);
 			this->exitToolStripMenuItem->Text = L"Exit";
 			this->exitToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::exitToolStripMenuItem_Click);
 			// 
@@ -209,7 +243,7 @@ namespace GeoLock {
 			// timer
 			// 
 			this->timer->Enabled = true;
-			this->timer->Interval = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["updateFreq"])*60*1000);
+			this->timer->Interval = 300000;
 			this->timer->Tick += gcnew System::EventHandler(this, &GeoLockWin::GeoLockWin_Load);
 			// 
 			// timeStamp
@@ -359,5 +393,8 @@ namespace GeoLock {
 					 this->toolStripButton2->Text = acceptState;
 				 }
 			 }
+	private: System::Void forceUpdateToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+				     getNewIdentity();
+		     }
 };
 }

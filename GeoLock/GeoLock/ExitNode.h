@@ -1,6 +1,5 @@
 #pragma once
 
-extern System::String^ char2StringRef(char* p);
 
 namespace GeoLock {
 
@@ -72,15 +71,7 @@ namespace GeoLock {
 	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape3;
 	private: System::Windows::Forms::Label^  label7;
 	private: System::Windows::Forms::TextBox^  updateIn;
-
 	private: System::Windows::Forms::Label^  label6;
-
-
-
-
-
-
-
 	private: System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
@@ -340,7 +331,7 @@ namespace GeoLock {
 			this->label7->AutoSize = true;
 			this->label7->Location = System::Drawing::Point(178, 36);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(88, 13);
+			this->label7->Size = System::Drawing::Size(82, 13);
 			this->label7->TabIndex = 4;
 			this->label7->Text = L"minutes. [5-300]";
 			// 
@@ -416,6 +407,8 @@ namespace GeoLock {
 			this->Controls->Add(this->cancelButton);
 			this->Controls->Add(this->okButton);
 			this->Controls->Add(this->tabControl1);
+			this->MaximumSize = System::Drawing::Size(303, 389);
+			this->MinimumSize = System::Drawing::Size(303, 389);
 			this->Name = L"ExitNode";
 			this->Text = L"GeoLock Configuration";
 			this->tabControl1->ResumeLayout(false);
