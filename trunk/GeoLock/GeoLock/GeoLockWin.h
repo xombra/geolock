@@ -424,6 +424,7 @@ namespace GeoLock {
 			this->Controls->Add(this->excludeList);
 			this->Controls->Add(this->menuStrip1);
 			this->Controls->Add(this->shapeContainer1);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(L"$this.Icon")));
 			this->MainMenuStrip = this->menuStrip1;
 			this->MaximumSize = System::Drawing::Size(319, 169);
 			this->MinimumSize = System::Drawing::Size(319, 169);
