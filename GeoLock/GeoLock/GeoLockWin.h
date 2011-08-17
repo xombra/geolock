@@ -52,14 +52,14 @@ void getNewIdentity() {
 void updateIP() {
 	WebClient^ myWebClient = gcnew WebClient;
 	
-	Uri^ siteUri = gcnew Uri("http://automation.whatismyip.com/n09230945.asp");
+	Uri^ siteUri = gcnew Uri("http://api.wipmania.com/");
 	try {
 		Stream^ ipStream = myWebClient->OpenRead(siteUri);
 		StreamReader^ sr = gcnew StreamReader(ipStream);
 		ip = (char*)(void*)
 			Marshal::StringToHGlobalAnsi(sr->ReadToEnd());
 		ipStream->Close();
-		//cleanString('<');
+		cleanString('<');
 	}
 	catch (WebException ^ex) {
 		MessageBox::Show("Tor is not running or is not properly configured.","Connection Error");
@@ -111,6 +111,20 @@ namespace GeoLock {
 			else this->excludeList->Text = L"Exclude: NONE";
 			if (managedExit->Length > 0) this->preferNodes->Text = L"Prefer: " + managedExit;
 			else this->preferNodes->Text = L"Prefer: NONE";
+		}
+
+		void updateIPandDisplay() {
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
+			updateIP();
+			SYSTEMTIME lt;
+			GetLocalTime(&lt);
+			this->timeStamp->Text = L"Last Updated: " + getPrettyDate(lt);
+			this->toolStripLabel1->Text = L"IP: " + char2StringRef(ip);
+			this->toolStripLabel2->Text = char2StringRef(ct); this->toolStripButton1->Text = char2StringRef(ct);
+			String^ acceptState = getAcceptState(char2StringRef(ct));
+			this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(char2StringRef(ct))));
+			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
+			this->toolStripButton2->Text = acceptState;
 		}
 
 	protected:
@@ -362,17 +376,7 @@ namespace GeoLock {
 				 Application::Exit();
 			 }
 	private: System::Void GeoLockWin_Load(System::Object^  sender, System::EventArgs^  e) {
-				 System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
-				 updateIP();
-				 SYSTEMTIME lt;
-				 GetLocalTime(&lt);
-				 this->timeStamp->Text = L"Last Updated: " + getPrettyDate(lt);
-				 this->toolStripLabel1->Text = L"IP: " + char2StringRef(ip);
-				 this->toolStripLabel2->Text = char2StringRef(ct); this->toolStripButton1->Text = char2StringRef(ct);
-				 String^ acceptState = getAcceptState(char2StringRef(ct));
-				 this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(char2StringRef(ct))));
-				 this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
-				 this->toolStripButton2->Text = acceptState;
+				 updateIPandDisplay();
 			 }
 	private: System::Void excludeExitNodesToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 			 	 ExitNode^ exitNodeDialog = gcnew ExitNode();
@@ -395,17 +399,7 @@ namespace GeoLock {
 			 }
 	private: System::Void forceUpdateToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 				     getNewIdentity();
-					 System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
-					 updateIP();
-					 SYSTEMTIME lt;
-					 GetLocalTime(&lt);
-					 this->timeStamp->Text = L"Last Updated: " + getPrettyDate(lt);
-					 this->toolStripLabel1->Text = L"IP: " + char2StringRef(ip);
-					 this->toolStripLabel2->Text = char2StringRef(ct); this->toolStripButton1->Text = char2StringRef(ct);
-					 String^ acceptState = getAcceptState(char2StringRef(ct));
-					 this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(char2StringRef(ct))));
-					 this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
-					 this->toolStripButton2->Text = acceptState;
+					 updateIPandDisplay();
 		     }
 };
 }
