@@ -170,8 +170,13 @@ namespace GeoLock {
 			this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(char2StringRef(ct))));
 			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
 			this->toolStripButton2->Text = acceptState;
-			IPHostEntry^ host = Dns::GetHostEntry(char2StringRef(ip));
-			this->toolStripButton1->Text = host->HostName;
+			try {
+				IPHostEntry^ host = Dns::GetHostEntry(char2StringRef(ip));
+				this->toolStripButton1->Text = host->HostName;
+			}
+			catch (Exception^ ex) {
+				this->toolStripButton1->Text = "unknown";
+			}
 			if (acceptState == "Locked") return true;
 			else return false;
 		}
@@ -465,6 +470,7 @@ namespace GeoLock {
 				 }
 			 }
 	private: System::Void forceUpdateToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+					getNewIdentity();
 					bool acceptable = updateIPandDisplay();
 					while (!acceptable) {
 						getNewIdentity();
