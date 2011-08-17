@@ -162,6 +162,7 @@
     <None Include="icons\EE.png" />
     <None Include="icons\EG.png" />
     <None Include="icons\ER.png" />
+    <None Include="icons\error.gif" />
     <None Include="icons\ES.png" />
     <None Include="icons\ET.png" />
     <None Include="icons\EU.png" />
@@ -181,6 +182,7 @@
     <None Include="icons\GL.png" />
     <None Include="icons\GM.png" />
     <None Include="icons\GN.png" />
+    <None Include="icons\good.gif" />
     <None Include="icons\GP.png" />
     <None Include="icons\GQ.png" />
     <None Include="icons\GR.png" />

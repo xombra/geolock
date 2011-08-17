@@ -550,6 +550,8 @@ private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^
 			 if (temp > 300) temp = 300;
 			 config->AppSettings->Settings->Remove("updateFreq");
 			 config->AppSettings->Settings->Add("updateFreq",temp.ToString());
+			 config->AppSettings->Settings->Remove("controlPort");
+			 config->AppSettings->Settings->Add("controlPort",this->controlPort->Text);
 			 config->Save(System::Configuration::ConfigurationSaveMode::Modified);
 			 System::Configuration::ConfigurationManager::RefreshSection("appSettings");
 			 Close();

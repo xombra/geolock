@@ -6,6 +6,9 @@
 // TODO: reference additional headers your program requires here
 #include <Windows.h>
 #include <time.h>
+#include <iostream>
+#include <fstream>
+#include <istream>
 
 	using namespace System;
 	using namespace System::Text;

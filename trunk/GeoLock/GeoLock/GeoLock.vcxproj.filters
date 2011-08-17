@@ -734,6 +734,12 @@
     <None Include="icons\Not Locked.png">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="icons\error.gif">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\good.gif">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeoLock.cpp">
