@@ -68,8 +68,6 @@ namespace GeoLock {
 	private: System::Windows::Forms::Button^  SelectAllPre;
 	private: System::Windows::Forms::Button^  ClearAllPre;
 	private: System::Windows::Forms::TabPage^  tabPage3;
-
-
 	private: System::Windows::Forms::Label^  label5;
 	private: Microsoft::VisualBasic::PowerPacks::ShapeContainer^  shapeContainer3;
 	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape3;
@@ -486,6 +484,7 @@ namespace GeoLock {
 			this->Controls->Add(this->cancelButton);
 			this->Controls->Add(this->okButton);
 			this->Controls->Add(this->tabControl1);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(L"$this.Icon")));
 			this->MaximumSize = System::Drawing::Size(303, 389);
 			this->MinimumSize = System::Drawing::Size(303, 389);
 			this->Name = L"ExitNode";

@@ -96,6 +96,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\favicon.ico" />
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
