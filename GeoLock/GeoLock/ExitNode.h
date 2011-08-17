@@ -82,6 +82,7 @@ namespace GeoLock {
 	private: System::Windows::Forms::TextBox^  controlPort;
 
 	private: System::Windows::Forms::Label^  label10;
+	private: System::Windows::Forms::Button^  defaultButton;
 	private: System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
@@ -106,6 +107,9 @@ namespace GeoLock {
 			this->shapeContainer2 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
 			this->lineShape2 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->defaultButton = (gcnew System::Windows::Forms::Button());
+			this->controlPort = (gcnew System::Windows::Forms::TextBox());
+			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
@@ -113,12 +117,10 @@ namespace GeoLock {
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->shapeContainer3 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
+			this->lineShape4 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->lineShape3 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->okButton = (gcnew System::Windows::Forms::Button());
 			this->cancelButton = (gcnew System::Windows::Forms::Button());
-			this->lineShape4 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
-			this->label10 = (gcnew System::Windows::Forms::Label());
-			this->controlPort = (gcnew System::Windows::Forms::TextBox());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
@@ -328,6 +330,7 @@ namespace GeoLock {
 			// 
 			// tabPage3
 			// 
+			this->tabPage3->Controls->Add(this->defaultButton);
 			this->tabPage3->Controls->Add(this->controlPort);
 			this->tabPage3->Controls->Add(this->label10);
 			this->tabPage3->Controls->Add(this->label9);
@@ -344,6 +347,32 @@ namespace GeoLock {
 			this->tabPage3->TabIndex = 2;
 			this->tabPage3->Text = L"Advanced";
 			this->tabPage3->UseVisualStyleBackColor = true;
+			// 
+			// defaultButton
+			// 
+			this->defaultButton->Location = System::Drawing::Point(187, 255);
+			this->defaultButton->Name = L"defaultButton";
+			this->defaultButton->Size = System::Drawing::Size(75, 23);
+			this->defaultButton->TabIndex = 9;
+			this->defaultButton->Text = L"Defaults";
+			this->defaultButton->UseVisualStyleBackColor = true;
+			this->defaultButton->Click += gcnew System::EventHandler(this, &ExitNode::defaultButton_Click);
+			// 
+			// controlPort
+			// 
+			this->controlPort->Location = System::Drawing::Point(82, 99);
+			this->controlPort->Name = L"controlPort";
+			this->controlPort->Size = System::Drawing::Size(76, 20);
+			this->controlPort->TabIndex = 8;
+			// 
+			// label10
+			// 
+			this->label10->AutoSize = true;
+			this->label10->Location = System::Drawing::Point(14, 102);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(65, 13);
+			this->label10->TabIndex = 7;
+			this->label10->Text = L"Control Port:";
 			// 
 			// label9
 			// 
@@ -408,6 +437,15 @@ namespace GeoLock {
 			this->shapeContainer3->TabIndex = 1;
 			this->shapeContainer3->TabStop = false;
 			// 
+			// lineShape4
+			// 
+			this->lineShape4->BorderColor = System::Drawing::SystemColors::Highlight;
+			this->lineShape4->Name = L"lineShape4";
+			this->lineShape4->X1 = 65;
+			this->lineShape4->X2 = 258;
+			this->lineShape4->Y1 = 80;
+			this->lineShape4->Y2 = 80;
+			// 
 			// lineShape3
 			// 
 			this->lineShape3->BorderColor = System::Drawing::SystemColors::Highlight;
@@ -436,31 +474,6 @@ namespace GeoLock {
 			this->cancelButton->Text = L"Cancel";
 			this->cancelButton->UseVisualStyleBackColor = true;
 			this->cancelButton->Click += gcnew System::EventHandler(this, &ExitNode::cancelButton_Click);
-			// 
-			// lineShape4
-			// 
-			this->lineShape4->BorderColor = System::Drawing::SystemColors::Highlight;
-			this->lineShape4->Name = L"lineShape4";
-			this->lineShape4->X1 = 65;
-			this->lineShape4->X2 = 258;
-			this->lineShape4->Y1 = 80;
-			this->lineShape4->Y2 = 80;
-			// 
-			// label10
-			// 
-			this->label10->AutoSize = true;
-			this->label10->Location = System::Drawing::Point(14, 102);
-			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(65, 13);
-			this->label10->TabIndex = 7;
-			this->label10->Text = L"Control Port:";
-			// 
-			// controlPort
-			// 
-			this->controlPort->Location = System::Drawing::Point(82, 99);
-			this->controlPort->Name = L"controlPort";
-			this->controlPort->Size = System::Drawing::Size(76, 20);
-			this->controlPort->TabIndex = 8;
 			// 
 			// ExitNode
 			// 
@@ -543,6 +556,10 @@ private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^
 		 }
 private: System::Void cancelButton_Click(System::Object^  sender, System::EventArgs^  e) {
 			 Close();
+		 }
+private: System::Void defaultButton_Click(System::Object^  sender, System::EventArgs^  e) {
+			 this->controlPort->Text = L"9051";
+			 this->updateIn->Text = L"5";
 		 }
 };
 }
