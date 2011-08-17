@@ -100,7 +100,6 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="app.ico" />
     <None Include="icons\AD.png" />
     <None Include="icons\AE.png" />
     <None Include="icons\AF.png" />
