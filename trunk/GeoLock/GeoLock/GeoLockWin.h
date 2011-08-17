@@ -51,8 +51,11 @@ void getNewIdentity() {
 
 void updateIP() {
 	WebClient^ myWebClient = gcnew WebClient;
-	
-	Uri^ siteUri = gcnew Uri("http://api.wipmania.com/");
+	srand(time(NULL));
+	int random = rand()%1000 + 1;
+	String^ ipURL = "http://api.wipmania.com/?" + random;
+
+	Uri^ siteUri = gcnew Uri(ipURL);
 	try {
 		Stream^ ipStream = myWebClient->OpenRead(siteUri);
 		StreamReader^ sr = gcnew StreamReader(ipStream);

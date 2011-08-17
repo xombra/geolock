@@ -5,6 +5,7 @@
 
 // TODO: reference additional headers your program requires here
 #include <Windows.h>
+#include <time.h>
 
 	using namespace System;
 	using namespace System::Text;
@@ -20,3 +21,4 @@
 	using namespace System::Runtime::InteropServices;
 	using namespace System::Diagnostics;
 	using namespace System::Net::Sockets;
+	using namespace System::Net::Cache;
