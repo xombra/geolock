@@ -109,12 +109,53 @@ namespace GeoLock {
 		GeoLockWin(void)
 		{
 			InitializeComponent();
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
+			switch (checkTorrc()) {
+			case 0:
+				this->torStatusIcon->Text = "Tor OK";
+				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("good")));
+				break;
+			case 1:
+				this->torStatusIcon->Text = "Error: Tor is using a password!";
+				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
+				break;
+			case 2:
+				this->torStatusIcon->Text = "Error: Tor is using cookie authentication!";
+				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
+				break;
+			case 99:
+				this->torStatusIcon->Text = "Error: Unknown";
+				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
+				break;
+			}
 			String^ managedExclude = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
 			String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
 			if (managedExclude->Length > 0) this->excludeList->Text = L"Exclude: " + managedExclude;
 			else this->excludeList->Text = L"Exclude: NONE";
 			if (managedExit->Length > 0) this->preferNodes->Text = L"Prefer: " + managedExit;
 			else this->preferNodes->Text = L"Prefer: NONE";
+		}
+
+		int checkTorrc() {
+			char* pPath = std::getenv("appdata");
+			String^ appdata = char2StringRef(pPath) + "\\Vidalia\\torrc";
+			StreamReader^ sr = gcnew StreamReader(appdata);
+			try {
+				try {
+					String^ line;
+					while (line = sr->ReadLine()) {
+						if (line->StartsWith("HashedControlPassword")) return 1;
+						if (line->StartsWith("CookieAuthentication 1")) return 2;
+					}
+				}
+				finally {
+					if (sr) delete (IDisposable^)sr;
+				}
+			}
+			catch (Exception^ ex) {
+				return 99;
+			}
+			return 0;
 		}
 
 		bool updateIPandDisplay() {
@@ -129,7 +170,8 @@ namespace GeoLock {
 			this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(char2StringRef(ct))));
 			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
 			this->toolStripButton2->Text = acceptState;
-			this->toolStripButton1->Text = "";
+			IPHostEntry^ host = Dns::GetHostEntry(char2StringRef(ip));
+			this->toolStripButton1->Text = host->HostName;
 			if (acceptState == "Locked") return true;
 			else return false;
 		}
@@ -165,6 +207,8 @@ namespace GeoLock {
 	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape1;
 	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape2;
 	private: System::Windows::Forms::ToolStripMenuItem^  forceUpdateToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripButton^  torStatusIcon;
+
 
 	private: System::ComponentModel::IContainer^  components;
 
@@ -192,6 +236,7 @@ namespace GeoLock {
 			this->shapeContainer1 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
 			this->lineShape2 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->lineShape1 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
+			this->torStatusIcon = (gcnew System::Windows::Forms::ToolStripButton());
 			this->menuStrip1->SuspendLayout();
 			this->toolStrip1->SuspendLayout();
 			this->SuspendLayout();
@@ -218,14 +263,14 @@ namespace GeoLock {
 			// forceUpdateToolStripMenuItem
 			// 
 			this->forceUpdateToolStripMenuItem->Name = L"forceUpdateToolStripMenuItem";
-			this->forceUpdateToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->forceUpdateToolStripMenuItem->Size = System::Drawing::Size(143, 22);
 			this->forceUpdateToolStripMenuItem->Text = L"Force Update";
 			this->forceUpdateToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::forceUpdateToolStripMenuItem_Click);
 			// 
 			// exitToolStripMenuItem
 			// 
 			this->exitToolStripMenuItem->Name = L"exitToolStripMenuItem";
-			this->exitToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->exitToolStripMenuItem->Size = System::Drawing::Size(143, 22);
 			this->exitToolStripMenuItem->Text = L"Exit";
 			this->exitToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::exitToolStripMenuItem_Click);
 			// 
@@ -280,8 +325,8 @@ namespace GeoLock {
 			// 
 			this->toolStrip1->Dock = System::Windows::Forms::DockStyle::Bottom;
 			this->toolStrip1->GripStyle = System::Windows::Forms::ToolStripGripStyle::Hidden;
-			this->toolStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {this->toolStripLabel1, 
-				this->toolStripSeparator1, this->toolStripLabel2, this->toolStripButton1, this->toolStripButton2});
+			this->toolStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(6) {this->toolStripLabel1, 
+				this->toolStripSeparator1, this->toolStripLabel2, this->toolStripButton1, this->toolStripButton2, this->torStatusIcon});
 			this->toolStrip1->Location = System::Drawing::Point(0, 106);
 			this->toolStrip1->Name = L"toolStrip1";
 			this->toolStrip1->RenderMode = System::Windows::Forms::ToolStripRenderMode::Professional;
@@ -352,6 +397,16 @@ namespace GeoLock {
 			this->lineShape1->X2 = 303;
 			this->lineShape1->Y1 = 105;
 			this->lineShape1->Y2 = 105;
+			// 
+			// torStatusIcon
+			// 
+			this->torStatusIcon->Alignment = System::Windows::Forms::ToolStripItemAlignment::Right;
+			this->torStatusIcon->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
+			this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"torStatusIcon.Image")));
+			this->torStatusIcon->ImageTransparentColor = System::Drawing::Color::Magenta;
+			this->torStatusIcon->Name = L"torStatusIcon";
+			this->torStatusIcon->Size = System::Drawing::Size(23, 22);
+			this->torStatusIcon->Text = L"toolStripButton3";
 			// 
 			// GeoLockWin
 			// 
