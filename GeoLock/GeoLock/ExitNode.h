@@ -251,6 +251,7 @@ namespace GeoLock {
 			// 
 			// ClearAllPre
 			// 
+			this->ClearAllPre->Enabled = false;
 			this->ClearAllPre->Location = System::Drawing::Point(107, 229);
 			this->ClearAllPre->Name = L"ClearAllPre";
 			this->ClearAllPre->Size = System::Drawing::Size(75, 23);
@@ -261,6 +262,7 @@ namespace GeoLock {
 			// 
 			// SelectAllPre
 			// 
+			this->SelectAllPre->Enabled = false;
 			this->SelectAllPre->Location = System::Drawing::Point(107, 200);
 			this->SelectAllPre->Name = L"SelectAllPre";
 			this->SelectAllPre->Size = System::Drawing::Size(75, 23);
@@ -289,6 +291,7 @@ namespace GeoLock {
 			// preferredNodes
 			// 
 			this->preferredNodes->CheckOnClick = true;
+			this->preferredNodes->Enabled = false;
 			this->preferredNodes->FormattingEnabled = true;
 			this->preferredNodes->Items->AddRange(gcnew cli::array< System::Object^  >(240) {L"AC", L"AD", L"AE", L"AF", L"AG", L"AI", 
 				L"AL", L"AM", L"AN", L"AO", L"AP", L"AQ", L"AR", L"AS", L"AT", L"AU", L"AW", L"AX", L"AZ", L"BA", L"BB", L"BD", L"BE", L"BF", 
