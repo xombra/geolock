@@ -27,9 +27,10 @@ System::String ^ getPrettyDate(SYSTEMTIME lt) {
 }
 
 void getNewIdentity() {
+	int controlPort = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["controlPort"]));
 	TcpClient^ tcpSocket;
 	tcpSocket = gcnew TcpClient();
-	IPEndPoint^ serverEP = gcnew IPEndPoint(IPAddress::Parse("127.0.0.1"),9051);
+	IPEndPoint^ serverEP = gcnew IPEndPoint(IPAddress::Parse("127.0.0.1"),controlPort);
 	NetworkStream^ netStream;
 	try {
 		tcpSocket->Connect(serverEP);
@@ -116,18 +117,21 @@ namespace GeoLock {
 			else this->preferNodes->Text = L"Prefer: NONE";
 		}
 
-		void updateIPandDisplay() {
+		bool updateIPandDisplay() {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
 			updateIP();
 			SYSTEMTIME lt;
 			GetLocalTime(&lt);
 			this->timeStamp->Text = L"Last Updated: " + getPrettyDate(lt);
 			this->toolStripLabel1->Text = L"IP: " + char2StringRef(ip);
-			this->toolStripLabel2->Text = char2StringRef(ct); this->toolStripButton1->Text = char2StringRef(ct);
+			this->toolStripLabel2->Text = char2StringRef(ct);
 			String^ acceptState = getAcceptState(char2StringRef(ct));
 			this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(char2StringRef(ct))));
 			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
 			this->toolStripButton2->Text = acceptState;
+			this->toolStripButton1->Text = "";
+			if (acceptState == "Locked") return true;
+			else return false;
 		}
 
 	protected:
@@ -379,7 +383,11 @@ namespace GeoLock {
 				 Application::Exit();
 			 }
 	private: System::Void GeoLockWin_Load(System::Object^  sender, System::EventArgs^  e) {
-				 updateIPandDisplay();
+				 bool acceptable = updateIPandDisplay();
+				 while (!acceptable) {
+					 getNewIdentity();
+					 acceptable = updateIPandDisplay();
+				 }
 			 }
 	private: System::Void excludeExitNodesToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 			 	 ExitNode^ exitNodeDialog = gcnew ExitNode();
@@ -394,15 +402,19 @@ namespace GeoLock {
 					 else this->excludeList->Text = L"Exclude: NONE";
 					 if (managedExit->Length > 0) this->preferNodes->Text = L"Prefer: " + managedExit;
 					 else this->preferNodes->Text = L"Prefer: NONE";
-					 System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
-					 String^ acceptState = getAcceptState(char2StringRef(ct));
-					 this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
-					 this->toolStripButton2->Text = acceptState;
+					 bool acceptable = updateIPandDisplay();
+					 while (!acceptable) {
+						 getNewIdentity();
+						 acceptable = updateIPandDisplay();
+					 }
 				 }
 			 }
 	private: System::Void forceUpdateToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-				     getNewIdentity();
-					 updateIPandDisplay();
+					bool acceptable = updateIPandDisplay();
+					while (!acceptable) {
+						getNewIdentity();
+						acceptable = updateIPandDisplay();
+					}
 		     }
 };
 }
