@@ -1,20 +1,19 @@
 #pragma once
 
-char *ip,*ct;
-
 System::String ^ char2StringRef( char * p){ 
 	System::String ^ str; 
 	str = gcnew System::String(p); 
 	return str; 
 }
 
-void cleanString(char c) {
-	int i=0; bool deleteAll = false;
-	while (ip[i+1] != NULL) {
-		if (ip[i] == c) deleteAll = true;
-		if (deleteAll) ip[i] = '\0';
-		i++;
-	}
+System::String^ getIP(System::String^ in) {
+	int index = in->IndexOf('<');
+	return in->Substring(0,index);
+}
+
+System::String^ getCountry(System::String^ in) {
+	int index = in->IndexOf('>');
+	return in->Substring(index+1,2);
 }
 
 System::String ^ getPrettyDate(SYSTEMTIME lt) {
@@ -50,37 +49,26 @@ void getNewIdentity() {
 	}
 }
 
-void updateIP() {
+System::String^ updateIP() {
 	WebClient^ myWebClient = gcnew WebClient;
 	srand(time(NULL));
 	int random = rand()%1000 + 1;
 	String^ ipURL = "http://api.wipmania.com/?" + random;
+	String^ in = "";
 
 	Uri^ siteUri = gcnew Uri(ipURL);
 	try {
 		Stream^ ipStream = myWebClient->OpenRead(siteUri);
 		StreamReader^ sr = gcnew StreamReader(ipStream);
-		ip = (char*)(void*)
-			Marshal::StringToHGlobalAnsi(sr->ReadToEnd());
+		in = sr->ReadToEnd();
 		ipStream->Close();
-		cleanString('<');
+		return in;
 	}
 	catch (WebException ^ex) {
 		MessageBox::Show("Tor is not running or is not properly configured.","Connection Error");
 		Application::Exit();
 	}
-	try {
-		String^ ctUriString = "http://api.wipmania.com/" + char2StringRef(ip);
-		Uri^ site2Uri = gcnew Uri(ctUriString);
-		Stream^ ctStream = myWebClient->OpenRead(site2Uri);
-		StreamReader^ sm = gcnew StreamReader(ctStream);
-		ct = (char*)(void*)
-			Marshal::StringToHGlobalAnsi(sm->ReadToEnd());
-		ctStream->Close();
-	}
-	catch (WebException ^ex) {
-		Application::Exit();
-	}
+	return "";
 }
 
 System::String^ getAcceptState(String^ ct) {
@@ -160,18 +148,20 @@ namespace GeoLock {
 
 		bool updateIPandDisplay() {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
-			updateIP();
+			String^ ipFull = updateIP();
+			String^ ip = getIP(ipFull);
+			String^ ct = getCountry(ipFull);
 			SYSTEMTIME lt;
 			GetLocalTime(&lt);
 			this->timeStamp->Text = L"Last Updated: " + getPrettyDate(lt);
-			this->toolStripLabel1->Text = L"IP: " + char2StringRef(ip);
-			this->toolStripLabel2->Text = char2StringRef(ct);
-			String^ acceptState = getAcceptState(char2StringRef(ct));
-			this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(char2StringRef(ct))));
+			this->toolStripLabel1->Text = L"IP: " + ip;
+			this->toolStripLabel2->Text = ct;
+			String^ acceptState = getAcceptState(ct);
+			this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(ct)));
 			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
 			this->toolStripButton2->Text = acceptState;
 			try {
-				IPHostEntry^ host = Dns::GetHostEntry(char2StringRef(ip));
+				IPHostEntry^ host = Dns::GetHostEntry(ip);
 				this->toolStripButton1->Text = host->HostName;
 			}
 			catch (Exception^ ex) {

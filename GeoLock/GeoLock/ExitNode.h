@@ -1,6 +1,5 @@
 #pragma once
 
-
 namespace GeoLock {
 
 	using namespace System;
