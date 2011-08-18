@@ -740,6 +740,9 @@
     <None Include="..\..\favicon.ico">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeoLock.cpp">
