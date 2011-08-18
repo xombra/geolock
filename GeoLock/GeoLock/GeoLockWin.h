@@ -66,9 +66,8 @@ System::String^ updateIP() {
 	}
 	catch (WebException ^ex) {
 		MessageBox::Show("Tor is not running or is not properly configured.","Connection Error");
-		Application::Exit();
 	}
-	return "";
+	return "ERROR";
 }
 
 System::String^ getAcceptState(String^ ct) {
@@ -148,16 +147,22 @@ namespace GeoLock {
 
 		bool updateIPandDisplay() {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
-			String^ ipFull = updateIP();
-			String^ ip = getIP(ipFull);
-			String^ ct = getCountry(ipFull);
+			String^ ipFull = updateIP(); String ^ip,^ct;
+			if (ipFull != "ERROR") {
+				ip = getIP(ipFull);
+				ct = getCountry(ipFull);
+			}
+			else {
+				ip = "??.??.??.??";
+				ct = "??";
+			}
 			SYSTEMTIME lt;
 			GetLocalTime(&lt);
 			this->timeStamp->Text = L"Last Updated: " + getPrettyDate(lt);
 			this->toolStripLabel1->Text = L"IP: " + ip;
 			this->toolStripLabel2->Text = ct;
 			String^ acceptState = getAcceptState(ct);
-			this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(ct)));
+			if (ipFull != "ERROR") this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(ct)));
 			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
 			this->toolStripButton2->Text = acceptState;
 			try {
