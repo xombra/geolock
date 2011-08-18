@@ -59,7 +59,6 @@ namespace GeoLock {
 	private: System::Windows::Forms::CheckedListBox^  preferredNodes;
 	private: Microsoft::VisualBasic::PowerPacks::ShapeContainer^  shapeContainer2;
 	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape2;
-	private: System::Windows::Forms::Label^  label4;
 	private: System::Windows::Forms::Button^  okButton;
 	private: System::Windows::Forms::Button^  cancelButton;
 	private: System::Windows::Forms::Button^  clearAll;
@@ -98,7 +97,6 @@ namespace GeoLock {
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
 			this->ClearAllPre = (gcnew System::Windows::Forms::Button());
 			this->SelectAllPre = (gcnew System::Windows::Forms::Button());
-			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->preferredNodes = (gcnew System::Windows::Forms::CheckedListBox());
 			this->shapeContainer2 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
@@ -234,7 +232,6 @@ namespace GeoLock {
 			// 
 			this->tabPage2->Controls->Add(this->ClearAllPre);
 			this->tabPage2->Controls->Add(this->SelectAllPre);
-			this->tabPage2->Controls->Add(this->label4);
 			this->tabPage2->Controls->Add(this->label3);
 			this->tabPage2->Controls->Add(this->preferredNodes);
 			this->tabPage2->Controls->Add(this->shapeContainer2);
@@ -265,14 +262,6 @@ namespace GeoLock {
 			this->SelectAllPre->Text = L"Select All";
 			this->SelectAllPre->UseVisualStyleBackColor = true;
 			this->SelectAllPre->Click += gcnew System::EventHandler(this, &ExitNode::SelectAllPre_Click);
-			// 
-			// label4
-			// 
-			this->label4->Location = System::Drawing::Point(107, 26);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(143, 167);
-			this->label4->TabIndex = 4;
-			this->label4->Text = resources->GetString(L"label4.Text");
 			// 
 			// label3
 			// 
