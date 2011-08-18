@@ -72,9 +72,14 @@ System::String^ updateIP() {
 
 System::String^ getAcceptState(String^ ct) {
 	String^ managedExcluded = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
+	String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
 	array<String^>^ excludedList = managedExcluded->Split(',');
-	for (int i=0;i<excludedList->Length;i++) {
-		if (ct == excludedList[i]) return L"Not Locked";
+	array<String^>^ exitList = managedExit->Split(',');
+	for (int i=0;i<excludedList->Length;i++) if (ct == excludedList[i]) return L"Not Locked";
+	if (exitList->Length > 1) {
+		bool acceptable = false;
+		for (int i=0;i<exitList->Length;i++) if (ct == exitList[i]) acceptable = true;
+		if (!acceptable) return L"Not Locked";
 	}
 	return L"Locked";
 }
