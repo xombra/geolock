@@ -1,21 +1,33 @@
 #pragma once
 
+/*
+if Visual Studio decides to remove timer Interval or complain about it in design mode, here's what it should be at compile
+this->timer->Interval = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["updateFreq"])*60*1000);
+*/
+
+//connectivity boolean (if IP is obtainable)
+bool torUP = false;
+
+//function to convert char arrays/strings into managed System::String
 System::String ^ char2StringRef( char * p){ 
 	System::String ^ str; 
 	str = gcnew System::String(p); 
 	return str; 
 }
 
+//clean up HTML output to obtain only IP address
 System::String^ getIP(System::String^ in) {
 	int index = in->IndexOf('<');
 	return in->Substring(0,index);
 }
 
+//clean up HTML output to obtain only country code
 System::String^ getCountry(System::String^ in) {
 	int index = in->IndexOf('>');
 	return in->Substring(index+1,2);
 }
 
+//clean up date (add extra 0s, colons, forward slashes)
 System::String ^ getPrettyDate(SYSTEMTIME lt) {
 	System::String ^tempD,^tempH,^tempM,^tempS;
 	if (lt.wDay < 10) tempD = "0" + lt.wDay; else tempD = "" + lt.wDay;
@@ -25,8 +37,11 @@ System::String ^ getPrettyDate(SYSTEMTIME lt) {
 	return lt.wMonth + "/" + tempD + "/" + lt.wYear + " - " + tempH + ":" + tempM + ":" + tempS;
 }
 
+//open telnet connection to localhost to tell Tor to update connections
 void getNewIdentity() {
+	//load control port from app.config
 	int controlPort = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["controlPort"]));
+	//build connection
 	TcpClient^ tcpSocket;
 	tcpSocket = gcnew TcpClient();
 	IPEndPoint^ serverEP = gcnew IPEndPoint(IPAddress::Parse("127.0.0.1"),controlPort);
@@ -36,8 +51,10 @@ void getNewIdentity() {
 		netStream = tcpSocket->GetStream();
 		if (netStream->CanWrite) {
 			ASCIIEncoding^ encoder = gcnew ASCIIEncoding();
+			//telnet command "AUTHENTICATE" - must not be using Tor authentication
 			array<Byte>^ sendBytes = encoder->GetBytes("AUTHENTICATE\r\n");
 			netStream->Write( sendBytes, 0, sendBytes->Length );
+			//telnet command to create new connections (drop old)
 			sendBytes = encoder->GetBytes("signal NEWNYM\r\n");
 			netStream->Write( sendBytes, 0, sendBytes->Length );
 		}
@@ -49,38 +66,53 @@ void getNewIdentity() {
 	}
 }
 
+//function to update IP address via wipmania's API and return either error or stream input
 System::String^ updateIP() {
 	WebClient^ myWebClient = gcnew WebClient;
+	//random number must be appended to URL to ensure IP is current
+	//as wipmania's API does not have correct refresh information
 	srand(time(NULL));
 	int random = rand()%1000 + 1;
 	String^ ipURL = "http://api.wipmania.com/?" + random;
 	String^ in = "";
-
 	Uri^ siteUri = gcnew Uri(ipURL);
 	try {
+		//attempt to open connection (via Tor) to wipmania
 		Stream^ ipStream = myWebClient->OpenRead(siteUri);
 		StreamReader^ sr = gcnew StreamReader(ipStream);
 		in = sr->ReadToEnd();
 		ipStream->Close();
+		torUP = true;
+		//return HTML formatted IP string similar to:
+		//XXX.XXX.XXX.XXX<br>US
 		return in;
 	}
 	catch (WebException ^ex) {
+		//set connectivity boolean and return error message
 		MessageBox::Show("Tor is not running or is not properly configured.","Connection Error");
+		torUP = false;
 	}
 	return "ERROR";
 }
 
+//function to verify if country code is acceptable based on user's settings
 System::String^ getAcceptState(String^ ct) {
+	//load excluded and preferred nodes from app.config
 	String^ managedExcluded = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
 	String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
+	//convert comma delimited list into array
 	array<String^>^ excludedList = managedExcluded->Split(',');
 	array<String^>^ exitList = managedExit->Split(',');
+	//if current country is anything on excluded, immediately fail
 	for (int i=0;i<excludedList->Length;i++) if (ct == excludedList[i]) return L"Not Locked";
+	//check preferred nodes (if necessary)
 	if (exitList->Length > 1) {
 		bool acceptable = false;
+		//verify that current country is preferred, if not, immediately fail
 		for (int i=0;i<exitList->Length;i++) if (ct == exitList[i]) acceptable = true;
 		if (!acceptable) return L"Not Locked";
 	}
+	//country has been verified as being acceptable, return success
 	return L"Locked";
 }
 
@@ -101,6 +133,18 @@ namespace GeoLock {
 		GeoLockWin(void)
 		{
 			InitializeComponent();
+			//load excluded and preferred nodes from app.config
+			String^ managedExclude = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
+			String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
+			//update their corresponding visual elements
+			if (managedExclude->Length > 0) this->excludeList->Text = L"Exclude: " + managedExclude;
+			else this->excludeList->Text = L"Exclude: NONE";
+			if (managedExit->Length > 0) this->preferNodes->Text = L"Prefer: " + managedExit;
+			else this->preferNodes->Text = L"Prefer: NONE";
+		}
+
+		//function to check Tor configuration/connectivity and update the status icon thusly
+		void updateTorIcon() {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
 			switch (checkTorrc()) {
 			case 0:
@@ -115,26 +159,29 @@ namespace GeoLock {
 				this->torStatusIcon->Text = "Error: Tor is using cookie authentication!";
 				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
 				break;
+			case 3:
+				this->torStatusIcon->Text = "Error: Tor is not running or is not properly configured.";
+				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("fatal")));
+				break;
 			case 99:
 				this->torStatusIcon->Text = "Error: Unknown";
 				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
 				break;
 			}
-			String^ managedExclude = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
-			String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
-			if (managedExclude->Length > 0) this->excludeList->Text = L"Exclude: " + managedExclude;
-			else this->excludeList->Text = L"Exclude: NONE";
-			if (managedExit->Length > 0) this->preferNodes->Text = L"Prefer: " + managedExit;
-			else this->preferNodes->Text = L"Prefer: NONE";
 		}
 
+		//backend function to check Tor configuration/connectivity 
 		int checkTorrc() {
+			//if Tor isn't up, return error
+			if (!torUP) return 3;
+			//load %appdata% environment variable
 			char* pPath = std::getenv("appdata");
 			String^ appdata = char2StringRef(pPath) + "\\Vidalia\\torrc";
 			StreamReader^ sr = gcnew StreamReader(appdata);
 			try {
 				try {
 					String^ line;
+					//check "torrc" for password or cookie authentication (which would cause "signal NEWNYM" to fail)
 					while (line = sr->ReadLine()) {
 						if (line->StartsWith("HashedControlPassword")) return 1;
 						if (line->StartsWith("CookieAuthentication 1")) return 2;
@@ -145,31 +192,47 @@ namespace GeoLock {
 				}
 			}
 			catch (Exception^ ex) {
+				//return unknown error
 				return 99;
 			}
+			//return status of OK
 			return 0;
 		}
 
+		//function to call backend updateIP() and update the visual elements accordingly
 		bool updateIPandDisplay() {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
+			//call backend updateIP() function and capture HTML formatted IP address
 			String^ ipFull = updateIP(); String ^ip,^ct;
+			//if IP was obtainable
 			if (ipFull != "ERROR") {
+				//convert HTML formatted IP and country code to useable elements
 				ip = getIP(ipFull);
 				ct = getCountry(ipFull);
+				//since IP was obtainable, connectivity is assured
+				torUP = true;
 			}
 			else {
+				//if IP was not obtainable, display ?'s
 				ip = "??.??.??.??";
 				ct = "??";
+				//assume no connectivity
+				torUP = false;
 			}
+			updateTorIcon();
+			//get current system time to display when the IP was last updated
 			SYSTEMTIME lt;
 			GetLocalTime(&lt);
 			this->timeStamp->Text = L"Last Updated: " + getPrettyDate(lt);
 			this->toolStripLabel1->Text = L"IP: " + ip;
 			this->toolStripLabel2->Text = ct;
+			//set flag icon
 			String^ acceptState = getAcceptState(ct);
 			if (ipFull != "ERROR") this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(ct)));
+			//set acceptance icon
 			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
 			this->toolStripButton2->Text = acceptState;
+			//attempt to resolve IP address to hostname
 			try {
 				IPHostEntry^ host = Dns::GetHostEntry(ip);
 				this->toolStripButton1->Text = host->HostName;
@@ -177,7 +240,9 @@ namespace GeoLock {
 			catch (Exception^ ex) {
 				this->toolStripButton1->Text = "unknown";
 			}
+			//IP address updated and it is acceptable
 			if (acceptState == "Locked") return true;
+			//or it was updated and is not acceptable
 			else return false;
 		}
 
@@ -189,19 +254,16 @@ namespace GeoLock {
 				delete components;
 			}
 		}
+
 	private: System::Windows::Forms::MenuStrip^  menuStrip1;
 	private: System::Windows::Forms::ToolStripMenuItem^  fileToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  exitToolStripMenuItem;
-
-
-
 	private: System::Windows::Forms::ToolStripMenuItem^  settingsToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  excludeExitNodesToolStripMenuItem;
 	private: System::Windows::Forms::Label^  excludeList;
 	private: System::Windows::Forms::Label^  preferNodes;
 	private: System::Windows::Forms::Timer^  timer;
 	private: System::Windows::Forms::Label^  timeStamp;
-
 	private: System::Windows::Forms::ToolStrip^  toolStrip1;
 	private: System::Windows::Forms::ToolStripLabel^  toolStripLabel1;
 	private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator1;
@@ -213,8 +275,6 @@ namespace GeoLock {
 	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape2;
 	private: System::Windows::Forms::ToolStripMenuItem^  forceUpdateToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripButton^  torStatusIcon;
-
-
 	private: System::ComponentModel::IContainer^  components;
 
 #pragma region Windows Form Designer generated code
@@ -279,7 +339,6 @@ namespace GeoLock {
 			// exitToolStripMenuItem
 			// 
 			this->exitToolStripMenuItem->Name = L"exitToolStripMenuItem";
-
 			this->exitToolStripMenuItem->ShortcutKeyDisplayString = L"Alt+F4";
 			this->exitToolStripMenuItem->Size = System::Drawing::Size(162, 22);
 			this->exitToolStripMenuItem->Size = System::Drawing::Size(143, 22);
@@ -444,34 +503,40 @@ namespace GeoLock {
 			this->toolStrip1->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
-
 		}
 #pragma endregion
 	private: System::Void exitToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 				 Application::Exit();
 			 }
 	private: System::Void GeoLockWin_Load(System::Object^  sender, System::EventArgs^  e) {
+				 //on application startup and timer expiration, force new identity if specified in user settings
 				 String^ forceUpdate = System::Configuration::ConfigurationManager::AppSettings["forceUpdate"];
 				 if (forceUpdate == "true") getNewIdentity();
+				 //check if IP address is acceptable
 				 bool acceptable = updateIPandDisplay();
+				 //if not keep switching identities until it is
 				 while (!acceptable) {
 					 getNewIdentity();
 					 acceptable = updateIPandDisplay();
 				 }
 			 }
 	private: System::Void excludeExitNodesToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+				 //launch user settings window
 			 	 ExitNode^ exitNodeDialog = gcnew ExitNode();
 				 try {
 					 exitNodeDialog->ShowDialog(this);
 				 }
 				 finally {
 					 delete exitNodeDialog;
+					 //when window is closed, update excluded and preferred nodes directly from app.config
 					 String^ managedExclude = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
 					 String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
+					 //update their visual elements
 					 if (managedExclude->Length > 0) this->excludeList->Text = L"Exclude: " + managedExclude;
 					 else this->excludeList->Text = L"Exclude: NONE";
 					 if (managedExit->Length > 0) this->preferNodes->Text = L"Prefer: " + managedExit;
 					 else this->preferNodes->Text = L"Prefer: NONE";
+					 //update the IP address and check if it is acceptable and if not, get new identity (this ensures that settings take effect immediately)
 					 bool acceptable = updateIPandDisplay();
 					 while (!acceptable) {
 						 getNewIdentity();
@@ -480,6 +545,7 @@ namespace GeoLock {
 				 }
 			 }
 	private: System::Void forceUpdateToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+					//when Force Update is selected or F5 pressed, get a new identity immediately
 					getNewIdentity();
 					bool acceptable = updateIPandDisplay();
 					while (!acceptable) {

@@ -167,6 +167,7 @@
     <None Include="icons\ES.png" />
     <None Include="icons\ET.png" />
     <None Include="icons\EU.png" />
+    <None Include="icons\fatal.png" />
     <None Include="icons\FI.png" />
     <None Include="icons\FJ.png" />
     <None Include="icons\FK.png" />

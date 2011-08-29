@@ -16,33 +16,42 @@ namespace GeoLock {
 		ExitNode(void)
 		{
 			InitializeComponent();
+			//load settings from app.config
 			String^ managedExcluded = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
 			String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
 			String^ updateFreq = System::Configuration::ConfigurationManager::AppSettings["updateFreq"];
 			String^ forceUpdate = System::Configuration::ConfigurationManager::AppSettings["forceUpdate"];
 			String^ controlPortI = System::Configuration::ConfigurationManager::AppSettings["controlPort"];
 
+			//convert comma delimited list into array
 			array<String^>^ excludedList = managedExcluded->Split(',');
 			if (excludedList[0] != "") {
 				for(int i=0;i<excludedList->Length;i++) {
+					//search for country code
 					int index = this->excludedNodes->FindString(excludedList[i]);
+					//check the box
 					if (index != -1) this->excludedNodes->SetItemChecked(index,true);
 				}
 			}
+			//convert comma delimited list into array
 			array<String^>^ exitList = managedExit->Split(',');
 			if (exitList[0] != "") {
 				for(int i=0;i<exitList->Length;i++) {
+					//search for country code
 					int index = this->preferredNodes->FindString(exitList[i]);
+					//check the box
 					if (index != -1) this->preferredNodes->SetItemChecked(index,true);
 				}
 			}
+			//set update frequency and control port
 			this->updateIn->Text = updateFreq;
+			this->controlPort->Text = controlPortI;
 
+			//set forceUpdate checkbox
 			if (forceUpdate == "true") {
 				this->checkBox1->Checked = true;
 				this->checkBox1->CheckState = System::Windows::Forms::CheckState::Checked;
 			}
-			this->controlPort->Text = controlPortI;
 		}
 
 	protected:
@@ -78,16 +87,14 @@ namespace GeoLock {
 	private: System::Windows::Forms::Label^  label7;
 	private: System::Windows::Forms::TextBox^  updateIn;
 	private: System::Windows::Forms::Label^  label6;
-
 	private: System::Windows::Forms::CheckBox^  checkBox1;
-
 	private: System::Windows::Forms::Label^  label8;
 	private: System::Windows::Forms::Label^  label9;
 	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape4;
 	private: System::Windows::Forms::TextBox^  controlPort;
-
 	private: System::Windows::Forms::Label^  label10;
 	private: System::Windows::Forms::Button^  defaultButton;
+	private: System::Windows::Forms::Label^  label4;
 	private: System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
@@ -126,6 +133,7 @@ namespace GeoLock {
 			this->lineShape3 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->okButton = (gcnew System::Windows::Forms::Button());
 			this->cancelButton = (gcnew System::Windows::Forms::Button());
+			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
@@ -160,7 +168,7 @@ namespace GeoLock {
 			this->tabControl1->Controls->Add(this->tabPage1);
 			this->tabControl1->Controls->Add(this->tabPage2);
 			this->tabControl1->Controls->Add(this->tabPage3);
-			this->tabControl1->Location = System::Drawing::Point(6, 7);
+			this->tabControl1->Location = System::Drawing::Point(1, 5);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
 			this->tabControl1->Size = System::Drawing::Size(276, 310);
@@ -240,6 +248,7 @@ namespace GeoLock {
 			// 
 			// tabPage2
 			// 
+			this->tabPage2->Controls->Add(this->label4);
 			this->tabPage2->Controls->Add(this->ClearAllPre);
 			this->tabPage2->Controls->Add(this->SelectAllPre);
 			this->tabPage2->Controls->Add(this->label3);
@@ -482,6 +491,14 @@ namespace GeoLock {
 			this->cancelButton->UseVisualStyleBackColor = true;
 			this->cancelButton->Click += gcnew System::EventHandler(this, &ExitNode::cancelButton_Click);
 			// 
+			// label4
+			// 
+			this->label4->Location = System::Drawing::Point(107, 26);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(143, 171);
+			this->label4->TabIndex = 7;
+			this->label4->Text = resources->GetString(L"label4.Text");
+			// 
 			// ExitNode
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -506,7 +523,7 @@ namespace GeoLock {
 
 		}
 #pragma endregion
-
+//BEGIN "Select All" and "Clear All" button definitions
 private: System::Void selectAll_Click(System::Object^  sender, System::EventArgs^  e) {
 			 for (int i=0;i<excludedNodes->Items->Count;i++) 
 				 excludedNodes->SetItemChecked(i,true);
@@ -527,49 +544,82 @@ private: System::Void ClearAllPre_Click(System::Object^  sender, System::EventAr
 				preferredNodes->SetItemChecked(i,false);
 			 this->preferredNodes->ClearSelected();
 		 }
+//END "Select All" and "Clear All" button definitions
+
+//save changes and close the window
 private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^  e) {
+			 //prepare app.config for editing
 			 System::Configuration::Configuration ^config = 
 				 System::Configuration::ConfigurationManager::OpenExeConfiguration(System::Configuration::ConfigurationUserLevel::None);
 			 String ^toBeExcluded = gcnew System::String("");
 		     String ^toBePreferred = gcnew System::String("");
+			 //build a comma delimited list of excluded nodes
 			 IEnumerator^ counter = excludedNodes->CheckedItems->GetEnumerator();
 			 while (counter->MoveNext()) {
 				 Object^ itemChecked = safe_cast<Object^>(counter->Current);
 				 toBeExcluded += itemChecked + ",";
 			 }
+			 //write new excluded nodes to app.config
 			 if (toBeExcluded->Length > 0) toBeExcluded = toBeExcluded->Remove(toBeExcluded->Length-1);
 			 config->AppSettings->Settings->Remove("excludedExitNodes");
 			 config->AppSettings->Settings->Add("excludedExitNodes",toBeExcluded);
+			 //build a comma delimited list of preferred nodes
 			 IEnumerator^ counter2 = preferredNodes->CheckedItems->GetEnumerator();
 			 while (counter2->MoveNext()) {
 				 Object^ itemChecked = safe_cast<Object^>(counter2->Current);
 				 toBePreferred += itemChecked + ",";
 			 }
+			 //write new preferred nodes to app.config
 			 if (toBePreferred->Length > 0) toBePreferred = toBePreferred->Remove(toBePreferred->Length-1);
 			 config->AppSettings->Settings->Remove("exitNodes");
 			 config->AppSettings->Settings->Add("exitNodes",toBePreferred);
+			 //temporary update frequency to prevent the user from doing anything strange
 			 int temp = 5;
 			 try {
+				 //try to convert whatever the user put into the update frequency box into a number
 				 temp = System::Int32::Parse(this->updateIn->Text);
 			 }
 			 catch (Exception^ ex) {
+				 //if unsuccessful, assume it was a fraction and set to lowest possible (1)
 				 temp = 1;
 			 }
+			 //if larger than 5 hours, reduce to maximum
 			 if (temp > 300) temp = 300;
+			 //write update cleansed update frequency
 			 config->AppSettings->Settings->Remove("updateFreq");
 			 config->AppSettings->Settings->Add("updateFreq",temp.ToString());
+			 //write force update boolean
 			 config->AppSettings->Settings->Remove("forceUpdate");
 			 if (this->checkBox1->Checked) config->AppSettings->Settings->Add("forceUpdate","true");
 			 else config->AppSettings->Settings->Add("forceUpdate","false");
+			 //temporary control port to prevent the user from doing anything strange
+			 int port = 0;
+			 try {
+				 //try to convert whatever the user put in as the control port into a number
+				 port = System::Int32::Parse(this->controlPort->Text);
+			 }
+			 catch (Exception^ ex) {
+				 //if unsuccessful, revert to default port
+				 port = 9051;
+			 }
+			 //if port is larger than valid port numbers, revert to default port
+			 if (port > 65535) port = 9051;
+
+			 //TODO: check for invalid ports (ie: 0, 22, 80)
+
+			 //write control port
 			 config->AppSettings->Settings->Remove("controlPort");
-			 config->AppSettings->Settings->Add("controlPort",this->controlPort->Text);
+			 config->AppSettings->Settings->Add("controlPort",port.ToString());
+			 //save app.config
 			 config->Save(System::Configuration::ConfigurationSaveMode::Modified);
 			 System::Configuration::ConfigurationManager::RefreshSection("appSettings");
 			 Close();
 		 }
+//Close the window and save no changes
 private: System::Void cancelButton_Click(System::Object^  sender, System::EventArgs^  e) {
 			 Close();
 		 }
+//Set default options for advanced features
 private: System::Void defaultButton_Click(System::Object^  sender, System::EventArgs^  e) {
 			 this->controlPort->Text = L"9051";
 			 this->updateIn->Text = L"5";
