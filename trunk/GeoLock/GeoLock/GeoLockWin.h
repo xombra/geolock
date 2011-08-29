@@ -133,14 +133,7 @@ namespace GeoLock {
 		GeoLockWin(void)
 		{
 			InitializeComponent();
-			//load excluded and preferred nodes from app.config
-			String^ managedExclude = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
-			String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
-			//update their corresponding visual elements
-			if (managedExclude->Length > 0) this->excludeList->Text = L"Exclude: " + managedExclude;
-			else this->excludeList->Text = L"Exclude: NONE";
-			if (managedExit->Length > 0) this->preferNodes->Text = L"Prefer: " + managedExit;
-			else this->preferNodes->Text = L"Prefer: NONE";
+			reinitialize();
 		}
 
 		//function to check Tor configuration/connectivity and update the status icon thusly
@@ -168,6 +161,26 @@ namespace GeoLock {
 				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
 				break;
 			}
+		}
+
+		void reinitialize() {
+			//load excluded and preferred nodes from app.config
+			String^ managedExclude = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
+			String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
+			String^ stayOnTop = System::Configuration::ConfigurationManager::AppSettings["persist"];
+			String^ taskbar = System::Configuration::ConfigurationManager::AppSettings["taskbar"];
+			//update their corresponding visual elements
+			if (managedExclude->Length > 0) this->excludeList->Text = L"Exclude: " + managedExclude;
+			else this->excludeList->Text = L"Exclude: NONE";
+			if (managedExit->Length > 0) this->preferNodes->Text = L"Prefer: " + managedExit;
+			else this->preferNodes->Text = L"Prefer: NONE";
+			if (stayOnTop == "true") this->TopMost = true;
+			else this->TopMost = false;
+			if (taskbar == "true") this->notifyIcon1->Visible = true;
+			else this->notifyIcon1->Visible = false;
+			int op = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["opacity"]));
+			double opacity = op/100.0;
+			this->Opacity = opacity;
 		}
 
 		//backend function to check Tor configuration/connectivity 
@@ -228,18 +241,21 @@ namespace GeoLock {
 			this->toolStripLabel2->Text = ct;
 			//set flag icon
 			String^ acceptState = getAcceptState(ct);
-			if (ipFull != "ERROR") this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(ct)));
-			//set acceptance icon
-			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
-			this->toolStripButton2->Text = acceptState;
 			//attempt to resolve IP address to hostname
+			IPHostEntry^ host;
 			try {
-				IPHostEntry^ host = Dns::GetHostEntry(ip);
+				host = Dns::GetHostEntry(ip);
 				this->toolStripButton1->Text = host->HostName;
 			}
 			catch (Exception^ ex) {
 				this->toolStripButton1->Text = "unknown";
 			}
+			if (ipFull != "ERROR") this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(ct)));
+			this->notifyIcon1->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(ct + "1")));
+			this->notifyIcon1->Text = ip + " | " + ct + "\n" + host->HostName;
+			//set acceptance icon
+			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
+			this->toolStripButton2->Text = acceptState;
 			//IP address updated and it is acceptable
 			if (acceptState == "Locked") return true;
 			//or it was updated and is not acceptable
@@ -275,6 +291,10 @@ namespace GeoLock {
 	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape2;
 	private: System::Windows::Forms::ToolStripMenuItem^  forceUpdateToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripButton^  torStatusIcon;
+private: System::Windows::Forms::NotifyIcon^  notifyIcon1;
+private: System::Windows::Forms::ContextMenuStrip^  contextMenuStrip1;
+private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem1;
+private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem2;
 	private: System::ComponentModel::IContainer^  components;
 
 #pragma region Windows Form Designer generated code
@@ -298,12 +318,17 @@ namespace GeoLock {
 			this->toolStripLabel2 = (gcnew System::Windows::Forms::ToolStripLabel());
 			this->toolStripButton1 = (gcnew System::Windows::Forms::ToolStripButton());
 			this->toolStripButton2 = (gcnew System::Windows::Forms::ToolStripButton());
+			this->torStatusIcon = (gcnew System::Windows::Forms::ToolStripButton());
 			this->shapeContainer1 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
 			this->lineShape2 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->lineShape1 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
-			this->torStatusIcon = (gcnew System::Windows::Forms::ToolStripButton());
+			this->notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
+			this->contextMenuStrip1 = (gcnew System::Windows::Forms::ContextMenuStrip(this->components));
+			this->toolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->toolStrip1->SuspendLayout();
+			this->contextMenuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// menuStrip1
@@ -331,7 +356,6 @@ namespace GeoLock {
 			this->forceUpdateToolStripMenuItem->ShortcutKeyDisplayString = L"F5";
 			this->forceUpdateToolStripMenuItem->ShortcutKeys = System::Windows::Forms::Keys::F5;
 			this->forceUpdateToolStripMenuItem->Size = System::Drawing::Size(162, 22);
-			this->forceUpdateToolStripMenuItem->Size = System::Drawing::Size(143, 22);
 			this->forceUpdateToolStripMenuItem->Text = L"Force Update";
 			this->forceUpdateToolStripMenuItem->ToolTipText = L"Forces a new identity";
 			this->forceUpdateToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::forceUpdateToolStripMenuItem_Click);
@@ -341,7 +365,6 @@ namespace GeoLock {
 			this->exitToolStripMenuItem->Name = L"exitToolStripMenuItem";
 			this->exitToolStripMenuItem->ShortcutKeyDisplayString = L"Alt+F4";
 			this->exitToolStripMenuItem->Size = System::Drawing::Size(162, 22);
-			this->exitToolStripMenuItem->Size = System::Drawing::Size(143, 22);
 			this->exitToolStripMenuItem->Text = L"Exit";
 			this->exitToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::exitToolStripMenuItem_Click);
 			// 
@@ -380,7 +403,7 @@ namespace GeoLock {
 			// timer
 			// 
 			this->timer->Enabled = true;
-			this->timer->Interval = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["updateFreq"])*60*1000);
+			this->timer->Interval = 300000;
 			this->timer->Tick += gcnew System::EventHandler(this, &GeoLockWin::GeoLockWin_Load);
 			// 
 			// timeStamp
@@ -440,6 +463,16 @@ namespace GeoLock {
 			this->toolStripButton2->Size = System::Drawing::Size(23, 22);
 			this->toolStripButton2->Text = L"toolStripButton2";
 			// 
+			// torStatusIcon
+			// 
+			this->torStatusIcon->Alignment = System::Windows::Forms::ToolStripItemAlignment::Right;
+			this->torStatusIcon->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
+			this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"torStatusIcon.Image")));
+			this->torStatusIcon->ImageTransparentColor = System::Drawing::Color::Magenta;
+			this->torStatusIcon->Name = L"torStatusIcon";
+			this->torStatusIcon->Size = System::Drawing::Size(23, 22);
+			this->torStatusIcon->Text = L"toolStripButton3";
+			// 
 			// shapeContainer1
 			// 
 			this->shapeContainer1->Location = System::Drawing::Point(0, 0);
@@ -469,15 +502,34 @@ namespace GeoLock {
 			this->lineShape1->Y1 = 105;
 			this->lineShape1->Y2 = 105;
 			// 
-			// torStatusIcon
+			// notifyIcon1
 			// 
-			this->torStatusIcon->Alignment = System::Windows::Forms::ToolStripItemAlignment::Right;
-			this->torStatusIcon->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"torStatusIcon.Image")));
-			this->torStatusIcon->ImageTransparentColor = System::Drawing::Color::Magenta;
-			this->torStatusIcon->Name = L"torStatusIcon";
-			this->torStatusIcon->Size = System::Drawing::Size(23, 22);
-			this->torStatusIcon->Text = L"toolStripButton3";
+			this->notifyIcon1->ContextMenuStrip = this->contextMenuStrip1;
+			this->notifyIcon1->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(L"notifyIcon1.Icon")));
+			this->notifyIcon1->Text = L"GeoLock";
+			this->notifyIcon1->Visible = true;
+			this->notifyIcon1->DoubleClick += gcnew System::EventHandler(this, &GeoLockWin::notifyIcon1_DoubleClick);
+			// 
+			// contextMenuStrip1
+			// 
+			this->contextMenuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {this->toolStripMenuItem1, 
+				this->toolStripMenuItem2});
+			this->contextMenuStrip1->Name = L"contextMenuStrip1";
+			this->contextMenuStrip1->Size = System::Drawing::Size(144, 48);
+			// 
+			// toolStripMenuItem1
+			// 
+			this->toolStripMenuItem1->Name = L"toolStripMenuItem1";
+			this->toolStripMenuItem1->Size = System::Drawing::Size(143, 22);
+			this->toolStripMenuItem1->Text = L"Force Update";
+			this->toolStripMenuItem1->Click += gcnew System::EventHandler(this, &GeoLockWin::toolStripMenuItem1_Click);
+			// 
+			// toolStripMenuItem2
+			// 
+			this->toolStripMenuItem2->Name = L"toolStripMenuItem2";
+			this->toolStripMenuItem2->Size = System::Drawing::Size(143, 22);
+			this->toolStripMenuItem2->Text = L"Exit";
+			this->toolStripMenuItem2->Click += gcnew System::EventHandler(this, &GeoLockWin::toolStripMenuItem2_Click);
 			// 
 			// GeoLockWin
 			// 
@@ -492,6 +544,7 @@ namespace GeoLock {
 			this->Controls->Add(this->shapeContainer1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(L"$this.Icon")));
 			this->MainMenuStrip = this->menuStrip1;
+			this->MaximizeBox = false;
 			this->MaximumSize = System::Drawing::Size(319, 169);
 			this->MinimumSize = System::Drawing::Size(319, 169);
 			this->Name = L"GeoLockWin";
@@ -501,8 +554,10 @@ namespace GeoLock {
 			this->menuStrip1->PerformLayout();
 			this->toolStrip1->ResumeLayout(false);
 			this->toolStrip1->PerformLayout();
+			this->contextMenuStrip1->ResumeLayout(false);
 			this->ResumeLayout(false);
 			this->PerformLayout();
+
 		}
 #pragma endregion
 	private: System::Void exitToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -528,14 +583,7 @@ namespace GeoLock {
 				 }
 				 finally {
 					 delete exitNodeDialog;
-					 //when window is closed, update excluded and preferred nodes directly from app.config
-					 String^ managedExclude = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
-					 String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
-					 //update their visual elements
-					 if (managedExclude->Length > 0) this->excludeList->Text = L"Exclude: " + managedExclude;
-					 else this->excludeList->Text = L"Exclude: NONE";
-					 if (managedExit->Length > 0) this->preferNodes->Text = L"Prefer: " + managedExit;
-					 else this->preferNodes->Text = L"Prefer: NONE";
+					 reinitialize();
 					 //update the IP address and check if it is acceptable and if not, get new identity (this ensures that settings take effect immediately)
 					 bool acceptable = updateIPandDisplay();
 					 while (!acceptable) {
@@ -553,5 +601,20 @@ namespace GeoLock {
 						acceptable = updateIPandDisplay();
 					}
 		     }
+private: System::Void toolStripMenuItem1_Click(System::Object^  sender, System::EventArgs^  e) {
+			 		//when Force Update is selected from context menu, get a new identity immediately
+					getNewIdentity();
+					bool acceptable = updateIPandDisplay();
+					while (!acceptable) {
+						getNewIdentity();
+						acceptable = updateIPandDisplay();
+					}
+		 }
+private: System::Void toolStripMenuItem2_Click(System::Object^  sender, System::EventArgs^  e) {
+			 Application::Exit();
+		 }
+private: System::Void notifyIcon1_DoubleClick(System::Object^  sender, System::EventArgs^  e) {
+			 this->WindowState = System::Windows::Forms::FormWindowState::Normal;
+		 }
 };
 }
