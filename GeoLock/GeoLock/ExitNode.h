@@ -22,6 +22,9 @@ namespace GeoLock {
 			String^ updateFreq = System::Configuration::ConfigurationManager::AppSettings["updateFreq"];
 			String^ forceUpdate = System::Configuration::ConfigurationManager::AppSettings["forceUpdate"];
 			String^ controlPortI = System::Configuration::ConfigurationManager::AppSettings["controlPort"];
+			String^ stayOnTop = System::Configuration::ConfigurationManager::AppSettings["persist"];
+			String^ opacity = System::Configuration::ConfigurationManager::AppSettings["opacity"];
+			String^ taskbar = System::Configuration::ConfigurationManager::AppSettings["taskbar"];
 
 			//convert comma delimited list into array
 			array<String^>^ excludedList = managedExcluded->Split(',');
@@ -43,14 +46,25 @@ namespace GeoLock {
 					if (index != -1) this->preferredNodes->SetItemChecked(index,true);
 				}
 			}
-			//set update frequency and control port
+			//set update frequency, control port, and opacity
 			this->updateIn->Text = updateFreq;
 			this->controlPort->Text = controlPortI;
+			this->opacitySelect->Value = System::Decimal::Parse(opacity);
 
 			//set forceUpdate checkbox
 			if (forceUpdate == "true") {
 				this->checkBox1->Checked = true;
 				this->checkBox1->CheckState = System::Windows::Forms::CheckState::Checked;
+			}
+			//set stayOnTop checkbox
+			if (stayOnTop == "true") {
+				this->ontop->Checked = true;
+				this->ontop->CheckState = System::Windows::Forms::CheckState::Checked;
+			}
+			//set taskbar checkbox
+			if (taskbar == "true") {
+				this->taskBar->Checked = true;
+				this->taskBar->CheckState = System::Windows::Forms::CheckState::Checked;
 			}
 		}
 
@@ -95,6 +109,17 @@ namespace GeoLock {
 	private: System::Windows::Forms::Label^  label10;
 	private: System::Windows::Forms::Button^  defaultButton;
 	private: System::Windows::Forms::Label^  label4;
+	private: System::Windows::Forms::Label^  label11;
+	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape5;
+	private: System::Windows::Forms::CheckBox^  ontop;
+	private: System::Windows::Forms::CheckBox^  taskBar;
+	private: System::Windows::Forms::Label^  label13;
+	private: System::Windows::Forms::Label^  label12;
+	private: System::Windows::Forms::NumericUpDown^  opacitySelect;
+
+
+
+
 	private: System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
@@ -111,6 +136,7 @@ namespace GeoLock {
 			this->shapeContainer1 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
 			this->lineShape1 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->ClearAllPre = (gcnew System::Windows::Forms::Button());
 			this->SelectAllPre = (gcnew System::Windows::Forms::Button());
 			this->label3 = (gcnew System::Windows::Forms::Label());
@@ -118,6 +144,12 @@ namespace GeoLock {
 			this->shapeContainer2 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
 			this->lineShape2 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->label13 = (gcnew System::Windows::Forms::Label());
+			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->opacitySelect = (gcnew System::Windows::Forms::NumericUpDown());
+			this->taskBar = (gcnew System::Windows::Forms::CheckBox());
+			this->ontop = (gcnew System::Windows::Forms::CheckBox());
+			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->defaultButton = (gcnew System::Windows::Forms::Button());
 			this->controlPort = (gcnew System::Windows::Forms::TextBox());
@@ -129,15 +161,16 @@ namespace GeoLock {
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->shapeContainer3 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
+			this->lineShape5 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->lineShape4 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->lineShape3 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->okButton = (gcnew System::Windows::Forms::Button());
 			this->cancelButton = (gcnew System::Windows::Forms::Button());
-			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
 			this->tabPage3->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->opacitySelect))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// excludedNodes
@@ -262,6 +295,14 @@ namespace GeoLock {
 			this->tabPage2->Text = L"Preferred Nodes";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
+			// label4
+			// 
+			this->label4->Location = System::Drawing::Point(107, 26);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(143, 171);
+			this->label4->TabIndex = 7;
+			this->label4->Text = resources->GetString(L"label4.Text");
+			// 
 			// ClearAllPre
 			// 
 			this->ClearAllPre->Location = System::Drawing::Point(107, 229);
@@ -335,6 +376,12 @@ namespace GeoLock {
 			// 
 			// tabPage3
 			// 
+			this->tabPage3->Controls->Add(this->label13);
+			this->tabPage3->Controls->Add(this->label12);
+			this->tabPage3->Controls->Add(this->opacitySelect);
+			this->tabPage3->Controls->Add(this->taskBar);
+			this->tabPage3->Controls->Add(this->ontop);
+			this->tabPage3->Controls->Add(this->label11);
 			this->tabPage3->Controls->Add(this->checkBox1);
 			this->tabPage3->Controls->Add(this->defaultButton);
 			this->tabPage3->Controls->Add(this->controlPort);
@@ -353,6 +400,61 @@ namespace GeoLock {
 			this->tabPage3->TabIndex = 2;
 			this->tabPage3->Text = L"Advanced";
 			this->tabPage3->UseVisualStyleBackColor = true;
+			// 
+			// label13
+			// 
+			this->label13->AutoSize = true;
+			this->label13->Location = System::Drawing::Point(119, 204);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(15, 13);
+			this->label13->TabIndex = 15;
+			this->label13->Text = L"%";
+			// 
+			// label12
+			// 
+			this->label12->AutoSize = true;
+			this->label12->Location = System::Drawing::Point(27, 203);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(43, 13);
+			this->label12->TabIndex = 14;
+			this->label12->Text = L"Opacity";
+			// 
+			// opacitySelect
+			// 
+			this->opacitySelect->Location = System::Drawing::Point(76, 201);
+			this->opacitySelect->Name = L"opacitySelect";
+			this->opacitySelect->Size = System::Drawing::Size(43, 20);
+			this->opacitySelect->TabIndex = 13;
+			this->opacitySelect->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) {100, 0, 0, 0});
+			// 
+			// taskBar
+			// 
+			this->taskBar->AutoSize = true;
+			this->taskBar->Location = System::Drawing::Point(29, 180);
+			this->taskBar->Name = L"taskBar";
+			this->taskBar->Size = System::Drawing::Size(130, 17);
+			this->taskBar->TabIndex = 12;
+			this->taskBar->Text = L"Show notification icon";
+			this->taskBar->UseVisualStyleBackColor = true;
+			// 
+			// ontop
+			// 
+			this->ontop->AutoSize = true;
+			this->ontop->Location = System::Drawing::Point(29, 156);
+			this->ontop->Name = L"ontop";
+			this->ontop->Size = System::Drawing::Size(167, 17);
+			this->ontop->TabIndex = 11;
+			this->ontop->Text = L"Keep on top of other windows";
+			this->ontop->UseVisualStyleBackColor = true;
+			// 
+			// label11
+			// 
+			this->label11->AutoSize = true;
+			this->label11->Location = System::Drawing::Point(7, 135);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(112, 13);
+			this->label11->TabIndex = 10;
+			this->label11->Text = L"Behavior/Appearance";
 			// 
 			// checkBox1
 			// 
@@ -447,11 +549,20 @@ namespace GeoLock {
 			this->shapeContainer3->Location = System::Drawing::Point(3, 3);
 			this->shapeContainer3->Margin = System::Windows::Forms::Padding(0);
 			this->shapeContainer3->Name = L"shapeContainer3";
-			this->shapeContainer3->Shapes->AddRange(gcnew cli::array< Microsoft::VisualBasic::PowerPacks::Shape^  >(2) {this->lineShape4, 
-				this->lineShape3});
+			this->shapeContainer3->Shapes->AddRange(gcnew cli::array< Microsoft::VisualBasic::PowerPacks::Shape^  >(3) {this->lineShape5, 
+				this->lineShape4, this->lineShape3});
 			this->shapeContainer3->Size = System::Drawing::Size(262, 278);
 			this->shapeContainer3->TabIndex = 1;
 			this->shapeContainer3->TabStop = false;
+			// 
+			// lineShape5
+			// 
+			this->lineShape5->BorderColor = System::Drawing::SystemColors::Highlight;
+			this->lineShape5->Name = L"lineShape5";
+			this->lineShape5->X1 = 119;
+			this->lineShape5->X2 = 258;
+			this->lineShape5->Y1 = 140;
+			this->lineShape5->Y2 = 140;
 			// 
 			// lineShape4
 			// 
@@ -483,6 +594,7 @@ namespace GeoLock {
 			// 
 			// cancelButton
 			// 
+			this->cancelButton->DialogResult = System::Windows::Forms::DialogResult::Cancel;
 			this->cancelButton->Location = System::Drawing::Point(202, 321);
 			this->cancelButton->Name = L"cancelButton";
 			this->cancelButton->Size = System::Drawing::Size(75, 23);
@@ -491,26 +603,23 @@ namespace GeoLock {
 			this->cancelButton->UseVisualStyleBackColor = true;
 			this->cancelButton->Click += gcnew System::EventHandler(this, &ExitNode::cancelButton_Click);
 			// 
-			// label4
-			// 
-			this->label4->Location = System::Drawing::Point(107, 26);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(143, 171);
-			this->label4->TabIndex = 7;
-			this->label4->Text = resources->GetString(L"label4.Text");
-			// 
 			// ExitNode
 			// 
+			this->AcceptButton = this->okButton;
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->CancelButton = this->cancelButton;
 			this->ClientSize = System::Drawing::Size(287, 351);
 			this->Controls->Add(this->cancelButton);
 			this->Controls->Add(this->okButton);
 			this->Controls->Add(this->tabControl1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(L"$this.Icon")));
+			this->MaximizeBox = false;
 			this->MaximumSize = System::Drawing::Size(303, 389);
+			this->MinimizeBox = false;
 			this->MinimumSize = System::Drawing::Size(303, 389);
 			this->Name = L"ExitNode";
+			this->ShowInTaskbar = false;
 			this->Text = L"GeoLock Configuration";
 			this->tabControl1->ResumeLayout(false);
 			this->tabPage1->ResumeLayout(false);
@@ -519,6 +628,7 @@ namespace GeoLock {
 			this->tabPage2->PerformLayout();
 			this->tabPage3->ResumeLayout(false);
 			this->tabPage3->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->opacitySelect))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -592,6 +702,14 @@ private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^
 			 config->AppSettings->Settings->Remove("forceUpdate");
 			 if (this->checkBox1->Checked) config->AppSettings->Settings->Add("forceUpdate","true");
 			 else config->AppSettings->Settings->Add("forceUpdate","false");
+			 //write stayOnTop boolean
+			 config->AppSettings->Settings->Remove("persist");
+			 if (this->ontop->Checked) config->AppSettings->Settings->Add("persist","true");
+			 else config->AppSettings->Settings->Add("persist","false");
+			 //write taskbar boolean
+			 config->AppSettings->Settings->Remove("taskbar");
+			 if (this->taskBar->Checked) config->AppSettings->Settings->Add("taskbar","true");
+			 else config->AppSettings->Settings->Add("taskbar","false");
 			 //temporary control port to prevent the user from doing anything strange
 			 int port = 0;
 			 try {
@@ -610,6 +728,9 @@ private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^
 			 //write control port
 			 config->AppSettings->Settings->Remove("controlPort");
 			 config->AppSettings->Settings->Add("controlPort",port.ToString());
+			 //write opacity
+			 config->AppSettings->Settings->Remove("opacity");
+			 config->AppSettings->Settings->Add("opacity",this->opacitySelect->Value.ToString());
 			 //save app.config
 			 config->Save(System::Configuration::ConfigurationSaveMode::Modified);
 			 System::Configuration::ConfigurationManager::RefreshSection("appSettings");
@@ -624,6 +745,9 @@ private: System::Void defaultButton_Click(System::Object^  sender, System::Event
 			 this->controlPort->Text = L"9051";
 			 this->updateIn->Text = L"5";
 			 this->checkBox1->Checked = false;
+			 this->ontop->Checked = false;
+			 this->opacitySelect->Value = 100;
+			 this->taskBar->Checked = false;
 		 }
 };
 }
