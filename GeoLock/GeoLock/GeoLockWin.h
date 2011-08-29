@@ -268,13 +268,20 @@ namespace GeoLock {
 			// forceUpdateToolStripMenuItem
 			// 
 			this->forceUpdateToolStripMenuItem->Name = L"forceUpdateToolStripMenuItem";
+			this->forceUpdateToolStripMenuItem->ShortcutKeyDisplayString = L"F5";
+			this->forceUpdateToolStripMenuItem->ShortcutKeys = System::Windows::Forms::Keys::F5;
+			this->forceUpdateToolStripMenuItem->Size = System::Drawing::Size(162, 22);
 			this->forceUpdateToolStripMenuItem->Size = System::Drawing::Size(143, 22);
 			this->forceUpdateToolStripMenuItem->Text = L"Force Update";
+			this->forceUpdateToolStripMenuItem->ToolTipText = L"Forces a new identity";
 			this->forceUpdateToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::forceUpdateToolStripMenuItem_Click);
 			// 
 			// exitToolStripMenuItem
 			// 
 			this->exitToolStripMenuItem->Name = L"exitToolStripMenuItem";
+
+			this->exitToolStripMenuItem->ShortcutKeyDisplayString = L"Alt+F4";
+			this->exitToolStripMenuItem->Size = System::Drawing::Size(162, 22);
 			this->exitToolStripMenuItem->Size = System::Drawing::Size(143, 22);
 			this->exitToolStripMenuItem->Text = L"Exit";
 			this->exitToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::exitToolStripMenuItem_Click);
@@ -314,7 +321,7 @@ namespace GeoLock {
 			// timer
 			// 
 			this->timer->Enabled = true;
-			this->timer->Interval = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["updateFreq"])*60*1000);
+			this->timer->Interval = 300000;
 			this->timer->Tick += gcnew System::EventHandler(this, &GeoLockWin::GeoLockWin_Load);
 			// 
 			// timeStamp
@@ -444,6 +451,9 @@ namespace GeoLock {
 				 Application::Exit();
 			 }
 	private: System::Void GeoLockWin_Load(System::Object^  sender, System::EventArgs^  e) {
+				 String^ forceUpdate = System::Configuration::ConfigurationManager::AppSettings["forceUpdate"];
+				 if (forceUpdate == "true") getNewIdentity();
+				 updateIPandDisplay();
 				 bool acceptable = updateIPandDisplay();
 				 while (!acceptable) {
 					 getNewIdentity();
