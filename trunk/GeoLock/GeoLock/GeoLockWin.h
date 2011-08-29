@@ -453,12 +453,11 @@ namespace GeoLock {
 	private: System::Void GeoLockWin_Load(System::Object^  sender, System::EventArgs^  e) {
 				 String^ forceUpdate = System::Configuration::ConfigurationManager::AppSettings["forceUpdate"];
 				 if (forceUpdate == "true") getNewIdentity();
-				 updateIPandDisplay();
-				 bool acceptable = updateIPandDisplay();
+/*				 bool acceptable = updateIPandDisplay();
 				 while (!acceptable) {
 					 getNewIdentity();
 					 acceptable = updateIPandDisplay();
-				 }
+				 }*/
 			 }
 	private: System::Void excludeExitNodesToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 			 	 ExitNode^ exitNodeDialog = gcnew ExitNode();

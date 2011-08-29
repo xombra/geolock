@@ -111,15 +111,12 @@ namespace GeoLock {
 			this->shapeContainer2 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
 			this->lineShape2 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
-
 			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
-
 			this->defaultButton = (gcnew System::Windows::Forms::Button());
 			this->controlPort = (gcnew System::Windows::Forms::TextBox());
 			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
-
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->updateIn = (gcnew System::Windows::Forms::TextBox());
 			this->label6 = (gcnew System::Windows::Forms::Label());
@@ -329,15 +326,12 @@ namespace GeoLock {
 			// 
 			// tabPage3
 			// 
-
 			this->tabPage3->Controls->Add(this->checkBox1);
-
 			this->tabPage3->Controls->Add(this->defaultButton);
 			this->tabPage3->Controls->Add(this->controlPort);
 			this->tabPage3->Controls->Add(this->label10);
 			this->tabPage3->Controls->Add(this->label9);
 			this->tabPage3->Controls->Add(this->label8);
-
 			this->tabPage3->Controls->Add(this->label7);
 			this->tabPage3->Controls->Add(this->updateIn);
 			this->tabPage3->Controls->Add(this->label6);
@@ -351,18 +345,16 @@ namespace GeoLock {
 			this->tabPage3->Text = L"Advanced";
 			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
-
 			// checkBox1
 			// 
 			this->checkBox1->AutoSize = true;
-			this->checkBox1->Location = System::Drawing::Point(29, 63);
+			this->checkBox1->Location = System::Drawing::Point(29, 60);
 			this->checkBox1->Name = L"checkBox1";
 			this->checkBox1->Size = System::Drawing::Size(218, 17);
 			this->checkBox1->TabIndex = 5;
 			this->checkBox1->Text = L"Force new identity even if conditions met";
 			this->checkBox1->UseVisualStyleBackColor = true;
 			// 
-
 			// defaultButton
 			// 
 			this->defaultButton->Location = System::Drawing::Point(187, 255);
@@ -375,7 +367,7 @@ namespace GeoLock {
 			// 
 			// controlPort
 			// 
-			this->controlPort->Location = System::Drawing::Point(82, 99);
+			this->controlPort->Location = System::Drawing::Point(82, 106);
 			this->controlPort->Name = L"controlPort";
 			this->controlPort->Size = System::Drawing::Size(76, 20);
 			this->controlPort->TabIndex = 8;
@@ -383,7 +375,7 @@ namespace GeoLock {
 			// label10
 			// 
 			this->label10->AutoSize = true;
-			this->label10->Location = System::Drawing::Point(14, 102);
+			this->label10->Location = System::Drawing::Point(14, 109);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(65, 13);
 			this->label10->TabIndex = 7;
@@ -392,7 +384,7 @@ namespace GeoLock {
 			// label9
 			// 
 			this->label9->AutoSize = true;
-			this->label9->Location = System::Drawing::Point(7, 75);
+			this->label9->Location = System::Drawing::Point(7, 82);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(61, 13);
 			this->label9->TabIndex = 6;
@@ -407,7 +399,6 @@ namespace GeoLock {
 			this->label8->TabIndex = 5;
 			this->label8->Text = L"(Requires restart of GeoLock)";
 			// 
-
 			// label7
 			// 
 			this->label7->AutoSize = true;
@@ -459,8 +450,8 @@ namespace GeoLock {
 			this->lineShape4->Name = L"lineShape4";
 			this->lineShape4->X1 = 65;
 			this->lineShape4->X2 = 258;
-			this->lineShape4->Y1 = 80;
-			this->lineShape4->Y2 = 80;
+			this->lineShape4->Y1 = 87;
+			this->lineShape4->Y2 = 87;
 			// 
 			// lineShape3
 			// 
@@ -582,6 +573,7 @@ private: System::Void cancelButton_Click(System::Object^  sender, System::EventA
 private: System::Void defaultButton_Click(System::Object^  sender, System::EventArgs^  e) {
 			 this->controlPort->Text = L"9051";
 			 this->updateIn->Text = L"5";
+			 this->checkBox1->Checked = false;
 		 }
 };
 }
