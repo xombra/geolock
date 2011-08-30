@@ -76,6 +76,7 @@ namespace GeoLock {
 				delete components;
 			}
 		}
+
 	private: System::Windows::Forms::CheckedListBox^  excludedNodes;
 	private: System::Windows::Forms::TabControl^  tabControl1;
 	private: System::Windows::Forms::TabPage^  tabPage1;
@@ -116,10 +117,6 @@ namespace GeoLock {
 	private: System::Windows::Forms::Label^  label13;
 	private: System::Windows::Forms::Label^  label12;
 	private: System::Windows::Forms::NumericUpDown^  opacitySelect;
-
-
-
-
 	private: System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
@@ -404,7 +401,7 @@ namespace GeoLock {
 			// label13
 			// 
 			this->label13->AutoSize = true;
-			this->label13->Location = System::Drawing::Point(119, 204);
+			this->label13->Location = System::Drawing::Point(119, 206);
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(15, 13);
 			this->label13->TabIndex = 15;
@@ -413,7 +410,7 @@ namespace GeoLock {
 			// label12
 			// 
 			this->label12->AutoSize = true;
-			this->label12->Location = System::Drawing::Point(27, 203);
+			this->label12->Location = System::Drawing::Point(27, 205);
 			this->label12->Name = L"label12";
 			this->label12->Size = System::Drawing::Size(43, 13);
 			this->label12->TabIndex = 14;
@@ -421,7 +418,7 @@ namespace GeoLock {
 			// 
 			// opacitySelect
 			// 
-			this->opacitySelect->Location = System::Drawing::Point(76, 201);
+			this->opacitySelect->Location = System::Drawing::Point(76, 203);
 			this->opacitySelect->Name = L"opacitySelect";
 			this->opacitySelect->Size = System::Drawing::Size(43, 20);
 			this->opacitySelect->TabIndex = 13;
@@ -432,9 +429,9 @@ namespace GeoLock {
 			this->taskBar->AutoSize = true;
 			this->taskBar->Location = System::Drawing::Point(29, 180);
 			this->taskBar->Name = L"taskBar";
-			this->taskBar->Size = System::Drawing::Size(130, 17);
+			this->taskBar->Size = System::Drawing::Size(160, 17);
 			this->taskBar->TabIndex = 12;
-			this->taskBar->Text = L"Show notification icon";
+			this->taskBar->Text = L"Show icon in the system tray";
 			this->taskBar->UseVisualStyleBackColor = true;
 			// 
 			// ontop
@@ -723,7 +720,7 @@ private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^
 			 //if port is larger than valid port numbers, revert to default port
 			 if (port > 65535) port = 9051;
 
-			 //TODO: check for invalid ports (ie: 0, 22, 80)
+			 if (port < 1024) MessageBox::Show("Using port numbers below 1024 can cause conflicts. If you experience connectivity issues, try increasing the control port number","Warning");
 
 			 //write control port
 			 config->AppSettings->Settings->Remove("controlPort");

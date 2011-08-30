@@ -6,7 +6,7 @@ this->timer->Interval = (System::Int32::Parse(System::Configuration::Configurati
 */
 
 //connectivity boolean (if IP is obtainable)
-bool torUP = false;
+bool torUP,cP = false;
 
 //function to convert char arrays/strings into managed System::String
 System::String ^ char2StringRef( char * p){ 
@@ -38,7 +38,7 @@ System::String ^ getPrettyDate(SYSTEMTIME lt) {
 }
 
 //open telnet connection to localhost to tell Tor to update connections
-void getNewIdentity() {
+bool getNewIdentity() {
 	//load control port from app.config
 	int controlPort = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["controlPort"]));
 	//build connection
@@ -62,8 +62,11 @@ void getNewIdentity() {
 		tcpSocket->Close();
 	}
 	catch (Exception^ ex) {
-		MessageBox::Show("GeoLock was unable to connect to Tor. Please check your configuration.","Error");
+		cP = true;
+		return false;
 	}
+	cP = false;
+	return true;
 }
 
 //function to update IP address via wipmania's API and return either error or stream input
@@ -77,19 +80,18 @@ System::String^ updateIP() {
 	String^ in = "";
 	Uri^ siteUri = gcnew Uri(ipURL);
 	try {
-		//attempt to open connection (via Tor) to wipmania
+		//attempt to open connection (via Tor proxy specified in app.config) to wipmania
 		Stream^ ipStream = myWebClient->OpenRead(siteUri);
 		StreamReader^ sr = gcnew StreamReader(ipStream);
 		in = sr->ReadToEnd();
 		ipStream->Close();
 		torUP = true;
 		//return HTML formatted IP string similar to:
-		//XXX.XXX.XXX.XXX<br>US
+		//###.###.###.###<br>US
 		return in;
 	}
 	catch (WebException ^ex) {
-		//set connectivity boolean and return error message
-		MessageBox::Show("Tor is not running or is not properly configured.","Connection Error");
+		//set connectivity boolean
 		torUP = false;
 	}
 	return "ERROR";
@@ -153,8 +155,12 @@ namespace GeoLock {
 				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
 				break;
 			case 3:
-				this->torStatusIcon->Text = "Error: Tor is not running or is not properly configured.";
+				this->torStatusIcon->Text = "Error: Tor is not running or is not properly configured!";
 				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("fatal")));
+				break;
+			case 4:
+				this->torStatusIcon->Text = "Error: Unable to communicate with Tor! Control port issue?";
+				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
 				break;
 			case 99:
 				this->torStatusIcon->Text = "Error: Unknown";
@@ -183,10 +189,20 @@ namespace GeoLock {
 			this->Opacity = opacity;
 		}
 
+		void refreshUntilAcceptable() {
+			bool acceptable = updateIPandDisplay();
+			while (!acceptable) {
+				getNewIdentity();
+				acceptable = updateIPandDisplay();
+			}
+		}
+
 		//backend function to check Tor configuration/connectivity 
 		int checkTorrc() {
 			//if Tor isn't up, return error
 			if (!torUP) return 3;
+			//if new identity has failed, return error
+			if (cP) return 4;
 			//load %appdata% environment variable
 			char* pPath = std::getenv("appdata");
 			String^ appdata = char2StringRef(pPath) + "\\Vidalia\\torrc";
@@ -222,24 +238,21 @@ namespace GeoLock {
 				//convert HTML formatted IP and country code to useable elements
 				ip = getIP(ipFull);
 				ct = getCountry(ipFull);
-				//since IP was obtainable, connectivity is assured
-				torUP = true;
 			}
 			else {
 				//if IP was not obtainable, display ?'s
 				ip = "??.??.??.??";
 				ct = "??";
-				//assume no connectivity
-				torUP = false;
 			}
 			updateTorIcon();
 			//get current system time to display when the IP was last updated
 			SYSTEMTIME lt;
 			GetLocalTime(&lt);
 			this->timeStamp->Text = L"Last Updated: " + getPrettyDate(lt);
+			//update IP and Country
 			this->toolStripLabel1->Text = L"IP: " + ip;
 			this->toolStripLabel2->Text = ct;
-			//set flag icon
+			//get acceptance state
 			String^ acceptState = getAcceptState(ct);
 			//attempt to resolve IP address to hostname
 			IPHostEntry^ host;
@@ -250,7 +263,9 @@ namespace GeoLock {
 			catch (Exception^ ex) {
 				this->toolStripButton1->Text = "unknown";
 			}
+			//set flag icon
 			if (ipFull != "ERROR") this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(ct)));
+			//set notification icon and tooltip
 			this->notifyIcon1->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject("$this.Icon")));
 			try {
 				this->notifyIcon1->Text = ip + " | " + ct + "\n" + host->HostName;
@@ -258,7 +273,7 @@ namespace GeoLock {
 			catch (Exception^ ex) {
 				this->notifyIcon1->Text = ip + " | " + ct + "\nunknown";
 			}
-			//set acceptance icon
+			//set acceptance icon and tooltip
 			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
 			this->toolStripButton2->Text = acceptState;
 			//IP address updated and it is acceptable
@@ -296,10 +311,10 @@ namespace GeoLock {
 	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape2;
 	private: System::Windows::Forms::ToolStripMenuItem^  forceUpdateToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripButton^  torStatusIcon;
-private: System::Windows::Forms::NotifyIcon^  notifyIcon1;
-private: System::Windows::Forms::ContextMenuStrip^  contextMenuStrip1;
-private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem1;
-private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem2;
+	private: System::Windows::Forms::NotifyIcon^  notifyIcon1;
+	private: System::Windows::Forms::ContextMenuStrip^  contextMenuStrip1;
+	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem2;
 	private: System::ComponentModel::IContainer^  components;
 
 #pragma region Windows Form Designer generated code
@@ -408,7 +423,7 @@ private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem2;
 			// timer
 			// 
 			this->timer->Enabled = true;
-			this->timer->Interval = 300000;
+			this->timer->Interval = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["updateFreq"])*60*1000);
 			this->timer->Tick += gcnew System::EventHandler(this, &GeoLockWin::GeoLockWin_Load);
 			// 
 			// timeStamp
@@ -527,14 +542,14 @@ private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem2;
 			this->toolStripMenuItem1->Name = L"toolStripMenuItem1";
 			this->toolStripMenuItem1->Size = System::Drawing::Size(143, 22);
 			this->toolStripMenuItem1->Text = L"Force Update";
-			this->toolStripMenuItem1->Click += gcnew System::EventHandler(this, &GeoLockWin::toolStripMenuItem1_Click);
+			this->toolStripMenuItem1->Click += gcnew System::EventHandler(this, &GeoLockWin::forceUpdateToolStripMenuItem_Click);
 			// 
 			// toolStripMenuItem2
 			// 
 			this->toolStripMenuItem2->Name = L"toolStripMenuItem2";
 			this->toolStripMenuItem2->Size = System::Drawing::Size(143, 22);
 			this->toolStripMenuItem2->Text = L"Exit";
-			this->toolStripMenuItem2->Click += gcnew System::EventHandler(this, &GeoLockWin::toolStripMenuItem2_Click);
+			this->toolStripMenuItem2->Click += gcnew System::EventHandler(this, &GeoLockWin::exitToolStripMenuItem_Click);
 			// 
 			// GeoLockWin
 			// 
@@ -572,13 +587,7 @@ private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem2;
 				 //on application startup and timer expiration, force new identity if specified in user settings
 				 String^ forceUpdate = System::Configuration::ConfigurationManager::AppSettings["forceUpdate"];
 				 if (forceUpdate == "true") getNewIdentity();
-				 //check if IP address is acceptable
-				 bool acceptable = updateIPandDisplay();
-				 //if not keep switching identities until it is
-				 while (!acceptable) {
-					 getNewIdentity();
-					 acceptable = updateIPandDisplay();
-				 }
+				 refreshUntilAcceptable();
 			 }
 	private: System::Void excludeExitNodesToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 				 //launch user settings window
@@ -588,38 +597,20 @@ private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem2;
 				 }
 				 finally {
 					 delete exitNodeDialog;
+					 //update display elements
 					 reinitialize();
 					 //update the IP address and check if it is acceptable and if not, get new identity (this ensures that settings take effect immediately)
-					 bool acceptable = updateIPandDisplay();
-					 while (!acceptable) {
-						 getNewIdentity();
-						 acceptable = updateIPandDisplay();
-					 }
+					 refreshUntilAcceptable();
 				 }
 			 }
 	private: System::Void forceUpdateToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-					//when Force Update is selected or F5 pressed, get a new identity immediately
-					getNewIdentity();
-					bool acceptable = updateIPandDisplay();
-					while (!acceptable) {
-						getNewIdentity();
-						acceptable = updateIPandDisplay();
-					}
+				//when Force Update is selected or F5 pressed, get a new identity immediately
+				getNewIdentity();
+				refreshUntilAcceptable();
 		     }
-private: System::Void toolStripMenuItem1_Click(System::Object^  sender, System::EventArgs^  e) {
-			 		//when Force Update is selected from context menu, get a new identity immediately
-					getNewIdentity();
-					bool acceptable = updateIPandDisplay();
-					while (!acceptable) {
-						getNewIdentity();
-						acceptable = updateIPandDisplay();
-					}
-		 }
-private: System::Void toolStripMenuItem2_Click(System::Object^  sender, System::EventArgs^  e) {
-			 Application::Exit();
-		 }
-private: System::Void notifyIcon1_DoubleClick(System::Object^  sender, System::EventArgs^  e) {
-			 this->WindowState = System::Windows::Forms::FormWindowState::Normal;
-		 }
+	private: System::Void notifyIcon1_DoubleClick(System::Object^  sender, System::EventArgs^  e) {
+			    //restore window from minimized state when notification icon is double clicked
+				this->WindowState = System::Windows::Forms::FormWindowState::Normal;
+			}
 };
 }
