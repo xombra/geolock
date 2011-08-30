@@ -252,7 +252,12 @@ namespace GeoLock {
 			}
 			if (ipFull != "ERROR") this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(ct)));
 			this->notifyIcon1->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(ct + "1")));
-			this->notifyIcon1->Text = ip + " | " + ct + "\n" + host->HostName;
+			try {
+				this->notifyIcon1->Text = ip + " | " + ct + "\n" + host->HostName;
+			}
+			catch (Exception^ ex) {
+				this->notifyIcon1->Text = ip + " | " + ct + "\nunknown";
+			}
 			//set acceptance icon
 			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
 			this->toolStripButton2->Text = acceptState;
