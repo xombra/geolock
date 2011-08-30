@@ -14,11 +14,12 @@ using namespace System::Security::Permissions;
 [assembly:AssemblyTitleAttribute("GeoLock")];
 [assembly:AssemblyDescriptionAttribute("")];
 [assembly:AssemblyConfigurationAttribute("")];
-[assembly:AssemblyCompanyAttribute("Microsoft")];
+[assembly:AssemblyCompanyAttribute("GeoLock Development Team")];
 [assembly:AssemblyProductAttribute("GeoLock")];
-[assembly:AssemblyCopyrightAttribute("Copyright (c) Microsoft 2011")];
+[assembly:AssemblyCopyrightAttribute("Copyright (c) Bryan carey 2011")];
 [assembly:AssemblyTrademarkAttribute("")];
 [assembly:AssemblyCultureAttribute("")];
+
 
 //
 // Version information for an assembly consists of the following four values:
@@ -33,7 +34,7 @@ using namespace System::Security::Permissions;
 
 [assembly:AssemblyVersionAttribute("1.0.*")];
 
-[assembly:ComVisible(false)];
+[assembly:ComVisible(true)];
 
 [assembly:CLSCompliantAttribute(true)];
 
