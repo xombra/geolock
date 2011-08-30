@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
+    <UICulture>en-US</UICulture>
     <ProjectGuid>{19636D3F-5E45-486C-8542-A5849CD00E80}</ProjectGuid>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
@@ -605,8 +606,26 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ExitNode.de-DE.resx">
+      <DependentUpon>ExitNode.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitNode.en-US.resx">
+      <DependentUpon>ExitNode.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitNode.es-ES.resx">
+      <DependentUpon>ExitNode.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExitNode.resx">
       <DependentUpon>ExitNode.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeoLockWin.de-DE.resx">
+      <DependentUpon>GeoLockWin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeoLockWin.en-US.resx">
+      <DependentUpon>GeoLockWin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeoLockWin.es-ES.resx">
+      <DependentUpon>GeoLockWin.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GeoLockWin.resX">
       <DependentUpon>GeoLockWin.h</DependentUpon>
