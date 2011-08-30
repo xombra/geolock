@@ -16,7 +16,7 @@ using namespace System::Security::Permissions;
 [assembly:AssemblyConfigurationAttribute("")];
 [assembly:AssemblyCompanyAttribute("GeoLock Development Team")];
 [assembly:AssemblyProductAttribute("GeoLock")];
-[assembly:AssemblyCopyrightAttribute("Copyright (c) Bryan carey 2011")];
+[assembly:AssemblyCopyrightAttribute("Copyright (c) Bryan Carey 2011")];
 [assembly:AssemblyTrademarkAttribute("")];
 [assembly:AssemblyCultureAttribute("")];
 

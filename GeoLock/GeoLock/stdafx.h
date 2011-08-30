@@ -25,3 +25,5 @@
 	using namespace System::Diagnostics;
 	using namespace System::Net::Sockets;
 	using namespace System::Net::Cache;
+	using namespace System::Globalization;
+	using namespace System::Resources;
