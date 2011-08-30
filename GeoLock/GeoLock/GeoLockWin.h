@@ -170,16 +170,29 @@ namespace GeoLock {
 		}
 
 		void reinitialize() {
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
 			//load excluded and preferred nodes from app.config
 			String^ managedExclude = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
 			String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
 			String^ stayOnTop = System::Configuration::ConfigurationManager::AppSettings["persist"];
 			String^ taskbar = System::Configuration::ConfigurationManager::AppSettings["taskbar"];
 			//update their corresponding visual elements
-			if (managedExclude->Length > 0) this->excludeList->Text = L"Exclude: " + managedExclude;
-			else this->excludeList->Text = L"Exclude: NONE";
-			if (managedExit->Length > 0) this->preferNodes->Text = L"Prefer: " + managedExit;
-			else this->preferNodes->Text = L"Prefer: NONE";
+			if (managedExclude->Length > 0) {
+				resources->ApplyResources(this->excludeList, L"excludeList");
+				this->excludeList->Text += managedExclude;
+			}
+			else {
+				resources->ApplyResources(this->excludeList, L"excludeList");
+				this->excludeList->Text += "-";
+			}
+			if (managedExit->Length > 0) {
+				resources->ApplyResources(this->preferNodes, L"preferNodes");
+				this->preferNodes->Text += managedExit;
+			}
+			else {
+				resources->ApplyResources(this->preferNodes, L"preferNodes");
+				this->preferNodes->Text += " -";
+			}
 			if (stayOnTop == "true") this->TopMost = true;
 			else this->TopMost = false;
 			if (taskbar == "true") this->notifyIcon1->Visible = true;
@@ -248,7 +261,8 @@ namespace GeoLock {
 			//get current system time to display when the IP was last updated
 			SYSTEMTIME lt;
 			GetLocalTime(&lt);
-			this->timeStamp->Text = L"Last Updated: " + getPrettyDate(lt);
+			resources->ApplyResources(this->timeStamp, L"timeStamp");
+			this->timeStamp->Text += getPrettyDate(lt);
 			//update IP and Country
 			this->toolStripLabel1->Text = L"IP: " + ip;
 			this->toolStripLabel2->Text = ct;
@@ -261,7 +275,7 @@ namespace GeoLock {
 				this->toolStripButton1->Text = host->HostName;
 			}
 			catch (Exception^ ex) {
-				this->toolStripButton1->Text = "unknown";
+				this->toolStripButton1->Text = "???";
 			}
 			//set flag icon
 			if (ipFull != "ERROR") this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(ct)));
@@ -271,7 +285,7 @@ namespace GeoLock {
 				this->notifyIcon1->Text = ip + " | " + ct + "\n" + host->HostName;
 			}
 			catch (Exception^ ex) {
-				this->notifyIcon1->Text = ip + " | " + ct + "\nunknown";
+				this->notifyIcon1->Text = ip + " | " + ct + "\n???";
 			}
 			//set acceptance icon and tooltip
 			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
