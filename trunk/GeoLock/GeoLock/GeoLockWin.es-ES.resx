@@ -479,4 +479,7 @@
   <data name="Unknown" xml:space="preserve">
     <value>Error: Desconocido</value>
   </data>
+  <data name="forceUpdateToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Las fuerzas de una nueva identidad</value>
+  </data>
 </root>

@@ -117,145 +117,151 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Исключенные узлы</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="clearAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 246</value>
+  </data>
   <data name="clearAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 23</value>
+    <value>84, 23</value>
   </data>
   <data name="clearAll.Text" xml:space="preserve">
-    <value>Borrar Todos</value>
+    <value>Очистить все</value>
+  </data>
+  <data name="selectAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 217</value>
   </data>
   <data name="selectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 23</value>
+    <value>84, 23</value>
   </data>
   <data name="selectAll.Text" xml:space="preserve">
-    <value>Seleccionar Todos</value>
+    <value>Выбрать все</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>GeoLock excluirá a los nodos de salida en estos países la hora de elegir un nodo de salida.
+    <value>GeoLock исключает выхода узлов в этих странах при выборе выхода узла.
 
-Nota: Al intentar encontrar un nuevo nodo de salida, GeoLock puede visitar los nodos situados en estos países. Sin embargo, seguirá buscando hasta que encuentre un país que no está excluida.</value>
+Примечание: При попытке найти новый узел выхода, GeoLock можете посетить узлов, расположенных в этих странах. Тем не менее, она будет продолжать поиски, пока не найдет страны, которая не исключена.</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 13</value>
+    <value>106, 13</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Países Excluidos</value>
-  </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Nodos Excluidos</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>GeoLock sólo utilizará los nodos de salida en estos países la hora de elegir un nodo de salida.
-
-Nota: Al intentar encontrar un nuevo nodo de salida, GeoLock puede visitar los nodos situados en otros países. Sin embargo, seguirá buscando hasta que encuentre un país que se prefiere.</value>
-  </data>
-  <data name="ClearAllPre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 23</value>
-  </data>
-  <data name="ClearAllPre.Text" xml:space="preserve">
-    <value>Borrar Todos</value>
-  </data>
-  <data name="SelectAllPre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 23</value>
-  </data>
-  <data name="SelectAllPre.Text" xml:space="preserve">
-    <value>Seleccionar Todos</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 13</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Países Preferidos</value>
+    <value>Исключены страны</value>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
-    <value>Nodos Preferidos</value>
+    <value>Предпочтительные узлы</value>
   </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 206</value>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 218</value>
   </data>
-  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 13</value>
+  <data name="label4.Text" xml:space="preserve">
+    <value>GeoLock будет использовать только выход узлов в этих странах при выборе выхода узла.
+
+Примечание: При попытке найти новый узел выхода, GeoLock можете посетить узлов, расположенных в других странах. Тем не менее, она будет продолжать поиски, пока не найдет страны, которая является предпочтительным.</value>
   </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>Opacidad</value>
+  <data name="ClearAllPre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 247</value>
   </data>
-  <data name="opacitySelect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>81, 203</value>
+  <data name="ClearAllPre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 23</value>
   </data>
-  <data name="taskBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>212, 17</value>
+  <data name="ClearAllPre.Text" xml:space="preserve">
+    <value>Очистить все</value>
   </data>
-  <data name="taskBar.Text" xml:space="preserve">
-    <value>Mostrar icono en la bandeja del sistema</value>
+  <data name="SelectAllPre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 247</value>
   </data>
-  <data name="ontop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>197, 17</value>
+  <data name="SelectAllPre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 23</value>
   </data>
-  <data name="ontop.Text" xml:space="preserve">
-    <value>Mantente al tanto de otras ventanas</value>
+  <data name="SelectAllPre.Text" xml:space="preserve">
+    <value>Выбрать все</value>
   </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 13</value>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 13</value>
   </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>Comportamiento / Apariencia</value>
-  </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 17</value>
-  </data>
-  <data name="checkBox1.Text" xml:space="preserve">
-    <value>Nueva fuerza de la identidad</value>
-  </data>
-  <data name="defaultButton.Text" xml:space="preserve">
-    <value>Defecto</value>
-  </data>
-  <data name="controlPort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 106</value>
-  </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 13</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Control Puerto:</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 13</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Conexión</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 13</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>minutos. [1-300]</value>
-  </data>
-  <data name="updateIn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 33</value>
-  </data>
-  <data name="updateIn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 20</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 13</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Actualización de IP cada</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 13</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Frecuencia de Actualización</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Предпочитаемые страны</value>
   </data>
   <data name="tabPage3.Text" xml:space="preserve">
-    <value>Avanzado</value>
+    <value>Передовой</value>
   </data>
-  <data name="okButton.Text" xml:space="preserve">
-    <value>Aceptar</value>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 206</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 13</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>непрозрачность</value>
+  </data>
+  <data name="opacitySelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 203</value>
+  </data>
+  <data name="taskBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 17</value>
+  </data>
+  <data name="taskBar.Text" xml:space="preserve">
+    <value>Вывести значок в системном трее</value>
+  </data>
+  <data name="ontop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 17</value>
+  </data>
+  <data name="ontop.Text" xml:space="preserve">
+    <value>Держите поверх других окон</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 13</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Поведение / Внешний вид</value>
+  </data>
+  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 17</value>
+  </data>
+  <data name="checkBox1.Text" xml:space="preserve">
+    <value>Группа новой идентичности</value>
+  </data>
+  <data name="defaultButton.Text" xml:space="preserve">
+    <value>умолчание</value>
+  </data>
+  <data name="controlPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 106</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Порт управления:</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>связь</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>минут. [1-300]</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Обновление IP</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 13</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Частота обновления</value>
   </data>
   <data name="cancelButton.Text" xml:space="preserve">
-    <value>Cancelar</value>
+    <value>отменить</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -514,6 +520,6 @@ Nota: Al intentar encontrar un nuevo nodo de salida, GeoLock puede visitar los n
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>GeoLock Configuración</value>
+    <value>GeoLock Конфигурация</value>
   </data>
 </root>

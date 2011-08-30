@@ -615,7 +615,19 @@
     <EmbeddedResource Include="ExitNode.es-ES.resx">
       <DependentUpon>ExitNode.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ExitNode.ja.resx">
+      <DependentUpon>ExitNode.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExitNode.resx">
+      <DependentUpon>ExitNode.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitNode.ru.resx">
+      <DependentUpon>ExitNode.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitNode.zh-Hans.resx">
+      <DependentUpon>ExitNode.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitNode.zh-Hant.resx">
       <DependentUpon>ExitNode.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GeoLockWin.de-DE.resx">
@@ -627,9 +639,21 @@
     <EmbeddedResource Include="GeoLockWin.es-ES.resx">
       <DependentUpon>GeoLockWin.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GeoLockWin.ja.resx">
+      <DependentUpon>GeoLockWin.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GeoLockWin.resX">
       <DependentUpon>GeoLockWin.h</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeoLockWin.ru.resx">
+      <DependentUpon>GeoLockWin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeoLockWin.zh-Hans.resx">
+      <DependentUpon>GeoLockWin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeoLockWin.zh-Hant.resx">
+      <DependentUpon>GeoLockWin.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
