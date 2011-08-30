@@ -1516,7 +1516,10 @@
     <EmbeddedResource Include="ExitNode.en-US.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="GeoLockWin.es.resx">
+    <EmbeddedResource Include="ExitNode.es-ES.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeoLockWin.es-ES.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

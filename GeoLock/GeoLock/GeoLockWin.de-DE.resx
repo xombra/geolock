@@ -482,4 +482,7 @@
   <data name="Unknown" xml:space="preserve">
     <value>Error: Unknown</value>
   </data>
+  <data name="forceUpdateToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Forces eine neue Identität</value>
+  </data>
 </root>

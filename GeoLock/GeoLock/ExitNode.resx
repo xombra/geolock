@@ -139,14 +139,14 @@
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 13</value>
   </data>
+  <data name="excludedNodes.Items51" xml:space="preserve">
+    <value>CV</value>
+  </data>
   <data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
   <data name="excludedNodes.Items82" xml:space="preserve">
     <value>GM</value>
-  </data>
-  <data name="excludedNodes.Items59" xml:space="preserve">
-    <value>DO</value>
   </data>
   <data name="shapeContainer1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -215,11 +215,14 @@
   <data name="preferredNodes.Items77" xml:space="preserve">
     <value>GE</value>
   </data>
+  <data name="excludedNodes.Items38" xml:space="preserve">
+    <value>CA</value>
+  </data>
   <data name="lineShape4.X1" type="System.Int32, mscorlib">
     <value>65</value>
   </data>
-  <data name="preferredNodes.Items115" xml:space="preserve">
-    <value>KM</value>
+  <data name="lineShape4.X2" type="System.Int32, mscorlib">
+    <value>258</value>
   </data>
   <data name="preferredNodes.Items215" xml:space="preserve">
     <value>TT</value>
@@ -254,17 +257,20 @@
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="preferredNodes.Items229" xml:space="preserve">
-    <value>VI</value>
-  </data>
-  <data name="&gt;&gt;SelectAllPre.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;taskBar.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="preferredNodes.Items141" xml:space="preserve">
+    <value>MM</value>
+  </data>
+  <data name="&gt;&gt;selectAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label13.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -275,11 +281,14 @@
   <data name="&gt;&gt;clearAll.Name" xml:space="preserve">
     <value>clearAll</value>
   </data>
+  <data name="ClearAllPre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="clearAll.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="updateIn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
   </data>
   <data name="ontop.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 156</value>
@@ -320,23 +329,17 @@
   <data name="preferredNodes.Items188" xml:space="preserve">
     <value>SB</value>
   </data>
-  <data name="excludedNodes.Items239" xml:space="preserve">
-    <value>ZW</value>
-  </data>
-  <data name="excludedNodes.Items229" xml:space="preserve">
-    <value>VI</value>
-  </data>
   <data name="preferredNodes.Items16" xml:space="preserve">
     <value>AW</value>
   </data>
   <data name="preferredNodes.Items26" xml:space="preserve">
     <value>BI</value>
   </data>
-  <data name="preferredNodes.Items36" xml:space="preserve">
-    <value>BY</value>
+  <data name="excludedNodes.Items196" xml:space="preserve">
+    <value>SM</value>
   </data>
-  <data name="preferredNodes.Items46" xml:space="preserve">
-    <value>CM</value>
+  <data name="excludedNodes.Items186" xml:space="preserve">
+    <value>RW</value>
   </data>
   <data name="preferredNodes.Items56" xml:space="preserve">
     <value>DJ</value>
@@ -388,8 +391,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items129" xml:space="preserve">
     <value>LT</value>
   </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 7</value>
+  <data name="preferredNodes.Items229" xml:space="preserve">
+    <value>VI</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -406,17 +409,20 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="excludedNodes.Items36" xml:space="preserve">
+    <value>BY</value>
+  </data>
   <data name="excludedNodes.Items20" xml:space="preserve">
     <value>BB</value>
   </data>
   <data name="excludedNodes.Items23" xml:space="preserve">
     <value>BF</value>
   </data>
-  <data name="excludedNodes.Items236" xml:space="preserve">
-    <value>YT</value>
+  <data name="excludedNodes.Items239" xml:space="preserve">
+    <value>ZW</value>
   </data>
-  <data name="excludedNodes.Items220" xml:space="preserve">
-    <value>UG</value>
+  <data name="excludedNodes.Items229" xml:space="preserve">
+    <value>VI</value>
   </data>
   <data name="&gt;&gt;SelectAllPre.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -526,9 +532,6 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items175" xml:space="preserve">
     <value>PM</value>
   </data>
-  <data name="preferredNodes.Items99" xml:space="preserve">
-    <value>IL</value>
-  </data>
   <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -537,12 +540,6 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   </data>
   <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="preferredNodes.Items49" xml:space="preserve">
-    <value>CR</value>
   </data>
   <data name="excludedNodes.Items9" xml:space="preserve">
     <value>AO</value>
@@ -561,9 +558,6 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   </data>
   <data name="&gt;&gt;selectAll.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
   </data>
   <data name="&gt;&gt;preferredNodes.Parent" xml:space="preserve">
     <value>tabPage2</value>
@@ -610,14 +604,17 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="&gt;&gt;opacitySelect.Parent" xml:space="preserve">
     <value>tabPage3</value>
   </data>
-  <data name="preferredNodes.Items141" xml:space="preserve">
-    <value>MM</value>
+  <data name="&gt;&gt;shapeContainer3.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="excludedNodes.Items154" xml:space="preserve">
+    <value>MZ</value>
   </data>
   <data name="excludedNodes.Items144" xml:space="preserve">
     <value>MP</value>
   </data>
-  <data name="preferredNodes.Items120" xml:space="preserve">
-    <value>KY</value>
+  <data name="excludedNodes.Items174" xml:space="preserve">
+    <value>PL</value>
   </data>
   <data name="preferredNodes.Items220" xml:space="preserve">
     <value>UG</value>
@@ -637,8 +634,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items14" xml:space="preserve">
     <value>AT</value>
   </data>
-  <data name="excludedNodes.Items141" xml:space="preserve">
-    <value>MM</value>
+  <data name="preferredNodes.Items24" xml:space="preserve">
+    <value>BG</value>
   </data>
   <data name="excludedNodes.Items171" xml:space="preserve">
     <value>PG</value>
@@ -691,14 +688,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="excludedNodes.Items154" xml:space="preserve">
-    <value>MZ</value>
-  </data>
   <data name="excludedNodes.Items194" xml:space="preserve">
     <value>SK</value>
-  </data>
-  <data name="excludedNodes.Items174" xml:space="preserve">
-    <value>PL</value>
   </data>
   <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -736,11 +727,11 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="&gt;&gt;updateIn.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="preferredNodes.Items232" xml:space="preserve">
-    <value>WF</value>
-  </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;controlPort.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -796,8 +787,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items185" xml:space="preserve">
     <value>RU</value>
   </data>
-  <data name="preferredNodes.Items135" xml:space="preserve">
-    <value>MD</value>
+  <data name="preferredNodes.Items115" xml:space="preserve">
+    <value>KM</value>
   </data>
   <data name="excludedNodes.Items217" xml:space="preserve">
     <value>TW</value>
@@ -853,6 +844,9 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 13</value>
   </data>
+  <data name="preferredNodes.Items201" xml:space="preserve">
+    <value>SV</value>
+  </data>
   <data name="&gt;&gt;label12.Name" xml:space="preserve">
     <value>label12</value>
   </data>
@@ -868,11 +862,11 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="excludedNodes.Items31" xml:space="preserve">
-    <value>BR</value>
-  </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="excludedNodes.Items32" xml:space="preserve">
+    <value>BS</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -934,8 +928,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items122" xml:space="preserve">
     <value>LA</value>
   </data>
-  <data name="preferredNodes.Items" xml:space="preserve">
-    <value>AC</value>
+  <data name="preferredNodes.Items222" xml:space="preserve">
+    <value>US</value>
   </data>
   <data name="excludedNodes.Items216" xml:space="preserve">
     <value>TV</value>
@@ -943,8 +937,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="excludedNodes.Items206" xml:space="preserve">
     <value>TG</value>
   </data>
-  <data name="excludedNodes.Items156" xml:space="preserve">
-    <value>NC</value>
+  <data name="excludedNodes.Items236" xml:space="preserve">
+    <value>YT</value>
   </data>
   <data name="excludedNodes.Items226" xml:space="preserve">
     <value>VC</value>
@@ -952,8 +946,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items84" xml:space="preserve">
     <value>GP</value>
   </data>
-  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="preferredNodes.Items94" xml:space="preserve">
+    <value>HR</value>
   </data>
   <data name="preferredNodes.Items124" xml:space="preserve">
     <value>LC</value>
@@ -970,17 +964,17 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="lineShape2.BorderColor" type="System.Drawing.Color, System.Drawing">
     <value>Highlight</value>
   </data>
-  <data name="excludedNodes.Items196" xml:space="preserve">
-    <value>SM</value>
+  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 17</value>
   </data>
-  <data name="excludedNodes.Items186" xml:space="preserve">
-    <value>RW</value>
-  </data>
-  <data name="preferredNodes.Items24" xml:space="preserve">
-    <value>BG</value>
+  <data name="preferredNodes.Items44" xml:space="preserve">
+    <value>CK</value>
   </data>
   <data name="preferredNodes.Items169" xml:space="preserve">
     <value>PE</value>
+  </data>
+  <data name="preferredNodes.Items180" xml:space="preserve">
+    <value>PY</value>
   </data>
   <data name="preferredNodes.Items100" xml:space="preserve">
     <value>IM</value>
@@ -991,6 +985,12 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="&gt;&gt;taskBar.Parent" xml:space="preserve">
     <value>tabPage3</value>
   </data>
+  <data name="preferredNodes.Items111" xml:space="preserve">
+    <value>KE</value>
+  </data>
+  <data name="preferredNodes.Items211" xml:space="preserve">
+    <value>TM</value>
+  </data>
   <data name="preferredNodes.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 244</value>
   </data>
@@ -1000,11 +1000,11 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>tabPage1</value>
   </data>
+  <data name="excludedNodes.Items4" xml:space="preserve">
+    <value>AG</value>
+  </data>
   <data name="okButton.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
-  </data>
-  <data name="taskBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 180</value>
   </data>
   <data name="&gt;&gt;excludedNodes.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1027,14 +1027,14 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>minute(s). [1-300]</value>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
   </data>
   <data name="excludedNodes.Items151" xml:space="preserve">
     <value>MW</value>
   </data>
-  <data name="preferredNodes.Items89" xml:space="preserve">
-    <value>GW</value>
+  <data name="excludedNodes.Items141" xml:space="preserve">
+    <value>MM</value>
   </data>
   <data name="preferredNodes.Items170" xml:space="preserve">
     <value>PF</value>
@@ -1105,11 +1105,11 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items214" xml:space="preserve">
     <value>TR</value>
   </data>
-  <data name="preferredNodes.Items30" xml:space="preserve">
-    <value>BO</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>287, 351</value>
+  </data>
+  <data name="preferredNodes.Items" xml:space="preserve">
+    <value>AC</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 36</value>
@@ -1147,20 +1147,17 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items238" xml:space="preserve">
     <value>ZM</value>
   </data>
-  <data name="okButton.Text" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="shapeContainer2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="preferredNodes.Items159" xml:space="preserve">
+    <value>NG</value>
   </data>
   <data name="preferredNodes.Items219" xml:space="preserve">
     <value>UA</value>
   </data>
-  <data name="preferredNodes.Items221" xml:space="preserve">
-    <value>UM</value>
-  </data>
   <data name="lineShape5.Y1" type="System.Int32, mscorlib">
     <value>140</value>
+  </data>
+  <data name="&gt;&gt;ontop.Parent" xml:space="preserve">
+    <value>tabPage3</value>
   </data>
   <data name="excludedNodes.Items15" xml:space="preserve">
     <value>AU</value>
@@ -1197,9 +1194,6 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   </data>
   <data name="excludedNodes.Items18" xml:space="preserve">
     <value>AZ</value>
-  </data>
-  <data name="preferredNodes.Items159" xml:space="preserve">
-    <value>NG</value>
   </data>
   <data name="excludedNodes.Items2" xml:space="preserve">
     <value>AE</value>
@@ -1291,8 +1285,23 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items204" xml:space="preserve">
     <value>TC</value>
   </data>
-  <data name="taskBar.Text" xml:space="preserve">
-    <value>Show icon in the system tray</value>
+  <data name="excludedNodes.Items128" xml:space="preserve">
+    <value>LS</value>
+  </data>
+  <data name="excludedNodes.Items156" xml:space="preserve">
+    <value>NC</value>
+  </data>
+  <data name="excludedNodes.Items198" xml:space="preserve">
+    <value>SO</value>
+  </data>
+  <data name="excludedNodes.Items188" xml:space="preserve">
+    <value>SB</value>
+  </data>
+  <data name="preferredNodes.Items36" xml:space="preserve">
+    <value>BY</value>
+  </data>
+  <data name="preferredNodes.Items46" xml:space="preserve">
+    <value>CM</value>
   </data>
   <data name="clearAll.Location" type="System.Drawing.Point, System.Drawing">
     <value>107, 229</value>
@@ -1333,6 +1342,9 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="&gt;&gt;lineShape4.Name" xml:space="preserve">
     <value>lineShape4</value>
   </data>
+  <data name="excludedNodes.Items30" xml:space="preserve">
+    <value>BO</value>
+  </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
     <value>268, 284</value>
   </data>
@@ -1342,11 +1354,11 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="defaultButton.Text" xml:space="preserve">
     <value>Defaults</value>
   </data>
-  <data name="shapeContainer3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 278</value>
+  <data name="label7.Text" xml:space="preserve">
+    <value>minute(s). [1-300]</value>
   </data>
-  <data name="lineShape4.X2" type="System.Int32, mscorlib">
-    <value>258</value>
+  <data name="&gt;&gt;SelectAllPre.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;ClearAllPre.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1354,20 +1366,17 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 7</value>
+  </data>
   <data name="&gt;&gt;label6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lineShape2.X1" type="System.Int32, mscorlib">
-    <value>104</value>
-  </data>
-  <data name="preferredNodes.Items158" xml:space="preserve">
-    <value>NF</value>
+  <data name="lineShape2.X2" type="System.Int32, mscorlib">
+    <value>258</value>
   </data>
   <data name="&gt;&gt;lineShape5.Type" xml:space="preserve">
     <value>Microsoft.VisualBasic.PowerPacks.LineShape, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
   </data>
   <data name="preferredNodes.Items150" xml:space="preserve">
     <value>MV</value>
@@ -1387,8 +1396,11 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="lineShape2.Y2" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="preferredNodes.Items81" xml:space="preserve">
-    <value>GL</value>
+  <data name="shapeContainer2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;opacitySelect.Name" xml:space="preserve">
+    <value>opacitySelect</value>
   </data>
   <data name="preferredNodes.Items172" xml:space="preserve">
     <value>PH</value>
@@ -1417,11 +1429,14 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items174" xml:space="preserve">
     <value>PL</value>
   </data>
+  <data name="preferredNodes.Items41" xml:space="preserve">
+    <value>CG</value>
+  </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="preferredNodes.Items71" xml:space="preserve">
+    <value>FM</value>
   </data>
   <data name="preferredNodes.Items17" xml:space="preserve">
     <value>AX</value>
@@ -1432,14 +1447,14 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items47" xml:space="preserve">
     <value>CN</value>
   </data>
+  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="preferredNodes.Items116" xml:space="preserve">
     <value>KN</value>
   </data>
   <data name="preferredNodes.Items216" xml:space="preserve">
     <value>TV</value>
-  </data>
-  <data name="shapeContainer2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
   </data>
   <data name="lineShape5.BorderColor" type="System.Drawing.Color, System.Drawing">
     <value>Highlight</value>
@@ -1452,6 +1467,9 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   </data>
   <data name="preferredNodes.Items218" xml:space="preserve">
     <value>TZ</value>
+  </data>
+  <data name="preferredNodes.Items89" xml:space="preserve">
+    <value>GW</value>
   </data>
   <data name="tabPage1.Text" xml:space="preserve">
     <value>Excluded Nodes</value>
@@ -1485,6 +1503,9 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   </data>
   <data name="taskBar.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
+  </data>
+  <data name="excludedNodes.Items231" xml:space="preserve">
+    <value>VU</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -1546,11 +1567,11 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
     <value>tabPage2</value>
   </data>
+  <data name="preferredNodes.Items1" xml:space="preserve">
+    <value>AD</value>
+  </data>
   <data name="&gt;&gt;lineShape2.Name" xml:space="preserve">
     <value>lineShape2</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 26</value>
   </data>
   <data name="preferredNodes.Items140" xml:space="preserve">
     <value>ML</value>
@@ -1588,26 +1609,23 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items80" xml:space="preserve">
     <value>GI</value>
   </data>
-  <data name="preferredNodes.Items90" xml:space="preserve">
-    <value>GY</value>
-  </data>
   <data name="preferredNodes.Items164" xml:space="preserve">
     <value>NR</value>
   </data>
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
     <value>tabPage3</value>
   </data>
-  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>303, 389</value>
-  </data>
-  <data name="preferredNodes.Items106" xml:space="preserve">
-    <value>IT</value>
+  <data name="lineShape4.Y1" type="System.Int32, mscorlib">
+    <value>87</value>
   </data>
   <data name="preferredNodes.Items206" xml:space="preserve">
     <value>TG</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 13</value>
+  </data>
+  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
     <value>tabPage3</value>
@@ -1635,9 +1653,6 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   </data>
   <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;controlPort.Parent" xml:space="preserve">
-    <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;label9.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1675,9 +1690,6 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items205" xml:space="preserve">
     <value>TD</value>
   </data>
-  <data name="preferredNodes.Items101" xml:space="preserve">
-    <value>IN</value>
-  </data>
   <data name="preferredNodes.Items152" xml:space="preserve">
     <value>MX</value>
   </data>
@@ -1687,8 +1699,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="excludedNodes.Items201" xml:space="preserve">
     <value>SV</value>
   </data>
-  <data name="excludedNodes.Items231" xml:space="preserve">
-    <value>VU</value>
+  <data name="preferredNodes.Items178" xml:space="preserve">
+    <value>PT</value>
   </data>
   <data name="excludedNodes.Items221" xml:space="preserve">
     <value>UM</value>
@@ -1714,8 +1726,11 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="&gt;&gt;controlPort.Name" xml:space="preserve">
     <value>controlPort</value>
   </data>
-  <data name="preferredNodes.Items40" xml:space="preserve">
-    <value>CF</value>
+  <data name="&gt;&gt;shapeContainer1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="preferredNodes.Items31" xml:space="preserve">
+    <value>BR</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 13</value>
@@ -1723,11 +1738,14 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items176" xml:space="preserve">
     <value>PR</value>
   </data>
+  <data name="&gt;&gt;lineShape2.Type" xml:space="preserve">
+    <value>Microsoft.VisualBasic.PowerPacks.LineShape, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="preferredNodes.Items199" xml:space="preserve">
     <value>SR</value>
   </data>
-  <data name="preferredNodes.Items178" xml:space="preserve">
-    <value>PT</value>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 244</value>
@@ -1813,9 +1831,6 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="&gt;&gt;ClearAllPre.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="shapeContainer3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
   <data name="&gt;&gt;okButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -1855,11 +1870,11 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="excludedNodes.Items230" xml:space="preserve">
     <value>VN</value>
   </data>
-  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="excludedNodes.Items220" xml:space="preserve">
+    <value>UG</value>
   </data>
-  <data name="excludedNodes.Items199" xml:space="preserve">
-    <value>SR</value>
+  <data name="preferredNodes.Items82" xml:space="preserve">
+    <value>GM</value>
   </data>
   <data name="preferredNodes.Items144" xml:space="preserve">
     <value>MP</value>
@@ -1870,17 +1885,23 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items227" xml:space="preserve">
     <value>VE</value>
   </data>
-  <data name="excludedNodes.Items148" xml:space="preserve">
-    <value>MT</value>
+  <data name="excludedNodes.Items158" xml:space="preserve">
+    <value>NF</value>
   </data>
-  <data name="excludedNodes.Items168" xml:space="preserve">
-    <value>PA</value>
+  <data name="excludedNodes.Items178" xml:space="preserve">
+    <value>PT</value>
+  </data>
+  <data name="preferredNodes.Items22" xml:space="preserve">
+    <value>BE</value>
+  </data>
+  <data name="preferredNodes.Items32" xml:space="preserve">
+    <value>BS</value>
+  </data>
+  <data name="preferredNodes.Items62" xml:space="preserve">
+    <value>EE</value>
   </data>
   <data name="preferredNodes.Items166" xml:space="preserve">
     <value>NZ</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
-    <value>tabControl1</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 82</value>
@@ -1890,6 +1911,9 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   </data>
   <data name="preferredNodes.Items168" xml:space="preserve">
     <value>PA</value>
+  </data>
+  <data name="preferredNodes.Items167" xml:space="preserve">
+    <value>OM</value>
   </data>
   <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1906,14 +1930,14 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
     <value>tabPage1</value>
   </data>
+  <data name="checkBox1.Text" xml:space="preserve">
+    <value>Force new identity even if conditions met</value>
+  </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="selectAll.Text" xml:space="preserve">
     <value>Select All</value>
-  </data>
-  <data name="&gt;&gt;defaultButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>14</value>
@@ -1938,9 +1962,6 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   </data>
   <data name="preferredNodes.Items173" xml:space="preserve">
     <value>PK</value>
-  </data>
-  <data name="ontop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 17</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2198,8 +2219,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
         AACAAwAAgAMAAMAHAADABwAA8B8AAPx/AAA=
 </value>
   </data>
-  <data name="preferredNodes.Items222" xml:space="preserve">
-    <value>US</value>
+  <data name="preferredNodes.Items232" xml:space="preserve">
+    <value>WF</value>
   </data>
   <data name="defaultButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>187, 255</value>
@@ -2225,8 +2246,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items85" xml:space="preserve">
     <value>GQ</value>
   </data>
-  <data name="preferredNodes.Items94" xml:space="preserve">
-    <value>HR</value>
+  <data name="preferredNodes.Items99" xml:space="preserve">
+    <value>IL</value>
   </data>
   <data name="preferredNodes.Items156" xml:space="preserve">
     <value>NC</value>
@@ -2243,8 +2264,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items34" xml:space="preserve">
     <value>BV</value>
   </data>
-  <data name="preferredNodes.Items44" xml:space="preserve">
-    <value>CK</value>
+  <data name="preferredNodes.Items49" xml:space="preserve">
+    <value>CR</value>
   </data>
   <data name="preferredNodes.Items54" xml:space="preserve">
     <value>CZ</value>
@@ -2252,8 +2273,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="lineShape3.BorderColor" type="System.Drawing.Color, System.Drawing">
     <value>Highlight</value>
   </data>
-  <data name="lineShape4.Y1" type="System.Int32, mscorlib">
-    <value>87</value>
+  <data name="preferredNodes.Items158" xml:space="preserve">
+    <value>NF</value>
   </data>
   <data name="lineShape4.Y2" type="System.Int32, mscorlib">
     <value>87</value>
@@ -2285,8 +2306,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="controlPort.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
+  <data name="preferredNodes.Items120" xml:space="preserve">
+    <value>KY</value>
   </data>
   <data name="&gt;&gt;label11.Parent" xml:space="preserve">
     <value>tabPage3</value>
@@ -2303,8 +2324,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="excludedNodes.Items96" xml:space="preserve">
     <value>HU</value>
   </data>
-  <data name="excludedNodes.Items91" xml:space="preserve">
-    <value>HK</value>
+  <data name="shapeContainer2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 7</value>
@@ -2339,8 +2360,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="excludedNodes.Items56" xml:space="preserve">
     <value>DJ</value>
   </data>
-  <data name="excludedNodes.Items51" xml:space="preserve">
-    <value>CV</value>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 26</value>
   </data>
   <data name="excludedNodes.Items50" xml:space="preserve">
     <value>CU</value>
@@ -2351,17 +2372,14 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="excludedNodes.Items52" xml:space="preserve">
     <value>CX</value>
   </data>
-  <data name="preferredNodes.Items180" xml:space="preserve">
-    <value>PY</value>
+  <data name="excludedNodes.Items59" xml:space="preserve">
+    <value>DO</value>
   </data>
   <data name="excludedNodes.Items58" xml:space="preserve">
     <value>DM</value>
   </data>
   <data name="preferredNodes.Items163" xml:space="preserve">
     <value>NP</value>
-  </data>
-  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -2378,9 +2396,6 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="&gt;&gt;SelectAllPre.Name" xml:space="preserve">
     <value>SelectAllPre</value>
   </data>
-  <data name="excludedNodes.Items159" xml:space="preserve">
-    <value>NG</value>
-  </data>
   <data name="excludedNodes.Items149" xml:space="preserve">
     <value>MU</value>
   </data>
@@ -2396,20 +2411,17 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items121" xml:space="preserve">
     <value>KZ</value>
   </data>
-  <data name="preferredNodes.Items82" xml:space="preserve">
-    <value>GM</value>
+  <data name="preferredNodes.Items221" xml:space="preserve">
+    <value>UM</value>
   </data>
   <data name="preferredNodes.Items92" xml:space="preserve">
     <value>HM</value>
   </data>
-  <data name="excludedNodes.Items189" xml:space="preserve">
-    <value>SC</value>
-  </data>
   <data name="preferredNodes.Items86" xml:space="preserve">
     <value>GR</value>
   </data>
-  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="ontop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 17</value>
   </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Advanced</value>
@@ -2420,11 +2432,11 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items12" xml:space="preserve">
     <value>AR</value>
   </data>
-  <data name="preferredNodes.Items22" xml:space="preserve">
-    <value>BE</value>
+  <data name="&gt;&gt;controlPort.Parent" xml:space="preserve">
+    <value>tabPage3</value>
   </data>
-  <data name="preferredNodes.Items32" xml:space="preserve">
-    <value>BS</value>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
   </data>
   <data name="preferredNodes.Items42" xml:space="preserve">
     <value>CH</value>
@@ -2432,8 +2444,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items52" xml:space="preserve">
     <value>CX</value>
   </data>
-  <data name="preferredNodes.Items62" xml:space="preserve">
-    <value>EE</value>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>303, 389</value>
   </data>
   <data name="preferredNodes.Items72" xml:space="preserve">
     <value>FO</value>
@@ -2465,17 +2477,14 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="&gt;&gt;updateIn.Name" xml:space="preserve">
     <value>updateIn</value>
   </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 17</value>
+  <data name="&gt;&gt;defaultButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="updateIn.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;opacitySelect.Name" xml:space="preserve">
-    <value>opacitySelect</value>
+  <data name="shapeContainer3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="&gt;&gt;defaultButton.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -2486,20 +2495,14 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="clearAll.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="&gt;&gt;opacitySelect.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="excludedNodes.Items73" xml:space="preserve">
-    <value>FR</value>
+  <data name="excludedNodes.Items75" xml:space="preserve">
+    <value>GB</value>
   </data>
   <data name="preferredNodes.Items191" xml:space="preserve">
     <value>SE</value>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>Preferred Nodes</value>
-  </data>
-  <data name="excludedNodes.Items79" xml:space="preserve">
-    <value>GH</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -2519,26 +2522,23 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items194" xml:space="preserve">
     <value>SK</value>
   </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
   <data name="preferredNodes.Items177" xml:space="preserve">
     <value>PS</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;ontop.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
   </data>
-  <data name="preferredNodes.Items111" xml:space="preserve">
-    <value>KE</value>
+  <data name="excludedNodes.Items159" xml:space="preserve">
+    <value>NG</value>
   </data>
-  <data name="preferredNodes.Items211" xml:space="preserve">
-    <value>TM</value>
+  <data name="preferredNodes.Items81" xml:space="preserve">
+    <value>GL</value>
   </data>
-  <data name="&gt;&gt;selectAll.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="taskBar.Text" xml:space="preserve">
+    <value>Show icon in the system tray</value>
   </data>
   <data name="excludedNodes.Items169" xml:space="preserve">
     <value>PE</value>
@@ -2564,11 +2564,11 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items21" xml:space="preserve">
     <value>BD</value>
   </data>
-  <data name="preferredNodes.Items31" xml:space="preserve">
-    <value>BR</value>
+  <data name="excludedNodes.Items199" xml:space="preserve">
+    <value>SR</value>
   </data>
-  <data name="preferredNodes.Items41" xml:space="preserve">
-    <value>CG</value>
+  <data name="excludedNodes.Items189" xml:space="preserve">
+    <value>SC</value>
   </data>
   <data name="preferredNodes.Items51" xml:space="preserve">
     <value>CV</value>
@@ -2576,26 +2576,26 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items61" xml:space="preserve">
     <value>EC</value>
   </data>
-  <data name="preferredNodes.Items71" xml:space="preserve">
-    <value>FM</value>
+  <data name="preferredNodes.Items106" xml:space="preserve">
+    <value>IT</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 13</value>
   </data>
-  <data name="ClearAllPre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="preferredNodes.Items135" xml:space="preserve">
+    <value>MD</value>
   </data>
   <data name="preferredNodes.Items235" xml:space="preserve">
     <value>YE</value>
   </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="excludedNodes.Items91" xml:space="preserve">
+    <value>HK</value>
   </data>
   <data name="excludedNodes.Items90" xml:space="preserve">
     <value>GY</value>
   </data>
-  <data name="&gt;&gt;lineShape2.Type" xml:space="preserve">
-    <value>Microsoft.VisualBasic.PowerPacks.LineShape, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
   </data>
   <data name="excludedNodes.Items84" xml:space="preserve">
     <value>GP</value>
@@ -2609,11 +2609,11 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="lineShape3.X2" type="System.Int32, mscorlib">
     <value>258</value>
   </data>
-  <data name="checkBox1.Text" xml:space="preserve">
-    <value>Force new identity even if conditions met</value>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="excludedNodes.Items75" xml:space="preserve">
-    <value>GB</value>
+  <data name="okButton.Text" xml:space="preserve">
+    <value>OK</value>
   </data>
   <data name="excludedNodes.Items74" xml:space="preserve">
     <value>GA</value>
@@ -2630,8 +2630,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="excludedNodes.Items70" xml:space="preserve">
     <value>FK</value>
   </data>
-  <data name="excludedNodes.Items4" xml:space="preserve">
-    <value>AG</value>
+  <data name="excludedNodes.Items73" xml:space="preserve">
+    <value>FR</value>
   </data>
   <data name="excludedNodes.Items72" xml:space="preserve">
     <value>FO</value>
@@ -2639,11 +2639,11 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="clearAll.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="taskBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 180</value>
   </data>
-  <data name="&gt;&gt;shapeContainer1.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="excludedNodes.Items79" xml:space="preserve">
+    <value>GH</value>
   </data>
   <data name="excludedNodes.Items78" xml:space="preserve">
     <value>GF</value>
@@ -2660,26 +2660,26 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="excludedNodes.Items37" xml:space="preserve">
     <value>BZ</value>
   </data>
-  <data name="excludedNodes.Items36" xml:space="preserve">
-    <value>BY</value>
+  <data name="lineShape2.X1" type="System.Int32, mscorlib">
+    <value>104</value>
   </data>
-  <data name="lineShape2.X2" type="System.Int32, mscorlib">
-    <value>258</value>
+  <data name="excludedNodes.Items31" xml:space="preserve">
+    <value>BR</value>
   </data>
-  <data name="excludedNodes.Items30" xml:space="preserve">
-    <value>BO</value>
+  <data name="&gt;&gt;opacitySelect.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="excludedNodes.Items33" xml:space="preserve">
     <value>BT</value>
   </data>
-  <data name="excludedNodes.Items32" xml:space="preserve">
-    <value>BS</value>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>tabPage3</value>
   </data>
   <data name="excludedNodes.Items39" xml:space="preserve">
     <value>CD</value>
   </data>
-  <data name="excludedNodes.Items38" xml:space="preserve">
-    <value>CA</value>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="preferredNodes.Items143" xml:space="preserve">
     <value>MO</value>
@@ -2705,23 +2705,23 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="excludedNodes.Items200" xml:space="preserve">
     <value>ST</value>
   </data>
-  <data name="preferredNodes.Items167" xml:space="preserve">
-    <value>OM</value>
+  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;label11.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="excludedNodes.Items158" xml:space="preserve">
-    <value>NF</value>
+  <data name="preferredNodes.Items101" xml:space="preserve">
+    <value>IN</value>
   </data>
-  <data name="preferredNodes.Items201" xml:space="preserve">
-    <value>SV</value>
+  <data name="excludedNodes.Items148" xml:space="preserve">
+    <value>MT</value>
   </data>
-  <data name="excludedNodes.Items178" xml:space="preserve">
-    <value>PT</value>
+  <data name="preferredNodes.Items90" xml:space="preserve">
+    <value>GY</value>
   </data>
-  <data name="&gt;&gt;shapeContainer3.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="excludedNodes.Items168" xml:space="preserve">
+    <value>PA</value>
   </data>
   <data name="excludedNodes.Items118" xml:space="preserve">
     <value>KR</value>
@@ -2732,8 +2732,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="excludedNodes.Items138" xml:space="preserve">
     <value>MH</value>
   </data>
-  <data name="excludedNodes.Items128" xml:space="preserve">
-    <value>LS</value>
+  <data name="shapeContainer3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 278</value>
   </data>
   <data name="preferredNodes.Items10" xml:space="preserve">
     <value>AP</value>
@@ -2741,11 +2741,11 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items20" xml:space="preserve">
     <value>BB</value>
   </data>
-  <data name="excludedNodes.Items198" xml:space="preserve">
-    <value>SO</value>
+  <data name="preferredNodes.Items30" xml:space="preserve">
+    <value>BO</value>
   </data>
-  <data name="excludedNodes.Items188" xml:space="preserve">
-    <value>SB</value>
+  <data name="preferredNodes.Items40" xml:space="preserve">
+    <value>CF</value>
   </data>
   <data name="preferredNodes.Items50" xml:space="preserve">
     <value>CU</value>
@@ -2792,8 +2792,8 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="preferredNodes.Items9" xml:space="preserve">
     <value>AO</value>
   </data>
-  <data name="preferredNodes.Items1" xml:space="preserve">
-    <value>AD</value>
+  <data name="updateIn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
   </data>
   <data name="preferredNodes.Items2" xml:space="preserve">
     <value>AE</value>
@@ -2847,7 +2847,7 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
     <value>139, 0</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>es-ES</value>
+    <value>zh-Hant</value>
   </metadata>
   <metadata name="lineShape1.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>154, 0</value>
