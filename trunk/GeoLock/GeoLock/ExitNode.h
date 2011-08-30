@@ -103,7 +103,7 @@ namespace GeoLock {
 	private: System::Windows::Forms::TextBox^  updateIn;
 	private: System::Windows::Forms::Label^  label6;
 	private: System::Windows::Forms::CheckBox^  checkBox1;
-	private: System::Windows::Forms::Label^  label8;
+
 	private: System::Windows::Forms::Label^  label9;
 	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape4;
 	private: System::Windows::Forms::TextBox^  controlPort;
@@ -152,7 +152,6 @@ namespace GeoLock {
 			this->controlPort = (gcnew System::Windows::Forms::TextBox());
 			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
-			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->updateIn = (gcnew System::Windows::Forms::TextBox());
 			this->label6 = (gcnew System::Windows::Forms::Label());
@@ -172,207 +171,288 @@ namespace GeoLock {
 			// 
 			// excludedNodes
 			// 
+			resources->ApplyResources(this->excludedNodes, L"excludedNodes");
 			this->excludedNodes->CheckOnClick = true;
 			this->excludedNodes->FormattingEnabled = true;
-			this->excludedNodes->Items->AddRange(gcnew cli::array< System::Object^  >(240) {L"AC", L"AD", L"AE", L"AF", L"AG", L"AI", L"AL", 
-				L"AM", L"AN", L"AO", L"AP", L"AQ", L"AR", L"AS", L"AT", L"AU", L"AW", L"AX", L"AZ", L"BA", L"BB", L"BD", L"BE", L"BF", L"BG", 
-				L"BH", L"BI", L"BJ", L"BM", L"BN", L"BO", L"BR", L"BS", L"BT", L"BV", L"BW", L"BY", L"BZ", L"CA", L"CD", L"CF", L"CG", L"CH", 
-				L"CI", L"CK", L"CL", L"CM", L"CN", L"CO", L"CR", L"CU", L"CV", L"CX", L"CY", L"CZ", L"DE", L"DJ", L"DK", L"DM", L"DO", L"DZ", 
-				L"EC", L"EE", L"EG", L"ER", L"ES", L"ET", L"EU", L"FI", L"FJ", L"FK", L"FM", L"FO", L"FR", L"GA", L"GB", L"GD", L"GE", L"GF", 
-				L"GH", L"GI", L"GL", L"GM", L"GN", L"GP", L"GQ", L"GR", L"GT", L"GU", L"GW", L"GY", L"HK", L"HM", L"HN", L"HR", L"HT", L"HU", 
-				L"ID", L"IE", L"IL", L"IM", L"IN", L"IO", L"IQ", L"IR", L"IS", L"IT", L"JE", L"JM", L"JO", L"JP", L"KE", L"KG", L"KH", L"KI", 
-				L"KM", L"KN", L"KP", L"KR", L"KW", L"KY", L"KZ", L"LA", L"LB", L"LC", L"LI", L"LK", L"LR", L"LS", L"LT", L"LU", L"LV", L"LY", 
-				L"MA", L"MC", L"MD", L"ME", L"MG", L"MH", L"MK", L"ML", L"MM", L"MN", L"MO", L"MP", L"MQ", L"MR", L"MS", L"MT", L"MU", L"MV", 
-				L"MW", L"MX", L"MY", L"MZ", L"NA", L"NC", L"NE", L"NF", L"NG", L"NI", L"NL", L"NO", L"NP", L"NR", L"NU", L"NZ", L"OM", L"PA", 
-				L"PE", L"PF", L"PG", L"PH", L"PK", L"PL", L"PM", L"PR", L"PS", L"PT", L"PW", L"PY", L"QA", L"RE", L"RO", L"RS", L"RU", L"RW", 
-				L"SA", L"SB", L"SC", L"SD", L"SE", L"SG", L"SI", L"SK", L"SL", L"SM", L"SN", L"SO", L"SR", L"ST", L"SV", L"SY", L"SZ", L"TC", 
-				L"TD", L"TG", L"TH", L"TJ", L"TK", L"TL", L"TM", L"TN", L"TO", L"TR", L"TT", L"TV", L"TW", L"TZ", L"UA", L"UG", L"UM", L"US", 
-				L"UY", L"UZ", L"VA", L"VC", L"VE", L"VG", L"VI", L"VN", L"VU", L"WF", L"WS", L"XX", L"YE", L"YT", L"ZA", L"ZM", L"ZW"});
-			this->excludedNodes->Location = System::Drawing::Point(21, 26);
+			this->excludedNodes->Items->AddRange(gcnew cli::array< System::Object^  >(240) {resources->GetString(L"excludedNodes.Items"), 
+				resources->GetString(L"excludedNodes.Items1"), resources->GetString(L"excludedNodes.Items2"), resources->GetString(L"excludedNodes.Items3"), 
+				resources->GetString(L"excludedNodes.Items4"), resources->GetString(L"excludedNodes.Items5"), resources->GetString(L"excludedNodes.Items6"), 
+				resources->GetString(L"excludedNodes.Items7"), resources->GetString(L"excludedNodes.Items8"), resources->GetString(L"excludedNodes.Items9"), 
+				resources->GetString(L"excludedNodes.Items10"), resources->GetString(L"excludedNodes.Items11"), resources->GetString(L"excludedNodes.Items12"), 
+				resources->GetString(L"excludedNodes.Items13"), resources->GetString(L"excludedNodes.Items14"), resources->GetString(L"excludedNodes.Items15"), 
+				resources->GetString(L"excludedNodes.Items16"), resources->GetString(L"excludedNodes.Items17"), resources->GetString(L"excludedNodes.Items18"), 
+				resources->GetString(L"excludedNodes.Items19"), resources->GetString(L"excludedNodes.Items20"), resources->GetString(L"excludedNodes.Items21"), 
+				resources->GetString(L"excludedNodes.Items22"), resources->GetString(L"excludedNodes.Items23"), resources->GetString(L"excludedNodes.Items24"), 
+				resources->GetString(L"excludedNodes.Items25"), resources->GetString(L"excludedNodes.Items26"), resources->GetString(L"excludedNodes.Items27"), 
+				resources->GetString(L"excludedNodes.Items28"), resources->GetString(L"excludedNodes.Items29"), resources->GetString(L"excludedNodes.Items30"), 
+				resources->GetString(L"excludedNodes.Items31"), resources->GetString(L"excludedNodes.Items32"), resources->GetString(L"excludedNodes.Items33"), 
+				resources->GetString(L"excludedNodes.Items34"), resources->GetString(L"excludedNodes.Items35"), resources->GetString(L"excludedNodes.Items36"), 
+				resources->GetString(L"excludedNodes.Items37"), resources->GetString(L"excludedNodes.Items38"), resources->GetString(L"excludedNodes.Items39"), 
+				resources->GetString(L"excludedNodes.Items40"), resources->GetString(L"excludedNodes.Items41"), resources->GetString(L"excludedNodes.Items42"), 
+				resources->GetString(L"excludedNodes.Items43"), resources->GetString(L"excludedNodes.Items44"), resources->GetString(L"excludedNodes.Items45"), 
+				resources->GetString(L"excludedNodes.Items46"), resources->GetString(L"excludedNodes.Items47"), resources->GetString(L"excludedNodes.Items48"), 
+				resources->GetString(L"excludedNodes.Items49"), resources->GetString(L"excludedNodes.Items50"), resources->GetString(L"excludedNodes.Items51"), 
+				resources->GetString(L"excludedNodes.Items52"), resources->GetString(L"excludedNodes.Items53"), resources->GetString(L"excludedNodes.Items54"), 
+				resources->GetString(L"excludedNodes.Items55"), resources->GetString(L"excludedNodes.Items56"), resources->GetString(L"excludedNodes.Items57"), 
+				resources->GetString(L"excludedNodes.Items58"), resources->GetString(L"excludedNodes.Items59"), resources->GetString(L"excludedNodes.Items60"), 
+				resources->GetString(L"excludedNodes.Items61"), resources->GetString(L"excludedNodes.Items62"), resources->GetString(L"excludedNodes.Items63"), 
+				resources->GetString(L"excludedNodes.Items64"), resources->GetString(L"excludedNodes.Items65"), resources->GetString(L"excludedNodes.Items66"), 
+				resources->GetString(L"excludedNodes.Items67"), resources->GetString(L"excludedNodes.Items68"), resources->GetString(L"excludedNodes.Items69"), 
+				resources->GetString(L"excludedNodes.Items70"), resources->GetString(L"excludedNodes.Items71"), resources->GetString(L"excludedNodes.Items72"), 
+				resources->GetString(L"excludedNodes.Items73"), resources->GetString(L"excludedNodes.Items74"), resources->GetString(L"excludedNodes.Items75"), 
+				resources->GetString(L"excludedNodes.Items76"), resources->GetString(L"excludedNodes.Items77"), resources->GetString(L"excludedNodes.Items78"), 
+				resources->GetString(L"excludedNodes.Items79"), resources->GetString(L"excludedNodes.Items80"), resources->GetString(L"excludedNodes.Items81"), 
+				resources->GetString(L"excludedNodes.Items82"), resources->GetString(L"excludedNodes.Items83"), resources->GetString(L"excludedNodes.Items84"), 
+				resources->GetString(L"excludedNodes.Items85"), resources->GetString(L"excludedNodes.Items86"), resources->GetString(L"excludedNodes.Items87"), 
+				resources->GetString(L"excludedNodes.Items88"), resources->GetString(L"excludedNodes.Items89"), resources->GetString(L"excludedNodes.Items90"), 
+				resources->GetString(L"excludedNodes.Items91"), resources->GetString(L"excludedNodes.Items92"), resources->GetString(L"excludedNodes.Items93"), 
+				resources->GetString(L"excludedNodes.Items94"), resources->GetString(L"excludedNodes.Items95"), resources->GetString(L"excludedNodes.Items96"), 
+				resources->GetString(L"excludedNodes.Items97"), resources->GetString(L"excludedNodes.Items98"), resources->GetString(L"excludedNodes.Items99"), 
+				resources->GetString(L"excludedNodes.Items100"), resources->GetString(L"excludedNodes.Items101"), resources->GetString(L"excludedNodes.Items102"), 
+				resources->GetString(L"excludedNodes.Items103"), resources->GetString(L"excludedNodes.Items104"), resources->GetString(L"excludedNodes.Items105"), 
+				resources->GetString(L"excludedNodes.Items106"), resources->GetString(L"excludedNodes.Items107"), resources->GetString(L"excludedNodes.Items108"), 
+				resources->GetString(L"excludedNodes.Items109"), resources->GetString(L"excludedNodes.Items110"), resources->GetString(L"excludedNodes.Items111"), 
+				resources->GetString(L"excludedNodes.Items112"), resources->GetString(L"excludedNodes.Items113"), resources->GetString(L"excludedNodes.Items114"), 
+				resources->GetString(L"excludedNodes.Items115"), resources->GetString(L"excludedNodes.Items116"), resources->GetString(L"excludedNodes.Items117"), 
+				resources->GetString(L"excludedNodes.Items118"), resources->GetString(L"excludedNodes.Items119"), resources->GetString(L"excludedNodes.Items120"), 
+				resources->GetString(L"excludedNodes.Items121"), resources->GetString(L"excludedNodes.Items122"), resources->GetString(L"excludedNodes.Items123"), 
+				resources->GetString(L"excludedNodes.Items124"), resources->GetString(L"excludedNodes.Items125"), resources->GetString(L"excludedNodes.Items126"), 
+				resources->GetString(L"excludedNodes.Items127"), resources->GetString(L"excludedNodes.Items128"), resources->GetString(L"excludedNodes.Items129"), 
+				resources->GetString(L"excludedNodes.Items130"), resources->GetString(L"excludedNodes.Items131"), resources->GetString(L"excludedNodes.Items132"), 
+				resources->GetString(L"excludedNodes.Items133"), resources->GetString(L"excludedNodes.Items134"), resources->GetString(L"excludedNodes.Items135"), 
+				resources->GetString(L"excludedNodes.Items136"), resources->GetString(L"excludedNodes.Items137"), resources->GetString(L"excludedNodes.Items138"), 
+				resources->GetString(L"excludedNodes.Items139"), resources->GetString(L"excludedNodes.Items140"), resources->GetString(L"excludedNodes.Items141"), 
+				resources->GetString(L"excludedNodes.Items142"), resources->GetString(L"excludedNodes.Items143"), resources->GetString(L"excludedNodes.Items144"), 
+				resources->GetString(L"excludedNodes.Items145"), resources->GetString(L"excludedNodes.Items146"), resources->GetString(L"excludedNodes.Items147"), 
+				resources->GetString(L"excludedNodes.Items148"), resources->GetString(L"excludedNodes.Items149"), resources->GetString(L"excludedNodes.Items150"), 
+				resources->GetString(L"excludedNodes.Items151"), resources->GetString(L"excludedNodes.Items152"), resources->GetString(L"excludedNodes.Items153"), 
+				resources->GetString(L"excludedNodes.Items154"), resources->GetString(L"excludedNodes.Items155"), resources->GetString(L"excludedNodes.Items156"), 
+				resources->GetString(L"excludedNodes.Items157"), resources->GetString(L"excludedNodes.Items158"), resources->GetString(L"excludedNodes.Items159"), 
+				resources->GetString(L"excludedNodes.Items160"), resources->GetString(L"excludedNodes.Items161"), resources->GetString(L"excludedNodes.Items162"), 
+				resources->GetString(L"excludedNodes.Items163"), resources->GetString(L"excludedNodes.Items164"), resources->GetString(L"excludedNodes.Items165"), 
+				resources->GetString(L"excludedNodes.Items166"), resources->GetString(L"excludedNodes.Items167"), resources->GetString(L"excludedNodes.Items168"), 
+				resources->GetString(L"excludedNodes.Items169"), resources->GetString(L"excludedNodes.Items170"), resources->GetString(L"excludedNodes.Items171"), 
+				resources->GetString(L"excludedNodes.Items172"), resources->GetString(L"excludedNodes.Items173"), resources->GetString(L"excludedNodes.Items174"), 
+				resources->GetString(L"excludedNodes.Items175"), resources->GetString(L"excludedNodes.Items176"), resources->GetString(L"excludedNodes.Items177"), 
+				resources->GetString(L"excludedNodes.Items178"), resources->GetString(L"excludedNodes.Items179"), resources->GetString(L"excludedNodes.Items180"), 
+				resources->GetString(L"excludedNodes.Items181"), resources->GetString(L"excludedNodes.Items182"), resources->GetString(L"excludedNodes.Items183"), 
+				resources->GetString(L"excludedNodes.Items184"), resources->GetString(L"excludedNodes.Items185"), resources->GetString(L"excludedNodes.Items186"), 
+				resources->GetString(L"excludedNodes.Items187"), resources->GetString(L"excludedNodes.Items188"), resources->GetString(L"excludedNodes.Items189"), 
+				resources->GetString(L"excludedNodes.Items190"), resources->GetString(L"excludedNodes.Items191"), resources->GetString(L"excludedNodes.Items192"), 
+				resources->GetString(L"excludedNodes.Items193"), resources->GetString(L"excludedNodes.Items194"), resources->GetString(L"excludedNodes.Items195"), 
+				resources->GetString(L"excludedNodes.Items196"), resources->GetString(L"excludedNodes.Items197"), resources->GetString(L"excludedNodes.Items198"), 
+				resources->GetString(L"excludedNodes.Items199"), resources->GetString(L"excludedNodes.Items200"), resources->GetString(L"excludedNodes.Items201"), 
+				resources->GetString(L"excludedNodes.Items202"), resources->GetString(L"excludedNodes.Items203"), resources->GetString(L"excludedNodes.Items204"), 
+				resources->GetString(L"excludedNodes.Items205"), resources->GetString(L"excludedNodes.Items206"), resources->GetString(L"excludedNodes.Items207"), 
+				resources->GetString(L"excludedNodes.Items208"), resources->GetString(L"excludedNodes.Items209"), resources->GetString(L"excludedNodes.Items210"), 
+				resources->GetString(L"excludedNodes.Items211"), resources->GetString(L"excludedNodes.Items212"), resources->GetString(L"excludedNodes.Items213"), 
+				resources->GetString(L"excludedNodes.Items214"), resources->GetString(L"excludedNodes.Items215"), resources->GetString(L"excludedNodes.Items216"), 
+				resources->GetString(L"excludedNodes.Items217"), resources->GetString(L"excludedNodes.Items218"), resources->GetString(L"excludedNodes.Items219"), 
+				resources->GetString(L"excludedNodes.Items220"), resources->GetString(L"excludedNodes.Items221"), resources->GetString(L"excludedNodes.Items222"), 
+				resources->GetString(L"excludedNodes.Items223"), resources->GetString(L"excludedNodes.Items224"), resources->GetString(L"excludedNodes.Items225"), 
+				resources->GetString(L"excludedNodes.Items226"), resources->GetString(L"excludedNodes.Items227"), resources->GetString(L"excludedNodes.Items228"), 
+				resources->GetString(L"excludedNodes.Items229"), resources->GetString(L"excludedNodes.Items230"), resources->GetString(L"excludedNodes.Items231"), 
+				resources->GetString(L"excludedNodes.Items232"), resources->GetString(L"excludedNodes.Items233"), resources->GetString(L"excludedNodes.Items234"), 
+				resources->GetString(L"excludedNodes.Items235"), resources->GetString(L"excludedNodes.Items236"), resources->GetString(L"excludedNodes.Items237"), 
+				resources->GetString(L"excludedNodes.Items238"), resources->GetString(L"excludedNodes.Items239")});
 			this->excludedNodes->Name = L"excludedNodes";
-			this->excludedNodes->Size = System::Drawing::Size(65, 244);
-			this->excludedNodes->TabIndex = 0;
 			// 
 			// tabControl1
 			// 
+			resources->ApplyResources(this->tabControl1, L"tabControl1");
 			this->tabControl1->Controls->Add(this->tabPage1);
 			this->tabControl1->Controls->Add(this->tabPage2);
 			this->tabControl1->Controls->Add(this->tabPage3);
-			this->tabControl1->Location = System::Drawing::Point(1, 5);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
-			this->tabControl1->Size = System::Drawing::Size(276, 310);
-			this->tabControl1->TabIndex = 4;
 			// 
 			// tabPage1
 			// 
+			resources->ApplyResources(this->tabPage1, L"tabPage1");
 			this->tabPage1->Controls->Add(this->clearAll);
 			this->tabPage1->Controls->Add(this->selectAll);
 			this->tabPage1->Controls->Add(this->label2);
 			this->tabPage1->Controls->Add(this->label1);
 			this->tabPage1->Controls->Add(this->excludedNodes);
 			this->tabPage1->Controls->Add(this->shapeContainer1);
-			this->tabPage1->Location = System::Drawing::Point(4, 22);
 			this->tabPage1->Name = L"tabPage1";
-			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage1->Size = System::Drawing::Size(268, 284);
-			this->tabPage1->TabIndex = 0;
-			this->tabPage1->Text = L"Excluded Nodes";
 			this->tabPage1->UseVisualStyleBackColor = true;
 			// 
 			// clearAll
 			// 
-			this->clearAll->Location = System::Drawing::Point(107, 229);
+			resources->ApplyResources(this->clearAll, L"clearAll");
 			this->clearAll->Name = L"clearAll";
-			this->clearAll->Size = System::Drawing::Size(75, 23);
-			this->clearAll->TabIndex = 5;
-			this->clearAll->Text = L"Clear All";
 			this->clearAll->UseVisualStyleBackColor = true;
 			this->clearAll->Click += gcnew System::EventHandler(this, &ExitNode::clearAll_Click);
 			// 
 			// selectAll
 			// 
-			this->selectAll->Location = System::Drawing::Point(107, 200);
+			resources->ApplyResources(this->selectAll, L"selectAll");
 			this->selectAll->Name = L"selectAll";
-			this->selectAll->Size = System::Drawing::Size(75, 23);
-			this->selectAll->TabIndex = 4;
-			this->selectAll->Text = L"Select All";
 			this->selectAll->UseVisualStyleBackColor = true;
 			this->selectAll->Click += gcnew System::EventHandler(this, &ExitNode::selectAll_Click);
 			// 
 			// label2
 			// 
-			this->label2->Location = System::Drawing::Point(107, 26);
+			resources->ApplyResources(this->label2, L"label2");
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(143, 244);
-			this->label2->TabIndex = 3;
-			this->label2->Text = resources->GetString(L"label2.Text");
 			// 
 			// label1
 			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(7, 7);
+			resources->ApplyResources(this->label1, L"label1");
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(98, 13);
-			this->label1->TabIndex = 1;
-			this->label1->Text = L"Excluded Countries";
 			// 
 			// shapeContainer1
 			// 
-			this->shapeContainer1->Location = System::Drawing::Point(3, 3);
-			this->shapeContainer1->Margin = System::Windows::Forms::Padding(0);
+			resources->ApplyResources(this->shapeContainer1, L"shapeContainer1");
 			this->shapeContainer1->Name = L"shapeContainer1";
 			this->shapeContainer1->Shapes->AddRange(gcnew cli::array< Microsoft::VisualBasic::PowerPacks::Shape^  >(1) {this->lineShape1});
-			this->shapeContainer1->Size = System::Drawing::Size(262, 278);
-			this->shapeContainer1->TabIndex = 2;
 			this->shapeContainer1->TabStop = false;
 			// 
 			// lineShape1
 			// 
-			this->lineShape1->BorderColor = System::Drawing::SystemColors::Highlight;
+			resources->ApplyResources(this->lineShape1, L"lineShape1");
 			this->lineShape1->Name = L"lineShape1";
-			this->lineShape1->X1 = 104;
-			this->lineShape1->X2 = 258;
-			this->lineShape1->Y1 = 11;
-			this->lineShape1->Y2 = 11;
 			// 
 			// tabPage2
 			// 
+			resources->ApplyResources(this->tabPage2, L"tabPage2");
 			this->tabPage2->Controls->Add(this->label4);
 			this->tabPage2->Controls->Add(this->ClearAllPre);
 			this->tabPage2->Controls->Add(this->SelectAllPre);
 			this->tabPage2->Controls->Add(this->label3);
 			this->tabPage2->Controls->Add(this->preferredNodes);
 			this->tabPage2->Controls->Add(this->shapeContainer2);
-			this->tabPage2->Location = System::Drawing::Point(4, 22);
 			this->tabPage2->Name = L"tabPage2";
-			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage2->Size = System::Drawing::Size(268, 284);
-			this->tabPage2->TabIndex = 1;
-			this->tabPage2->Text = L"Preferred Nodes";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
 			// label4
 			// 
-			this->label4->Location = System::Drawing::Point(107, 26);
+			resources->ApplyResources(this->label4, L"label4");
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(143, 171);
-			this->label4->TabIndex = 7;
-			this->label4->Text = resources->GetString(L"label4.Text");
 			// 
 			// ClearAllPre
 			// 
-			this->ClearAllPre->Location = System::Drawing::Point(107, 229);
+			resources->ApplyResources(this->ClearAllPre, L"ClearAllPre");
 			this->ClearAllPre->Name = L"ClearAllPre";
-			this->ClearAllPre->Size = System::Drawing::Size(75, 23);
-			this->ClearAllPre->TabIndex = 6;
-			this->ClearAllPre->Text = L"Clear All";
 			this->ClearAllPre->UseVisualStyleBackColor = true;
 			this->ClearAllPre->Click += gcnew System::EventHandler(this, &ExitNode::ClearAllPre_Click);
 			// 
 			// SelectAllPre
 			// 
-			this->SelectAllPre->Location = System::Drawing::Point(107, 200);
+			resources->ApplyResources(this->SelectAllPre, L"SelectAllPre");
 			this->SelectAllPre->Name = L"SelectAllPre";
-			this->SelectAllPre->Size = System::Drawing::Size(75, 23);
-			this->SelectAllPre->TabIndex = 5;
-			this->SelectAllPre->Text = L"Select All";
 			this->SelectAllPre->UseVisualStyleBackColor = true;
 			this->SelectAllPre->Click += gcnew System::EventHandler(this, &ExitNode::SelectAllPre_Click);
 			// 
 			// label3
 			// 
-			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(7, 7);
+			resources->ApplyResources(this->label3, L"label3");
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(97, 13);
-			this->label3->TabIndex = 1;
-			this->label3->Text = L"Preferred Countries";
 			// 
 			// preferredNodes
 			// 
+			resources->ApplyResources(this->preferredNodes, L"preferredNodes");
 			this->preferredNodes->CheckOnClick = true;
 			this->preferredNodes->FormattingEnabled = true;
-			this->preferredNodes->Items->AddRange(gcnew cli::array< System::Object^  >(240) {L"AC", L"AD", L"AE", L"AF", L"AG", L"AI", 
-				L"AL", L"AM", L"AN", L"AO", L"AP", L"AQ", L"AR", L"AS", L"AT", L"AU", L"AW", L"AX", L"AZ", L"BA", L"BB", L"BD", L"BE", L"BF", 
-				L"BG", L"BH", L"BI", L"BJ", L"BM", L"BN", L"BO", L"BR", L"BS", L"BT", L"BV", L"BW", L"BY", L"BZ", L"CA", L"CD", L"CF", L"CG", 
-				L"CH", L"CI", L"CK", L"CL", L"CM", L"CN", L"CO", L"CR", L"CU", L"CV", L"CX", L"CY", L"CZ", L"DE", L"DJ", L"DK", L"DM", L"DO", 
-				L"DZ", L"EC", L"EE", L"EG", L"ER", L"ES", L"ET", L"EU", L"FI", L"FJ", L"FK", L"FM", L"FO", L"FR", L"GA", L"GB", L"GD", L"GE", 
-				L"GF", L"GH", L"GI", L"GL", L"GM", L"GN", L"GP", L"GQ", L"GR", L"GT", L"GU", L"GW", L"GY", L"HK", L"HM", L"HN", L"HR", L"HT", 
-				L"HU", L"ID", L"IE", L"IL", L"IM", L"IN", L"IO", L"IQ", L"IR", L"IS", L"IT", L"JE", L"JM", L"JO", L"JP", L"KE", L"KG", L"KH", 
-				L"KI", L"KM", L"KN", L"KP", L"KR", L"KW", L"KY", L"KZ", L"LA", L"LB", L"LC", L"LI", L"LK", L"LR", L"LS", L"LT", L"LU", L"LV", 
-				L"LY", L"MA", L"MC", L"MD", L"ME", L"MG", L"MH", L"MK", L"ML", L"MM", L"MN", L"MO", L"MP", L"MQ", L"MR", L"MS", L"MT", L"MU", 
-				L"MV", L"MW", L"MX", L"MY", L"MZ", L"NA", L"NC", L"NE", L"NF", L"NG", L"NI", L"NL", L"NO", L"NP", L"NR", L"NU", L"NZ", L"OM", 
-				L"PA", L"PE", L"PF", L"PG", L"PH", L"PK", L"PL", L"PM", L"PR", L"PS", L"PT", L"PW", L"PY", L"QA", L"RE", L"RO", L"RS", L"RU", 
-				L"RW", L"SA", L"SB", L"SC", L"SD", L"SE", L"SG", L"SI", L"SK", L"SL", L"SM", L"SN", L"SO", L"SR", L"ST", L"SV", L"SY", L"SZ", 
-				L"TC", L"TD", L"TG", L"TH", L"TJ", L"TK", L"TL", L"TM", L"TN", L"TO", L"TR", L"TT", L"TV", L"TW", L"TZ", L"UA", L"UG", L"UM", 
-				L"US", L"UY", L"UZ", L"VA", L"VC", L"VE", L"VG", L"VI", L"VN", L"VU", L"WF", L"WS", L"XX", L"YE", L"YT", L"ZA", L"ZM", L"ZW"});
-			this->preferredNodes->Location = System::Drawing::Point(21, 26);
+			this->preferredNodes->Items->AddRange(gcnew cli::array< System::Object^  >(240) {resources->GetString(L"preferredNodes.Items"), 
+				resources->GetString(L"preferredNodes.Items1"), resources->GetString(L"preferredNodes.Items2"), resources->GetString(L"preferredNodes.Items3"), 
+				resources->GetString(L"preferredNodes.Items4"), resources->GetString(L"preferredNodes.Items5"), resources->GetString(L"preferredNodes.Items6"), 
+				resources->GetString(L"preferredNodes.Items7"), resources->GetString(L"preferredNodes.Items8"), resources->GetString(L"preferredNodes.Items9"), 
+				resources->GetString(L"preferredNodes.Items10"), resources->GetString(L"preferredNodes.Items11"), resources->GetString(L"preferredNodes.Items12"), 
+				resources->GetString(L"preferredNodes.Items13"), resources->GetString(L"preferredNodes.Items14"), resources->GetString(L"preferredNodes.Items15"), 
+				resources->GetString(L"preferredNodes.Items16"), resources->GetString(L"preferredNodes.Items17"), resources->GetString(L"preferredNodes.Items18"), 
+				resources->GetString(L"preferredNodes.Items19"), resources->GetString(L"preferredNodes.Items20"), resources->GetString(L"preferredNodes.Items21"), 
+				resources->GetString(L"preferredNodes.Items22"), resources->GetString(L"preferredNodes.Items23"), resources->GetString(L"preferredNodes.Items24"), 
+				resources->GetString(L"preferredNodes.Items25"), resources->GetString(L"preferredNodes.Items26"), resources->GetString(L"preferredNodes.Items27"), 
+				resources->GetString(L"preferredNodes.Items28"), resources->GetString(L"preferredNodes.Items29"), resources->GetString(L"preferredNodes.Items30"), 
+				resources->GetString(L"preferredNodes.Items31"), resources->GetString(L"preferredNodes.Items32"), resources->GetString(L"preferredNodes.Items33"), 
+				resources->GetString(L"preferredNodes.Items34"), resources->GetString(L"preferredNodes.Items35"), resources->GetString(L"preferredNodes.Items36"), 
+				resources->GetString(L"preferredNodes.Items37"), resources->GetString(L"preferredNodes.Items38"), resources->GetString(L"preferredNodes.Items39"), 
+				resources->GetString(L"preferredNodes.Items40"), resources->GetString(L"preferredNodes.Items41"), resources->GetString(L"preferredNodes.Items42"), 
+				resources->GetString(L"preferredNodes.Items43"), resources->GetString(L"preferredNodes.Items44"), resources->GetString(L"preferredNodes.Items45"), 
+				resources->GetString(L"preferredNodes.Items46"), resources->GetString(L"preferredNodes.Items47"), resources->GetString(L"preferredNodes.Items48"), 
+				resources->GetString(L"preferredNodes.Items49"), resources->GetString(L"preferredNodes.Items50"), resources->GetString(L"preferredNodes.Items51"), 
+				resources->GetString(L"preferredNodes.Items52"), resources->GetString(L"preferredNodes.Items53"), resources->GetString(L"preferredNodes.Items54"), 
+				resources->GetString(L"preferredNodes.Items55"), resources->GetString(L"preferredNodes.Items56"), resources->GetString(L"preferredNodes.Items57"), 
+				resources->GetString(L"preferredNodes.Items58"), resources->GetString(L"preferredNodes.Items59"), resources->GetString(L"preferredNodes.Items60"), 
+				resources->GetString(L"preferredNodes.Items61"), resources->GetString(L"preferredNodes.Items62"), resources->GetString(L"preferredNodes.Items63"), 
+				resources->GetString(L"preferredNodes.Items64"), resources->GetString(L"preferredNodes.Items65"), resources->GetString(L"preferredNodes.Items66"), 
+				resources->GetString(L"preferredNodes.Items67"), resources->GetString(L"preferredNodes.Items68"), resources->GetString(L"preferredNodes.Items69"), 
+				resources->GetString(L"preferredNodes.Items70"), resources->GetString(L"preferredNodes.Items71"), resources->GetString(L"preferredNodes.Items72"), 
+				resources->GetString(L"preferredNodes.Items73"), resources->GetString(L"preferredNodes.Items74"), resources->GetString(L"preferredNodes.Items75"), 
+				resources->GetString(L"preferredNodes.Items76"), resources->GetString(L"preferredNodes.Items77"), resources->GetString(L"preferredNodes.Items78"), 
+				resources->GetString(L"preferredNodes.Items79"), resources->GetString(L"preferredNodes.Items80"), resources->GetString(L"preferredNodes.Items81"), 
+				resources->GetString(L"preferredNodes.Items82"), resources->GetString(L"preferredNodes.Items83"), resources->GetString(L"preferredNodes.Items84"), 
+				resources->GetString(L"preferredNodes.Items85"), resources->GetString(L"preferredNodes.Items86"), resources->GetString(L"preferredNodes.Items87"), 
+				resources->GetString(L"preferredNodes.Items88"), resources->GetString(L"preferredNodes.Items89"), resources->GetString(L"preferredNodes.Items90"), 
+				resources->GetString(L"preferredNodes.Items91"), resources->GetString(L"preferredNodes.Items92"), resources->GetString(L"preferredNodes.Items93"), 
+				resources->GetString(L"preferredNodes.Items94"), resources->GetString(L"preferredNodes.Items95"), resources->GetString(L"preferredNodes.Items96"), 
+				resources->GetString(L"preferredNodes.Items97"), resources->GetString(L"preferredNodes.Items98"), resources->GetString(L"preferredNodes.Items99"), 
+				resources->GetString(L"preferredNodes.Items100"), resources->GetString(L"preferredNodes.Items101"), resources->GetString(L"preferredNodes.Items102"), 
+				resources->GetString(L"preferredNodes.Items103"), resources->GetString(L"preferredNodes.Items104"), resources->GetString(L"preferredNodes.Items105"), 
+				resources->GetString(L"preferredNodes.Items106"), resources->GetString(L"preferredNodes.Items107"), resources->GetString(L"preferredNodes.Items108"), 
+				resources->GetString(L"preferredNodes.Items109"), resources->GetString(L"preferredNodes.Items110"), resources->GetString(L"preferredNodes.Items111"), 
+				resources->GetString(L"preferredNodes.Items112"), resources->GetString(L"preferredNodes.Items113"), resources->GetString(L"preferredNodes.Items114"), 
+				resources->GetString(L"preferredNodes.Items115"), resources->GetString(L"preferredNodes.Items116"), resources->GetString(L"preferredNodes.Items117"), 
+				resources->GetString(L"preferredNodes.Items118"), resources->GetString(L"preferredNodes.Items119"), resources->GetString(L"preferredNodes.Items120"), 
+				resources->GetString(L"preferredNodes.Items121"), resources->GetString(L"preferredNodes.Items122"), resources->GetString(L"preferredNodes.Items123"), 
+				resources->GetString(L"preferredNodes.Items124"), resources->GetString(L"preferredNodes.Items125"), resources->GetString(L"preferredNodes.Items126"), 
+				resources->GetString(L"preferredNodes.Items127"), resources->GetString(L"preferredNodes.Items128"), resources->GetString(L"preferredNodes.Items129"), 
+				resources->GetString(L"preferredNodes.Items130"), resources->GetString(L"preferredNodes.Items131"), resources->GetString(L"preferredNodes.Items132"), 
+				resources->GetString(L"preferredNodes.Items133"), resources->GetString(L"preferredNodes.Items134"), resources->GetString(L"preferredNodes.Items135"), 
+				resources->GetString(L"preferredNodes.Items136"), resources->GetString(L"preferredNodes.Items137"), resources->GetString(L"preferredNodes.Items138"), 
+				resources->GetString(L"preferredNodes.Items139"), resources->GetString(L"preferredNodes.Items140"), resources->GetString(L"preferredNodes.Items141"), 
+				resources->GetString(L"preferredNodes.Items142"), resources->GetString(L"preferredNodes.Items143"), resources->GetString(L"preferredNodes.Items144"), 
+				resources->GetString(L"preferredNodes.Items145"), resources->GetString(L"preferredNodes.Items146"), resources->GetString(L"preferredNodes.Items147"), 
+				resources->GetString(L"preferredNodes.Items148"), resources->GetString(L"preferredNodes.Items149"), resources->GetString(L"preferredNodes.Items150"), 
+				resources->GetString(L"preferredNodes.Items151"), resources->GetString(L"preferredNodes.Items152"), resources->GetString(L"preferredNodes.Items153"), 
+				resources->GetString(L"preferredNodes.Items154"), resources->GetString(L"preferredNodes.Items155"), resources->GetString(L"preferredNodes.Items156"), 
+				resources->GetString(L"preferredNodes.Items157"), resources->GetString(L"preferredNodes.Items158"), resources->GetString(L"preferredNodes.Items159"), 
+				resources->GetString(L"preferredNodes.Items160"), resources->GetString(L"preferredNodes.Items161"), resources->GetString(L"preferredNodes.Items162"), 
+				resources->GetString(L"preferredNodes.Items163"), resources->GetString(L"preferredNodes.Items164"), resources->GetString(L"preferredNodes.Items165"), 
+				resources->GetString(L"preferredNodes.Items166"), resources->GetString(L"preferredNodes.Items167"), resources->GetString(L"preferredNodes.Items168"), 
+				resources->GetString(L"preferredNodes.Items169"), resources->GetString(L"preferredNodes.Items170"), resources->GetString(L"preferredNodes.Items171"), 
+				resources->GetString(L"preferredNodes.Items172"), resources->GetString(L"preferredNodes.Items173"), resources->GetString(L"preferredNodes.Items174"), 
+				resources->GetString(L"preferredNodes.Items175"), resources->GetString(L"preferredNodes.Items176"), resources->GetString(L"preferredNodes.Items177"), 
+				resources->GetString(L"preferredNodes.Items178"), resources->GetString(L"preferredNodes.Items179"), resources->GetString(L"preferredNodes.Items180"), 
+				resources->GetString(L"preferredNodes.Items181"), resources->GetString(L"preferredNodes.Items182"), resources->GetString(L"preferredNodes.Items183"), 
+				resources->GetString(L"preferredNodes.Items184"), resources->GetString(L"preferredNodes.Items185"), resources->GetString(L"preferredNodes.Items186"), 
+				resources->GetString(L"preferredNodes.Items187"), resources->GetString(L"preferredNodes.Items188"), resources->GetString(L"preferredNodes.Items189"), 
+				resources->GetString(L"preferredNodes.Items190"), resources->GetString(L"preferredNodes.Items191"), resources->GetString(L"preferredNodes.Items192"), 
+				resources->GetString(L"preferredNodes.Items193"), resources->GetString(L"preferredNodes.Items194"), resources->GetString(L"preferredNodes.Items195"), 
+				resources->GetString(L"preferredNodes.Items196"), resources->GetString(L"preferredNodes.Items197"), resources->GetString(L"preferredNodes.Items198"), 
+				resources->GetString(L"preferredNodes.Items199"), resources->GetString(L"preferredNodes.Items200"), resources->GetString(L"preferredNodes.Items201"), 
+				resources->GetString(L"preferredNodes.Items202"), resources->GetString(L"preferredNodes.Items203"), resources->GetString(L"preferredNodes.Items204"), 
+				resources->GetString(L"preferredNodes.Items205"), resources->GetString(L"preferredNodes.Items206"), resources->GetString(L"preferredNodes.Items207"), 
+				resources->GetString(L"preferredNodes.Items208"), resources->GetString(L"preferredNodes.Items209"), resources->GetString(L"preferredNodes.Items210"), 
+				resources->GetString(L"preferredNodes.Items211"), resources->GetString(L"preferredNodes.Items212"), resources->GetString(L"preferredNodes.Items213"), 
+				resources->GetString(L"preferredNodes.Items214"), resources->GetString(L"preferredNodes.Items215"), resources->GetString(L"preferredNodes.Items216"), 
+				resources->GetString(L"preferredNodes.Items217"), resources->GetString(L"preferredNodes.Items218"), resources->GetString(L"preferredNodes.Items219"), 
+				resources->GetString(L"preferredNodes.Items220"), resources->GetString(L"preferredNodes.Items221"), resources->GetString(L"preferredNodes.Items222"), 
+				resources->GetString(L"preferredNodes.Items223"), resources->GetString(L"preferredNodes.Items224"), resources->GetString(L"preferredNodes.Items225"), 
+				resources->GetString(L"preferredNodes.Items226"), resources->GetString(L"preferredNodes.Items227"), resources->GetString(L"preferredNodes.Items228"), 
+				resources->GetString(L"preferredNodes.Items229"), resources->GetString(L"preferredNodes.Items230"), resources->GetString(L"preferredNodes.Items231"), 
+				resources->GetString(L"preferredNodes.Items232"), resources->GetString(L"preferredNodes.Items233"), resources->GetString(L"preferredNodes.Items234"), 
+				resources->GetString(L"preferredNodes.Items235"), resources->GetString(L"preferredNodes.Items236"), resources->GetString(L"preferredNodes.Items237"), 
+				resources->GetString(L"preferredNodes.Items238"), resources->GetString(L"preferredNodes.Items239")});
 			this->preferredNodes->Name = L"preferredNodes";
-			this->preferredNodes->Size = System::Drawing::Size(65, 244);
-			this->preferredNodes->TabIndex = 0;
 			// 
 			// shapeContainer2
 			// 
-			this->shapeContainer2->Location = System::Drawing::Point(3, 3);
-			this->shapeContainer2->Margin = System::Windows::Forms::Padding(0);
+			resources->ApplyResources(this->shapeContainer2, L"shapeContainer2");
 			this->shapeContainer2->Name = L"shapeContainer2";
 			this->shapeContainer2->Shapes->AddRange(gcnew cli::array< Microsoft::VisualBasic::PowerPacks::Shape^  >(1) {this->lineShape2});
-			this->shapeContainer2->Size = System::Drawing::Size(262, 278);
-			this->shapeContainer2->TabIndex = 2;
 			this->shapeContainer2->TabStop = false;
 			// 
 			// lineShape2
 			// 
-			this->lineShape2->BorderColor = System::Drawing::SystemColors::Highlight;
+			resources->ApplyResources(this->lineShape2, L"lineShape2");
 			this->lineShape2->Name = L"lineShape2";
-			this->lineShape2->X1 = 104;
-			this->lineShape2->X2 = 258;
-			this->lineShape2->Y1 = 11;
-			this->lineShape2->Y2 = 11;
 			// 
 			// tabPage3
 			// 
+			resources->ApplyResources(this->tabPage3, L"tabPage3");
 			this->tabPage3->Controls->Add(this->label13);
 			this->tabPage3->Controls->Add(this->label12);
 			this->tabPage3->Controls->Add(this->opacitySelect);
@@ -384,240 +464,146 @@ namespace GeoLock {
 			this->tabPage3->Controls->Add(this->controlPort);
 			this->tabPage3->Controls->Add(this->label10);
 			this->tabPage3->Controls->Add(this->label9);
-			this->tabPage3->Controls->Add(this->label8);
 			this->tabPage3->Controls->Add(this->label7);
 			this->tabPage3->Controls->Add(this->updateIn);
 			this->tabPage3->Controls->Add(this->label6);
 			this->tabPage3->Controls->Add(this->label5);
 			this->tabPage3->Controls->Add(this->shapeContainer3);
-			this->tabPage3->Location = System::Drawing::Point(4, 22);
 			this->tabPage3->Name = L"tabPage3";
-			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage3->Size = System::Drawing::Size(268, 284);
-			this->tabPage3->TabIndex = 2;
-			this->tabPage3->Text = L"Advanced";
 			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
 			// label13
 			// 
-			this->label13->AutoSize = true;
-			this->label13->Location = System::Drawing::Point(119, 206);
+			resources->ApplyResources(this->label13, L"label13");
 			this->label13->Name = L"label13";
-			this->label13->Size = System::Drawing::Size(15, 13);
-			this->label13->TabIndex = 15;
-			this->label13->Text = L"%";
 			// 
 			// label12
 			// 
-			this->label12->AutoSize = true;
-			this->label12->Location = System::Drawing::Point(27, 205);
+			resources->ApplyResources(this->label12, L"label12");
 			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(43, 13);
-			this->label12->TabIndex = 14;
-			this->label12->Text = L"Opacity";
 			// 
 			// opacitySelect
 			// 
-			this->opacitySelect->Location = System::Drawing::Point(76, 203);
+			resources->ApplyResources(this->opacitySelect, L"opacitySelect");
 			this->opacitySelect->Name = L"opacitySelect";
-			this->opacitySelect->Size = System::Drawing::Size(43, 20);
-			this->opacitySelect->TabIndex = 13;
 			this->opacitySelect->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) {100, 0, 0, 0});
 			// 
 			// taskBar
 			// 
-			this->taskBar->AutoSize = true;
-			this->taskBar->Location = System::Drawing::Point(29, 180);
+			resources->ApplyResources(this->taskBar, L"taskBar");
 			this->taskBar->Name = L"taskBar";
-			this->taskBar->Size = System::Drawing::Size(160, 17);
-			this->taskBar->TabIndex = 12;
-			this->taskBar->Text = L"Show icon in the system tray";
 			this->taskBar->UseVisualStyleBackColor = true;
 			// 
 			// ontop
 			// 
-			this->ontop->AutoSize = true;
-			this->ontop->Location = System::Drawing::Point(29, 156);
+			resources->ApplyResources(this->ontop, L"ontop");
 			this->ontop->Name = L"ontop";
-			this->ontop->Size = System::Drawing::Size(167, 17);
-			this->ontop->TabIndex = 11;
-			this->ontop->Text = L"Keep on top of other windows";
 			this->ontop->UseVisualStyleBackColor = true;
 			// 
 			// label11
 			// 
-			this->label11->AutoSize = true;
-			this->label11->Location = System::Drawing::Point(7, 135);
+			resources->ApplyResources(this->label11, L"label11");
 			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(112, 13);
-			this->label11->TabIndex = 10;
-			this->label11->Text = L"Behavior/Appearance";
 			// 
 			// checkBox1
 			// 
-			this->checkBox1->AutoSize = true;
-			this->checkBox1->Location = System::Drawing::Point(29, 60);
+			resources->ApplyResources(this->checkBox1, L"checkBox1");
 			this->checkBox1->Name = L"checkBox1";
-			this->checkBox1->Size = System::Drawing::Size(218, 17);
-			this->checkBox1->TabIndex = 5;
-			this->checkBox1->Text = L"Force new identity even if conditions met";
 			this->checkBox1->UseVisualStyleBackColor = true;
 			// 
 			// defaultButton
 			// 
-			this->defaultButton->Location = System::Drawing::Point(187, 255);
+			resources->ApplyResources(this->defaultButton, L"defaultButton");
 			this->defaultButton->Name = L"defaultButton";
-			this->defaultButton->Size = System::Drawing::Size(75, 23);
-			this->defaultButton->TabIndex = 9;
-			this->defaultButton->Text = L"Defaults";
 			this->defaultButton->UseVisualStyleBackColor = true;
 			this->defaultButton->Click += gcnew System::EventHandler(this, &ExitNode::defaultButton_Click);
 			// 
 			// controlPort
 			// 
-			this->controlPort->Location = System::Drawing::Point(82, 106);
+			resources->ApplyResources(this->controlPort, L"controlPort");
 			this->controlPort->Name = L"controlPort";
-			this->controlPort->Size = System::Drawing::Size(76, 20);
-			this->controlPort->TabIndex = 8;
 			// 
 			// label10
 			// 
-			this->label10->AutoSize = true;
-			this->label10->Location = System::Drawing::Point(14, 109);
+			resources->ApplyResources(this->label10, L"label10");
 			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(65, 13);
-			this->label10->TabIndex = 7;
-			this->label10->Text = L"Control Port:";
 			// 
 			// label9
 			// 
-			this->label9->AutoSize = true;
-			this->label9->Location = System::Drawing::Point(7, 82);
+			resources->ApplyResources(this->label9, L"label9");
 			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(61, 13);
-			this->label9->TabIndex = 6;
-			this->label9->Text = L"Connection";
-			// 
-			// label8
-			// 
-			this->label8->AutoSize = true;
-			this->label8->Location = System::Drawing::Point(95, 61);
-			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(146, 13);
-			this->label8->TabIndex = 5;
-			this->label8->Text = L"(Requires restart of GeoLock)";
 			// 
 			// label7
 			// 
-			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(178, 36);
+			resources->ApplyResources(this->label7, L"label7");
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(88, 13);
-			this->label7->TabIndex = 4;
-			this->label7->Text = L"minute(s). [1-300]";
 			// 
 			// updateIn
 			// 
-			this->updateIn->Location = System::Drawing::Point(98, 33);
+			resources->ApplyResources(this->updateIn, L"updateIn");
 			this->updateIn->Name = L"updateIn";
-			this->updateIn->Size = System::Drawing::Size(76, 20);
-			this->updateIn->TabIndex = 3;
 			// 
 			// label6
 			// 
-			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(11, 36);
+			resources->ApplyResources(this->label6, L"label6");
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(84, 13);
-			this->label6->TabIndex = 2;
-			this->label6->Text = L"Update IP every";
 			// 
 			// label5
 			// 
-			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(7, 7);
+			resources->ApplyResources(this->label5, L"label5");
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(95, 13);
-			this->label5->TabIndex = 0;
-			this->label5->Text = L"Update Frequency";
 			// 
 			// shapeContainer3
 			// 
-			this->shapeContainer3->Location = System::Drawing::Point(3, 3);
-			this->shapeContainer3->Margin = System::Windows::Forms::Padding(0);
+			resources->ApplyResources(this->shapeContainer3, L"shapeContainer3");
 			this->shapeContainer3->Name = L"shapeContainer3";
 			this->shapeContainer3->Shapes->AddRange(gcnew cli::array< Microsoft::VisualBasic::PowerPacks::Shape^  >(3) {this->lineShape5, 
 				this->lineShape4, this->lineShape3});
-			this->shapeContainer3->Size = System::Drawing::Size(262, 278);
-			this->shapeContainer3->TabIndex = 1;
 			this->shapeContainer3->TabStop = false;
 			// 
 			// lineShape5
 			// 
-			this->lineShape5->BorderColor = System::Drawing::SystemColors::Highlight;
+			resources->ApplyResources(this->lineShape5, L"lineShape5");
 			this->lineShape5->Name = L"lineShape5";
-			this->lineShape5->X1 = 119;
-			this->lineShape5->X2 = 258;
-			this->lineShape5->Y1 = 140;
-			this->lineShape5->Y2 = 140;
 			// 
 			// lineShape4
 			// 
-			this->lineShape4->BorderColor = System::Drawing::SystemColors::Highlight;
+			resources->ApplyResources(this->lineShape4, L"lineShape4");
 			this->lineShape4->Name = L"lineShape4";
-			this->lineShape4->X1 = 65;
-			this->lineShape4->X2 = 258;
-			this->lineShape4->Y1 = 87;
-			this->lineShape4->Y2 = 87;
 			// 
 			// lineShape3
 			// 
-			this->lineShape3->BorderColor = System::Drawing::SystemColors::Highlight;
+			resources->ApplyResources(this->lineShape3, L"lineShape3");
 			this->lineShape3->Name = L"lineShape3";
-			this->lineShape3->X1 = 101;
-			this->lineShape3->X2 = 258;
-			this->lineShape3->Y1 = 11;
-			this->lineShape3->Y2 = 11;
 			// 
 			// okButton
 			// 
-			this->okButton->Location = System::Drawing::Point(121, 321);
+			resources->ApplyResources(this->okButton, L"okButton");
 			this->okButton->Name = L"okButton";
-			this->okButton->Size = System::Drawing::Size(75, 23);
-			this->okButton->TabIndex = 5;
-			this->okButton->Text = L"OK";
 			this->okButton->UseVisualStyleBackColor = true;
 			this->okButton->Click += gcnew System::EventHandler(this, &ExitNode::okButton_Click);
 			// 
 			// cancelButton
 			// 
+			resources->ApplyResources(this->cancelButton, L"cancelButton");
 			this->cancelButton->DialogResult = System::Windows::Forms::DialogResult::Cancel;
-			this->cancelButton->Location = System::Drawing::Point(202, 321);
 			this->cancelButton->Name = L"cancelButton";
-			this->cancelButton->Size = System::Drawing::Size(75, 23);
-			this->cancelButton->TabIndex = 6;
-			this->cancelButton->Text = L"Cancel";
 			this->cancelButton->UseVisualStyleBackColor = true;
 			this->cancelButton->Click += gcnew System::EventHandler(this, &ExitNode::cancelButton_Click);
 			// 
 			// ExitNode
 			// 
 			this->AcceptButton = this->okButton;
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->CancelButton = this->cancelButton;
-			this->ClientSize = System::Drawing::Size(287, 351);
 			this->Controls->Add(this->cancelButton);
 			this->Controls->Add(this->okButton);
 			this->Controls->Add(this->tabControl1);
-			this->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(L"$this.Icon")));
 			this->MaximizeBox = false;
-			this->MaximumSize = System::Drawing::Size(303, 389);
 			this->MinimizeBox = false;
-			this->MinimumSize = System::Drawing::Size(303, 389);
 			this->Name = L"ExitNode";
 			this->ShowInTaskbar = false;
-			this->Text = L"GeoLock Configuration";
 			this->tabControl1->ResumeLayout(false);
 			this->tabPage1->ResumeLayout(false);
 			this->tabPage1->PerformLayout();

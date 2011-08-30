@@ -353,222 +353,166 @@ namespace GeoLock {
 			// 
 			// menuStrip1
 			// 
+			resources->ApplyResources(this->menuStrip1, L"menuStrip1");
 			this->menuStrip1->BackColor = System::Drawing::SystemColors::Control;
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {this->fileToolStripMenuItem, 
 				this->settingsToolStripMenuItem});
-			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(303, 24);
-			this->menuStrip1->TabIndex = 0;
-			this->menuStrip1->Text = L"menuStrip1";
 			// 
 			// fileToolStripMenuItem
 			// 
+			resources->ApplyResources(this->fileToolStripMenuItem, L"fileToolStripMenuItem");
 			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {this->forceUpdateToolStripMenuItem, 
 				this->exitToolStripMenuItem});
 			this->fileToolStripMenuItem->Name = L"fileToolStripMenuItem";
-			this->fileToolStripMenuItem->Size = System::Drawing::Size(37, 20);
-			this->fileToolStripMenuItem->Text = L"File";
 			// 
 			// forceUpdateToolStripMenuItem
 			// 
+			resources->ApplyResources(this->forceUpdateToolStripMenuItem, L"forceUpdateToolStripMenuItem");
 			this->forceUpdateToolStripMenuItem->Name = L"forceUpdateToolStripMenuItem";
-			this->forceUpdateToolStripMenuItem->ShortcutKeyDisplayString = L"F5";
-			this->forceUpdateToolStripMenuItem->ShortcutKeys = System::Windows::Forms::Keys::F5;
-			this->forceUpdateToolStripMenuItem->Size = System::Drawing::Size(162, 22);
-			this->forceUpdateToolStripMenuItem->Text = L"Force Update";
-			this->forceUpdateToolStripMenuItem->ToolTipText = L"Forces a new identity";
 			this->forceUpdateToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::forceUpdateToolStripMenuItem_Click);
 			// 
 			// exitToolStripMenuItem
 			// 
+			resources->ApplyResources(this->exitToolStripMenuItem, L"exitToolStripMenuItem");
 			this->exitToolStripMenuItem->Name = L"exitToolStripMenuItem";
-			this->exitToolStripMenuItem->ShortcutKeyDisplayString = L"Alt+F4";
-			this->exitToolStripMenuItem->Size = System::Drawing::Size(162, 22);
-			this->exitToolStripMenuItem->Text = L"Exit";
 			this->exitToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::exitToolStripMenuItem_Click);
 			// 
 			// settingsToolStripMenuItem
 			// 
+			resources->ApplyResources(this->settingsToolStripMenuItem, L"settingsToolStripMenuItem");
 			this->settingsToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) {this->excludeExitNodesToolStripMenuItem});
 			this->settingsToolStripMenuItem->Name = L"settingsToolStripMenuItem";
-			this->settingsToolStripMenuItem->Size = System::Drawing::Size(61, 20);
-			this->settingsToolStripMenuItem->Text = L"Settings";
 			// 
 			// excludeExitNodesToolStripMenuItem
 			// 
+			resources->ApplyResources(this->excludeExitNodesToolStripMenuItem, L"excludeExitNodesToolStripMenuItem");
 			this->excludeExitNodesToolStripMenuItem->Name = L"excludeExitNodesToolStripMenuItem";
-			this->excludeExitNodesToolStripMenuItem->Size = System::Drawing::Size(156, 22);
-			this->excludeExitNodesToolStripMenuItem->Text = L"Configuration...";
 			this->excludeExitNodesToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::excludeExitNodesToolStripMenuItem_Click);
 			// 
 			// excludeList
 			// 
+			resources->ApplyResources(this->excludeList, L"excludeList");
 			this->excludeList->AutoEllipsis = true;
-			this->excludeList->Location = System::Drawing::Point(12, 32);
 			this->excludeList->Name = L"excludeList";
-			this->excludeList->Size = System::Drawing::Size(279, 13);
-			this->excludeList->TabIndex = 2;
-			this->excludeList->Text = L"Exclude: ";
 			// 
 			// preferNodes
 			// 
+			resources->ApplyResources(this->preferNodes, L"preferNodes");
 			this->preferNodes->AutoEllipsis = true;
-			this->preferNodes->Location = System::Drawing::Point(12, 58);
 			this->preferNodes->Name = L"preferNodes";
-			this->preferNodes->Size = System::Drawing::Size(279, 13);
-			this->preferNodes->TabIndex = 3;
-			this->preferNodes->Text = L"Prefer:";
 			// 
 			// timer
 			// 
 			this->timer->Enabled = true;
-			this->timer->Interval = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["updateFreq"])*60*1000);
+			this->timer->Interval = 300000;
 			this->timer->Tick += gcnew System::EventHandler(this, &GeoLockWin::GeoLockWin_Load);
 			// 
 			// timeStamp
 			// 
-			this->timeStamp->AutoSize = true;
-			this->timeStamp->Location = System::Drawing::Point(12, 82);
+			resources->ApplyResources(this->timeStamp, L"timeStamp");
 			this->timeStamp->Name = L"timeStamp";
-			this->timeStamp->Size = System::Drawing::Size(77, 13);
-			this->timeStamp->TabIndex = 4;
-			this->timeStamp->Text = L"Last Updated: ";
 			// 
 			// toolStrip1
 			// 
-			this->toolStrip1->Dock = System::Windows::Forms::DockStyle::Bottom;
+			resources->ApplyResources(this->toolStrip1, L"toolStrip1");
 			this->toolStrip1->GripStyle = System::Windows::Forms::ToolStripGripStyle::Hidden;
 			this->toolStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(6) {this->toolStripLabel1, 
 				this->toolStripSeparator1, this->toolStripLabel2, this->toolStripButton1, this->toolStripButton2, this->torStatusIcon});
-			this->toolStrip1->Location = System::Drawing::Point(0, 106);
 			this->toolStrip1->Name = L"toolStrip1";
 			this->toolStrip1->RenderMode = System::Windows::Forms::ToolStripRenderMode::Professional;
-			this->toolStrip1->Size = System::Drawing::Size(303, 25);
-			this->toolStrip1->TabIndex = 6;
-			this->toolStrip1->Text = L"toolStrip1";
 			// 
 			// toolStripLabel1
 			// 
+			resources->ApplyResources(this->toolStripLabel1, L"toolStripLabel1");
 			this->toolStripLabel1->Name = L"toolStripLabel1";
-			this->toolStripLabel1->Size = System::Drawing::Size(22, 22);
-			this->toolStripLabel1->Text = L"IP: ";
 			// 
 			// toolStripSeparator1
 			// 
+			resources->ApplyResources(this->toolStripSeparator1, L"toolStripSeparator1");
 			this->toolStripSeparator1->Name = L"toolStripSeparator1";
-			this->toolStripSeparator1->Size = System::Drawing::Size(6, 25);
 			// 
 			// toolStripLabel2
 			// 
+			resources->ApplyResources(this->toolStripLabel2, L"toolStripLabel2");
 			this->toolStripLabel2->Name = L"toolStripLabel2";
-			this->toolStripLabel2->Size = System::Drawing::Size(0, 22);
 			// 
 			// toolStripButton1
 			// 
+			resources->ApplyResources(this->toolStripButton1, L"toolStripButton1");
 			this->toolStripButton1->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"toolStripButton1.Image")));
-			this->toolStripButton1->ImageScaling = System::Windows::Forms::ToolStripItemImageScaling::None;
-			this->toolStripButton1->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->toolStripButton1->Name = L"toolStripButton1";
-			this->toolStripButton1->Size = System::Drawing::Size(23, 22);
 			// 
 			// toolStripButton2
 			// 
+			resources->ApplyResources(this->toolStripButton2, L"toolStripButton2");
 			this->toolStripButton2->Alignment = System::Windows::Forms::ToolStripItemAlignment::Right;
 			this->toolStripButton2->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"toolStripButton2.Image")));
-			this->toolStripButton2->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->toolStripButton2->Name = L"toolStripButton2";
-			this->toolStripButton2->Size = System::Drawing::Size(23, 22);
-			this->toolStripButton2->Text = L"toolStripButton2";
 			// 
 			// torStatusIcon
 			// 
+			resources->ApplyResources(this->torStatusIcon, L"torStatusIcon");
 			this->torStatusIcon->Alignment = System::Windows::Forms::ToolStripItemAlignment::Right;
 			this->torStatusIcon->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"torStatusIcon.Image")));
-			this->torStatusIcon->ImageTransparentColor = System::Drawing::Color::Magenta;
 			this->torStatusIcon->Name = L"torStatusIcon";
-			this->torStatusIcon->Size = System::Drawing::Size(23, 22);
-			this->torStatusIcon->Text = L"toolStripButton3";
 			// 
 			// shapeContainer1
 			// 
-			this->shapeContainer1->Location = System::Drawing::Point(0, 0);
-			this->shapeContainer1->Margin = System::Windows::Forms::Padding(0);
+			resources->ApplyResources(this->shapeContainer1, L"shapeContainer1");
 			this->shapeContainer1->Name = L"shapeContainer1";
 			this->shapeContainer1->Shapes->AddRange(gcnew cli::array< Microsoft::VisualBasic::PowerPacks::Shape^  >(2) {this->lineShape2, 
 				this->lineShape1});
-			this->shapeContainer1->Size = System::Drawing::Size(303, 131);
-			this->shapeContainer1->TabIndex = 7;
 			this->shapeContainer1->TabStop = false;
 			// 
 			// lineShape2
 			// 
-			this->lineShape2->BorderColor = System::Drawing::SystemColors::ActiveCaption;
+			resources->ApplyResources(this->lineShape2, L"lineShape2");
 			this->lineShape2->Name = L"lineShape2";
-			this->lineShape2->X1 = -1;
-			this->lineShape2->X2 = 303;
-			this->lineShape2->Y1 = 24;
-			this->lineShape2->Y2 = 24;
 			// 
 			// lineShape1
 			// 
-			this->lineShape1->BorderColor = System::Drawing::SystemColors::ActiveCaption;
+			resources->ApplyResources(this->lineShape1, L"lineShape1");
 			this->lineShape1->Name = L"lineShape1";
-			this->lineShape1->X1 = -1;
-			this->lineShape1->X2 = 303;
-			this->lineShape1->Y1 = 105;
-			this->lineShape1->Y2 = 105;
 			// 
 			// notifyIcon1
 			// 
+			resources->ApplyResources(this->notifyIcon1, L"notifyIcon1");
 			this->notifyIcon1->ContextMenuStrip = this->contextMenuStrip1;
-			this->notifyIcon1->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(L"notifyIcon1.Icon")));
-			this->notifyIcon1->Text = L"GeoLock";
-			this->notifyIcon1->Visible = true;
 			this->notifyIcon1->DoubleClick += gcnew System::EventHandler(this, &GeoLockWin::notifyIcon1_DoubleClick);
 			// 
 			// contextMenuStrip1
 			// 
+			resources->ApplyResources(this->contextMenuStrip1, L"contextMenuStrip1");
 			this->contextMenuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {this->toolStripMenuItem1, 
 				this->toolStripMenuItem2});
 			this->contextMenuStrip1->Name = L"contextMenuStrip1";
-			this->contextMenuStrip1->Size = System::Drawing::Size(144, 48);
 			// 
 			// toolStripMenuItem1
 			// 
+			resources->ApplyResources(this->toolStripMenuItem1, L"toolStripMenuItem1");
 			this->toolStripMenuItem1->Name = L"toolStripMenuItem1";
-			this->toolStripMenuItem1->Size = System::Drawing::Size(143, 22);
-			this->toolStripMenuItem1->Text = L"Force Update";
 			this->toolStripMenuItem1->Click += gcnew System::EventHandler(this, &GeoLockWin::forceUpdateToolStripMenuItem_Click);
 			// 
 			// toolStripMenuItem2
 			// 
+			resources->ApplyResources(this->toolStripMenuItem2, L"toolStripMenuItem2");
 			this->toolStripMenuItem2->Name = L"toolStripMenuItem2";
-			this->toolStripMenuItem2->Size = System::Drawing::Size(143, 22);
-			this->toolStripMenuItem2->Text = L"Exit";
 			this->toolStripMenuItem2->Click += gcnew System::EventHandler(this, &GeoLockWin::exitToolStripMenuItem_Click);
 			// 
 			// GeoLockWin
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(303, 131);
 			this->Controls->Add(this->toolStrip1);
 			this->Controls->Add(this->timeStamp);
 			this->Controls->Add(this->preferNodes);
 			this->Controls->Add(this->excludeList);
 			this->Controls->Add(this->menuStrip1);
 			this->Controls->Add(this->shapeContainer1);
-			this->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(L"$this.Icon")));
 			this->MainMenuStrip = this->menuStrip1;
 			this->MaximizeBox = false;
-			this->MaximumSize = System::Drawing::Size(319, 169);
-			this->MinimumSize = System::Drawing::Size(319, 169);
 			this->Name = L"GeoLockWin";
-			this->Text = L"GeoLock";
 			this->Load += gcnew System::EventHandler(this, &GeoLockWin::GeoLockWin_Load);
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
