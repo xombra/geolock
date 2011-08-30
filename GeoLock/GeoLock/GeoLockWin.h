@@ -251,7 +251,7 @@ namespace GeoLock {
 				this->toolStripButton1->Text = "unknown";
 			}
 			if (ipFull != "ERROR") this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(ct)));
-			this->notifyIcon1->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(ct + "1")));
+			this->notifyIcon1->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject("$this.Icon")));
 			try {
 				this->notifyIcon1->Text = ip + " | " + ct + "\n" + host->HostName;
 			}
