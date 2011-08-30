@@ -464,4 +464,22 @@
         AACAAwAAgAMAAMAHAADABwAA8B8AAPx/AAA=
 </value>
   </data>
+  <data name="Comm" xml:space="preserve">
+    <value>Fehler: Kann nicht mit Tor zu kommunizieren! Control-Port Problem?</value>
+  </data>
+  <data name="Err" xml:space="preserve">
+    <value>Fehler: Tor läuft nicht oder nicht richtig konfiguriert!</value>
+  </data>
+  <data name="Torcookie" xml:space="preserve">
+    <value>Fehler: Tor ist mit Cookie-Authentifizierung!</value>
+  </data>
+  <data name="TorOK" xml:space="preserve">
+    <value>Tor OK</value>
+  </data>
+  <data name="Torpw" xml:space="preserve">
+    <value>Fehler: Tor ist mit einem Passwort!</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Error: Unknown</value>
+  </data>
 </root>

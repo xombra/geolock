@@ -143,27 +143,27 @@ namespace GeoLock {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
 			switch (checkTorrc()) {
 			case 0:
-				this->torStatusIcon->Text = "Tor OK";
+				this->torStatusIcon->Text = resources->GetString(L"TorOK");
 				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("good")));
 				break;
 			case 1:
-				this->torStatusIcon->Text = "Error: Tor is using a password!";
+				this->torStatusIcon->Text = resources->GetString(L"Torpw");
 				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
 				break;
 			case 2:
-				this->torStatusIcon->Text = "Error: Tor is using cookie authentication!";
+				this->torStatusIcon->Text = resources->GetString(L"Torcookie");
 				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
 				break;
 			case 3:
-				this->torStatusIcon->Text = "Error: Tor is not running or is not properly configured!";
+				this->torStatusIcon->Text = resources->GetString(L"Err");
 				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("fatal")));
 				break;
 			case 4:
-				this->torStatusIcon->Text = "Error: Unable to communicate with Tor! Control port issue?";
+				this->torStatusIcon->Text = resources->GetString(L"Comm");
 				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
 				break;
 			case 99:
-				this->torStatusIcon->Text = "Error: Unknown";
+				this->torStatusIcon->Text = resources->GetString(L"Unknown");
 				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
 				break;
 			}
@@ -183,7 +183,7 @@ namespace GeoLock {
 			}
 			else {
 				resources->ApplyResources(this->excludeList, L"excludeList");
-				this->excludeList->Text += "-";
+				this->excludeList->Text += " -";
 			}
 			if (managedExit->Length > 0) {
 				resources->ApplyResources(this->preferNodes, L"preferNodes");
