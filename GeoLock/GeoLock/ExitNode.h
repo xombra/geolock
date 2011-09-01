@@ -103,7 +103,6 @@ namespace GeoLock {
 	private: System::Windows::Forms::TextBox^  updateIn;
 	private: System::Windows::Forms::Label^  label6;
 	private: System::Windows::Forms::CheckBox^  checkBox1;
-
 	private: System::Windows::Forms::Label^  label9;
 	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape4;
 	private: System::Windows::Forms::TextBox^  controlPort;
@@ -705,8 +704,6 @@ private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^
 			 }
 			 //if port is larger than valid port numbers, revert to default port
 			 if (port > 65535) port = 9051;
-
-			 if (port < 1024) MessageBox::Show("Using port numbers below 1024 can cause conflicts. If you experience connectivity issues, try increasing the control port number","Warning");
 
 			 //write control port
 			 config->AppSettings->Settings->Remove("controlPort");
