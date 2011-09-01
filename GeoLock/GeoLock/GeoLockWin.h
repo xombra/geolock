@@ -419,7 +419,7 @@ namespace GeoLock {
 			// timer
 			// 
 			this->timer->Enabled = true;
-			this->timer->Interval = 300000;
+			this->timer->Interval = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["updateFreq"])*60*1000);
 			this->timer->Tick += gcnew System::EventHandler(this, &GeoLockWin::GeoLockWin_Load);
 			// 
 			// timeStamp
