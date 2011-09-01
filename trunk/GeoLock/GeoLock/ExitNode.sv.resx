@@ -117,115 +117,127 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Uteslutna Noder</value>
+  </data>
   <data name="clearAll.Text" xml:space="preserve">
-    <value>全部清除</value>
+    <value>Ta bort alla</value>
   </data>
   <data name="selectAll.Text" xml:space="preserve">
-    <value>全选</value>
+    <value>Markera alla</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>GeoLock将排除在这些国家的出口节点时，选择出口节点。
+    <value>GeoLock kommer att utesluta ur noder i dessa länder när man väljer en exit nod.
 
-注：在试图寻找新的出口节点，GeoLock可能访问这些国家内的的节点。但是，它将继续搜索，直到找到一个国家，不排除。</value>
+Obs: Vid försök att hitta en ny exit nod, kan GeoLock besöka noder som ligger inom dessa länder. Det kommer dock att fortsätta att söka tills den hittar ett land som inte är utesluten.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 13</value>
+    <value>102, 13</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>排除在外的国家</value>
-  </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>排除节点</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>GeoLock将只使用在这些国家的出口节点时，选择出口节点。
-
-注：在试图寻找新的出口节点，GeoLock可能访问其他国家内的的节点。但是，它将继续搜索，直到找到一个国家是首选。</value>
-  </data>
-  <data name="ClearAllPre.Text" xml:space="preserve">
-    <value>全部清除</value>
-  </data>
-  <data name="SelectAllPre.Text" xml:space="preserve">
-    <value>全选</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 13</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>首选国家</value>
+    <value>Exkluderade Länder</value>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
-    <value>首选的节点</value>
+    <value>Prioriterade Noder</value>
   </data>
-  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 13</value>
+  <data name="label4.Text" xml:space="preserve">
+    <value>GeoLock kommer endast att använda exit-noder i dessa länder när man väljer en exit nod.
+
+Obs: Vid försök att hitta en ny exit nod, kan GeoLock besöka noder belägna inom andra länder. Det kommer dock att fortsätta att söka tills den hittar ett land som är att föredra.</value>
   </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>不透明度</value>
+  <data name="ClearAllPre.Text" xml:space="preserve">
+    <value>Ta bort alla</value>
   </data>
-  <data name="taskBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 17</value>
+  <data name="SelectAllPre.Text" xml:space="preserve">
+    <value>Markera alla</value>
   </data>
-  <data name="taskBar.Text" xml:space="preserve">
-    <value>在系统托盘中显示图标</value>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 13</value>
   </data>
-  <data name="ontop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 17</value>
-  </data>
-  <data name="ontop.Text" xml:space="preserve">
-    <value>请其他窗口的顶部</value>
-  </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 13</value>
-  </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>行为/外观</value>
-  </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 17</value>
-  </data>
-  <data name="checkBox1.Text" xml:space="preserve">
-    <value>成立新的身份，即使条件符合</value>
-  </data>
-  <data name="defaultButton.Text" xml:space="preserve">
-    <value>默认</value>
-  </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 13</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>控制端口：</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 13</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>连接</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 13</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>分钟. [1-300]</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 13</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>更新IP每</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 13</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>更新频率</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Prioriterade Länder</value>
   </data>
   <data name="tabPage3.Text" xml:space="preserve">
-    <value>高级</value>
+    <value>Avancerade</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Opacitet</value>
+  </data>
+  <data name="taskBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 17</value>
+  </data>
+  <data name="taskBar.Text" xml:space="preserve">
+    <value>Visa ikon i aktivitetsfältet</value>
+  </data>
+  <data name="ontop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 17</value>
+  </data>
+  <data name="ontop.Text" xml:space="preserve">
+    <value>Håll ovanpå andra fönster</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 13</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Beteende / Utseende</value>
+  </data>
+  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 17</value>
+  </data>
+  <data name="checkBox1.Text" xml:space="preserve">
+    <value>Force ny identitet, även om villkoren uppfylls</value>
+  </data>
+  <data name="defaultButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 255</value>
+  </data>
+  <data name="defaultButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 23</value>
+  </data>
+  <data name="defaultButton.Text" xml:space="preserve">
+    <value>Standardvärden</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Kontroll Port:</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Anslutning</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>minuter. [1-300]</value>
+  </data>
+  <data name="updateIn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 33</value>
+  </data>
+  <data name="updateIn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 20</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 13</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Uppdatera IP varje</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 13</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Uppdateringsfrekvens</value>
   </data>
   <data name="cancelButton.Text" xml:space="preserve">
-    <value>取消</value>
+    <value>Avbryt</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -484,6 +496,6 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>GeoLock配置</value>
+    <value>GeoLock Konfiguration</value>
   </data>
 </root>

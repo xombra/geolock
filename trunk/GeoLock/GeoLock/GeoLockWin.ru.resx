@@ -124,6 +124,9 @@
   <data name="forceUpdateToolStripMenuItem.Text" xml:space="preserve">
     <value>Форсировать обновление</value>
   </data>
+  <data name="forceUpdateToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Силами новой идентичности</value>
+  </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 22</value>
   </data>
@@ -460,26 +463,5 @@
         8w7///8A////AP///wD///8A////AP+BAAD4AQAA4AEAAMABAADAAQAAgAEAAIABAAAAAQAAAAEAAAAB
         AACAAwAAgAMAAMAHAADABwAA8B8AAPx/AAA=
 </value>
-  </data>
-  <data name="Comm" xml:space="preserve">
-    <value>Ошибка: не удалось связаться с Tor! Управление порта вопросу?</value>
-  </data>
-  <data name="Err" xml:space="preserve">
-    <value>Ошибка: Tor не работает или не правильно настроен!</value>
-  </data>
-  <data name="forceUpdateToolStripMenuItem.ToolTipText" xml:space="preserve">
-    <value>Силами новой идентичности</value>
-  </data>
-  <data name="Torcookie" xml:space="preserve">
-    <value>Ошибка: Tor использует куки аутентификации!</value>
-  </data>
-  <data name="TorOK" xml:space="preserve">
-    <value>Tor OK</value>
-  </data>
-  <data name="Torpw" xml:space="preserve">
-    <value>Ошибка: Tor использует пароль!</value>
-  </data>
-  <data name="Unknown" xml:space="preserve">
-    <value>Ошибка: Неизвестно</value>
   </data>
 </root>
