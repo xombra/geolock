@@ -606,6 +606,9 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ExitNode.ar.resx">
+      <DependentUpon>ExitNode.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExitNode.de-DE.resx">
       <DependentUpon>ExitNode.h</DependentUpon>
     </EmbeddedResource>
@@ -615,7 +618,13 @@
     <EmbeddedResource Include="ExitNode.es-ES.resx">
       <DependentUpon>ExitNode.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ExitNode.fr.resx">
+      <DependentUpon>ExitNode.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExitNode.ja.resx">
+      <DependentUpon>ExitNode.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitNode.pt.resx">
       <DependentUpon>ExitNode.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExitNode.resx">
@@ -624,11 +633,17 @@
     <EmbeddedResource Include="ExitNode.ru.resx">
       <DependentUpon>ExitNode.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ExitNode.sv.resx">
+      <DependentUpon>ExitNode.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExitNode.zh-Hans.resx">
       <DependentUpon>ExitNode.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExitNode.zh-Hant.resx">
       <DependentUpon>ExitNode.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeoLockWin.ar.resx">
+      <DependentUpon>GeoLockWin.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GeoLockWin.de-DE.resx">
       <DependentUpon>GeoLockWin.h</DependentUpon>
@@ -639,7 +654,13 @@
     <EmbeddedResource Include="GeoLockWin.es-ES.resx">
       <DependentUpon>GeoLockWin.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GeoLockWin.fr.resx">
+      <DependentUpon>GeoLockWin.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GeoLockWin.ja.resx">
+      <DependentUpon>GeoLockWin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeoLockWin.pt.resx">
       <DependentUpon>GeoLockWin.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GeoLockWin.resX">
@@ -647,6 +668,9 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GeoLockWin.ru.resx">
+      <DependentUpon>GeoLockWin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeoLockWin.sv.resx">
       <DependentUpon>GeoLockWin.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GeoLockWin.zh-Hans.resx">

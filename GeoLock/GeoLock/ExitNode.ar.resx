@@ -117,115 +117,124 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>استبعاد العقد</value>
+  </data>
   <data name="clearAll.Text" xml:space="preserve">
-    <value>全部清除</value>
+    <value>مسح جميع</value>
   </data>
   <data name="selectAll.Text" xml:space="preserve">
-    <value>全选</value>
+    <value>حدد الكل</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>GeoLock将排除在这些国家的出口节点时，选择出口节点。
+    <value>وسوف تستبعد GeoLock العقد الخروج في هذه البلدان عند اختيار عقدة الخروج.
 
-注：在试图寻找新的出口节点，GeoLock可能访问这些国家内的的节点。但是，它将继续搜索，直到找到一个国家，不排除。</value>
+ملاحظة : على الرغم من محاولة لإيجاد مخرج عقدة جديدة ، قد يزور GeoLock العقد الموجود داخل هذه البلدان. ومع ذلك ، فإنه يواصل البحث حتى يجد هذا البلد الذي ليس مستبعدا.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 13</value>
+    <value>73, 13</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>排除在外的国家</value>
-  </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>排除节点</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>GeoLock将只使用在这些国家的出口节点时，选择出口节点。
-
-注：在试图寻找新的出口节点，GeoLock可能访问其他国家内的的节点。但是，它将继续搜索，直到找到一个国家是首选。</value>
-  </data>
-  <data name="ClearAllPre.Text" xml:space="preserve">
-    <value>全部清除</value>
-  </data>
-  <data name="SelectAllPre.Text" xml:space="preserve">
-    <value>全选</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 13</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>首选国家</value>
+    <value>استبعاد البلدان</value>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
-    <value>首选的节点</value>
+    <value>فضل العقد</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>وسوف تستخدم فقط GeoLock العقد الخروج في هذه البلدان عند اختيار عقدة الخروج.
+
+ملاحظة : على الرغم من محاولة لإيجاد مخرج عقدة جديدة ، قد يزور GeoLock العقد الموجود داخل البلدان الأخرى. ومع ذلك ، فإنه يواصل البحث حتى يجد هذا البلد الذي هو المفض</value>
+  </data>
+  <data name="ClearAllPre.Text" xml:space="preserve">
+    <value>مسح جميع</value>
+  </data>
+  <data name="SelectAllPre.Text" xml:space="preserve">
+    <value>حدد الكل</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>فضلت بلدان</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>متقدم</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 13</value>
+    <value>36, 13</value>
   </data>
   <data name="label12.Text" xml:space="preserve">
-    <value>不透明度</value>
+    <value>غموض</value>
   </data>
   <data name="taskBar.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 17</value>
   </data>
   <data name="taskBar.Text" xml:space="preserve">
-    <value>在系统托盘中显示图标</value>
+    <value>إظهار الرمز في علبة النظام</value>
   </data>
   <data name="ontop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 17</value>
+    <value>173, 17</value>
   </data>
   <data name="ontop.Text" xml:space="preserve">
-    <value>请其他窗口的顶部</value>
+    <value>تبقي على أعلى الإطارات الأخرى</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 13</value>
+    <value>79, 13</value>
   </data>
   <data name="label11.Text" xml:space="preserve">
-    <value>行为/外观</value>
+    <value>السلوك / المظهر</value>
   </data>
   <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 17</value>
+    <value>207, 17</value>
   </data>
   <data name="checkBox1.Text" xml:space="preserve">
-    <value>成立新的身份，即使条件符合</value>
+    <value>قوة هوية جديدة حتى لو اجتمعت الشروط</value>
   </data>
   <data name="defaultButton.Text" xml:space="preserve">
-    <value>默认</value>
+    <value>تخلف</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 13</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>控制端口：</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 13</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>连接</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 13</value>
   </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>ميناء السيطرة</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 13</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>صلة</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>分钟. [1-300]</value>
+    <value>دقائق</value>
+  </data>
+  <data name="updateIn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 33</value>
+  </data>
+  <data name="updateIn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 20</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 13</value>
+    <value>103, 13</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>更新IP每</value>
+    <value>تحديث الملكية الفكرية</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 13</value>
+    <value>63, 13</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>更新频率</value>
+    <value>تحديث التردد</value>
   </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>高级</value>
+  <data name="okButton.Text" xml:space="preserve">
+    <value>موافق</value>
   </data>
   <data name="cancelButton.Text" xml:space="preserve">
-    <value>取消</value>
+    <value>إلغاء</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -484,6 +493,6 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>GeoLock配置</value>
+    <value>GeoLock التكوين</value>
   </data>
 </root>
