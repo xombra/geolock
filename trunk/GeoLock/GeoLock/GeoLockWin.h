@@ -38,7 +38,7 @@ System::String ^ getPrettyDate(SYSTEMTIME lt) {
 }
 
 //open telnet connection to localhost to tell Tor to update connections
-bool getNewIdentity() {
+void getNewIdentity() {
 	//load control port from app.config
 	int controlPort = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["controlPort"]));
 	//build connection
@@ -63,10 +63,8 @@ bool getNewIdentity() {
 	}
 	catch (Exception^ ex) {
 		cP = true;
-		return false;
 	}
 	cP = false;
-	return true;
 }
 
 //function to update IP address via wipmania's API and return either error or stream input
@@ -128,6 +126,7 @@ namespace GeoLock {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::Threading;
 
 	public ref class GeoLockWin : public System::Windows::Forms::Form
 	{
