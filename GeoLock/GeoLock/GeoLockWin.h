@@ -73,9 +73,9 @@ System::String^ updateIP() {
 	//random number must be appended to URL to ensure IP is current
 	//as wipmania's API does not have correct refresh information
 	srand(time(NULL));
+	String^ in = "";
 	int random = rand()%1000 + 1;
 	String^ ipURL = "http://api.wipmania.com/?" + random;
-	String^ in = "";
 	Uri^ siteUri = gcnew Uri(ipURL);
 	try {
 		//attempt to open connection (via Tor proxy specified in app.config) to wipmania
@@ -127,6 +127,7 @@ namespace GeoLock {
 	using namespace System::Data;
 	using namespace System::Drawing;
 	using namespace System::Threading;
+	using namespace System::Runtime::InteropServices;
 
 	public ref class GeoLockWin : public System::Windows::Forms::Form
 	{
@@ -244,7 +245,8 @@ namespace GeoLock {
 		bool updateIPandDisplay() {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
 			//call backend updateIP() function and capture HTML formatted IP address
-			String^ ipFull = updateIP(); String ^ip,^ct;
+			String^ ipFull = updateIP();
+			String ^ip,^ct;
 			//if IP was obtainable
 			if (ipFull != "ERROR") {
 				//convert HTML formatted IP and country code to useable elements

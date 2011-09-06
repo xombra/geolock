@@ -25,6 +25,8 @@ namespace GeoLock {
 			String^ stayOnTop = System::Configuration::ConfigurationManager::AppSettings["persist"];
 			String^ opacity = System::Configuration::ConfigurationManager::AppSettings["opacity"];
 			String^ taskbar = System::Configuration::ConfigurationManager::AppSettings["taskbar"];
+			String^ logging = System::Configuration::ConfigurationManager::AppSettings["logging"];
+			String^ advOut = System::Configuration::ConfigurationManager::AppSettings["advancedOutput"];
 
 			//convert comma delimited list into array
 			array<String^>^ excludedList = managedExcluded->Split(',');
@@ -65,6 +67,16 @@ namespace GeoLock {
 			if (taskbar == "true") {
 				this->taskBar->Checked = true;
 				this->taskBar->CheckState = System::Windows::Forms::CheckState::Checked;
+			}
+			//set logging checkbox
+			if (logging == "true") {
+				this->loggingCheck->Checked = true;
+				this->loggingCheck->CheckState = System::Windows::Forms::CheckState::Checked;
+			}
+			//set advOut checkbox
+			if (advOut == "true") {
+				this->advOutput->Checked = true;
+				this->advOutput->CheckState = System::Windows::Forms::CheckState::Checked;
 			}
 		}
 
@@ -116,6 +128,10 @@ namespace GeoLock {
 	private: System::Windows::Forms::Label^  label13;
 	private: System::Windows::Forms::Label^  label12;
 	private: System::Windows::Forms::NumericUpDown^  opacitySelect;
+private: System::Windows::Forms::CheckBox^  loggingCheck;
+private: System::Windows::Forms::CheckBox^  advOutput;
+
+
 	private: System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
@@ -140,6 +156,7 @@ namespace GeoLock {
 			this->shapeContainer2 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
 			this->lineShape2 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->loggingCheck = (gcnew System::Windows::Forms::CheckBox());
 			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->opacitySelect = (gcnew System::Windows::Forms::NumericUpDown());
@@ -161,6 +178,7 @@ namespace GeoLock {
 			this->lineShape3 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->okButton = (gcnew System::Windows::Forms::Button());
 			this->cancelButton = (gcnew System::Windows::Forms::Button());
+			this->advOutput = (gcnew System::Windows::Forms::CheckBox());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
@@ -170,7 +188,6 @@ namespace GeoLock {
 			// 
 			// excludedNodes
 			// 
-			resources->ApplyResources(this->excludedNodes, L"excludedNodes");
 			this->excludedNodes->CheckOnClick = true;
 			this->excludedNodes->FormattingEnabled = true;
 			this->excludedNodes->Items->AddRange(gcnew cli::array< System::Object^  >(240) {resources->GetString(L"excludedNodes.Items"), 
@@ -254,26 +271,27 @@ namespace GeoLock {
 				resources->GetString(L"excludedNodes.Items232"), resources->GetString(L"excludedNodes.Items233"), resources->GetString(L"excludedNodes.Items234"), 
 				resources->GetString(L"excludedNodes.Items235"), resources->GetString(L"excludedNodes.Items236"), resources->GetString(L"excludedNodes.Items237"), 
 				resources->GetString(L"excludedNodes.Items238"), resources->GetString(L"excludedNodes.Items239")});
+			resources->ApplyResources(this->excludedNodes, L"excludedNodes");
 			this->excludedNodes->Name = L"excludedNodes";
 			// 
 			// tabControl1
 			// 
-			resources->ApplyResources(this->tabControl1, L"tabControl1");
 			this->tabControl1->Controls->Add(this->tabPage1);
 			this->tabControl1->Controls->Add(this->tabPage2);
 			this->tabControl1->Controls->Add(this->tabPage3);
+			resources->ApplyResources(this->tabControl1, L"tabControl1");
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
 			// 
 			// tabPage1
 			// 
-			resources->ApplyResources(this->tabPage1, L"tabPage1");
 			this->tabPage1->Controls->Add(this->clearAll);
 			this->tabPage1->Controls->Add(this->selectAll);
 			this->tabPage1->Controls->Add(this->label2);
 			this->tabPage1->Controls->Add(this->label1);
 			this->tabPage1->Controls->Add(this->excludedNodes);
 			this->tabPage1->Controls->Add(this->shapeContainer1);
+			resources->ApplyResources(this->tabPage1, L"tabPage1");
 			this->tabPage1->Name = L"tabPage1";
 			this->tabPage1->UseVisualStyleBackColor = true;
 			// 
@@ -315,13 +333,13 @@ namespace GeoLock {
 			// 
 			// tabPage2
 			// 
-			resources->ApplyResources(this->tabPage2, L"tabPage2");
 			this->tabPage2->Controls->Add(this->label4);
 			this->tabPage2->Controls->Add(this->ClearAllPre);
 			this->tabPage2->Controls->Add(this->SelectAllPre);
 			this->tabPage2->Controls->Add(this->label3);
 			this->tabPage2->Controls->Add(this->preferredNodes);
 			this->tabPage2->Controls->Add(this->shapeContainer2);
+			resources->ApplyResources(this->tabPage2, L"tabPage2");
 			this->tabPage2->Name = L"tabPage2";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
@@ -351,7 +369,6 @@ namespace GeoLock {
 			// 
 			// preferredNodes
 			// 
-			resources->ApplyResources(this->preferredNodes, L"preferredNodes");
 			this->preferredNodes->CheckOnClick = true;
 			this->preferredNodes->FormattingEnabled = true;
 			this->preferredNodes->Items->AddRange(gcnew cli::array< System::Object^  >(240) {resources->GetString(L"preferredNodes.Items"), 
@@ -435,6 +452,7 @@ namespace GeoLock {
 				resources->GetString(L"preferredNodes.Items232"), resources->GetString(L"preferredNodes.Items233"), resources->GetString(L"preferredNodes.Items234"), 
 				resources->GetString(L"preferredNodes.Items235"), resources->GetString(L"preferredNodes.Items236"), resources->GetString(L"preferredNodes.Items237"), 
 				resources->GetString(L"preferredNodes.Items238"), resources->GetString(L"preferredNodes.Items239")});
+			resources->ApplyResources(this->preferredNodes, L"preferredNodes");
 			this->preferredNodes->Name = L"preferredNodes";
 			// 
 			// shapeContainer2
@@ -451,7 +469,8 @@ namespace GeoLock {
 			// 
 			// tabPage3
 			// 
-			resources->ApplyResources(this->tabPage3, L"tabPage3");
+			this->tabPage3->Controls->Add(this->advOutput);
+			this->tabPage3->Controls->Add(this->loggingCheck);
 			this->tabPage3->Controls->Add(this->label13);
 			this->tabPage3->Controls->Add(this->label12);
 			this->tabPage3->Controls->Add(this->opacitySelect);
@@ -468,8 +487,15 @@ namespace GeoLock {
 			this->tabPage3->Controls->Add(this->label6);
 			this->tabPage3->Controls->Add(this->label5);
 			this->tabPage3->Controls->Add(this->shapeContainer3);
+			resources->ApplyResources(this->tabPage3, L"tabPage3");
 			this->tabPage3->Name = L"tabPage3";
 			this->tabPage3->UseVisualStyleBackColor = true;
+			// 
+			// loggingCheck
+			// 
+			resources->ApplyResources(this->loggingCheck, L"loggingCheck");
+			this->loggingCheck->Name = L"loggingCheck";
+			this->loggingCheck->UseVisualStyleBackColor = true;
 			// 
 			// label13
 			// 
@@ -584,11 +610,17 @@ namespace GeoLock {
 			// 
 			// cancelButton
 			// 
-			resources->ApplyResources(this->cancelButton, L"cancelButton");
 			this->cancelButton->DialogResult = System::Windows::Forms::DialogResult::Cancel;
+			resources->ApplyResources(this->cancelButton, L"cancelButton");
 			this->cancelButton->Name = L"cancelButton";
 			this->cancelButton->UseVisualStyleBackColor = true;
 			this->cancelButton->Click += gcnew System::EventHandler(this, &ExitNode::cancelButton_Click);
+			// 
+			// advOutput
+			// 
+			resources->ApplyResources(this->advOutput, L"advOutput");
+			this->advOutput->Name = L"advOutput";
+			this->advOutput->UseVisualStyleBackColor = true;
 			// 
 			// ExitNode
 			// 
@@ -692,6 +724,14 @@ private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^
 			 config->AppSettings->Settings->Remove("taskbar");
 			 if (this->taskBar->Checked) config->AppSettings->Settings->Add("taskbar","true");
 			 else config->AppSettings->Settings->Add("taskbar","false");
+			 //write logging boolean
+			 config->AppSettings->Settings->Remove("logging");
+			 if (this->loggingCheck->Checked) config->AppSettings->Settings->Add("logging","true");
+			 else config->AppSettings->Settings->Add("logging","false");
+			 //write advOut boolean
+			 config->AppSettings->Settings->Remove("advancedOutput");
+			 if (this->advOutput->Checked) config->AppSettings->Settings->Add("advancedOutput","true");
+			 else config->AppSettings->Settings->Add("advancedOutput","false");
 			 //temporary control port to prevent the user from doing anything strange
 			 int port = 0;
 			 try {
@@ -728,6 +768,8 @@ private: System::Void defaultButton_Click(System::Object^  sender, System::Event
 			 this->ontop->Checked = false;
 			 this->opacitySelect->Value = 100;
 			 this->taskBar->Checked = false;
+			 this->loggingCheck->Checked = false;
+			 this->advOutput->Checked = false;
 		 }
 };
 }
