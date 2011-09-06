@@ -9,6 +9,7 @@
 #include <iostream>
 #include <fstream>
 #include <istream>
+#include <process.h>
 
 	using namespace System;
 	using namespace System::Text;
