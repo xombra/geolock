@@ -156,6 +156,7 @@ private: System::Windows::Forms::CheckBox^  advOutput;
 			this->shapeContainer2 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
 			this->lineShape2 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->advOutput = (gcnew System::Windows::Forms::CheckBox());
 			this->loggingCheck = (gcnew System::Windows::Forms::CheckBox());
 			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->label12 = (gcnew System::Windows::Forms::Label());
@@ -178,7 +179,6 @@ private: System::Windows::Forms::CheckBox^  advOutput;
 			this->lineShape3 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->okButton = (gcnew System::Windows::Forms::Button());
 			this->cancelButton = (gcnew System::Windows::Forms::Button());
-			this->advOutput = (gcnew System::Windows::Forms::CheckBox());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
@@ -491,6 +491,12 @@ private: System::Windows::Forms::CheckBox^  advOutput;
 			this->tabPage3->Name = L"tabPage3";
 			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
+			// advOutput
+			// 
+			resources->ApplyResources(this->advOutput, L"advOutput");
+			this->advOutput->Name = L"advOutput";
+			this->advOutput->UseVisualStyleBackColor = true;
+			// 
 			// loggingCheck
 			// 
 			resources->ApplyResources(this->loggingCheck, L"loggingCheck");
@@ -615,12 +621,6 @@ private: System::Windows::Forms::CheckBox^  advOutput;
 			this->cancelButton->Name = L"cancelButton";
 			this->cancelButton->UseVisualStyleBackColor = true;
 			this->cancelButton->Click += gcnew System::EventHandler(this, &ExitNode::cancelButton_Click);
-			// 
-			// advOutput
-			// 
-			resources->ApplyResources(this->advOutput, L"advOutput");
-			this->advOutput->Name = L"advOutput";
-			this->advOutput->UseVisualStyleBackColor = true;
 			// 
 			// ExitNode
 			// 

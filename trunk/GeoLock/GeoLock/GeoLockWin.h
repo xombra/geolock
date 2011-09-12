@@ -69,6 +69,9 @@ void getNewIdentity() {
 
 //function to update IP address via wipmania's API and return either error or stream input
 System::String^ updateIP() {
+	//load logging boolean
+	String^ logging = System::Configuration::ConfigurationManager::AppSettings["logging"];
+	bool log = (logging == "true");
 	WebClient^ myWebClient = gcnew WebClient;
 	//random number must be appended to URL to ensure IP is current
 	//as wipmania's API does not have correct refresh information
@@ -86,6 +89,13 @@ System::String^ updateIP() {
 		torUP = true;
 		//return HTML formatted IP string similar to:
 		//###.###.###.###<br>US
+		if (log) {
+			StreamWriter^ pwriter = gcnew StreamWriter("Identity_Log.txt",true);
+			SYSTEMTIME lt;
+			GetLocalTime(&lt);
+			pwriter->WriteLine("[IP_Update @" + getPrettyDate(lt) + "] - " + getIP(in) + "|" + getCountry(in));
+			pwriter->Close();
+		}
 		return in;
 	}
 	catch (WebException ^ex) {
@@ -134,6 +144,8 @@ namespace GeoLock {
 	public:
 		GeoLockWin(void)
 		{
+			String^ advOut = System::Configuration::ConfigurationManager::AppSettings["advancedOutput"];
+			if (advOut == "true") AllocConsole();
 			InitializeComponent();
 			reinitialize();
 		}
@@ -172,11 +184,18 @@ namespace GeoLock {
 		void reinitialize() {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
 			//load excluded and preferred nodes from app.config
+			String^ advOut = System::Configuration::ConfigurationManager::AppSettings["advancedOutput"];
+			bool adv = (advOut == "true");
 			String^ managedExclude = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
 			String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
 			String^ stayOnTop = System::Configuration::ConfigurationManager::AppSettings["persist"];
 			String^ taskbar = System::Configuration::ConfigurationManager::AppSettings["taskbar"];
 			//update their corresponding visual elements
+			if (adv) {
+				SYSTEMTIME lt;
+				GetLocalTime(&lt);
+				Console::Write("[" + getPrettyDate(lt) + "]: " + "Loading excluded nodes...");
+				}
 			if (managedExclude->Length > 0) {
 				resources->ApplyResources(this->excludeList, L"excludeList");
 				this->excludeList->Text += managedExclude;
@@ -184,6 +203,12 @@ namespace GeoLock {
 			else {
 				resources->ApplyResources(this->excludeList, L"excludeList");
 				this->excludeList->Text += " -";
+			}
+			if (adv) Console::WriteLine("Complete");
+			if (adv) {
+				SYSTEMTIME lt;
+				GetLocalTime(&lt);
+				Console::Write("[" + getPrettyDate(lt) + "]: " + "Loading preferred nodes...");
 			}
 			if (managedExit->Length > 0) {
 				resources->ApplyResources(this->preferNodes, L"preferNodes");
@@ -193,6 +218,7 @@ namespace GeoLock {
 				resources->ApplyResources(this->preferNodes, L"preferNodes");
 				this->preferNodes->Text += " -";
 			}
+			if (adv) Console::WriteLine("Complete");
 			if (stayOnTop == "true") this->TopMost = true;
 			else this->TopMost = false;
 			if (taskbar == "true") this->notifyIcon1->Visible = true;
@@ -244,6 +270,13 @@ namespace GeoLock {
 		//function to call backend updateIP() and update the visual elements accordingly
 		bool updateIPandDisplay() {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
+			String^ advOut = System::Configuration::ConfigurationManager::AppSettings["advancedOutput"];
+			bool adv = (advOut == "true");
+			if (adv) {
+				SYSTEMTIME lt;
+				GetLocalTime(&lt);
+				Console::Write("[" + getPrettyDate(lt) + "]: " + "Attempting to Update IP...");
+			}
 			//call backend updateIP() function and capture HTML formatted IP address
 			String^ ipFull = updateIP();
 			String ^ip,^ct;
@@ -252,11 +285,17 @@ namespace GeoLock {
 				//convert HTML formatted IP and country code to useable elements
 				ip = getIP(ipFull);
 				ct = getCountry(ipFull);
+				if (adv) {
+					Console::WriteLine("Complete");
+					Console::WriteLine("\tIP: " + ip);
+					Console::WriteLine("\tGeo: " + ct);
+				}
 			}
 			else {
 				//if IP was not obtainable, display ?'s
 				ip = "??.??.??.??";
 				ct = "??";
+				if (adv) Console::WriteLine("FAIL");
 			}
 			updateTorIcon();
 			//get current system time to display when the IP was last updated
@@ -274,9 +313,11 @@ namespace GeoLock {
 			try {
 				host = Dns::GetHostEntry(ip);
 				this->toolStripButton1->Text = host->HostName;
+				if (adv) Console::WriteLine("\tHost: " + host->HostName);
 			}
 			catch (Exception^ ex) {
 				this->toolStripButton1->Text = "???";
+				if (adv) Console::WriteLine("\tHost: unknown");
 			}
 			//set flag icon
 			if (ipFull != "ERROR") this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(ct)));
@@ -292,9 +333,15 @@ namespace GeoLock {
 			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
 			this->toolStripButton2->Text = acceptState;
 			//IP address updated and it is acceptable
-			if (acceptState == "Locked") return true;
+			if (acceptState == "Locked") {
+				if (adv) Console::WriteLine("\tState: Good");
+				return true;
+			}
 			//or it was updated and is not acceptable
-			else return false;
+			else {
+				if (adv) Console::WriteLine("\tState: Bad");
+				return false;
+			}
 		}
 
 	protected:
