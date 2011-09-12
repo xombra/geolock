@@ -1047,11 +1047,38 @@
   <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="checkBox2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 79</value>
+  </data>
+  <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 17</value>
+  </data>
+  <data name="checkBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="checkBox2.Text" xml:space="preserve">
+    <value>Lookup hostname</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
+    <value>checkBox2</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="advOutput.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="advOutput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 220</value>
+    <value>29, 236</value>
   </data>
   <data name="advOutput.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 17</value>
@@ -1072,13 +1099,13 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;advOutput.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="loggingCheck.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="loggingCheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 199</value>
+    <value>29, 215</value>
   </data>
   <data name="loggingCheck.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 17</value>
@@ -1099,13 +1126,13 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;loggingCheck.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 244</value>
+    <value>119, 260</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 13</value>
@@ -1126,13 +1153,13 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 243</value>
+    <value>27, 259</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 13</value>
@@ -1153,10 +1180,10 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="opacitySelect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 241</value>
+    <value>76, 257</value>
   </data>
   <data name="opacitySelect.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 20</value>
@@ -1174,13 +1201,13 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;opacitySelect.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="taskBar.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="taskBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 178</value>
+    <value>29, 194</value>
   </data>
   <data name="taskBar.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 17</value>
@@ -1201,13 +1228,13 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;taskBar.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="ontop.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="ontop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 156</value>
+    <value>29, 172</value>
   </data>
   <data name="ontop.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 17</value>
@@ -1228,13 +1255,13 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;ontop.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 135</value>
+    <value>7, 151</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 13</value>
@@ -1255,13 +1282,13 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 60</value>
+    <value>29, 59</value>
   </data>
   <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>218, 17</value>
@@ -1282,7 +1309,7 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="defaultButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>187, 255</value>
@@ -1306,10 +1333,10 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;defaultButton.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="controlPort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 106</value>
+    <value>82, 122</value>
   </data>
   <data name="controlPort.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 20</value>
@@ -1327,13 +1354,13 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;controlPort.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 109</value>
+    <value>14, 125</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 13</value>
@@ -1354,13 +1381,13 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 82</value>
+    <value>7, 98</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 13</value>
@@ -1381,7 +1408,7 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1408,7 +1435,7 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="updateIn.Location" type="System.Drawing.Point, System.Drawing">
     <value>98, 33</value>
@@ -1429,7 +1456,7 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;updateIn.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1456,7 +1483,7 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1483,22 +1510,22 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <metadata name="lineShape5.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>119, 140, 139, 0</value>
+    <value>119, 155, 139, 0</value>
   </metadata>
   <metadata name="lineShape5.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>119, 140</value>
+    <value>119, 155</value>
   </metadata>
   <metadata name="lineShape5.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>139, 0</value>
   </metadata>
   <metadata name="lineShape4.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>65, 87, 193, 0</value>
+    <value>65, 102, 193, 0</value>
   </metadata>
   <metadata name="lineShape4.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>65, 87</value>
+    <value>65, 102</value>
   </metadata>
   <metadata name="lineShape4.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>193, 0</value>
@@ -1534,7 +1561,7 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;shapeContainer3.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -2642,10 +2669,10 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
     <value>11</value>
   </data>
   <metadata name="lineShape5.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>119, 140, 139, 0</value>
+    <value>119, 155, 139, 0</value>
   </metadata>
   <metadata name="lineShape5.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>119, 140</value>
+    <value>119, 155</value>
   </metadata>
   <metadata name="lineShape5.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>139, 0</value>
@@ -2660,16 +2687,16 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
     <value>258</value>
   </data>
   <data name="lineShape5.Y1" type="System.Int32, mscorlib">
-    <value>140</value>
+    <value>155</value>
   </data>
   <data name="lineShape5.Y2" type="System.Int32, mscorlib">
-    <value>140</value>
+    <value>155</value>
   </data>
   <metadata name="lineShape4.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>65, 87, 193, 0</value>
+    <value>65, 102, 193, 0</value>
   </metadata>
   <metadata name="lineShape4.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>65, 87</value>
+    <value>65, 102</value>
   </metadata>
   <metadata name="lineShape4.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>193, 0</value>
@@ -2684,10 +2711,10 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
     <value>258</value>
   </data>
   <data name="lineShape4.Y1" type="System.Int32, mscorlib">
-    <value>87</value>
+    <value>102</value>
   </data>
   <data name="lineShape4.Y2" type="System.Int32, mscorlib">
-    <value>87</value>
+    <value>102</value>
   </data>
   <metadata name="lineShape3.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>101, 11, 157, 0</value>
