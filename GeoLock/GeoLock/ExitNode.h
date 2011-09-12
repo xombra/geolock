@@ -130,6 +130,7 @@ namespace GeoLock {
 	private: System::Windows::Forms::NumericUpDown^  opacitySelect;
 private: System::Windows::Forms::CheckBox^  loggingCheck;
 private: System::Windows::Forms::CheckBox^  advOutput;
+private: System::Windows::Forms::CheckBox^  checkBox2;
 
 
 	private: System::ComponentModel::Container ^components;
@@ -179,6 +180,7 @@ private: System::Windows::Forms::CheckBox^  advOutput;
 			this->lineShape3 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->okButton = (gcnew System::Windows::Forms::Button());
 			this->cancelButton = (gcnew System::Windows::Forms::Button());
+			this->checkBox2 = (gcnew System::Windows::Forms::CheckBox());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
@@ -469,6 +471,7 @@ private: System::Windows::Forms::CheckBox^  advOutput;
 			// 
 			// tabPage3
 			// 
+			this->tabPage3->Controls->Add(this->checkBox2);
 			this->tabPage3->Controls->Add(this->advOutput);
 			this->tabPage3->Controls->Add(this->loggingCheck);
 			this->tabPage3->Controls->Add(this->label13);
@@ -621,6 +624,12 @@ private: System::Windows::Forms::CheckBox^  advOutput;
 			this->cancelButton->Name = L"cancelButton";
 			this->cancelButton->UseVisualStyleBackColor = true;
 			this->cancelButton->Click += gcnew System::EventHandler(this, &ExitNode::cancelButton_Click);
+			// 
+			// checkBox2
+			// 
+			resources->ApplyResources(this->checkBox2, L"checkBox2");
+			this->checkBox2->Name = L"checkBox2";
+			this->checkBox2->UseVisualStyleBackColor = true;
 			// 
 			// ExitNode
 			// 
