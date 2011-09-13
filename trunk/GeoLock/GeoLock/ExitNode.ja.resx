@@ -173,8 +173,26 @@
   <data name="tabPage3.Text" xml:space="preserve">
     <value>高度な</value>
   </data>
+  <data name="lookupHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 17</value>
+  </data>
+  <data name="lookupHost.Text" xml:space="preserve">
+    <value>ホスト名のルックアップ</value>
+  </data>
+  <data name="advOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 17</value>
+  </data>
+  <data name="advOutput.Text" xml:space="preserve">
+    <value>高度な出力（英語）を表示</value>
+  </data>
+  <data name="loggingCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 17</value>
+  </data>
+  <data name="loggingCheck.Text" xml:space="preserve">
+    <value>ロギングを有効にする</value>
+  </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 206</value>
+    <value>133, 261</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -183,7 +201,7 @@
     <value>不透明度</value>
   </data>
   <data name="opacitySelect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 203</value>
+    <value>88, 258</value>
   </data>
   <data name="taskBar.Size" type="System.Drawing.Size, System.Drawing">
     <value>186, 17</value>
@@ -203,11 +221,11 @@
   <data name="label11.Text" xml:space="preserve">
     <value>行動/外観</value>
   </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 17</value>
+  <data name="forceIdent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 17</value>
   </data>
-  <data name="checkBox1.Text" xml:space="preserve">
-    <value>条件が満たされていても強制的に新しいのID</value>
+  <data name="forceIdent.Text" xml:space="preserve">
+    <value>フォースの新しいアイデンティティー</value>
   </data>
   <data name="defaultButton.Text" xml:space="preserve">
     <value>デフォルトの</value>

@@ -27,6 +27,7 @@ namespace GeoLock {
 			String^ taskbar = System::Configuration::ConfigurationManager::AppSettings["taskbar"];
 			String^ logging = System::Configuration::ConfigurationManager::AppSettings["logging"];
 			String^ advOut = System::Configuration::ConfigurationManager::AppSettings["advancedOutput"];
+			String^ host = System::Configuration::ConfigurationManager::AppSettings["hostLookup"];
 
 			//convert comma delimited list into array
 			array<String^>^ excludedList = managedExcluded->Split(',');
@@ -55,8 +56,8 @@ namespace GeoLock {
 
 			//set forceUpdate checkbox
 			if (forceUpdate == "true") {
-				this->checkBox1->Checked = true;
-				this->checkBox1->CheckState = System::Windows::Forms::CheckState::Checked;
+				this->forceIdent->Checked = true;
+				this->forceIdent->CheckState = System::Windows::Forms::CheckState::Checked;
 			}
 			//set stayOnTop checkbox
 			if (stayOnTop == "true") {
@@ -77,6 +78,11 @@ namespace GeoLock {
 			if (advOut == "true") {
 				this->advOutput->Checked = true;
 				this->advOutput->CheckState = System::Windows::Forms::CheckState::Checked;
+			}
+			//set hostLookup checkbox
+			if (host == "true") {
+				this->lookupHost->Checked = true;
+				this->lookupHost->CheckState = System::Windows::Forms::CheckState::Checked;
 			}
 		}
 
@@ -114,7 +120,7 @@ namespace GeoLock {
 	private: System::Windows::Forms::Label^  label7;
 	private: System::Windows::Forms::TextBox^  updateIn;
 	private: System::Windows::Forms::Label^  label6;
-	private: System::Windows::Forms::CheckBox^  checkBox1;
+	private: System::Windows::Forms::CheckBox^  forceIdent;
 	private: System::Windows::Forms::Label^  label9;
 	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape4;
 	private: System::Windows::Forms::TextBox^  controlPort;
@@ -128,11 +134,9 @@ namespace GeoLock {
 	private: System::Windows::Forms::Label^  label13;
 	private: System::Windows::Forms::Label^  label12;
 	private: System::Windows::Forms::NumericUpDown^  opacitySelect;
-private: System::Windows::Forms::CheckBox^  loggingCheck;
-private: System::Windows::Forms::CheckBox^  advOutput;
-private: System::Windows::Forms::CheckBox^  checkBox2;
-
-
+	private: System::Windows::Forms::CheckBox^  loggingCheck;
+	private: System::Windows::Forms::CheckBox^  advOutput;
+	private: System::Windows::Forms::CheckBox^  lookupHost;
 	private: System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
@@ -157,6 +161,7 @@ private: System::Windows::Forms::CheckBox^  checkBox2;
 			this->shapeContainer2 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
 			this->lineShape2 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->lookupHost = (gcnew System::Windows::Forms::CheckBox());
 			this->advOutput = (gcnew System::Windows::Forms::CheckBox());
 			this->loggingCheck = (gcnew System::Windows::Forms::CheckBox());
 			this->label13 = (gcnew System::Windows::Forms::Label());
@@ -165,7 +170,7 @@ private: System::Windows::Forms::CheckBox^  checkBox2;
 			this->taskBar = (gcnew System::Windows::Forms::CheckBox());
 			this->ontop = (gcnew System::Windows::Forms::CheckBox());
 			this->label11 = (gcnew System::Windows::Forms::Label());
-			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
+			this->forceIdent = (gcnew System::Windows::Forms::CheckBox());
 			this->defaultButton = (gcnew System::Windows::Forms::Button());
 			this->controlPort = (gcnew System::Windows::Forms::TextBox());
 			this->label10 = (gcnew System::Windows::Forms::Label());
@@ -180,7 +185,6 @@ private: System::Windows::Forms::CheckBox^  checkBox2;
 			this->lineShape3 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->okButton = (gcnew System::Windows::Forms::Button());
 			this->cancelButton = (gcnew System::Windows::Forms::Button());
-			this->checkBox2 = (gcnew System::Windows::Forms::CheckBox());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
@@ -190,6 +194,7 @@ private: System::Windows::Forms::CheckBox^  checkBox2;
 			// 
 			// excludedNodes
 			// 
+			resources->ApplyResources(this->excludedNodes, L"excludedNodes");
 			this->excludedNodes->CheckOnClick = true;
 			this->excludedNodes->FormattingEnabled = true;
 			this->excludedNodes->Items->AddRange(gcnew cli::array< System::Object^  >(240) {resources->GetString(L"excludedNodes.Items"), 
@@ -273,27 +278,26 @@ private: System::Windows::Forms::CheckBox^  checkBox2;
 				resources->GetString(L"excludedNodes.Items232"), resources->GetString(L"excludedNodes.Items233"), resources->GetString(L"excludedNodes.Items234"), 
 				resources->GetString(L"excludedNodes.Items235"), resources->GetString(L"excludedNodes.Items236"), resources->GetString(L"excludedNodes.Items237"), 
 				resources->GetString(L"excludedNodes.Items238"), resources->GetString(L"excludedNodes.Items239")});
-			resources->ApplyResources(this->excludedNodes, L"excludedNodes");
 			this->excludedNodes->Name = L"excludedNodes";
 			// 
 			// tabControl1
 			// 
+			resources->ApplyResources(this->tabControl1, L"tabControl1");
 			this->tabControl1->Controls->Add(this->tabPage1);
 			this->tabControl1->Controls->Add(this->tabPage2);
 			this->tabControl1->Controls->Add(this->tabPage3);
-			resources->ApplyResources(this->tabControl1, L"tabControl1");
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
 			// 
 			// tabPage1
 			// 
+			resources->ApplyResources(this->tabPage1, L"tabPage1");
 			this->tabPage1->Controls->Add(this->clearAll);
 			this->tabPage1->Controls->Add(this->selectAll);
 			this->tabPage1->Controls->Add(this->label2);
 			this->tabPage1->Controls->Add(this->label1);
 			this->tabPage1->Controls->Add(this->excludedNodes);
 			this->tabPage1->Controls->Add(this->shapeContainer1);
-			resources->ApplyResources(this->tabPage1, L"tabPage1");
 			this->tabPage1->Name = L"tabPage1";
 			this->tabPage1->UseVisualStyleBackColor = true;
 			// 
@@ -335,13 +339,13 @@ private: System::Windows::Forms::CheckBox^  checkBox2;
 			// 
 			// tabPage2
 			// 
+			resources->ApplyResources(this->tabPage2, L"tabPage2");
 			this->tabPage2->Controls->Add(this->label4);
 			this->tabPage2->Controls->Add(this->ClearAllPre);
 			this->tabPage2->Controls->Add(this->SelectAllPre);
 			this->tabPage2->Controls->Add(this->label3);
 			this->tabPage2->Controls->Add(this->preferredNodes);
 			this->tabPage2->Controls->Add(this->shapeContainer2);
-			resources->ApplyResources(this->tabPage2, L"tabPage2");
 			this->tabPage2->Name = L"tabPage2";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
@@ -371,6 +375,7 @@ private: System::Windows::Forms::CheckBox^  checkBox2;
 			// 
 			// preferredNodes
 			// 
+			resources->ApplyResources(this->preferredNodes, L"preferredNodes");
 			this->preferredNodes->CheckOnClick = true;
 			this->preferredNodes->FormattingEnabled = true;
 			this->preferredNodes->Items->AddRange(gcnew cli::array< System::Object^  >(240) {resources->GetString(L"preferredNodes.Items"), 
@@ -454,7 +459,6 @@ private: System::Windows::Forms::CheckBox^  checkBox2;
 				resources->GetString(L"preferredNodes.Items232"), resources->GetString(L"preferredNodes.Items233"), resources->GetString(L"preferredNodes.Items234"), 
 				resources->GetString(L"preferredNodes.Items235"), resources->GetString(L"preferredNodes.Items236"), resources->GetString(L"preferredNodes.Items237"), 
 				resources->GetString(L"preferredNodes.Items238"), resources->GetString(L"preferredNodes.Items239")});
-			resources->ApplyResources(this->preferredNodes, L"preferredNodes");
 			this->preferredNodes->Name = L"preferredNodes";
 			// 
 			// shapeContainer2
@@ -471,7 +475,8 @@ private: System::Windows::Forms::CheckBox^  checkBox2;
 			// 
 			// tabPage3
 			// 
-			this->tabPage3->Controls->Add(this->checkBox2);
+			resources->ApplyResources(this->tabPage3, L"tabPage3");
+			this->tabPage3->Controls->Add(this->lookupHost);
 			this->tabPage3->Controls->Add(this->advOutput);
 			this->tabPage3->Controls->Add(this->loggingCheck);
 			this->tabPage3->Controls->Add(this->label13);
@@ -480,7 +485,7 @@ private: System::Windows::Forms::CheckBox^  checkBox2;
 			this->tabPage3->Controls->Add(this->taskBar);
 			this->tabPage3->Controls->Add(this->ontop);
 			this->tabPage3->Controls->Add(this->label11);
-			this->tabPage3->Controls->Add(this->checkBox1);
+			this->tabPage3->Controls->Add(this->forceIdent);
 			this->tabPage3->Controls->Add(this->defaultButton);
 			this->tabPage3->Controls->Add(this->controlPort);
 			this->tabPage3->Controls->Add(this->label10);
@@ -490,9 +495,14 @@ private: System::Windows::Forms::CheckBox^  checkBox2;
 			this->tabPage3->Controls->Add(this->label6);
 			this->tabPage3->Controls->Add(this->label5);
 			this->tabPage3->Controls->Add(this->shapeContainer3);
-			resources->ApplyResources(this->tabPage3, L"tabPage3");
 			this->tabPage3->Name = L"tabPage3";
 			this->tabPage3->UseVisualStyleBackColor = true;
+			// 
+			// lookupHost
+			// 
+			resources->ApplyResources(this->lookupHost, L"lookupHost");
+			this->lookupHost->Name = L"lookupHost";
+			this->lookupHost->UseVisualStyleBackColor = true;
 			// 
 			// advOutput
 			// 
@@ -539,11 +549,11 @@ private: System::Windows::Forms::CheckBox^  checkBox2;
 			resources->ApplyResources(this->label11, L"label11");
 			this->label11->Name = L"label11";
 			// 
-			// checkBox1
+			// forceIdent
 			// 
-			resources->ApplyResources(this->checkBox1, L"checkBox1");
-			this->checkBox1->Name = L"checkBox1";
-			this->checkBox1->UseVisualStyleBackColor = true;
+			resources->ApplyResources(this->forceIdent, L"forceIdent");
+			this->forceIdent->Name = L"forceIdent";
+			this->forceIdent->UseVisualStyleBackColor = true;
 			// 
 			// defaultButton
 			// 
@@ -619,17 +629,11 @@ private: System::Windows::Forms::CheckBox^  checkBox2;
 			// 
 			// cancelButton
 			// 
-			this->cancelButton->DialogResult = System::Windows::Forms::DialogResult::Cancel;
 			resources->ApplyResources(this->cancelButton, L"cancelButton");
+			this->cancelButton->DialogResult = System::Windows::Forms::DialogResult::Cancel;
 			this->cancelButton->Name = L"cancelButton";
 			this->cancelButton->UseVisualStyleBackColor = true;
 			this->cancelButton->Click += gcnew System::EventHandler(this, &ExitNode::cancelButton_Click);
-			// 
-			// checkBox2
-			// 
-			resources->ApplyResources(this->checkBox2, L"checkBox2");
-			this->checkBox2->Name = L"checkBox2";
-			this->checkBox2->UseVisualStyleBackColor = true;
 			// 
 			// ExitNode
 			// 
@@ -723,7 +727,7 @@ private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^
 			 config->AppSettings->Settings->Add("updateFreq",temp.ToString());
 			 //write force update boolean
 			 config->AppSettings->Settings->Remove("forceUpdate");
-			 if (this->checkBox1->Checked) config->AppSettings->Settings->Add("forceUpdate","true");
+			 if (this->forceIdent->Checked) config->AppSettings->Settings->Add("forceUpdate","true");
 			 else config->AppSettings->Settings->Add("forceUpdate","false");
 			 //write stayOnTop boolean
 			 config->AppSettings->Settings->Remove("persist");
@@ -741,6 +745,10 @@ private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^
 			 config->AppSettings->Settings->Remove("advancedOutput");
 			 if (this->advOutput->Checked) config->AppSettings->Settings->Add("advancedOutput","true");
 			 else config->AppSettings->Settings->Add("advancedOutput","false");
+			 //write hostLookup boolean
+			 config->AppSettings->Settings->Remove("hostLookup");
+			 if (this->lookupHost->Checked) config->AppSettings->Settings->Add("hostLookup","true");
+			 else config->AppSettings->Settings->Add("hostLookup","false");
 			 //temporary control port to prevent the user from doing anything strange
 			 int port = 0;
 			 try {
@@ -773,12 +781,13 @@ private: System::Void cancelButton_Click(System::Object^  sender, System::EventA
 private: System::Void defaultButton_Click(System::Object^  sender, System::EventArgs^  e) {
 			 this->controlPort->Text = L"9051";
 			 this->updateIn->Text = L"5";
-			 this->checkBox1->Checked = false;
+			 this->forceIdent->Checked = false;
 			 this->ontop->Checked = false;
 			 this->opacitySelect->Value = 100;
 			 this->taskBar->Checked = false;
 			 this->loggingCheck->Checked = false;
 			 this->advOutput->Checked = false;
+			 this->lookupHost->Checked = true;
 		 }
 };
 }

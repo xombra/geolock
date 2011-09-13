@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Uteslutna Noder</value>
-  </data>
   <data name="clearAll.Text" xml:space="preserve">
     <value>Ta bort alla</value>
   </data>
@@ -138,8 +135,8 @@ Obs: Vid försök att hitta en ny exit nod, kan GeoLock besöka noder som ligger
   <data name="label1.Text" xml:space="preserve">
     <value>Exkluderade Länder</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Prioriterade Noder</value>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Uteslutna Noder</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>GeoLock kommer endast att använda exit-noder i dessa länder när man väljer en exit nod.
@@ -158,8 +155,20 @@ Obs: Vid försök att hitta en ny exit nod, kan GeoLock besöka noder belägna i
   <data name="label3.Text" xml:space="preserve">
     <value>Prioriterade Länder</value>
   </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Avancerade</value>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Prioriterade Noder</value>
+  </data>
+  <data name="advOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 17</value>
+  </data>
+  <data name="advOutput.Text" xml:space="preserve">
+    <value>Visa avancerade utgång (engelska)</value>
+  </data>
+  <data name="loggingCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 17</value>
+  </data>
+  <data name="loggingCheck.Text" xml:space="preserve">
+    <value>Aktivera loggning</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 13</value>
@@ -185,11 +194,11 @@ Obs: Vid försök att hitta en ny exit nod, kan GeoLock besöka noder belägna i
   <data name="label11.Text" xml:space="preserve">
     <value>Beteende / Utseende</value>
   </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 17</value>
+  <data name="forceIdent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 17</value>
   </data>
-  <data name="checkBox1.Text" xml:space="preserve">
-    <value>Force ny identitet, även om villkoren uppfylls</value>
+  <data name="forceIdent.Text" xml:space="preserve">
+    <value>Force ny identitet</value>
   </data>
   <data name="defaultButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>163, 255</value>
@@ -235,6 +244,9 @@ Obs: Vid försök att hitta en ny exit nod, kan GeoLock besöka noder belägna i
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Uppdateringsfrekvens</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Avancerade</value>
   </data>
   <data name="cancelButton.Text" xml:space="preserve">
     <value>Avbryt</value>

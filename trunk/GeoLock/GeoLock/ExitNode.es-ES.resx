@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Nodos Excluidos</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="clearAll.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 23</value>
@@ -141,8 +144,8 @@ Nota: Al intentar encontrar un nuevo nodo de salida, GeoLock puede visitar los n
   <data name="label1.Text" xml:space="preserve">
     <value>Países Excluidos</value>
   </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Nodos Excluidos</value>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Nodos Preferidos</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>GeoLock sólo utilizará los nodos de salida en estos países la hora de elegir un nodo de salida.
@@ -167,11 +170,29 @@ Nota: Al intentar encontrar un nuevo nodo de salida, GeoLock puede visitar los n
   <data name="label3.Text" xml:space="preserve">
     <value>Países Preferidos</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Nodos Preferidos</value>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Avanzado</value>
+  </data>
+  <data name="lookupHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 17</value>
+  </data>
+  <data name="lookupHost.Text" xml:space="preserve">
+    <value>Búsqueda de nombre de host</value>
+  </data>
+  <data name="advOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 17</value>
+  </data>
+  <data name="advOutput.Text" xml:space="preserve">
+    <value>Mostrar la salida avanzada (Inglés)</value>
+  </data>
+  <data name="loggingCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 17</value>
+  </data>
+  <data name="loggingCheck.Text" xml:space="preserve">
+    <value>Habilitar el registro</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 206</value>
+    <value>124, 261</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 13</value>
@@ -180,7 +201,7 @@ Nota: Al intentar encontrar un nuevo nodo de salida, GeoLock puede visitar los n
     <value>Opacidad</value>
   </data>
   <data name="opacitySelect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>81, 203</value>
+    <value>81, 258</value>
   </data>
   <data name="taskBar.Size" type="System.Drawing.Size, System.Drawing">
     <value>212, 17</value>
@@ -200,10 +221,10 @@ Nota: Al intentar encontrar un nuevo nodo de salida, GeoLock puede visitar los n
   <data name="label11.Text" xml:space="preserve">
     <value>Comportamiento / Apariencia</value>
   </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="forceIdent.Size" type="System.Drawing.Size, System.Drawing">
     <value>162, 17</value>
   </data>
-  <data name="checkBox1.Text" xml:space="preserve">
+  <data name="forceIdent.Text" xml:space="preserve">
     <value>Nueva fuerza de la identidad</value>
   </data>
   <data name="defaultButton.Text" xml:space="preserve">
@@ -247,9 +268,6 @@ Nota: Al intentar encontrar un nuevo nodo de salida, GeoLock puede visitar los n
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Frecuencia de Actualización</value>
-  </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Avanzado</value>
   </data>
   <data name="okButton.Text" xml:space="preserve">
     <value>Aceptar</value>

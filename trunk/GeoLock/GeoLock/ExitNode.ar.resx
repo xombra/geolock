@@ -161,6 +161,24 @@
   <data name="tabPage3.Text" xml:space="preserve">
     <value>متقدم</value>
   </data>
+  <data name="lookupHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 17</value>
+  </data>
+  <data name="lookupHost.Text" xml:space="preserve">
+    <value>بحث المضيف</value>
+  </data>
+  <data name="advOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 17</value>
+  </data>
+  <data name="advOutput.Text" xml:space="preserve">
+    <value>عرض الانتاج المتقدمة (الانكليزية)</value>
+  </data>
+  <data name="loggingCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 17</value>
+  </data>
+  <data name="loggingCheck.Text" xml:space="preserve">
+    <value>تمكين تسجيل</value>
+  </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>36, 13</value>
   </data>
@@ -185,11 +203,11 @@
   <data name="label11.Text" xml:space="preserve">
     <value>السلوك / المظهر</value>
   </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 17</value>
+  <data name="forceIdent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 17</value>
   </data>
-  <data name="checkBox1.Text" xml:space="preserve">
-    <value>قوة هوية جديدة حتى لو اجتمعت الشروط</value>
+  <data name="forceIdent.Text" xml:space="preserve">
+    <value>قوة جديدة الهوية</value>
   </data>
   <data name="defaultButton.Text" xml:space="preserve">
     <value>تخلف</value>

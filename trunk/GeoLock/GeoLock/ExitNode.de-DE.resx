@@ -164,6 +164,18 @@ Hinweis: Bei dem Versuch, eine neue Ausfahrt Knoten zu finden, GeoLock können K
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Fortgeschritten</value>
   </data>
+  <data name="advOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 17</value>
+  </data>
+  <data name="advOutput.Text" xml:space="preserve">
+    <value>Anzeige erweiterte Ausgabe (englisch)</value>
+  </data>
+  <data name="loggingCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 17</value>
+  </data>
+  <data name="loggingCheck.Text" xml:space="preserve">
+    <value>aktivieren Sie die Protokollierung</value>
+  </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 13</value>
   </data>
@@ -188,10 +200,10 @@ Hinweis: Bei dem Versuch, eine neue Ausfahrt Knoten zu finden, GeoLock können K
   <data name="label11.Text" xml:space="preserve">
     <value>Verhalten / Aussehen</value>
   </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="forceIdent.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 17</value>
   </data>
-  <data name="checkBox1.Text" xml:space="preserve">
+  <data name="forceIdent.Text" xml:space="preserve">
     <value>Kraft neue Identität</value>
   </data>
   <data name="defaultButton.Text" xml:space="preserve">

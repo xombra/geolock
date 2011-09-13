@@ -173,8 +173,26 @@ Nota: Ao tentar encontrar um nó de saída novo, GeoLock pode visitar nós local
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Avançado</value>
   </data>
+  <data name="lookupHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 17</value>
+  </data>
+  <data name="lookupHost.Text" xml:space="preserve">
+    <value>Pesquisa hostname</value>
+  </data>
+  <data name="advOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 17</value>
+  </data>
+  <data name="advOutput.Text" xml:space="preserve">
+    <value>Exibir a saída do avançado (em Inglês)</value>
+  </data>
+  <data name="loggingCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 17</value>
+  </data>
+  <data name="loggingCheck.Text" xml:space="preserve">
+    <value>Habilitar o log</value>
+  </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 206</value>
+    <value>135, 260</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 13</value>
@@ -183,7 +201,7 @@ Nota: Ao tentar encontrar um nó de saída novo, GeoLock pode visitar nós local
     <value>Opacidade</value>
   </data>
   <data name="opacitySelect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 203</value>
+    <value>92, 257</value>
   </data>
   <data name="taskBar.Size" type="System.Drawing.Size, System.Drawing">
     <value>201, 17</value>
@@ -203,10 +221,10 @@ Nota: Ao tentar encontrar um nó de saída novo, GeoLock pode visitar nós local
   <data name="label11.Text" xml:space="preserve">
     <value>Comportamento / Aparência</value>
   </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="forceIdent.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 17</value>
   </data>
-  <data name="checkBox1.Text" xml:space="preserve">
+  <data name="forceIdent.Text" xml:space="preserve">
     <value>Nova força de identidade</value>
   </data>
   <data name="defaultButton.Text" xml:space="preserve">

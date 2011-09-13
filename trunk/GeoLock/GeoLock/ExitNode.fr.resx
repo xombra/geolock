@@ -188,6 +188,24 @@ Remarque: En essayant de trouver un noeud de sortie de nouveaux GeoLock peuvent 
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Avancée</value>
   </data>
+  <data name="lookupHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 17</value>
+  </data>
+  <data name="lookupHost.Text" xml:space="preserve">
+    <value>Recherche hostname</value>
+  </data>
+  <data name="advOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 17</value>
+  </data>
+  <data name="advOutput.Text" xml:space="preserve">
+    <value>Affichage de sortie avancée (en anglais)</value>
+  </data>
+  <data name="loggingCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 17</value>
+  </data>
+  <data name="loggingCheck.Text" xml:space="preserve">
+    <value>Activer la journalisation</value>
+  </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 13</value>
   </data>
@@ -212,10 +230,10 @@ Remarque: En essayant de trouver un noeud de sortie de nouveaux GeoLock peuvent 
   <data name="label11.Text" xml:space="preserve">
     <value>Comportement / Apparence</value>
   </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="forceIdent.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 17</value>
   </data>
-  <data name="checkBox1.Text" xml:space="preserve">
+  <data name="forceIdent.Text" xml:space="preserve">
     <value>Groupe nouvelle identité</value>
   </data>
   <data name="defaultButton.Text" xml:space="preserve">

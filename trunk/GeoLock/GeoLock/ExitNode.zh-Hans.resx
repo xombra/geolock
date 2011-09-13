@@ -158,11 +158,35 @@
   <data name="tabPage2.Text" xml:space="preserve">
     <value>首选的节点</value>
   </data>
+  <data name="lookupHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 17</value>
+  </data>
+  <data name="lookupHost.Text" xml:space="preserve">
+    <value>查找主机</value>
+  </data>
+  <data name="advOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 17</value>
+  </data>
+  <data name="advOutput.Text" xml:space="preserve">
+    <value>显示先进的输出（英文）</value>
+  </data>
+  <data name="loggingCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 17</value>
+  </data>
+  <data name="loggingCheck.Text" xml:space="preserve">
+    <value>启用日志记录</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 262</value>
+  </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
   </data>
   <data name="label12.Text" xml:space="preserve">
     <value>不透明度</value>
+  </data>
+  <data name="opacitySelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 259</value>
   </data>
   <data name="taskBar.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 17</value>
@@ -182,11 +206,11 @@
   <data name="label11.Text" xml:space="preserve">
     <value>行为/外观</value>
   </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 17</value>
+  <data name="forceIdent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 17</value>
   </data>
-  <data name="checkBox1.Text" xml:space="preserve">
-    <value>成立新的身份，即使条件符合</value>
+  <data name="forceIdent.Text" xml:space="preserve">
+    <value>成立新的身份</value>
   </data>
   <data name="defaultButton.Text" xml:space="preserve">
     <value>默认</value>
