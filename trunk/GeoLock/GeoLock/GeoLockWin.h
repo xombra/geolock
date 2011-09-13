@@ -39,6 +39,13 @@ System::String ^ getPrettyDate(SYSTEMTIME lt) {
 
 //open telnet connection to localhost to tell Tor to update connections
 void getNewIdentity() {
+	String^ advOut = System::Configuration::ConfigurationManager::AppSettings["advancedOutput"];
+	bool adv = (advOut == "true");
+	if (adv) {
+		SYSTEMTIME lt;
+		GetLocalTime(&lt);
+		Console::Write("[" + getPrettyDate(lt) + "]: Establishing telnet connection to localhost...");
+	}
 	//load control port from app.config
 	int controlPort = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["controlPort"]));
 	//build connection
@@ -49,17 +56,22 @@ void getNewIdentity() {
 	try {
 		tcpSocket->Connect(serverEP);
 		netStream = tcpSocket->GetStream();
+		if (adv) Console::WriteLine("Complete");
 		if (netStream->CanWrite) {
 			ASCIIEncoding^ encoder = gcnew ASCIIEncoding();
 			//telnet command "AUTHENTICATE" - must not be using Tor authentication
 			array<Byte>^ sendBytes = encoder->GetBytes("AUTHENTICATE\r\n");
 			netStream->Write( sendBytes, 0, sendBytes->Length );
+			if (adv) Console::WriteLine("\ttelnet@localhost: AUTHENTICATE");
 			//telnet command to create new connections (drop old)
 			sendBytes = encoder->GetBytes("signal NEWNYM\r\n");
 			netStream->Write( sendBytes, 0, sendBytes->Length );
+			if (adv) Console::WriteLine("\ttelnet@localhost: signal NEWNYM");
 		}
+		if (adv) Console::Write("\tClosing telnet connection...");
 		netStream->Close();
 		tcpSocket->Close();
+		if (adv) Console::WriteLine("Complete\n\tIdentity switch request sent to Tor.");
 	}
 	catch (Exception^ ex) {
 		cP = true;
@@ -194,7 +206,7 @@ namespace GeoLock {
 			if (adv) {
 				SYSTEMTIME lt;
 				GetLocalTime(&lt);
-				Console::Write("[" + getPrettyDate(lt) + "]: " + "Loading excluded nodes...");
+				Console::Write("[" + getPrettyDate(lt) + "]: Loading excluded nodes...");
 				}
 			if (managedExclude->Length > 0) {
 				resources->ApplyResources(this->excludeList, L"excludeList");
@@ -208,7 +220,7 @@ namespace GeoLock {
 			if (adv) {
 				SYSTEMTIME lt;
 				GetLocalTime(&lt);
-				Console::Write("[" + getPrettyDate(lt) + "]: " + "Loading preferred nodes...");
+				Console::Write("[" + getPrettyDate(lt) + "]: Loading preferred nodes...");
 			}
 			if (managedExit->Length > 0) {
 				resources->ApplyResources(this->preferNodes, L"preferNodes");
@@ -275,7 +287,7 @@ namespace GeoLock {
 			if (adv) {
 				SYSTEMTIME lt;
 				GetLocalTime(&lt);
-				Console::Write("[" + getPrettyDate(lt) + "]: " + "Attempting to Update IP...");
+				Console::Write("[" + getPrettyDate(lt) + "]: Attempting to Update IP...");
 			}
 			//call backend updateIP() function and capture HTML formatted IP address
 			String^ ipFull = updateIP();
