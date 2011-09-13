@@ -7,6 +7,7 @@ this->timer->Interval = (System::Int32::Parse(System::Configuration::Configurati
 
 //connectivity boolean (if IP is obtainable)
 bool torUP,cP = false;
+bool acceptance = true;
 
 //function to convert char arrays/strings into managed System::String
 System::String ^ char2StringRef( char * p){ 
@@ -46,7 +47,7 @@ void getNewIdentity() {
 	if (adv) {
 		SYSTEMTIME lt;
 		GetLocalTime(&lt);
-		Console::Write("[" + getPrettyDate(lt) + "]: Establishing telnet connection to 127.0.0.1:" + controlPort + "...");
+		Console::WriteLine("[" + getPrettyDate(lt) + "]: Establishing telnet connection to 127.0.0.1:" + controlPort + "...");
 	}
 	//build connection
 	TcpClient^ tcpSocket;
@@ -56,7 +57,6 @@ void getNewIdentity() {
 	try {
 		tcpSocket->Connect(serverEP);
 		netStream = tcpSocket->GetStream();
-		if (adv) Console::WriteLine("Complete");
 		if (netStream->CanWrite) {
 			ASCIIEncoding^ encoder = gcnew ASCIIEncoding();
 			//telnet command "AUTHENTICATE" - must not be using Tor authentication
@@ -78,44 +78,6 @@ void getNewIdentity() {
 		cP = true;
 	}
 	cP = false;
-}
-
-//function to update IP address via wipmania's API and return either error or stream input
-System::String^ updateIP() {
-	//load logging boolean
-	String^ logging = System::Configuration::ConfigurationManager::AppSettings["logging"];
-	bool log = (logging == "true");
-	WebClient^ myWebClient = gcnew WebClient;
-	//random number must be appended to URL to ensure IP is current
-	//as wipmania's API does not have correct refresh information
-	srand(time(NULL));
-	String^ in = "";
-	int random = rand()%1000 + 1;
-	String^ ipURL = "http://api.wipmania.com/?" + random;
-	Uri^ siteUri = gcnew Uri(ipURL);
-	try {
-		//attempt to open connection (via Tor proxy specified in app.config) to wipmania
-		Stream^ ipStream = myWebClient->OpenRead(siteUri);
-		StreamReader^ sr = gcnew StreamReader(ipStream);
-		in = sr->ReadToEnd();
-		ipStream->Close();
-		torUP = true;
-		//return HTML formatted IP string similar to:
-		//###.###.###.###<br>US
-		if (log) {
-			StreamWriter^ pwriter = gcnew StreamWriter("Identity_Log.txt",true);
-			SYSTEMTIME lt;
-			GetLocalTime(&lt);
-			pwriter->WriteLine("[IP_Update @" + getPrettyDate(lt) + "] - " + getIP(in) + "|" + getCountry(in));
-			pwriter->Close();
-		}
-		return in;
-	}
-	catch (WebException ^ex) {
-		//set connectivity boolean
-		torUP = false;
-	}
-	return "ERROR";
 }
 
 //function to verify if country code is acceptable based on user's settings
@@ -161,6 +123,102 @@ namespace GeoLock {
 			if (advOut == "true") AllocConsole();
 			InitializeComponent();
 			reinitialize();
+		}
+
+		//function to update IP address via wipmania's API and return either error or stream input
+		void updateIP() {
+			//load logging boolean
+			WebClient^ myWebClient = gcnew WebClient;
+			//random number must be appended to URL to ensure IP is current
+			//as wipmania's API does not have correct refresh information
+			srand(time(NULL));
+			String^ in = "";
+			int random = rand()%1000 + 1;
+			String^ ipURL = "http://api.wipmania.com/?" + random;
+			Uri^ siteUri = gcnew Uri(ipURL);
+			try {
+				//attempt to open connection (via Tor proxy specified in app.config) to wipmania
+				myWebClient->DownloadStringCompleted += gcnew DownloadStringCompletedEventHandler(this,&GeoLock::GeoLockWin::downloadStringEventComplete);
+				myWebClient->DownloadStringAsync(siteUri);
+				torUP = true;
+			}
+			catch (WebException ^ex) {
+				//set connectivity boolean
+				torUP = false;
+			}
+		}
+
+		void downloadStringEventComplete(Object^ /*sender*/, DownloadStringCompletedEventArgs^ e) {
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
+			String^ advOut = System::Configuration::ConfigurationManager::AppSettings["advancedOutput"];
+			bool adv = (advOut == "true");
+			String^ logging = System::Configuration::ConfigurationManager::AppSettings["logging"];
+			bool log = (logging == "true");
+			if (e->Error == nullptr) {
+				torUP = true;
+				String^ ipFull = dynamic_cast<String^>(e->Result);
+				String ^ip,^ct;
+				//if IP was obtainable
+				if (ipFull != "") {
+					//convert HTML formatted IP and country code to useable elements
+					ip = getIP(ipFull);
+					ct = getCountry(ipFull);
+					if (adv) {
+						Console::WriteLine("Complete");
+						Console::WriteLine("\tIP: " + ip);
+						Console::WriteLine("\tGeo: " + ct);
+					}
+				}
+				else {
+					//if IP was not obtainable, display ?'s
+					ip = "??.??.??.??";
+					ct = "??";
+					if (adv) Console::WriteLine("FAIL");
+				}
+				//update IP and Country
+				this->toolStripLabel1->Text = L"IP: " + ip;
+				this->toolStripLabel2->Text = ct;
+				//get acceptance state
+				String^ acceptState = getAcceptState(ct);
+				//set notification icon and tooltip
+				this->notifyIcon1->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject("$this.Icon")));
+				this->notifyIcon1->Text = ip + " | " + ct;
+				//load hostLookup boolean
+				String^ host = System::Configuration::ConfigurationManager::AppSettings["hostLookup"];
+				//attempt to resolve IP address to hostname if specified
+				if (host == "true") {
+					IPHostEntry^ host;
+					try {
+						host = Dns::GetHostEntry(ip);
+						this->toolStripButton1->Text = host->HostName;
+						if (adv) Console::WriteLine("\tHost: " + host->HostName);
+						this->notifyIcon1->Text += "\n" + host->HostName;
+					}
+					catch (Exception^ ex) {
+						this->toolStripButton1->Text = "???";
+						if (adv) Console::WriteLine("\tHost: unknown");
+						this->notifyIcon1->Text += "\n???";
+					}
+				}
+				else {
+					this->toolStripButton1->Text = "---";
+				}
+				//set flag icon
+				if (ipFull != "") this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(ct)));
+				//set acceptance icon and tooltip
+				this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
+				this->toolStripButton2->Text = acceptState;
+				if (acceptState == "Locked") acceptance = true;
+				else acceptance = false;
+				if (log) {
+					StreamWriter^ pwriter = gcnew StreamWriter("Identity_Log.txt",true);
+					SYSTEMTIME lt;
+					GetLocalTime(&lt);
+					pwriter->WriteLine("[IP_Update @" + getPrettyDate(lt) + "] - " + ip + "|" + ct);
+					pwriter->Close();
+				}
+			}
+			this->progressBar1->Visible = false;
 		}
 
 		//function to check Tor configuration/connectivity and update the status icon thusly
@@ -291,66 +349,16 @@ namespace GeoLock {
 				Console::Write("[" + getPrettyDate(lt) + "]: Attempting to Update IP...");
 			}
 			//call backend updateIP() function and capture HTML formatted IP address
-			String^ ipFull = updateIP();
-			String ^ip,^ct;
-			//if IP was obtainable
-			if (ipFull != "ERROR") {
-				//convert HTML formatted IP and country code to useable elements
-				ip = getIP(ipFull);
-				ct = getCountry(ipFull);
-				if (adv) {
-					Console::WriteLine("Complete");
-					Console::WriteLine("\tIP: " + ip);
-					Console::WriteLine("\tGeo: " + ct);
-				}
-			}
-			else {
-				//if IP was not obtainable, display ?'s
-				ip = "??.??.??.??";
-				ct = "??";
-				if (adv) Console::WriteLine("FAIL");
-			}
+			this->progressBar1->Visible = true;
+			updateIP();
 			updateTorIcon();
 			//get current system time to display when the IP was last updated
 			SYSTEMTIME lt;
 			GetLocalTime(&lt);
 			resources->ApplyResources(this->timeStamp, L"timeStamp");
 			this->timeStamp->Text += getPrettyDate(lt);
-			//update IP and Country
-			this->toolStripLabel1->Text = L"IP: " + ip;
-			this->toolStripLabel2->Text = ct;
-			//get acceptance state
-			String^ acceptState = getAcceptState(ct);
-			//set notification icon and tooltip
-			this->notifyIcon1->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject("$this.Icon")));
-			this->notifyIcon1->Text = ip + " | " + ct;
-			//load hostLookup boolean
-			String^ host = System::Configuration::ConfigurationManager::AppSettings["hostLookup"];
-			//attempt to resolve IP address to hostname if specified
-			if (host == "true") {
-				IPHostEntry^ host;
-				try {
-					host = Dns::GetHostEntry(ip);
-					this->toolStripButton1->Text = host->HostName;
-					if (adv) Console::WriteLine("\tHost: " + host->HostName);
-					this->notifyIcon1->Text += "\n" + host->HostName;
-				}
-				catch (Exception^ ex) {
-					this->toolStripButton1->Text = "???";
-					if (adv) Console::WriteLine("\tHost: unknown");
-					this->notifyIcon1->Text += "\n???";
-				}
-			}
-			else {
-				this->toolStripButton1->Text = "---";
-			}
-			//set flag icon
-			if (ipFull != "ERROR") this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(ct)));
-			//set acceptance icon and tooltip
-			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
-			this->toolStripButton2->Text = acceptState;
 			//IP address updated and it is acceptable
-			if (acceptState == "Locked") {
+			if (acceptance) {
 				if (adv) Console::WriteLine("\tState: Good");
 				return true;
 			}
@@ -394,6 +402,7 @@ namespace GeoLock {
 	private: System::Windows::Forms::ContextMenuStrip^  contextMenuStrip1;
 	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem1;
 	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem2;
+private: System::Windows::Forms::ProgressBar^  progressBar1;
 	private: System::ComponentModel::IContainer^  components;
 
 #pragma region Windows Form Designer generated code
@@ -425,6 +434,7 @@ namespace GeoLock {
 			this->contextMenuStrip1 = (gcnew System::Windows::Forms::ContextMenuStrip(this->components));
 			this->toolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->progressBar1 = (gcnew System::Windows::Forms::ProgressBar());
 			this->menuStrip1->SuspendLayout();
 			this->toolStrip1->SuspendLayout();
 			this->contextMenuStrip1->SuspendLayout();
@@ -432,53 +442,53 @@ namespace GeoLock {
 			// 
 			// menuStrip1
 			// 
-			resources->ApplyResources(this->menuStrip1, L"menuStrip1");
 			this->menuStrip1->BackColor = System::Drawing::SystemColors::Control;
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {this->fileToolStripMenuItem, 
 				this->settingsToolStripMenuItem});
+			resources->ApplyResources(this->menuStrip1, L"menuStrip1");
 			this->menuStrip1->Name = L"menuStrip1";
 			// 
 			// fileToolStripMenuItem
 			// 
-			resources->ApplyResources(this->fileToolStripMenuItem, L"fileToolStripMenuItem");
 			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {this->forceUpdateToolStripMenuItem, 
 				this->exitToolStripMenuItem});
 			this->fileToolStripMenuItem->Name = L"fileToolStripMenuItem";
+			resources->ApplyResources(this->fileToolStripMenuItem, L"fileToolStripMenuItem");
 			// 
 			// forceUpdateToolStripMenuItem
 			// 
-			resources->ApplyResources(this->forceUpdateToolStripMenuItem, L"forceUpdateToolStripMenuItem");
 			this->forceUpdateToolStripMenuItem->Name = L"forceUpdateToolStripMenuItem";
+			resources->ApplyResources(this->forceUpdateToolStripMenuItem, L"forceUpdateToolStripMenuItem");
 			this->forceUpdateToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::forceUpdateToolStripMenuItem_Click);
 			// 
 			// exitToolStripMenuItem
 			// 
-			resources->ApplyResources(this->exitToolStripMenuItem, L"exitToolStripMenuItem");
 			this->exitToolStripMenuItem->Name = L"exitToolStripMenuItem";
+			resources->ApplyResources(this->exitToolStripMenuItem, L"exitToolStripMenuItem");
 			this->exitToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::exitToolStripMenuItem_Click);
 			// 
 			// settingsToolStripMenuItem
 			// 
-			resources->ApplyResources(this->settingsToolStripMenuItem, L"settingsToolStripMenuItem");
 			this->settingsToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) {this->excludeExitNodesToolStripMenuItem});
 			this->settingsToolStripMenuItem->Name = L"settingsToolStripMenuItem";
+			resources->ApplyResources(this->settingsToolStripMenuItem, L"settingsToolStripMenuItem");
 			// 
 			// excludeExitNodesToolStripMenuItem
 			// 
-			resources->ApplyResources(this->excludeExitNodesToolStripMenuItem, L"excludeExitNodesToolStripMenuItem");
 			this->excludeExitNodesToolStripMenuItem->Name = L"excludeExitNodesToolStripMenuItem";
+			resources->ApplyResources(this->excludeExitNodesToolStripMenuItem, L"excludeExitNodesToolStripMenuItem");
 			this->excludeExitNodesToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::excludeExitNodesToolStripMenuItem_Click);
 			// 
 			// excludeList
 			// 
-			resources->ApplyResources(this->excludeList, L"excludeList");
 			this->excludeList->AutoEllipsis = true;
+			resources->ApplyResources(this->excludeList, L"excludeList");
 			this->excludeList->Name = L"excludeList";
 			// 
 			// preferNodes
 			// 
-			resources->ApplyResources(this->preferNodes, L"preferNodes");
 			this->preferNodes->AutoEllipsis = true;
+			resources->ApplyResources(this->preferNodes, L"preferNodes");
 			this->preferNodes->Name = L"preferNodes";
 			// 
 			// timer
@@ -503,37 +513,37 @@ namespace GeoLock {
 			// 
 			// toolStripLabel1
 			// 
-			resources->ApplyResources(this->toolStripLabel1, L"toolStripLabel1");
 			this->toolStripLabel1->Name = L"toolStripLabel1";
+			resources->ApplyResources(this->toolStripLabel1, L"toolStripLabel1");
 			// 
 			// toolStripSeparator1
 			// 
-			resources->ApplyResources(this->toolStripSeparator1, L"toolStripSeparator1");
 			this->toolStripSeparator1->Name = L"toolStripSeparator1";
+			resources->ApplyResources(this->toolStripSeparator1, L"toolStripSeparator1");
 			// 
 			// toolStripLabel2
 			// 
-			resources->ApplyResources(this->toolStripLabel2, L"toolStripLabel2");
 			this->toolStripLabel2->Name = L"toolStripLabel2";
+			resources->ApplyResources(this->toolStripLabel2, L"toolStripLabel2");
 			// 
 			// toolStripButton1
 			// 
-			resources->ApplyResources(this->toolStripButton1, L"toolStripButton1");
 			this->toolStripButton1->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
+			resources->ApplyResources(this->toolStripButton1, L"toolStripButton1");
 			this->toolStripButton1->Name = L"toolStripButton1";
 			// 
 			// toolStripButton2
 			// 
-			resources->ApplyResources(this->toolStripButton2, L"toolStripButton2");
 			this->toolStripButton2->Alignment = System::Windows::Forms::ToolStripItemAlignment::Right;
 			this->toolStripButton2->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
+			resources->ApplyResources(this->toolStripButton2, L"toolStripButton2");
 			this->toolStripButton2->Name = L"toolStripButton2";
 			// 
 			// torStatusIcon
 			// 
-			resources->ApplyResources(this->torStatusIcon, L"torStatusIcon");
 			this->torStatusIcon->Alignment = System::Windows::Forms::ToolStripItemAlignment::Right;
 			this->torStatusIcon->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
+			resources->ApplyResources(this->torStatusIcon, L"torStatusIcon");
 			this->torStatusIcon->Name = L"torStatusIcon";
 			// 
 			// shapeContainer1
@@ -556,33 +566,41 @@ namespace GeoLock {
 			// 
 			// notifyIcon1
 			// 
-			resources->ApplyResources(this->notifyIcon1, L"notifyIcon1");
 			this->notifyIcon1->ContextMenuStrip = this->contextMenuStrip1;
+			resources->ApplyResources(this->notifyIcon1, L"notifyIcon1");
 			this->notifyIcon1->DoubleClick += gcnew System::EventHandler(this, &GeoLockWin::notifyIcon1_DoubleClick);
 			// 
 			// contextMenuStrip1
 			// 
-			resources->ApplyResources(this->contextMenuStrip1, L"contextMenuStrip1");
 			this->contextMenuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {this->toolStripMenuItem1, 
 				this->toolStripMenuItem2});
 			this->contextMenuStrip1->Name = L"contextMenuStrip1";
+			resources->ApplyResources(this->contextMenuStrip1, L"contextMenuStrip1");
 			// 
 			// toolStripMenuItem1
 			// 
-			resources->ApplyResources(this->toolStripMenuItem1, L"toolStripMenuItem1");
 			this->toolStripMenuItem1->Name = L"toolStripMenuItem1";
+			resources->ApplyResources(this->toolStripMenuItem1, L"toolStripMenuItem1");
 			this->toolStripMenuItem1->Click += gcnew System::EventHandler(this, &GeoLockWin::forceUpdateToolStripMenuItem_Click);
 			// 
 			// toolStripMenuItem2
 			// 
-			resources->ApplyResources(this->toolStripMenuItem2, L"toolStripMenuItem2");
 			this->toolStripMenuItem2->Name = L"toolStripMenuItem2";
+			resources->ApplyResources(this->toolStripMenuItem2, L"toolStripMenuItem2");
 			this->toolStripMenuItem2->Click += gcnew System::EventHandler(this, &GeoLockWin::exitToolStripMenuItem_Click);
+			// 
+			// progressBar1
+			// 
+			this->progressBar1->BackColor = System::Drawing::SystemColors::Control;
+			resources->ApplyResources(this->progressBar1, L"progressBar1");
+			this->progressBar1->Name = L"progressBar1";
+			this->progressBar1->Style = System::Windows::Forms::ProgressBarStyle::Marquee;
 			// 
 			// GeoLockWin
 			// 
 			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Controls->Add(this->progressBar1);
 			this->Controls->Add(this->toolStrip1);
 			this->Controls->Add(this->timeStamp);
 			this->Controls->Add(this->preferNodes);
