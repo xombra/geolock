@@ -41,13 +41,13 @@ System::String ^ getPrettyDate(SYSTEMTIME lt) {
 void getNewIdentity() {
 	String^ advOut = System::Configuration::ConfigurationManager::AppSettings["advancedOutput"];
 	bool adv = (advOut == "true");
+	//load control port from app.config
+	int controlPort = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["controlPort"]));
 	if (adv) {
 		SYSTEMTIME lt;
 		GetLocalTime(&lt);
-		Console::Write("[" + getPrettyDate(lt) + "]: Establishing telnet connection to localhost...");
+		Console::Write("[" + getPrettyDate(lt) + "]: Establishing telnet connection to 127.0.0.1:" + controlPort + "...");
 	}
-	//load control port from app.config
-	int controlPort = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["controlPort"]));
 	//build connection
 	TcpClient^ tcpSocket;
 	tcpSocket = gcnew TcpClient();
@@ -74,6 +74,7 @@ void getNewIdentity() {
 		if (adv) Console::WriteLine("Complete\n\tIdentity switch request sent to Tor.");
 	}
 	catch (Exception^ ex) {
+		if (adv) Console::WriteLine("FAIL");
 		cP = true;
 	}
 	cP = false;
