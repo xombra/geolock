@@ -308,27 +308,31 @@ namespace GeoLock {
 			this->toolStripLabel2->Text = ct;
 			//get acceptance state
 			String^ acceptState = getAcceptState(ct);
-			//attempt to resolve IP address to hostname
-			IPHostEntry^ host;
-			try {
-				host = Dns::GetHostEntry(ip);
-				this->toolStripButton1->Text = host->HostName;
-				if (adv) Console::WriteLine("\tHost: " + host->HostName);
+			//set notification icon and tooltip
+			this->notifyIcon1->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject("$this.Icon")));
+			this->notifyIcon1->Text = ip + " | " + ct;
+			//load hostLookup boolean
+			String^ host = System::Configuration::ConfigurationManager::AppSettings["hostLookup"];
+			//attempt to resolve IP address to hostname if specified
+			if (host == "true") {
+				IPHostEntry^ host;
+				try {
+					host = Dns::GetHostEntry(ip);
+					this->toolStripButton1->Text = host->HostName;
+					if (adv) Console::WriteLine("\tHost: " + host->HostName);
+					this->notifyIcon1->Text += "\n" + host->HostName;
+				}
+				catch (Exception^ ex) {
+					this->toolStripButton1->Text = "???";
+					if (adv) Console::WriteLine("\tHost: unknown");
+					this->notifyIcon1->Text += "\n???";
+				}
 			}
-			catch (Exception^ ex) {
-				this->toolStripButton1->Text = "???";
-				if (adv) Console::WriteLine("\tHost: unknown");
+			else {
+				this->toolStripButton1->Text = "---";
 			}
 			//set flag icon
 			if (ipFull != "ERROR") this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(ct)));
-			//set notification icon and tooltip
-			this->notifyIcon1->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject("$this.Icon")));
-			try {
-				this->notifyIcon1->Text = ip + " | " + ct + "\n" + host->HostName;
-			}
-			catch (Exception^ ex) {
-				this->notifyIcon1->Text = ip + " | " + ct + "\n???";
-			}
 			//set acceptance icon and tooltip
 			this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
 			this->toolStripButton2->Text = acceptState;

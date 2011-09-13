@@ -188,8 +188,26 @@
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Передовой</value>
   </data>
+  <data name="lookupHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 17</value>
+  </data>
+  <data name="lookupHost.Text" xml:space="preserve">
+    <value>Поиск хоста</value>
+  </data>
+  <data name="advOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 17</value>
+  </data>
+  <data name="advOutput.Text" xml:space="preserve">
+    <value>Расширенный выход (английский язык)</value>
+  </data>
+  <data name="loggingCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 17</value>
+  </data>
+  <data name="loggingCheck.Text" xml:space="preserve">
+    <value>Включить ведение журнала</value>
+  </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>159, 206</value>
+    <value>159, 260</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 13</value>
@@ -198,7 +216,7 @@
     <value>непрозрачность</value>
   </data>
   <data name="opacitySelect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 203</value>
+    <value>116, 257</value>
   </data>
   <data name="taskBar.Size" type="System.Drawing.Size, System.Drawing">
     <value>203, 17</value>
@@ -218,10 +236,10 @@
   <data name="label11.Text" xml:space="preserve">
     <value>Поведение / Внешний вид</value>
   </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="forceIdent.Size" type="System.Drawing.Size, System.Drawing">
     <value>166, 17</value>
   </data>
-  <data name="checkBox1.Text" xml:space="preserve">
+  <data name="forceIdent.Text" xml:space="preserve">
     <value>Группа новой идентичности</value>
   </data>
   <data name="defaultButton.Text" xml:space="preserve">
