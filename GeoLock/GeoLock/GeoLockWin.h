@@ -6,7 +6,7 @@ this->timer->Interval = (System::Int32::Parse(System::Configuration::Configurati
 */
 
 //connectivity boolean (if IP is obtainable)
-bool torUP,cP = false;
+//bool torUP,cP = false;
 bool acceptance = true;
 
 //function to convert char arrays/strings into managed System::String
