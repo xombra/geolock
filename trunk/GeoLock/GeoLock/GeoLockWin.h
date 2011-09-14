@@ -5,8 +5,7 @@ if Visual Studio decides to remove timer Interval or complain about it in design
 this->timer->Interval = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["updateFreq"])*60*1000);
 */
 
-//connectivity boolean (if IP is obtainable)
-//bool torUP,cP = false;
+//bool to keep track of if IP is acceptable or not
 bool acceptance = true;
 
 //function to convert char arrays/strings into managed System::String
