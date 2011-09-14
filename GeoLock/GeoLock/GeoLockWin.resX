@@ -355,7 +355,7 @@
     <value>23, 22</value>
   </data>
   <data name="toolStripButton2.Text" xml:space="preserve">
-    <value>toolStripButton2</value>
+    <value />
   </data>
   <data name="torStatusIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1608,5 +1608,23 @@
   </data>
   <data name="ZW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>icons\ZW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Comm" xml:space="preserve">
+    <value>Error: Cannot communicate with Tor! Control port issue?</value>
+  </data>
+  <data name="Err" xml:space="preserve">
+    <value>Error: Tor is not running or is not configured correctly!</value>
+  </data>
+  <data name="Torcookie" xml:space="preserve">
+    <value>Error: Tor is using cookie authentication</value>
+  </data>
+  <data name="TorOK" xml:space="preserve">
+    <value>Tor OK</value>
+  </data>
+  <data name="Torpw" xml:space="preserve">
+    <value>Error: Tor is using a password</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Error: Unknown</value>
   </data>
 </root>
