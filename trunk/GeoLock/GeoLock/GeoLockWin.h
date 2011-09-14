@@ -208,14 +208,22 @@ namespace GeoLock {
 				//set acceptance icon and tooltip
 				this->toolStripButton2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(acceptState)));
 				this->toolStripButton2->Text = acceptState;
-				if (acceptState == "Locked") acceptance = true;
-				else acceptance = false;
 				if (log) {
 					StreamWriter^ pwriter = gcnew StreamWriter("Identity_Log.txt",true);
 					SYSTEMTIME lt;
 					GetLocalTime(&lt);
 					pwriter->WriteLine("[IP_Update @" + getPrettyDate(lt) + "] - " + ip + "|" + ct);
 					pwriter->Close();
+				}
+				if ((acceptState) == "Locked") {
+					//IP address updated and it is acceptable
+					if (adv) Console::WriteLine("\tState: Good");
+				}
+				else {
+					//or it was updated and is not acceptable
+					if (adv) Console::WriteLine("\tState: Bad");
+					getNewIdentity();
+					updateIPandDisplay();
 				}
 			}
 			this->progressBar1->Visible = false;
@@ -299,14 +307,6 @@ namespace GeoLock {
 			this->Opacity = opacity;
 		}
 
-		void refreshUntilAcceptable() {
-			bool acceptable = updateIPandDisplay();
-			while (!acceptable) {
-				getNewIdentity();
-				acceptable = updateIPandDisplay();
-			}
-		}
-
 		//backend function to check Tor configuration/connectivity 
 		int checkTorrc() {
 			//if Tor isn't up, return error
@@ -339,7 +339,7 @@ namespace GeoLock {
 		}
 
 		//function to call backend updateIP() and update the visual elements accordingly
-		bool updateIPandDisplay() {
+		void updateIPandDisplay() {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
 			String^ advOut = System::Configuration::ConfigurationManager::AppSettings["advancedOutput"];
 			bool adv = (advOut == "true");
@@ -357,16 +357,6 @@ namespace GeoLock {
 			GetLocalTime(&lt);
 			resources->ApplyResources(this->timeStamp, L"timeStamp");
 			this->timeStamp->Text += getPrettyDate(lt);
-			//IP address updated and it is acceptable
-			if (acceptance) {
-				if (adv) Console::WriteLine("\tState: Good");
-				return true;
-			}
-			//or it was updated and is not acceptable
-			else {
-				if (adv) Console::WriteLine("\tState: Bad");
-				return false;
-			}
 		}
 
 	protected:
@@ -628,7 +618,7 @@ private: System::Windows::Forms::ProgressBar^  progressBar1;
 				 //on application startup and timer expiration, force new identity if specified in user settings
 				 String^ forceUpdate = System::Configuration::ConfigurationManager::AppSettings["forceUpdate"];
 				 if (forceUpdate == "true") getNewIdentity();
-				 refreshUntilAcceptable();
+				 updateIPandDisplay();
 			 }
 	private: System::Void excludeExitNodesToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 				 //launch user settings window
@@ -640,14 +630,16 @@ private: System::Windows::Forms::ProgressBar^  progressBar1;
 					 delete exitNodeDialog;
 					 //update display elements
 					 reinitialize();
+					 //update timer tick if necessary
+					 this->timer->Interval = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["updateFreq"])*60*1000);
 					 //update the IP address and check if it is acceptable and if not, get new identity (this ensures that settings take effect immediately)
-					 refreshUntilAcceptable();
+					 updateIPandDisplay();
 				 }
 			 }
 	private: System::Void forceUpdateToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 				//when Force Update is selected or F5 pressed, get a new identity immediately
 				getNewIdentity();
-				refreshUntilAcceptable();
+				updateIPandDisplay();
 		     }
 	private: System::Void notifyIcon1_DoubleClick(System::Object^  sender, System::EventArgs^  e) {
 			    //restore window from minimized state when notification icon is double clicked
