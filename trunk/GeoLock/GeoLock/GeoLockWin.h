@@ -39,7 +39,7 @@ System::String ^ getPrettyDate(SYSTEMTIME lt) {
 }
 
 //open telnet connection to localhost to tell Tor to update connections
-void getNewIdentity() {
+bool getNewIdentity() {
 	String^ advOut = System::Configuration::ConfigurationManager::AppSettings["advancedOutput"];
 	bool adv = (advOut == "true");
 	//load control port from app.config
@@ -75,9 +75,9 @@ void getNewIdentity() {
 	}
 	catch (Exception^ ex) {
 		if (adv) Console::WriteLine("FAIL");
-		cP = true;
+		return false;
 	}
-	cP = false;
+	return true;
 }
 
 //function to verify if country code is acceptable based on user's settings
@@ -140,12 +140,8 @@ namespace GeoLock {
 				//attempt to open connection (via Tor proxy specified in app.config) to wipmania
 				myWebClient->DownloadStringCompleted += gcnew DownloadStringCompletedEventHandler(this,&GeoLock::GeoLockWin::downloadStringEventComplete);
 				myWebClient->DownloadStringAsync(siteUri);
-				torUP = true;
 			}
-			catch (WebException ^ex) {
-				//set connectivity boolean
-				torUP = false;
-			}
+			catch (WebException ^ex) {}
 		}
 
 		void downloadStringEventComplete(Object^ /*sender*/, DownloadStringCompletedEventArgs^ e) {
@@ -155,7 +151,6 @@ namespace GeoLock {
 			String^ logging = System::Configuration::ConfigurationManager::AppSettings["logging"];
 			bool log = (logging == "true");
 			if (e->Error == nullptr) {
-				torUP = true;
 				String^ ipFull = dynamic_cast<String^>(e->Result);
 				String ^ip,^ct;
 				//if IP was obtainable
@@ -215,6 +210,7 @@ namespace GeoLock {
 					pwriter->WriteLine("[IP_Update @" + getPrettyDate(lt) + "] - " + ip + "|" + ct);
 					pwriter->Close();
 				}
+				updateTorIcon(true);
 				if ((acceptState) == "Locked") {
 					//IP address updated and it is acceptable
 					if (adv) Console::WriteLine("\tState: Good");
@@ -222,41 +218,45 @@ namespace GeoLock {
 				else {
 					//or it was updated and is not acceptable
 					if (adv) Console::WriteLine("\tState: Bad");
-					getNewIdentity();
+					if(!getNewIdentity()) {
+						this->torStatusIcon->Text = resources->GetString(L"Comm");
+						this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
+					}
 					updateIPandDisplay();
 				}
+			}
+			else {
+				updateTorIcon(false);
 			}
 			this->progressBar1->Visible = false;
 		}
 
 		//function to check Tor configuration/connectivity and update the status icon thusly
-		void updateTorIcon() {
+		void updateTorIcon(bool up) {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
-			switch (checkTorrc()) {
-			case 0:
-				this->torStatusIcon->Text = resources->GetString(L"TorOK");
-				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("good")));
-				break;
-			case 1:
-				this->torStatusIcon->Text = resources->GetString(L"Torpw");
-				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
-				break;
-			case 2:
-				this->torStatusIcon->Text = resources->GetString(L"Torcookie");
-				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
-				break;
-			case 3:
+			if (!up) {
 				this->torStatusIcon->Text = resources->GetString(L"Err");
 				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("fatal")));
-				break;
-			case 4:
-				this->torStatusIcon->Text = resources->GetString(L"Comm");
-				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
-				break;
-			case 99:
-				this->torStatusIcon->Text = resources->GetString(L"Unknown");
-				this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
-				break;
+			}
+			else {
+				switch (checkTorrc()) {
+				case 0:
+					this->torStatusIcon->Text = resources->GetString(L"TorOK");
+					this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("good")));
+					break;
+				case 1:
+					this->torStatusIcon->Text = resources->GetString(L"Torpw");
+					this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
+					break;
+				case 2:
+					this->torStatusIcon->Text = resources->GetString(L"Torcookie");
+					this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
+					break;
+				case 99:
+					this->torStatusIcon->Text = resources->GetString(L"Unknown");
+					this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
+					break;
+				}
 			}
 		}
 
@@ -309,10 +309,6 @@ namespace GeoLock {
 
 		//backend function to check Tor configuration/connectivity 
 		int checkTorrc() {
-			//if Tor isn't up, return error
-			if (!torUP) return 3;
-			//if new identity has failed, return error
-			if (cP) return 4;
 			//load %appdata% environment variable
 			char* pPath = std::getenv("appdata");
 			String^ appdata = char2StringRef(pPath) + "\\Vidalia\\torrc";
@@ -349,9 +345,9 @@ namespace GeoLock {
 				Console::Write("[" + getPrettyDate(lt) + "]: Attempting to Update IP...");
 			}
 			//call backend updateIP() function and capture HTML formatted IP address
+			//set progress bar to visible so user knows their is background process running
 			this->progressBar1->Visible = true;
 			updateIP();
-			updateTorIcon();
 			//get current system time to display when the IP was last updated
 			SYSTEMTIME lt;
 			GetLocalTime(&lt);
@@ -392,7 +388,7 @@ namespace GeoLock {
 	private: System::Windows::Forms::ContextMenuStrip^  contextMenuStrip1;
 	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem1;
 	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem2;
-private: System::Windows::Forms::ProgressBar^  progressBar1;
+	private: System::Windows::Forms::ProgressBar^  progressBar1;
 	private: System::ComponentModel::IContainer^  components;
 
 #pragma region Windows Form Designer generated code
@@ -617,7 +613,13 @@ private: System::Windows::Forms::ProgressBar^  progressBar1;
 	private: System::Void GeoLockWin_Load(System::Object^  sender, System::EventArgs^  e) {
 				 //on application startup and timer expiration, force new identity if specified in user settings
 				 String^ forceUpdate = System::Configuration::ConfigurationManager::AppSettings["forceUpdate"];
-				 if (forceUpdate == "true") getNewIdentity();
+				 if (forceUpdate == "true") {
+					 if(!getNewIdentity()) {
+						 System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
+						 this->torStatusIcon->Text = resources->GetString(L"Comm");
+						 this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
+					 }
+				 }
 				 updateIPandDisplay();
 			 }
 	private: System::Void excludeExitNodesToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -638,7 +640,11 @@ private: System::Windows::Forms::ProgressBar^  progressBar1;
 			 }
 	private: System::Void forceUpdateToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 				//when Force Update is selected or F5 pressed, get a new identity immediately
-				getNewIdentity();
+				if(!getNewIdentity()) {
+					System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(GeoLockWin::typeid));
+					this->torStatusIcon->Text = resources->GetString(L"Comm");
+					this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
+				}
 				updateIPandDisplay();
 		     }
 	private: System::Void notifyIcon1_DoubleClick(System::Object^  sender, System::EventArgs^  e) {
