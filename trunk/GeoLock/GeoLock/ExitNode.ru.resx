@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Исключенные узлы</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="clearAll.Location" type="System.Drawing.Point, System.Drawing">
     <value>107, 246</value>
@@ -150,8 +147,8 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Исключены страны</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Предпочтительные узлы</value>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Исключенные узлы</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 218</value>
@@ -185,8 +182,8 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Предпочитаемые страны</value>
   </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Передовой</value>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Предпочтительные узлы</value>
   </data>
   <data name="lookupHost.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 17</value>
@@ -277,6 +274,9 @@
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Частота обновления</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Передовой</value>
   </data>
   <data name="cancelButton.Text" xml:space="preserve">
     <value>отменить</value>
