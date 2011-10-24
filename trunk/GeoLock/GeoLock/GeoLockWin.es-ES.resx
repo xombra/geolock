@@ -118,6 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
+  </data>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 20</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Opciones</value>
+  </data>
   <data name="forceUpdateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>214, 22</value>
   </data>
@@ -127,29 +139,29 @@
   <data name="forceUpdateToolStripMenuItem.ToolTipText" xml:space="preserve">
     <value>Las fuerzas de una nueva identidad</value>
   </data>
+  <data name="addCurrentIP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 22</value>
+  </data>
+  <data name="addCurrentIP.Text" xml:space="preserve">
+    <value>Bloquear IP actual</value>
+  </data>
+  <data name="addCurrentHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 22</value>
+  </data>
+  <data name="addCurrentHost.Text" xml:space="preserve">
+    <value>Bloquear host actual</value>
+  </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>214, 22</value>
   </data>
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
     <value>Salir</value>
   </data>
-  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 20</value>
-  </data>
-  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Archivo</value>
-  </data>
   <data name="excludeExitNodesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 22</value>
   </data>
   <data name="excludeExitNodesToolStripMenuItem.Text" xml:space="preserve">
     <value>Configuración...</value>
-  </data>
-  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 20</value>
-  </data>
-  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Opciones</value>
   </data>
   <data name="excludeList.Text" xml:space="preserve">
     <value>Excluir:</value>
@@ -207,6 +219,33 @@
         LRI7JrtZdoDAo1XmbjMyD+tjSXxGcXRmnYg5ttD9QuxDhN0uUgDOmbvNTpPOJaGAo2K36cyaGZvOFIfd
         KlSA8/zRh9ABIDUG+1JpAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>Fuerza de Actualización</value>
+  </data>
+  <data name="blockCurrentIPn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="blockCurrentIPn.Text" xml:space="preserve">
+    <value>Bloquear IP actual</value>
+  </data>
+  <data name="blockCurrentHostn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="blockCurrentHostn.Text" xml:space="preserve">
+    <value>Bloquear host actual</value>
+  </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="toolStripMenuItem2.Text" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 92</value>
   </data>
   <data name="blockedIP.Text" xml:space="preserve">
     <value>IPs bloqueadas:</value>
@@ -470,7 +509,7 @@
         AACAAwAAgAMAAMAHAADABwAA8B8AAPx/AAA=
 </value>
   </data>
-  <data name="Comm" xml:space="preserve">
+    <data name="Comm" xml:space="preserve">
     <value>Error: No se puede comunicar con Tor! Control de emisión del puerto?</value>
   </data>
   <data name="Err" xml:space="preserve">

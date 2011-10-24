@@ -118,8 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 20</value>
+  </data>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>設定</value>
+  </data>
   <data name="forceUpdateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
+    <value>242, 22</value>
   </data>
   <data name="forceUpdateToolStripMenuItem.Text" xml:space="preserve">
     <value>強制アップデート</value>
@@ -127,29 +139,29 @@
   <data name="forceUpdateToolStripMenuItem.ToolTipText" xml:space="preserve">
     <value>新しいIDを強制的に</value>
   </data>
+  <data name="addCurrentIP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 22</value>
+  </data>
+  <data name="addCurrentIP.Text" xml:space="preserve">
+    <value>現在のIPをブロックする</value>
+  </data>
+  <data name="addCurrentHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 22</value>
+  </data>
+  <data name="addCurrentHost.Text" xml:space="preserve">
+    <value>現在のホスト名をブロックする</value>
+  </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
+    <value>242, 22</value>
   </data>
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
     <value>終了</value>
-  </data>
-  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 20</value>
-  </data>
-  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>ファイル</value>
   </data>
   <data name="excludeExitNodesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 22</value>
   </data>
   <data name="excludeExitNodesToolStripMenuItem.Text" xml:space="preserve">
     <value>設定...</value>
-  </data>
-  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 20</value>
-  </data>
-  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>設定</value>
   </data>
   <data name="excludeList.Text" xml:space="preserve">
     <value>除外：</value>
@@ -207,6 +219,33 @@
         LRI7JrtZdoDAo1XmbjMyD+tjSXxGcXRmnYg5ttD9QuxDhN0uUgDOmbvNTpPOJaGAo2K36cyaGZvOFIfd
         KlSA8/zRh9ABIDUG+1JpAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 92</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 22</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>強制アップデート</value>
+  </data>
+  <data name="blockCurrentIPn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 22</value>
+  </data>
+  <data name="blockCurrentIPn.Text" xml:space="preserve">
+    <value>現在のIPをブロックする</value>
+  </data>
+  <data name="blockCurrentHostn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 22</value>
+  </data>
+  <data name="blockCurrentHostn.Text" xml:space="preserve">
+    <value>現在のホスト名をブロックする</value>
+  </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 22</value>
+  </data>
+  <data name="toolStripMenuItem2.Text" xml:space="preserve">
+    <value>終了</value>
   </data>
   <data name="blockedIP.Text" xml:space="preserve">
     <value>ブロックされたIPアドレス：</value>
@@ -470,7 +509,7 @@
         AACAAwAAgAMAAMAHAADABwAA8B8AAPx/AAA=
 </value>
   </data>
-  <data name="Comm" xml:space="preserve">
+    <data name="Comm" xml:space="preserve">
     <value>エラー：Torと通信できません！コントロールポートの問題？</value>
   </data>
   <data name="Err" xml:space="preserve">

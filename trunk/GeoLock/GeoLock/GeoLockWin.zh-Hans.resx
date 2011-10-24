@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="forceUpdateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="forceUpdateToolStripMenuItem.Text" xml:space="preserve">
     <value>强制更新</value>
@@ -127,8 +127,20 @@
   <data name="forceUpdateToolStripMenuItem.ToolTipText" xml:space="preserve">
     <value>强制一个新的身份</value>
   </data>
+  <data name="addCurrentIP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="addCurrentIP.Text" xml:space="preserve">
+    <value>块的当前IP</value>
+  </data>
+  <data name="addCurrentHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="addCurrentHost.Text" xml:space="preserve">
+    <value>当前主机座</value>
+  </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
     <value>退出</value>
@@ -140,7 +152,7 @@
     <value>文件</value>
   </data>
   <data name="excludeExitNodesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="excludeExitNodesToolStripMenuItem.Text" xml:space="preserve">
     <value>配置...</value>
@@ -207,6 +219,33 @@
         LRI7JrtZdoDAo1XmbjMyD+tjSXxGcXRmnYg5ttD9QuxDhN0uUgDOmbvNTpPOJaGAo2K36cyaGZvOFIfd
         KlSA8/zRh9ABIDUG+1JpAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 22</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>强制更新</value>
+  </data>
+  <data name="blockCurrentIPn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 22</value>
+  </data>
+  <data name="blockCurrentIPn.Text" xml:space="preserve">
+    <value>块的当前IP</value>
+  </data>
+  <data name="blockCurrentHostn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 22</value>
+  </data>
+  <data name="blockCurrentHostn.Text" xml:space="preserve">
+    <value>当前主机座</value>
+  </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 22</value>
+  </data>
+  <data name="toolStripMenuItem2.Text" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 92</value>
   </data>
   <data name="blockedIP.Text" xml:space="preserve">
     <value>被封IP：</value>
