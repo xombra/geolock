@@ -137,6 +137,7 @@ namespace GeoLock {
 	private: System::Windows::Forms::CheckBox^  loggingCheck;
 	private: System::Windows::Forms::CheckBox^  advOutput;
 	private: System::Windows::Forms::CheckBox^  lookupHost;
+private: System::Windows::Forms::TabPage^  tabPage4;
 	private: System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
@@ -185,6 +186,7 @@ namespace GeoLock {
 			this->lineShape3 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->okButton = (gcnew System::Windows::Forms::Button());
 			this->cancelButton = (gcnew System::Windows::Forms::Button());
+			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
@@ -194,7 +196,6 @@ namespace GeoLock {
 			// 
 			// excludedNodes
 			// 
-			resources->ApplyResources(this->excludedNodes, L"excludedNodes");
 			this->excludedNodes->CheckOnClick = true;
 			this->excludedNodes->FormattingEnabled = true;
 			this->excludedNodes->Items->AddRange(gcnew cli::array< System::Object^  >(240) {resources->GetString(L"excludedNodes.Items"), 
@@ -278,26 +279,28 @@ namespace GeoLock {
 				resources->GetString(L"excludedNodes.Items232"), resources->GetString(L"excludedNodes.Items233"), resources->GetString(L"excludedNodes.Items234"), 
 				resources->GetString(L"excludedNodes.Items235"), resources->GetString(L"excludedNodes.Items236"), resources->GetString(L"excludedNodes.Items237"), 
 				resources->GetString(L"excludedNodes.Items238"), resources->GetString(L"excludedNodes.Items239")});
+			resources->ApplyResources(this->excludedNodes, L"excludedNodes");
 			this->excludedNodes->Name = L"excludedNodes";
 			// 
 			// tabControl1
 			// 
-			resources->ApplyResources(this->tabControl1, L"tabControl1");
 			this->tabControl1->Controls->Add(this->tabPage1);
 			this->tabControl1->Controls->Add(this->tabPage2);
+			this->tabControl1->Controls->Add(this->tabPage4);
 			this->tabControl1->Controls->Add(this->tabPage3);
+			resources->ApplyResources(this->tabControl1, L"tabControl1");
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
 			// 
 			// tabPage1
 			// 
-			resources->ApplyResources(this->tabPage1, L"tabPage1");
 			this->tabPage1->Controls->Add(this->clearAll);
 			this->tabPage1->Controls->Add(this->selectAll);
 			this->tabPage1->Controls->Add(this->label2);
 			this->tabPage1->Controls->Add(this->label1);
 			this->tabPage1->Controls->Add(this->excludedNodes);
 			this->tabPage1->Controls->Add(this->shapeContainer1);
+			resources->ApplyResources(this->tabPage1, L"tabPage1");
 			this->tabPage1->Name = L"tabPage1";
 			this->tabPage1->UseVisualStyleBackColor = true;
 			// 
@@ -339,13 +342,13 @@ namespace GeoLock {
 			// 
 			// tabPage2
 			// 
-			resources->ApplyResources(this->tabPage2, L"tabPage2");
 			this->tabPage2->Controls->Add(this->label4);
 			this->tabPage2->Controls->Add(this->ClearAllPre);
 			this->tabPage2->Controls->Add(this->SelectAllPre);
 			this->tabPage2->Controls->Add(this->label3);
 			this->tabPage2->Controls->Add(this->preferredNodes);
 			this->tabPage2->Controls->Add(this->shapeContainer2);
+			resources->ApplyResources(this->tabPage2, L"tabPage2");
 			this->tabPage2->Name = L"tabPage2";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
@@ -375,7 +378,6 @@ namespace GeoLock {
 			// 
 			// preferredNodes
 			// 
-			resources->ApplyResources(this->preferredNodes, L"preferredNodes");
 			this->preferredNodes->CheckOnClick = true;
 			this->preferredNodes->FormattingEnabled = true;
 			this->preferredNodes->Items->AddRange(gcnew cli::array< System::Object^  >(240) {resources->GetString(L"preferredNodes.Items"), 
@@ -459,6 +461,7 @@ namespace GeoLock {
 				resources->GetString(L"preferredNodes.Items232"), resources->GetString(L"preferredNodes.Items233"), resources->GetString(L"preferredNodes.Items234"), 
 				resources->GetString(L"preferredNodes.Items235"), resources->GetString(L"preferredNodes.Items236"), resources->GetString(L"preferredNodes.Items237"), 
 				resources->GetString(L"preferredNodes.Items238"), resources->GetString(L"preferredNodes.Items239")});
+			resources->ApplyResources(this->preferredNodes, L"preferredNodes");
 			this->preferredNodes->Name = L"preferredNodes";
 			// 
 			// shapeContainer2
@@ -475,7 +478,6 @@ namespace GeoLock {
 			// 
 			// tabPage3
 			// 
-			resources->ApplyResources(this->tabPage3, L"tabPage3");
 			this->tabPage3->Controls->Add(this->lookupHost);
 			this->tabPage3->Controls->Add(this->advOutput);
 			this->tabPage3->Controls->Add(this->loggingCheck);
@@ -495,6 +497,7 @@ namespace GeoLock {
 			this->tabPage3->Controls->Add(this->label6);
 			this->tabPage3->Controls->Add(this->label5);
 			this->tabPage3->Controls->Add(this->shapeContainer3);
+			resources->ApplyResources(this->tabPage3, L"tabPage3");
 			this->tabPage3->Name = L"tabPage3";
 			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
@@ -629,11 +632,17 @@ namespace GeoLock {
 			// 
 			// cancelButton
 			// 
-			resources->ApplyResources(this->cancelButton, L"cancelButton");
 			this->cancelButton->DialogResult = System::Windows::Forms::DialogResult::Cancel;
+			resources->ApplyResources(this->cancelButton, L"cancelButton");
 			this->cancelButton->Name = L"cancelButton";
 			this->cancelButton->UseVisualStyleBackColor = true;
 			this->cancelButton->Click += gcnew System::EventHandler(this, &ExitNode::cancelButton_Click);
+			// 
+			// tabPage4
+			// 
+			resources->ApplyResources(this->tabPage4, L"tabPage4");
+			this->tabPage4->Name = L"tabPage4";
+			this->tabPage4->UseVisualStyleBackColor = true;
 			// 
 			// ExitNode
 			// 

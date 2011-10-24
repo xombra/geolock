@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Nós Excluídos</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="clearAll.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 23</value>
@@ -144,8 +141,8 @@ Nota: Ao tentar encontrar um nó de saída novo, GeoLock pode visitar nós local
   <data name="label1.Text" xml:space="preserve">
     <value>Países excluídos</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Nós Preferidos</value>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Nós Excluídos</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>GeoLock usará apenas os nós de saída nesses países quando se escolhe um nó de saída.
@@ -170,8 +167,8 @@ Nota: Ao tentar encontrar um nó de saída novo, GeoLock pode visitar nós local
   <data name="label3.Text" xml:space="preserve">
     <value>Países preferidos</value>
   </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Avançado</value>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Nós Preferidos</value>
   </data>
   <data name="lookupHost.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 17</value>
@@ -265,6 +262,9 @@ Nota: Ao tentar encontrar um nó de saída novo, GeoLock pode visitar nós local
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Freqüência de atualização</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Avançado</value>
   </data>
   <data name="cancelButton.Text" xml:space="preserve">
     <value>Cancelar</value>
