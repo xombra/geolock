@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>排除的節點</value>
+  </data>
   <data name="clearAll.Text" xml:space="preserve">
     <value>全部清除</value>
   </data>
@@ -135,8 +138,8 @@
   <data name="label1.Text" xml:space="preserve">
     <value>排除的國家之</value>
   </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>排除的節點</value>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>首選的節點</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>GeoLock只會用在這些國家的出口節點時，選擇退出的節點。
@@ -155,8 +158,38 @@
   <data name="label3.Text" xml:space="preserve">
     <value>首選國家</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>首選的節點</value>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>被封IP地址</value>
+  </data>
+  <data name="clearBlockedButton.Text" xml:space="preserve">
+    <value>全部清除</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>（用逗號分隔）</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>封鎖的主機名</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>（用逗號分隔）</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>被封IP地址</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>高級</value>
   </data>
   <data name="lookupHost.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 17</value>
@@ -244,9 +277,6 @@
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>更新頻率</value>
-  </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>高級</value>
   </data>
   <data name="cancelButton.Text" xml:space="preserve">
     <value>取消</value>

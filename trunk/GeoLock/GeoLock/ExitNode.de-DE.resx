@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Auszuschließen Knoten</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="clearAll.Location" type="System.Drawing.Point, System.Drawing">
     <value>107, 246</value>
@@ -144,8 +141,8 @@ Hinweis: Bei dem Versuch, eine neue Ausfahrt Knoten zu finden, GeoLock können K
   <data name="label1.Text" xml:space="preserve">
     <value>Ausgeschlossen Ländern</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Bevorzugten Knoten</value>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Auszuschließen Knoten</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>GeoLock wird nur Exit-Nodes in diesen Ländern bei der Auswahl eines Exit-Node.
@@ -161,8 +158,38 @@ Hinweis: Bei dem Versuch, eine neue Ausfahrt Knoten zu finden, GeoLock können K
   <data name="label3.Text" xml:space="preserve">
     <value>Bevorzugte Länder</value>
   </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Fortgeschritten</value>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Bevorzugten Knoten</value>
+  </data>
+  <data name="clearBlockedButton.Text" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 13</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>(getrennt mit Komma)</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 13</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Blockierte Hostnamen</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 13</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>(getrennt mit Komma)</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 13</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Gesperrte IP-Adressen</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>Blockierte IPs</value>
   </data>
   <data name="advOutput.Size" type="System.Drawing.Size, System.Drawing">
     <value>206, 17</value>
@@ -238,6 +265,9 @@ Hinweis: Bei dem Versuch, eine neue Ausfahrt Knoten zu finden, GeoLock können K
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Aktualisieren Häufigkeit</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Fortgeschritten</value>
   </data>
   <data name="cancelButton.Text" xml:space="preserve">
     <value>Abbrechen</value>

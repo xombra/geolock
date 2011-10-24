@@ -208,6 +208,12 @@
         KlSA8/zRh9ABIDUG+1JpAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="blockedIP.Text" xml:space="preserve">
+    <value>منعت الملكية الفكرية:</value>
+  </data>
+  <data name="blockedHost.Text" xml:space="preserve">
+    <value>حظر المضيفون:</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAMAMDAAAAEAIACoJQAANgAAACAgAAABACAAqBAAAN4lAAAQEAAAAQAgAGgEAACGNgAAKAAAADAA
@@ -463,5 +469,23 @@
         8w7///8A////AP///wD///8A////AP+BAAD4AQAA4AEAAMABAADAAQAAgAEAAIABAAAAAQAAAAEAAAAB
         AACAAwAAgAMAAMAHAADABwAA8B8AAPx/AAA=
 </value>
+  </data>
+  <data name="Comm" xml:space="preserve">
+    <value>خطأ : لا يمكن التواصل مع تور! مراقبة الموانئ القضية؟</value>
+  </data>
+  <data name="Err" xml:space="preserve">
+    <value>خطأ : لم يتم تشغيل تور أو لم يتم تكوينه بشكل صحيح!</value>
+  </data>
+  <data name="Torcookie" xml:space="preserve">
+    <value>الخطأ : تور يستخدم مصادقة كوكي</value>
+  </data>
+  <data name="TorOK" xml:space="preserve">
+    <value>تور موافق</value>
+  </data>
+  <data name="Torpw" xml:space="preserve">
+    <value>الخطأ : تور يستخدم كلمة مرور</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>خطأ : غير معروف</value>
   </data>
 </root>

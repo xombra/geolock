@@ -170,6 +170,42 @@ Nota: Ao tentar encontrar um nó de saída novo, GeoLock pode visitar nós local
   <data name="tabPage2.Text" xml:space="preserve">
     <value>Nós Preferidos</value>
   </data>
+  <data name="clearBlockedButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 248</value>
+  </data>
+  <data name="clearBlockedButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 23</value>
+  </data>
+  <data name="clearBlockedButton.Text" xml:space="preserve">
+    <value>Limpar Todos</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 13</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>(separar com vírgulas)</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 13</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Hostnames bloqueados</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 13</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>(separar com vírgulas)</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 13</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Bloqueados endereços IP</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>IPs bloqueados</value>
+  </data>
   <data name="lookupHost.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 17</value>
   </data>

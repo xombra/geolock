@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Uteslutna Noder</value>
+  </data>
   <data name="clearAll.Text" xml:space="preserve">
     <value>Ta bort alla</value>
   </data>
@@ -135,8 +138,8 @@ Obs: Vid försök att hitta en ny exit nod, kan GeoLock besöka noder som ligger
   <data name="label1.Text" xml:space="preserve">
     <value>Exkluderade Länder</value>
   </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Uteslutna Noder</value>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Prioriterade Noder</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>GeoLock kommer endast att använda exit-noder i dessa länder när man väljer en exit nod.
@@ -155,8 +158,38 @@ Obs: Vid försök att hitta en ny exit nod, kan GeoLock besöka noder belägna i
   <data name="label3.Text" xml:space="preserve">
     <value>Prioriterade Länder</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Prioriterade Noder</value>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>Blockerade IP</value>
+  </data>
+  <data name="clearBlockedButton.Text" xml:space="preserve">
+    <value>Rensa alla</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 13</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>(separera med kommatecken)</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 13</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Blockerade Värdnamn</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 13</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>(separera med kommatecken)</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 13</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Blockerade IP-adresser</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Avancerade</value>
   </data>
   <data name="advOutput.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 17</value>
@@ -244,9 +277,6 @@ Obs: Vid försök att hitta en ny exit nod, kan GeoLock besöka noder belägna i
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Uppdateringsfrekvens</value>
-  </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Avancerade</value>
   </data>
   <data name="cancelButton.Text" xml:space="preserve">
     <value>Avbryt</value>

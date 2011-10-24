@@ -208,6 +208,12 @@
         KlSA8/zRh9ABIDUG+1JpAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="blockedIP.Text" xml:space="preserve">
+    <value>被封IP：</value>
+  </data>
+  <data name="blockedHost.Text" xml:space="preserve">
+    <value>封锁的主机：</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAMAMDAAAAEAIACoJQAANgAAACAgAAABACAAqBAAAN4lAAAQEAAAAQAgAGgEAACGNgAAKAAAADAA
@@ -463,5 +469,23 @@
         8w7///8A////AP///wD///8A////AP+BAAD4AQAA4AEAAMABAADAAQAAgAEAAIABAAAAAQAAAAEAAAAB
         AACAAwAAgAMAAMAHAADABwAA8B8AAPx/AAA=
 </value>
+  </data>
+  <data name="Comm" xml:space="preserve">
+    <value>错误：无法沟通与Tor！控制端口的问题？</value>
+  </data>
+  <data name="Err" xml:space="preserve">
+    <value>错误：Tor是不运行或配置不正确！</value>
+  </data>
+  <data name="Torcookie" xml:space="preserve">
+    <value>错误：Tor是使用cookie认证</value>
+  </data>
+  <data name="TorOK" xml:space="preserve">
+    <value>Tor的确定</value>
+  </data>
+  <data name="Torpw" xml:space="preserve">
+    <value>错误：Tor是使用密码</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>错误：未知</value>
   </data>
 </root>

@@ -208,6 +208,12 @@
         KlSA8/zRh9ABIDUG+1JpAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="blockedIP.Text" xml:space="preserve">
+    <value>Blockerade IP-adresser:</value>
+  </data>
+  <data name="blockedHost.Text" xml:space="preserve">
+    <value>Blockerade Värdar:</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAMAMDAAAAEAIACoJQAANgAAACAgAAABACAAqBAAAN4lAAAQEAAAAQAgAGgEAACGNgAAKAAAADAA
@@ -463,5 +469,23 @@
         8w7///8A////AP///wD///8A////AP+BAAD4AQAA4AEAAMABAADAAQAAgAEAAIABAAAAAQAAAAEAAAAB
         AACAAwAAgAMAAMAHAADABwAA8B8AAPx/AAA=
 </value>
+  </data>
+  <data name="Comm" xml:space="preserve">
+    <value>Fel: Kan inte kommunicera med Tor! Kontroll port fråga?</value>
+  </data>
+  <data name="Err" xml:space="preserve">
+    <value>Fel: Tor körs inte eller är inte korrekt konfigurerad!</value>
+  </data>
+  <data name="Torcookie" xml:space="preserve">
+    <value>Fel: Tor använder cookies autentisering</value>
+  </data>
+  <data name="TorOK" xml:space="preserve">
+    <value>Tor OK</value>
+  </data>
+  <data name="Torpw" xml:space="preserve">
+    <value>Fel: Tor använder ett lösenord</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Fel: Okänt</value>
   </data>
 </root>

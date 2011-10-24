@@ -28,6 +28,8 @@ namespace GeoLock {
 			String^ logging = System::Configuration::ConfigurationManager::AppSettings["logging"];
 			String^ advOut = System::Configuration::ConfigurationManager::AppSettings["advancedOutput"];
 			String^ host = System::Configuration::ConfigurationManager::AppSettings["hostLookup"];
+			String^ managedBadIP = System::Configuration::ConfigurationManager::AppSettings["blockedIP"];
+			String^ managedBadHost = System::Configuration::ConfigurationManager::AppSettings["blockedHost"];
 
 			//convert comma delimited list into array
 			array<String^>^ excludedList = managedExcluded->Split(',');
@@ -53,6 +55,8 @@ namespace GeoLock {
 			this->updateIn->Text = updateFreq;
 			this->controlPort->Text = controlPortI;
 			this->opacitySelect->Value = System::Decimal::Parse(opacity);
+			this->badIP->Text = managedBadIP;
+			this->badHost->Text = managedBadHost;
 
 			//set forceUpdate checkbox
 			if (forceUpdate == "true") {
@@ -137,7 +141,17 @@ namespace GeoLock {
 	private: System::Windows::Forms::CheckBox^  loggingCheck;
 	private: System::Windows::Forms::CheckBox^  advOutput;
 	private: System::Windows::Forms::CheckBox^  lookupHost;
-private: System::Windows::Forms::TabPage^  tabPage4;
+	private: System::Windows::Forms::TabPage^  tabPage4;
+	private: System::Windows::Forms::Label^  label8;
+	private: Microsoft::VisualBasic::PowerPacks::ShapeContainer^  shapeContainer4;
+	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape6;
+	private: System::Windows::Forms::TextBox^  badIP;
+	private: System::Windows::Forms::TextBox^  badHost;
+	private: System::Windows::Forms::Label^  label15;
+	private: System::Windows::Forms::Label^  label14;
+	private: Microsoft::VisualBasic::PowerPacks::LineShape^  lineShape7;
+	private: System::Windows::Forms::Label^  label16;
+	private: System::Windows::Forms::Button^  clearBlockedButton;
 	private: System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
@@ -161,6 +175,17 @@ private: System::Windows::Forms::TabPage^  tabPage4;
 			this->preferredNodes = (gcnew System::Windows::Forms::CheckedListBox());
 			this->shapeContainer2 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
 			this->lineShape2 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
+			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
+			this->clearBlockedButton = (gcnew System::Windows::Forms::Button());
+			this->label16 = (gcnew System::Windows::Forms::Label());
+			this->badHost = (gcnew System::Windows::Forms::TextBox());
+			this->label15 = (gcnew System::Windows::Forms::Label());
+			this->label14 = (gcnew System::Windows::Forms::Label());
+			this->badIP = (gcnew System::Windows::Forms::TextBox());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->shapeContainer4 = (gcnew Microsoft::VisualBasic::PowerPacks::ShapeContainer());
+			this->lineShape7 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
+			this->lineShape6 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
 			this->lookupHost = (gcnew System::Windows::Forms::CheckBox());
 			this->advOutput = (gcnew System::Windows::Forms::CheckBox());
@@ -186,16 +211,17 @@ private: System::Windows::Forms::TabPage^  tabPage4;
 			this->lineShape3 = (gcnew Microsoft::VisualBasic::PowerPacks::LineShape());
 			this->okButton = (gcnew System::Windows::Forms::Button());
 			this->cancelButton = (gcnew System::Windows::Forms::Button());
-			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
+			this->tabPage4->SuspendLayout();
 			this->tabPage3->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->opacitySelect))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// excludedNodes
 			// 
+			resources->ApplyResources(this->excludedNodes, L"excludedNodes");
 			this->excludedNodes->CheckOnClick = true;
 			this->excludedNodes->FormattingEnabled = true;
 			this->excludedNodes->Items->AddRange(gcnew cli::array< System::Object^  >(240) {resources->GetString(L"excludedNodes.Items"), 
@@ -279,28 +305,29 @@ private: System::Windows::Forms::TabPage^  tabPage4;
 				resources->GetString(L"excludedNodes.Items232"), resources->GetString(L"excludedNodes.Items233"), resources->GetString(L"excludedNodes.Items234"), 
 				resources->GetString(L"excludedNodes.Items235"), resources->GetString(L"excludedNodes.Items236"), resources->GetString(L"excludedNodes.Items237"), 
 				resources->GetString(L"excludedNodes.Items238"), resources->GetString(L"excludedNodes.Items239")});
-			resources->ApplyResources(this->excludedNodes, L"excludedNodes");
 			this->excludedNodes->Name = L"excludedNodes";
 			// 
 			// tabControl1
 			// 
+			resources->ApplyResources(this->tabControl1, L"tabControl1");
 			this->tabControl1->Controls->Add(this->tabPage1);
 			this->tabControl1->Controls->Add(this->tabPage2);
 			this->tabControl1->Controls->Add(this->tabPage4);
 			this->tabControl1->Controls->Add(this->tabPage3);
-			resources->ApplyResources(this->tabControl1, L"tabControl1");
+			this->tabControl1->MaximumSize = System::Drawing::Size(325, 310);
+			this->tabControl1->MinimumSize = System::Drawing::Size(325, 310);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
 			// 
 			// tabPage1
 			// 
+			resources->ApplyResources(this->tabPage1, L"tabPage1");
 			this->tabPage1->Controls->Add(this->clearAll);
 			this->tabPage1->Controls->Add(this->selectAll);
 			this->tabPage1->Controls->Add(this->label2);
 			this->tabPage1->Controls->Add(this->label1);
 			this->tabPage1->Controls->Add(this->excludedNodes);
 			this->tabPage1->Controls->Add(this->shapeContainer1);
-			resources->ApplyResources(this->tabPage1, L"tabPage1");
 			this->tabPage1->Name = L"tabPage1";
 			this->tabPage1->UseVisualStyleBackColor = true;
 			// 
@@ -342,13 +369,13 @@ private: System::Windows::Forms::TabPage^  tabPage4;
 			// 
 			// tabPage2
 			// 
+			resources->ApplyResources(this->tabPage2, L"tabPage2");
 			this->tabPage2->Controls->Add(this->label4);
 			this->tabPage2->Controls->Add(this->ClearAllPre);
 			this->tabPage2->Controls->Add(this->SelectAllPre);
 			this->tabPage2->Controls->Add(this->label3);
 			this->tabPage2->Controls->Add(this->preferredNodes);
 			this->tabPage2->Controls->Add(this->shapeContainer2);
-			resources->ApplyResources(this->tabPage2, L"tabPage2");
 			this->tabPage2->Name = L"tabPage2";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
@@ -378,6 +405,7 @@ private: System::Windows::Forms::TabPage^  tabPage4;
 			// 
 			// preferredNodes
 			// 
+			resources->ApplyResources(this->preferredNodes, L"preferredNodes");
 			this->preferredNodes->CheckOnClick = true;
 			this->preferredNodes->FormattingEnabled = true;
 			this->preferredNodes->Items->AddRange(gcnew cli::array< System::Object^  >(240) {resources->GetString(L"preferredNodes.Items"), 
@@ -461,7 +489,6 @@ private: System::Windows::Forms::TabPage^  tabPage4;
 				resources->GetString(L"preferredNodes.Items232"), resources->GetString(L"preferredNodes.Items233"), resources->GetString(L"preferredNodes.Items234"), 
 				resources->GetString(L"preferredNodes.Items235"), resources->GetString(L"preferredNodes.Items236"), resources->GetString(L"preferredNodes.Items237"), 
 				resources->GetString(L"preferredNodes.Items238"), resources->GetString(L"preferredNodes.Items239")});
-			resources->ApplyResources(this->preferredNodes, L"preferredNodes");
 			this->preferredNodes->Name = L"preferredNodes";
 			// 
 			// shapeContainer2
@@ -476,8 +503,78 @@ private: System::Windows::Forms::TabPage^  tabPage4;
 			resources->ApplyResources(this->lineShape2, L"lineShape2");
 			this->lineShape2->Name = L"lineShape2";
 			// 
+			// tabPage4
+			// 
+			resources->ApplyResources(this->tabPage4, L"tabPage4");
+			this->tabPage4->Controls->Add(this->clearBlockedButton);
+			this->tabPage4->Controls->Add(this->label16);
+			this->tabPage4->Controls->Add(this->badHost);
+			this->tabPage4->Controls->Add(this->label15);
+			this->tabPage4->Controls->Add(this->label14);
+			this->tabPage4->Controls->Add(this->badIP);
+			this->tabPage4->Controls->Add(this->label8);
+			this->tabPage4->Controls->Add(this->shapeContainer4);
+			this->tabPage4->Name = L"tabPage4";
+			this->tabPage4->UseVisualStyleBackColor = true;
+			// 
+			// clearBlockedButton
+			// 
+			resources->ApplyResources(this->clearBlockedButton, L"clearBlockedButton");
+			this->clearBlockedButton->Name = L"clearBlockedButton";
+			this->clearBlockedButton->UseVisualStyleBackColor = true;
+			this->clearBlockedButton->Click += gcnew System::EventHandler(this, &ExitNode::clearBlockedButton_Click);
+			// 
+			// label16
+			// 
+			resources->ApplyResources(this->label16, L"label16");
+			this->label16->Name = L"label16";
+			// 
+			// badHost
+			// 
+			resources->ApplyResources(this->badHost, L"badHost");
+			this->badHost->Name = L"badHost";
+			// 
+			// label15
+			// 
+			resources->ApplyResources(this->label15, L"label15");
+			this->label15->Name = L"label15";
+			// 
+			// label14
+			// 
+			resources->ApplyResources(this->label14, L"label14");
+			this->label14->Name = L"label14";
+			// 
+			// badIP
+			// 
+			resources->ApplyResources(this->badIP, L"badIP");
+			this->badIP->Name = L"badIP";
+			// 
+			// label8
+			// 
+			resources->ApplyResources(this->label8, L"label8");
+			this->label8->Name = L"label8";
+			// 
+			// shapeContainer4
+			// 
+			resources->ApplyResources(this->shapeContainer4, L"shapeContainer4");
+			this->shapeContainer4->Name = L"shapeContainer4";
+			this->shapeContainer4->Shapes->AddRange(gcnew cli::array< Microsoft::VisualBasic::PowerPacks::Shape^  >(2) {this->lineShape7, 
+				this->lineShape6});
+			this->shapeContainer4->TabStop = false;
+			// 
+			// lineShape7
+			// 
+			resources->ApplyResources(this->lineShape7, L"lineShape7");
+			this->lineShape7->Name = L"lineShape7";
+			// 
+			// lineShape6
+			// 
+			resources->ApplyResources(this->lineShape6, L"lineShape6");
+			this->lineShape6->Name = L"lineShape6";
+			// 
 			// tabPage3
 			// 
+			resources->ApplyResources(this->tabPage3, L"tabPage3");
 			this->tabPage3->Controls->Add(this->lookupHost);
 			this->tabPage3->Controls->Add(this->advOutput);
 			this->tabPage3->Controls->Add(this->loggingCheck);
@@ -497,7 +594,6 @@ private: System::Windows::Forms::TabPage^  tabPage4;
 			this->tabPage3->Controls->Add(this->label6);
 			this->tabPage3->Controls->Add(this->label5);
 			this->tabPage3->Controls->Add(this->shapeContainer3);
-			resources->ApplyResources(this->tabPage3, L"tabPage3");
 			this->tabPage3->Name = L"tabPage3";
 			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
@@ -632,17 +728,11 @@ private: System::Windows::Forms::TabPage^  tabPage4;
 			// 
 			// cancelButton
 			// 
-			this->cancelButton->DialogResult = System::Windows::Forms::DialogResult::Cancel;
 			resources->ApplyResources(this->cancelButton, L"cancelButton");
+			this->cancelButton->DialogResult = System::Windows::Forms::DialogResult::Cancel;
 			this->cancelButton->Name = L"cancelButton";
 			this->cancelButton->UseVisualStyleBackColor = true;
 			this->cancelButton->Click += gcnew System::EventHandler(this, &ExitNode::cancelButton_Click);
-			// 
-			// tabPage4
-			// 
-			resources->ApplyResources(this->tabPage4, L"tabPage4");
-			this->tabPage4->Name = L"tabPage4";
-			this->tabPage4->UseVisualStyleBackColor = true;
 			// 
 			// ExitNode
 			// 
@@ -662,6 +752,8 @@ private: System::Windows::Forms::TabPage^  tabPage4;
 			this->tabPage1->PerformLayout();
 			this->tabPage2->ResumeLayout(false);
 			this->tabPage2->PerformLayout();
+			this->tabPage4->ResumeLayout(false);
+			this->tabPage4->PerformLayout();
 			this->tabPage3->ResumeLayout(false);
 			this->tabPage3->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->opacitySelect))->EndInit();
@@ -777,6 +869,12 @@ private: System::Void okButton_Click(System::Object^  sender, System::EventArgs^
 			 //write opacity
 			 config->AppSettings->Settings->Remove("opacity");
 			 config->AppSettings->Settings->Add("opacity",this->opacitySelect->Value.ToString());
+			 //write blockedIPs
+			 config->AppSettings->Settings->Remove("blockedIP");
+			 config->AppSettings->Settings->Add("blockedIP",this->badIP->Text);
+			 //write blockedHosts
+			 config->AppSettings->Settings->Remove("blockedHost");
+			 config->AppSettings->Settings->Add("blockedHost",this->badHost->Text);
 			 //save app.config
 			 config->Save(System::Configuration::ConfigurationSaveMode::Modified);
 			 System::Configuration::ConfigurationManager::RefreshSection("appSettings");
@@ -797,6 +895,10 @@ private: System::Void defaultButton_Click(System::Object^  sender, System::Event
 			 this->loggingCheck->Checked = false;
 			 this->advOutput->Checked = false;
 			 this->lookupHost->Checked = true;
+		 }
+private: System::Void clearBlockedButton_Click(System::Object^  sender, System::EventArgs^  e) {
+			 this->badIP->Text = L"";
+			 this->badHost->Text = L"";
 		 }
 };
 }

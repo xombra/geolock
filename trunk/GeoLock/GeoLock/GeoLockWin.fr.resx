@@ -202,6 +202,12 @@
         KlSA8/zRh9ABIDUG+1JpAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="blockedIP.Text" xml:space="preserve">
+    <value>IP bloqués:</value>
+  </data>
+  <data name="blockedHost.Text" xml:space="preserve">
+    <value>Hôtes bloqués:</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAMAMDAAAAEAIACoJQAANgAAACAgAAABACAAqBAAAN4lAAAQEAAAAQAgAGgEAACGNgAAKAAAADAA
@@ -457,5 +463,23 @@
         8w7///8A////AP///wD///8A////AP+BAAD4AQAA4AEAAMABAADAAQAAgAEAAIABAAAAAQAAAAEAAAAB
         AACAAwAAgAMAAMAHAADABwAA8B8AAPx/AAA=
 </value>
+  </data>
+  <data name="Comm" xml:space="preserve">
+    <value>Erreur: Impossible de communiquer avec Tor! Question de port de contrôle?</value>
+  </data>
+  <data name="Err" xml:space="preserve">
+    <value>Erreur: Tor ne fonctionne pas ou n'est pas correctement configuré!</value>
+  </data>
+  <data name="Torcookie" xml:space="preserve">
+    <value>Erreur: Tor utilise l'authentification par cookie</value>
+  </data>
+  <data name="TorOK" xml:space="preserve">
+    <value>Tor OK</value>
+  </data>
+  <data name="Torpw" xml:space="preserve">
+    <value>Erreur: Tor est un mot de passe</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Erreur: Unknown</value>
   </data>
 </root>
