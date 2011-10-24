@@ -117,1767 +117,1387 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="excludedNodes.Items" xml:space="preserve">
+    <value>AC</value>
+  </data>
+  <data name="excludedNodes.Items1" xml:space="preserve">
+    <value>AD</value>
+  </data>
+  <data name="excludedNodes.Items2" xml:space="preserve">
+    <value>AE</value>
+  </data>
+  <data name="excludedNodes.Items3" xml:space="preserve">
+    <value>AF</value>
+  </data>
+  <data name="excludedNodes.Items4" xml:space="preserve">
+    <value>AG</value>
+  </data>
+  <data name="excludedNodes.Items5" xml:space="preserve">
+    <value>AI</value>
+  </data>
+  <data name="excludedNodes.Items6" xml:space="preserve">
+    <value>AL</value>
+  </data>
+  <data name="excludedNodes.Items7" xml:space="preserve">
+    <value>AM</value>
+  </data>
+  <data name="excludedNodes.Items8" xml:space="preserve">
+    <value>AN</value>
+  </data>
+  <data name="excludedNodes.Items9" xml:space="preserve">
+    <value>AO</value>
+  </data>
+  <data name="excludedNodes.Items10" xml:space="preserve">
+    <value>AP</value>
+  </data>
+  <data name="excludedNodes.Items11" xml:space="preserve">
+    <value>AQ</value>
+  </data>
+  <data name="excludedNodes.Items12" xml:space="preserve">
+    <value>AR</value>
+  </data>
   <data name="excludedNodes.Items13" xml:space="preserve">
     <value>AS</value>
+  </data>
+  <data name="excludedNodes.Items14" xml:space="preserve">
+    <value>AT</value>
+  </data>
+  <data name="excludedNodes.Items15" xml:space="preserve">
+    <value>AU</value>
+  </data>
+  <data name="excludedNodes.Items16" xml:space="preserve">
+    <value>AW</value>
+  </data>
+  <data name="excludedNodes.Items17" xml:space="preserve">
+    <value>AX</value>
+  </data>
+  <data name="excludedNodes.Items18" xml:space="preserve">
+    <value>AZ</value>
+  </data>
+  <data name="excludedNodes.Items19" xml:space="preserve">
+    <value>BA</value>
+  </data>
+  <data name="excludedNodes.Items20" xml:space="preserve">
+    <value>BB</value>
+  </data>
+  <data name="excludedNodes.Items21" xml:space="preserve">
+    <value>BD</value>
+  </data>
+  <data name="excludedNodes.Items22" xml:space="preserve">
+    <value>BE</value>
+  </data>
+  <data name="excludedNodes.Items23" xml:space="preserve">
+    <value>BF</value>
+  </data>
+  <data name="excludedNodes.Items24" xml:space="preserve">
+    <value>BG</value>
+  </data>
+  <data name="excludedNodes.Items25" xml:space="preserve">
+    <value>BH</value>
+  </data>
+  <data name="excludedNodes.Items26" xml:space="preserve">
+    <value>BI</value>
+  </data>
+  <data name="excludedNodes.Items27" xml:space="preserve">
+    <value>BJ</value>
+  </data>
+  <data name="excludedNodes.Items28" xml:space="preserve">
+    <value>BM</value>
+  </data>
+  <data name="excludedNodes.Items29" xml:space="preserve">
+    <value>BN</value>
+  </data>
+  <data name="excludedNodes.Items30" xml:space="preserve">
+    <value>BO</value>
+  </data>
+  <data name="excludedNodes.Items31" xml:space="preserve">
+    <value>BR</value>
+  </data>
+  <data name="excludedNodes.Items32" xml:space="preserve">
+    <value>BS</value>
+  </data>
+  <data name="excludedNodes.Items33" xml:space="preserve">
+    <value>BT</value>
+  </data>
+  <data name="excludedNodes.Items34" xml:space="preserve">
+    <value>BV</value>
+  </data>
+  <data name="excludedNodes.Items35" xml:space="preserve">
+    <value>BW</value>
+  </data>
+  <data name="excludedNodes.Items36" xml:space="preserve">
+    <value>BY</value>
+  </data>
+  <data name="excludedNodes.Items37" xml:space="preserve">
+    <value>BZ</value>
+  </data>
+  <data name="excludedNodes.Items38" xml:space="preserve">
+    <value>CA</value>
+  </data>
+  <data name="excludedNodes.Items39" xml:space="preserve">
+    <value>CD</value>
+  </data>
+  <data name="excludedNodes.Items40" xml:space="preserve">
+    <value>CF</value>
+  </data>
+  <data name="excludedNodes.Items41" xml:space="preserve">
+    <value>CG</value>
+  </data>
+  <data name="excludedNodes.Items42" xml:space="preserve">
+    <value>CH</value>
+  </data>
+  <data name="excludedNodes.Items43" xml:space="preserve">
+    <value>CI</value>
+  </data>
+  <data name="excludedNodes.Items44" xml:space="preserve">
+    <value>CK</value>
+  </data>
+  <data name="excludedNodes.Items45" xml:space="preserve">
+    <value>CL</value>
+  </data>
+  <data name="excludedNodes.Items46" xml:space="preserve">
+    <value>CM</value>
+  </data>
+  <data name="excludedNodes.Items47" xml:space="preserve">
+    <value>CN</value>
+  </data>
+  <data name="excludedNodes.Items48" xml:space="preserve">
+    <value>CO</value>
+  </data>
+  <data name="excludedNodes.Items49" xml:space="preserve">
+    <value>CR</value>
+  </data>
+  <data name="excludedNodes.Items50" xml:space="preserve">
+    <value>CU</value>
+  </data>
+  <data name="excludedNodes.Items51" xml:space="preserve">
+    <value>CV</value>
+  </data>
+  <data name="excludedNodes.Items52" xml:space="preserve">
+    <value>CX</value>
+  </data>
+  <data name="excludedNodes.Items53" xml:space="preserve">
+    <value>CY</value>
+  </data>
+  <data name="excludedNodes.Items54" xml:space="preserve">
+    <value>CZ</value>
+  </data>
+  <data name="excludedNodes.Items55" xml:space="preserve">
+    <value>DE</value>
+  </data>
+  <data name="excludedNodes.Items56" xml:space="preserve">
+    <value>DJ</value>
+  </data>
+  <data name="excludedNodes.Items57" xml:space="preserve">
+    <value>DK</value>
+  </data>
+  <data name="excludedNodes.Items58" xml:space="preserve">
+    <value>DM</value>
+  </data>
+  <data name="excludedNodes.Items59" xml:space="preserve">
+    <value>DO</value>
+  </data>
+  <data name="excludedNodes.Items60" xml:space="preserve">
+    <value>DZ</value>
+  </data>
+  <data name="excludedNodes.Items61" xml:space="preserve">
+    <value>EC</value>
+  </data>
+  <data name="excludedNodes.Items62" xml:space="preserve">
+    <value>EE</value>
+  </data>
+  <data name="excludedNodes.Items63" xml:space="preserve">
+    <value>EG</value>
+  </data>
+  <data name="excludedNodes.Items64" xml:space="preserve">
+    <value>ER</value>
+  </data>
+  <data name="excludedNodes.Items65" xml:space="preserve">
+    <value>ES</value>
+  </data>
+  <data name="excludedNodes.Items66" xml:space="preserve">
+    <value>ET</value>
+  </data>
+  <data name="excludedNodes.Items67" xml:space="preserve">
+    <value>EU</value>
+  </data>
+  <data name="excludedNodes.Items68" xml:space="preserve">
+    <value>FI</value>
+  </data>
+  <data name="excludedNodes.Items69" xml:space="preserve">
+    <value>FJ</value>
+  </data>
+  <data name="excludedNodes.Items70" xml:space="preserve">
+    <value>FK</value>
+  </data>
+  <data name="excludedNodes.Items71" xml:space="preserve">
+    <value>FM</value>
+  </data>
+  <data name="excludedNodes.Items72" xml:space="preserve">
+    <value>FO</value>
+  </data>
+  <data name="excludedNodes.Items73" xml:space="preserve">
+    <value>FR</value>
+  </data>
+  <data name="excludedNodes.Items74" xml:space="preserve">
+    <value>GA</value>
+  </data>
+  <data name="excludedNodes.Items75" xml:space="preserve">
+    <value>GB</value>
+  </data>
+  <data name="excludedNodes.Items76" xml:space="preserve">
+    <value>GD</value>
+  </data>
+  <data name="excludedNodes.Items77" xml:space="preserve">
+    <value>GE</value>
+  </data>
+  <data name="excludedNodes.Items78" xml:space="preserve">
+    <value>GF</value>
+  </data>
+  <data name="excludedNodes.Items79" xml:space="preserve">
+    <value>GH</value>
+  </data>
+  <data name="excludedNodes.Items80" xml:space="preserve">
+    <value>GI</value>
+  </data>
+  <data name="excludedNodes.Items81" xml:space="preserve">
+    <value>GL</value>
+  </data>
+  <data name="excludedNodes.Items82" xml:space="preserve">
+    <value>GM</value>
+  </data>
+  <data name="excludedNodes.Items83" xml:space="preserve">
+    <value>GN</value>
+  </data>
+  <data name="excludedNodes.Items84" xml:space="preserve">
+    <value>GP</value>
+  </data>
+  <data name="excludedNodes.Items85" xml:space="preserve">
+    <value>GQ</value>
+  </data>
+  <data name="excludedNodes.Items86" xml:space="preserve">
+    <value>GR</value>
+  </data>
+  <data name="excludedNodes.Items87" xml:space="preserve">
+    <value>GT</value>
+  </data>
+  <data name="excludedNodes.Items88" xml:space="preserve">
+    <value>GU</value>
+  </data>
+  <data name="excludedNodes.Items89" xml:space="preserve">
+    <value>GW</value>
+  </data>
+  <data name="excludedNodes.Items90" xml:space="preserve">
+    <value>GY</value>
+  </data>
+  <data name="excludedNodes.Items91" xml:space="preserve">
+    <value>HK</value>
+  </data>
+  <data name="excludedNodes.Items92" xml:space="preserve">
+    <value>HM</value>
+  </data>
+  <data name="excludedNodes.Items93" xml:space="preserve">
+    <value>HN</value>
+  </data>
+  <data name="excludedNodes.Items94" xml:space="preserve">
+    <value>HR</value>
+  </data>
+  <data name="excludedNodes.Items95" xml:space="preserve">
+    <value>HT</value>
+  </data>
+  <data name="excludedNodes.Items96" xml:space="preserve">
+    <value>HU</value>
+  </data>
+  <data name="excludedNodes.Items97" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="excludedNodes.Items98" xml:space="preserve">
+    <value>IE</value>
+  </data>
+  <data name="excludedNodes.Items99" xml:space="preserve">
+    <value>IL</value>
+  </data>
+  <data name="excludedNodes.Items100" xml:space="preserve">
+    <value>IM</value>
+  </data>
+  <data name="excludedNodes.Items101" xml:space="preserve">
+    <value>IN</value>
+  </data>
+  <data name="excludedNodes.Items102" xml:space="preserve">
+    <value>IO</value>
+  </data>
+  <data name="excludedNodes.Items103" xml:space="preserve">
+    <value>IQ</value>
+  </data>
+  <data name="excludedNodes.Items104" xml:space="preserve">
+    <value>IR</value>
+  </data>
+  <data name="excludedNodes.Items105" xml:space="preserve">
+    <value>IS</value>
+  </data>
+  <data name="excludedNodes.Items106" xml:space="preserve">
+    <value>IT</value>
+  </data>
+  <data name="excludedNodes.Items107" xml:space="preserve">
+    <value>JE</value>
+  </data>
+  <data name="excludedNodes.Items108" xml:space="preserve">
+    <value>JM</value>
+  </data>
+  <data name="excludedNodes.Items109" xml:space="preserve">
+    <value>JO</value>
+  </data>
+  <data name="excludedNodes.Items110" xml:space="preserve">
+    <value>JP</value>
+  </data>
+  <data name="excludedNodes.Items111" xml:space="preserve">
+    <value>KE</value>
+  </data>
+  <data name="excludedNodes.Items112" xml:space="preserve">
+    <value>KG</value>
+  </data>
+  <data name="excludedNodes.Items113" xml:space="preserve">
+    <value>KH</value>
+  </data>
+  <data name="excludedNodes.Items114" xml:space="preserve">
+    <value>KI</value>
+  </data>
+  <data name="excludedNodes.Items115" xml:space="preserve">
+    <value>KM</value>
+  </data>
+  <data name="excludedNodes.Items116" xml:space="preserve">
+    <value>KN</value>
+  </data>
+  <data name="excludedNodes.Items117" xml:space="preserve">
+    <value>KP</value>
+  </data>
+  <data name="excludedNodes.Items118" xml:space="preserve">
+    <value>KR</value>
+  </data>
+  <data name="excludedNodes.Items119" xml:space="preserve">
+    <value>KW</value>
+  </data>
+  <data name="excludedNodes.Items120" xml:space="preserve">
+    <value>KY</value>
+  </data>
+  <data name="excludedNodes.Items121" xml:space="preserve">
+    <value>KZ</value>
+  </data>
+  <data name="excludedNodes.Items122" xml:space="preserve">
+    <value>LA</value>
+  </data>
+  <data name="excludedNodes.Items123" xml:space="preserve">
+    <value>LB</value>
+  </data>
+  <data name="excludedNodes.Items124" xml:space="preserve">
+    <value>LC</value>
+  </data>
+  <data name="excludedNodes.Items125" xml:space="preserve">
+    <value>LI</value>
+  </data>
+  <data name="excludedNodes.Items126" xml:space="preserve">
+    <value>LK</value>
+  </data>
+  <data name="excludedNodes.Items127" xml:space="preserve">
+    <value>LR</value>
+  </data>
+  <data name="excludedNodes.Items128" xml:space="preserve">
+    <value>LS</value>
+  </data>
+  <data name="excludedNodes.Items129" xml:space="preserve">
+    <value>LT</value>
+  </data>
+  <data name="excludedNodes.Items130" xml:space="preserve">
+    <value>LU</value>
+  </data>
+  <data name="excludedNodes.Items131" xml:space="preserve">
+    <value>LV</value>
+  </data>
+  <data name="excludedNodes.Items132" xml:space="preserve">
+    <value>LY</value>
+  </data>
+  <data name="excludedNodes.Items133" xml:space="preserve">
+    <value>MA</value>
+  </data>
+  <data name="excludedNodes.Items134" xml:space="preserve">
+    <value>MC</value>
+  </data>
+  <data name="excludedNodes.Items135" xml:space="preserve">
+    <value>MD</value>
+  </data>
+  <data name="excludedNodes.Items136" xml:space="preserve">
+    <value>ME</value>
+  </data>
+  <data name="excludedNodes.Items137" xml:space="preserve">
+    <value>MG</value>
+  </data>
+  <data name="excludedNodes.Items138" xml:space="preserve">
+    <value>MH</value>
+  </data>
+  <data name="excludedNodes.Items139" xml:space="preserve">
+    <value>MK</value>
+  </data>
+  <data name="excludedNodes.Items140" xml:space="preserve">
+    <value>ML</value>
+  </data>
+  <data name="excludedNodes.Items141" xml:space="preserve">
+    <value>MM</value>
+  </data>
+  <data name="excludedNodes.Items142" xml:space="preserve">
+    <value>MN</value>
+  </data>
+  <data name="excludedNodes.Items143" xml:space="preserve">
+    <value>MO</value>
+  </data>
+  <data name="excludedNodes.Items144" xml:space="preserve">
+    <value>MP</value>
+  </data>
+  <data name="excludedNodes.Items145" xml:space="preserve">
+    <value>MQ</value>
+  </data>
+  <data name="excludedNodes.Items146" xml:space="preserve">
+    <value>MR</value>
+  </data>
+  <data name="excludedNodes.Items147" xml:space="preserve">
+    <value>MS</value>
+  </data>
+  <data name="excludedNodes.Items148" xml:space="preserve">
+    <value>MT</value>
+  </data>
+  <data name="excludedNodes.Items149" xml:space="preserve">
+    <value>MU</value>
+  </data>
+  <data name="excludedNodes.Items150" xml:space="preserve">
+    <value>MV</value>
+  </data>
+  <data name="excludedNodes.Items151" xml:space="preserve">
+    <value>MW</value>
+  </data>
+  <data name="excludedNodes.Items152" xml:space="preserve">
+    <value>MX</value>
+  </data>
+  <data name="excludedNodes.Items153" xml:space="preserve">
+    <value>MY</value>
+  </data>
+  <data name="excludedNodes.Items154" xml:space="preserve">
+    <value>MZ</value>
+  </data>
+  <data name="excludedNodes.Items155" xml:space="preserve">
+    <value>NA</value>
+  </data>
+  <data name="excludedNodes.Items156" xml:space="preserve">
+    <value>NC</value>
+  </data>
+  <data name="excludedNodes.Items157" xml:space="preserve">
+    <value>NE</value>
+  </data>
+  <data name="excludedNodes.Items158" xml:space="preserve">
+    <value>NF</value>
+  </data>
+  <data name="excludedNodes.Items159" xml:space="preserve">
+    <value>NG</value>
+  </data>
+  <data name="excludedNodes.Items160" xml:space="preserve">
+    <value>NI</value>
+  </data>
+  <data name="excludedNodes.Items161" xml:space="preserve">
+    <value>NL</value>
+  </data>
+  <data name="excludedNodes.Items162" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="excludedNodes.Items163" xml:space="preserve">
+    <value>NP</value>
+  </data>
+  <data name="excludedNodes.Items164" xml:space="preserve">
+    <value>NR</value>
+  </data>
+  <data name="excludedNodes.Items165" xml:space="preserve">
+    <value>NU</value>
+  </data>
+  <data name="excludedNodes.Items166" xml:space="preserve">
+    <value>NZ</value>
+  </data>
+  <data name="excludedNodes.Items167" xml:space="preserve">
+    <value>OM</value>
+  </data>
+  <data name="excludedNodes.Items168" xml:space="preserve">
+    <value>PA</value>
+  </data>
+  <data name="excludedNodes.Items169" xml:space="preserve">
+    <value>PE</value>
+  </data>
+  <data name="excludedNodes.Items170" xml:space="preserve">
+    <value>PF</value>
+  </data>
+  <data name="excludedNodes.Items171" xml:space="preserve">
+    <value>PG</value>
+  </data>
+  <data name="excludedNodes.Items172" xml:space="preserve">
+    <value>PH</value>
+  </data>
+  <data name="excludedNodes.Items173" xml:space="preserve">
+    <value>PK</value>
+  </data>
+  <data name="excludedNodes.Items174" xml:space="preserve">
+    <value>PL</value>
+  </data>
+  <data name="excludedNodes.Items175" xml:space="preserve">
+    <value>PM</value>
+  </data>
+  <data name="excludedNodes.Items176" xml:space="preserve">
+    <value>PR</value>
+  </data>
+  <data name="excludedNodes.Items177" xml:space="preserve">
+    <value>PS</value>
+  </data>
+  <data name="excludedNodes.Items178" xml:space="preserve">
+    <value>PT</value>
+  </data>
+  <data name="excludedNodes.Items179" xml:space="preserve">
+    <value>PW</value>
+  </data>
+  <data name="excludedNodes.Items180" xml:space="preserve">
+    <value>PY</value>
+  </data>
+  <data name="excludedNodes.Items181" xml:space="preserve">
+    <value>QA</value>
+  </data>
+  <data name="excludedNodes.Items182" xml:space="preserve">
+    <value>RE</value>
+  </data>
+  <data name="excludedNodes.Items183" xml:space="preserve">
+    <value>RO</value>
+  </data>
+  <data name="excludedNodes.Items184" xml:space="preserve">
+    <value>RS</value>
+  </data>
+  <data name="excludedNodes.Items185" xml:space="preserve">
+    <value>RU</value>
+  </data>
+  <data name="excludedNodes.Items186" xml:space="preserve">
+    <value>RW</value>
+  </data>
+  <data name="excludedNodes.Items187" xml:space="preserve">
+    <value>SA</value>
+  </data>
+  <data name="excludedNodes.Items188" xml:space="preserve">
+    <value>SB</value>
+  </data>
+  <data name="excludedNodes.Items189" xml:space="preserve">
+    <value>SC</value>
+  </data>
+  <data name="excludedNodes.Items190" xml:space="preserve">
+    <value>SD</value>
+  </data>
+  <data name="excludedNodes.Items191" xml:space="preserve">
+    <value>SE</value>
+  </data>
+  <data name="excludedNodes.Items192" xml:space="preserve">
+    <value>SG</value>
+  </data>
+  <data name="excludedNodes.Items193" xml:space="preserve">
+    <value>SI</value>
+  </data>
+  <data name="excludedNodes.Items194" xml:space="preserve">
+    <value>SK</value>
+  </data>
+  <data name="excludedNodes.Items195" xml:space="preserve">
+    <value>SL</value>
+  </data>
+  <data name="excludedNodes.Items196" xml:space="preserve">
+    <value>SM</value>
+  </data>
+  <data name="excludedNodes.Items197" xml:space="preserve">
+    <value>SN</value>
+  </data>
+  <data name="excludedNodes.Items198" xml:space="preserve">
+    <value>SO</value>
+  </data>
+  <data name="excludedNodes.Items199" xml:space="preserve">
+    <value>SR</value>
+  </data>
+  <data name="excludedNodes.Items200" xml:space="preserve">
+    <value>ST</value>
+  </data>
+  <data name="excludedNodes.Items201" xml:space="preserve">
+    <value>SV</value>
+  </data>
+  <data name="excludedNodes.Items202" xml:space="preserve">
+    <value>SY</value>
+  </data>
+  <data name="excludedNodes.Items203" xml:space="preserve">
+    <value>SZ</value>
+  </data>
+  <data name="excludedNodes.Items204" xml:space="preserve">
+    <value>TC</value>
+  </data>
+  <data name="excludedNodes.Items205" xml:space="preserve">
+    <value>TD</value>
+  </data>
+  <data name="excludedNodes.Items206" xml:space="preserve">
+    <value>TG</value>
+  </data>
+  <data name="excludedNodes.Items207" xml:space="preserve">
+    <value>TH</value>
+  </data>
+  <data name="excludedNodes.Items208" xml:space="preserve">
+    <value>TJ</value>
+  </data>
+  <data name="excludedNodes.Items209" xml:space="preserve">
+    <value>TK</value>
+  </data>
+  <data name="excludedNodes.Items210" xml:space="preserve">
+    <value>TL</value>
+  </data>
+  <data name="excludedNodes.Items211" xml:space="preserve">
+    <value>TM</value>
+  </data>
+  <data name="excludedNodes.Items212" xml:space="preserve">
+    <value>TN</value>
+  </data>
+  <data name="excludedNodes.Items213" xml:space="preserve">
+    <value>TO</value>
+  </data>
+  <data name="excludedNodes.Items214" xml:space="preserve">
+    <value>TR</value>
+  </data>
+  <data name="excludedNodes.Items215" xml:space="preserve">
+    <value>TT</value>
+  </data>
+  <data name="excludedNodes.Items216" xml:space="preserve">
+    <value>TV</value>
+  </data>
+  <data name="excludedNodes.Items217" xml:space="preserve">
+    <value>TW</value>
+  </data>
+  <data name="excludedNodes.Items218" xml:space="preserve">
+    <value>TZ</value>
+  </data>
+  <data name="excludedNodes.Items219" xml:space="preserve">
+    <value>UA</value>
+  </data>
+  <data name="excludedNodes.Items220" xml:space="preserve">
+    <value>UG</value>
+  </data>
+  <data name="excludedNodes.Items221" xml:space="preserve">
+    <value>UM</value>
+  </data>
+  <data name="excludedNodes.Items222" xml:space="preserve">
+    <value>US</value>
+  </data>
+  <data name="excludedNodes.Items223" xml:space="preserve">
+    <value>UY</value>
+  </data>
+  <data name="excludedNodes.Items224" xml:space="preserve">
+    <value>UZ</value>
+  </data>
+  <data name="excludedNodes.Items225" xml:space="preserve">
+    <value>VA</value>
+  </data>
+  <data name="excludedNodes.Items226" xml:space="preserve">
+    <value>VC</value>
+  </data>
+  <data name="excludedNodes.Items227" xml:space="preserve">
+    <value>VE</value>
+  </data>
+  <data name="excludedNodes.Items228" xml:space="preserve">
+    <value>VG</value>
+  </data>
+  <data name="excludedNodes.Items229" xml:space="preserve">
+    <value>VI</value>
+  </data>
+  <data name="excludedNodes.Items230" xml:space="preserve">
+    <value>VN</value>
+  </data>
+  <data name="excludedNodes.Items231" xml:space="preserve">
+    <value>VU</value>
+  </data>
+  <data name="excludedNodes.Items232" xml:space="preserve">
+    <value>WF</value>
+  </data>
+  <data name="excludedNodes.Items233" xml:space="preserve">
+    <value>WS</value>
+  </data>
+  <data name="excludedNodes.Items234" xml:space="preserve">
+    <value>XX</value>
+  </data>
+  <data name="excludedNodes.Items235" xml:space="preserve">
+    <value>YE</value>
+  </data>
+  <data name="excludedNodes.Items236" xml:space="preserve">
+    <value>YT</value>
+  </data>
+  <data name="excludedNodes.Items237" xml:space="preserve">
+    <value>ZA</value>
+  </data>
+  <data name="excludedNodes.Items238" xml:space="preserve">
+    <value>ZM</value>
+  </data>
+  <data name="excludedNodes.Items239" xml:space="preserve">
+    <value>ZW</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="excludedNodes.Location" type="System.Drawing.Point, System.Drawing">
     <value>21, 26</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 13</value>
-  </data>
-  <data name="&gt;&gt;okButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;forceIdent.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="forceIdent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 17</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 13</value>
-  </data>
-  <data name="excludedNodes.Items51" xml:space="preserve">
-    <value>CV</value>
-  </data>
-  <data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;excludedNodes.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="excludedNodes.Items82" xml:space="preserve">
-    <value>GM</value>
-  </data>
-  <data name="excludedNodes.Items59" xml:space="preserve">
-    <value>DO</value>
-  </data>
-  <data name="shapeContainer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="preferredNodes.Items157" xml:space="preserve">
-    <value>NE</value>
+  <data name="excludedNodes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 244</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lineShape5.X1" type="System.Int32, mscorlib">
-    <value>119</value>
-  </data>
-  <data name="lineShape5.X2" type="System.Int32, mscorlib">
-    <value>258</value>
-  </data>
-  <data name="preferredNodes.Items145" xml:space="preserve">
-    <value>MQ</value>
-  </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>Behavior/Appearance</value>
-  </data>
-  <data name="preferredNodes.Items196" xml:space="preserve">
-    <value>SM</value>
-  </data>
-  <data name="excludedNodes.Items157" xml:space="preserve">
-    <value>NE</value>
-  </data>
-  <data name="excludedNodes.Items147" xml:space="preserve">
-    <value>MS</value>
-  </data>
-  <data name="excludedNodes.Items177" xml:space="preserve">
-    <value>PS</value>
-  </data>
-  <data name="excludedNodes.Items167" xml:space="preserve">
-    <value>OM</value>
-  </data>
-  <data name="excludedNodes.Items117" xml:space="preserve">
-    <value>KP</value>
-  </data>
-  <data name="excludedNodes.Items107" xml:space="preserve">
-    <value>JE</value>
-  </data>
-  <data name="excludedNodes.Items137" xml:space="preserve">
-    <value>MG</value>
-  </data>
-  <data name="preferredNodes.Items198" xml:space="preserve">
-    <value>SO</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Update IP every</value>
-  </data>
-  <data name="preferredNodes.Items27" xml:space="preserve">
-    <value>BJ</value>
-  </data>
-  <data name="excludedNodes.Items197" xml:space="preserve">
-    <value>SN</value>
-  </data>
-  <data name="excludedNodes.Items187" xml:space="preserve">
-    <value>SA</value>
-  </data>
-  <data name="preferredNodes.Items57" xml:space="preserve">
-    <value>DK</value>
-  </data>
-  <data name="preferredNodes.Items67" xml:space="preserve">
-    <value>EU</value>
-  </data>
-  <data name="preferredNodes.Items77" xml:space="preserve">
-    <value>GE</value>
-  </data>
-  <data name="lineShape4.X1" type="System.Int32, mscorlib">
-    <value>65</value>
-  </data>
-  <data name="preferredNodes.Items115" xml:space="preserve">
-    <value>KM</value>
-  </data>
-  <data name="preferredNodes.Items215" xml:space="preserve">
-    <value>TT</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Connection</value>
-  </data>
-  <data name="&gt;&gt;clearAll.ZOrder" xml:space="preserve">
+  <data name="excludedNodes.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="excludedNodes.Items191" xml:space="preserve">
-    <value>SE</value>
-  </data>
-  <data name="&gt;&gt;label12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lineShape5.Name" xml:space="preserve">
-    <value>lineShape5</value>
   </data>
   <data name="&gt;&gt;excludedNodes.Name" xml:space="preserve">
     <value>excludedNodes</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Update Frequency</value>
+  <data name="&gt;&gt;excludedNodes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lineShape1.Name" xml:space="preserve">
-    <value>lineShape1</value>
+  <data name="&gt;&gt;excludedNodes.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;loggingCheck.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="preferredNodes.Items139" xml:space="preserve">
-    <value>MK</value>
-  </data>
-  <data name="preferredNodes.Items239" xml:space="preserve">
-    <value>ZW</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="forceIdent.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="preferredNodes.Items229" xml:space="preserve">
-    <value>VI</value>
-  </data>
-  <data name="&gt;&gt;SelectAllPre.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;taskBar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="excludedNodes.Items209" xml:space="preserve">
-    <value>TK</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;excludedNodes.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;clearAll.Name" xml:space="preserve">
     <value>clearAll</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;clearAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;clearAll.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;clearAll.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;selectAll.Name" xml:space="preserve">
+    <value>selectAll</value>
+  </data>
+  <data name="&gt;&gt;selectAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;selectAll.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;selectAll.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="updateIn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+  <data name="&gt;&gt;shapeContainer1.Name" xml:space="preserve">
+    <value>shapeContainer1</value>
   </data>
-  <data name="ontop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 172</value>
+  <data name="&gt;&gt;shapeContainer1.Type" xml:space="preserve">
+    <value>Microsoft.VisualBasic.PowerPacks.ShapeContainer, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="preferredNodes.Items147" xml:space="preserve">
-    <value>MS</value>
+  <data name="&gt;&gt;shapeContainer1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;updateIn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;shapeContainer1.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="preferredNodes.Items186" xml:space="preserve">
-    <value>RW</value>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
   </data>
-  <data name="preferredNodes.Items161" xml:space="preserve">
-    <value>NL</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
-  <data name="excludedNodes.Items146" xml:space="preserve">
-    <value>MR</value>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>317, 284</value>
   </data>
-  <data name="excludedNodes.Items176" xml:space="preserve">
-    <value>PR</value>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="excludedNodes.Items166" xml:space="preserve">
-    <value>NZ</value>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Excluded Nodes</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ClearAllPre.Name" xml:space="preserve">
+    <value>ClearAllPre</value>
+  </data>
+  <data name="&gt;&gt;ClearAllPre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ClearAllPre.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;ClearAllPre.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;SelectAllPre.Name" xml:space="preserve">
+    <value>SelectAllPre</value>
+  </data>
+  <data name="&gt;&gt;SelectAllPre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SelectAllPre.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;SelectAllPre.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;preferredNodes.Name" xml:space="preserve">
+    <value>preferredNodes</value>
+  </data>
+  <data name="&gt;&gt;preferredNodes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;preferredNodes.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;preferredNodes.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;shapeContainer2.Name" xml:space="preserve">
+    <value>shapeContainer2</value>
+  </data>
+  <data name="&gt;&gt;shapeContainer2.Type" xml:space="preserve">
+    <value>Microsoft.VisualBasic.PowerPacks.ShapeContainer, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;shapeContainer2.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;shapeContainer2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>317, 284</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Preferred Nodes</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>317, 284</value>
+  </data>
+  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>Blocked IPs</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lookupHost.Name" xml:space="preserve">
+    <value>lookupHost</value>
   </data>
   <data name="&gt;&gt;lookupHost.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="excludedNodes.Items106" xml:space="preserve">
-    <value>IT</value>
+  <data name="&gt;&gt;lookupHost.Parent" xml:space="preserve">
+    <value>tabPage3</value>
   </data>
-  <data name="excludedNodes.Items136" xml:space="preserve">
-    <value>ME</value>
+  <data name="&gt;&gt;lookupHost.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="preferredNodes.Items188" xml:space="preserve">
-    <value>SB</value>
+  <data name="&gt;&gt;advOutput.Name" xml:space="preserve">
+    <value>advOutput</value>
   </data>
-  <data name="excludedNodes.Items239" xml:space="preserve">
-    <value>ZW</value>
+  <data name="&gt;&gt;advOutput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="preferredNodes.Items16" xml:space="preserve">
-    <value>AW</value>
+  <data name="&gt;&gt;advOutput.Parent" xml:space="preserve">
+    <value>tabPage3</value>
   </data>
-  <data name="preferredNodes.Items26" xml:space="preserve">
-    <value>BI</value>
+  <data name="&gt;&gt;advOutput.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="excludedNodes.Items196" xml:space="preserve">
-    <value>SM</value>
+  <data name="&gt;&gt;loggingCheck.Name" xml:space="preserve">
+    <value>loggingCheck</value>
   </data>
-  <data name="preferredNodes.Items46" xml:space="preserve">
-    <value>CM</value>
+  <data name="&gt;&gt;loggingCheck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="preferredNodes.Items56" xml:space="preserve">
-    <value>DJ</value>
+  <data name="&gt;&gt;loggingCheck.Parent" xml:space="preserve">
+    <value>tabPage3</value>
   </data>
-  <data name="preferredNodes.Items66" xml:space="preserve">
-    <value>ET</value>
+  <data name="&gt;&gt;loggingCheck.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="preferredNodes.Items76" xml:space="preserve">
-    <value>GD</value>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;opacitySelect.Name" xml:space="preserve">
+    <value>opacitySelect</value>
+  </data>
+  <data name="&gt;&gt;opacitySelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;opacitySelect.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;opacitySelect.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;taskBar.Name" xml:space="preserve">
+    <value>taskBar</value>
+  </data>
+  <data name="&gt;&gt;taskBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;taskBar.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;taskBar.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;ontop.Name" xml:space="preserve">
+    <value>ontop</value>
+  </data>
+  <data name="&gt;&gt;ontop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ontop.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;ontop.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;forceIdent.Name" xml:space="preserve">
+    <value>forceIdent</value>
+  </data>
+  <data name="&gt;&gt;forceIdent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;forceIdent.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;forceIdent.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;defaultButton.Name" xml:space="preserve">
+    <value>defaultButton</value>
+  </data>
+  <data name="&gt;&gt;defaultButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;defaultButton.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;defaultButton.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;controlPort.Name" xml:space="preserve">
+    <value>controlPort</value>
+  </data>
+  <data name="&gt;&gt;controlPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;controlPort.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;controlPort.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;updateIn.Name" xml:space="preserve">
+    <value>updateIn</value>
+  </data>
+  <data name="&gt;&gt;updateIn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;updateIn.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;updateIn.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;shapeContainer3.Name" xml:space="preserve">
+    <value>shapeContainer3</value>
+  </data>
+  <data name="&gt;&gt;shapeContainer3.Type" xml:space="preserve">
+    <value>Microsoft.VisualBasic.PowerPacks.ShapeContainer, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;shapeContainer3.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;shapeContainer3.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>317, 284</value>
+  </data>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 5</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 310</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="clearAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 229</value>
+  </data>
+  <data name="clearAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="clearAll.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="clearAll.Text" xml:space="preserve">
+    <value>Clear All</value>
+  </data>
+  <data name="&gt;&gt;clearAll.Name" xml:space="preserve">
+    <value>clearAll</value>
+  </data>
+  <data name="&gt;&gt;clearAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;clearAll.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;clearAll.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="selectAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 200</value>
+  </data>
+  <data name="selectAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="selectAll.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="selectAll.Text" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="&gt;&gt;selectAll.Name" xml:space="preserve">
+    <value>selectAll</value>
+  </data>
+  <data name="&gt;&gt;selectAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;selectAll.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;selectAll.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 26</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 244</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>GeoLock will exclude exit nodes in these countries when choosing an exit node.
 
 Note: While attempting to find a new exit node, GeoLock may visit nodes located within these countries. However, it will continue to search until it finds a country that is not excluded.</value>
   </data>
-  <data name="preferredNodes.Items105" xml:space="preserve">
-    <value>IS</value>
-  </data>
-  <data name="preferredNodes.Items205" xml:space="preserve">
-    <value>TD</value>
-  </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="excludedNodes.Items173" xml:space="preserve">
-    <value>PK</value>
-  </data>
-  <data name="preferredNodes.Items28" xml:space="preserve">
-    <value>BM</value>
-  </data>
-  <data name="preferredNodes.Items38" xml:space="preserve">
-    <value>CA</value>
-  </data>
-  <data name="preferredNodes.Items48" xml:space="preserve">
-    <value>CO</value>
-  </data>
-  <data name="&gt;&gt;ClearAllPre.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 7</value>
-  </data>
-  <data name="controlPort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 122</value>
-  </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 13</value>
-  </data>
-  <data name="preferredNodes.Items129" xml:space="preserve">
-    <value>LT</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 7</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="excludedNodes.Items31" xml:space="preserve">
-    <value>BR</value>
-  </data>
-  <data name="excludedNodes.Items23" xml:space="preserve">
-    <value>BF</value>
-  </data>
-  <data name="excludedNodes.Items236" xml:space="preserve">
-    <value>YT</value>
-  </data>
-  <data name="excludedNodes.Items229" xml:space="preserve">
-    <value>VI</value>
-  </data>
-  <data name="&gt;&gt;SelectAllPre.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="preferredNodes.Items193" xml:space="preserve">
-    <value>SI</value>
-  </data>
-  <data name="excludedNodes.Items28" xml:space="preserve">
-    <value>BM</value>
-  </data>
-  <data name="defaultButton.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="preferredNodes.Items151" xml:space="preserve">
-    <value>MW</value>
-  </data>
-  <data name="preferredNodes.Items171" xml:space="preserve">
-    <value>PG</value>
-  </data>
-  <data name="preferredNodes.Items221" xml:space="preserve">
-    <value>UM</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Excluded Countries</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="taskBar.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="excludedNodes.Items91" xml:space="preserve">
-    <value>HK</value>
-  </data>
-  <data name="loggingCheck.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ExitNode</value>
-  </data>
-  <data name="&gt;&gt;cancelButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="excludedNodes.Items155" xml:space="preserve">
-    <value>NA</value>
-  </data>
-  <data name="excludedNodes.Items145" xml:space="preserve">
-    <value>MQ</value>
-  </data>
-  <data name="excludedNodes.Items175" xml:space="preserve">
-    <value>PM</value>
-  </data>
-  <data name="excludedNodes.Items165" xml:space="preserve">
-    <value>NU</value>
-  </data>
-  <data name="excludedNodes.Items115" xml:space="preserve">
-    <value>KM</value>
-  </data>
-  <data name="excludedNodes.Items105" xml:space="preserve">
-    <value>IS</value>
-  </data>
-  <data name="excludedNodes.Items135" xml:space="preserve">
-    <value>MD</value>
-  </data>
-  <data name="excludedNodes.Items125" xml:space="preserve">
-    <value>LI</value>
-  </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 125</value>
-  </data>
-  <data name="preferredNodes.Items15" xml:space="preserve">
-    <value>AU</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>GeoLock will only use exit nodes in these countries when choosing an exit node.
-
-Note: While attempting to find a new exit node, GeoLock may visit nodes located within other countries. However, it will continue to search until it finds a country that is preferred.</value>
-  </data>
-  <data name="excludedNodes.Items195" xml:space="preserve">
-    <value>SL</value>
-  </data>
-  <data name="excludedNodes.Items185" xml:space="preserve">
-    <value>RU</value>
-  </data>
-  <data name="&gt;&gt;taskBar.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="preferredNodes.Items65" xml:space="preserve">
-    <value>ES</value>
-  </data>
-  <data name="preferredNodes.Items75" xml:space="preserve">
-    <value>GB</value>
-  </data>
-  <data name="excludedNodes.Items219" xml:space="preserve">
-    <value>UA</value>
-  </data>
-  <data name="&gt;&gt;advOutput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;shapeContainer1.Name" xml:space="preserve">
-    <value>shapeContainer1</value>
-  </data>
-  <data name="excludedNodes.Items163" xml:space="preserve">
-    <value>NP</value>
-  </data>
-  <data name="preferredNodes.Items175" xml:space="preserve">
-    <value>PM</value>
-  </data>
-  <data name="preferredNodes.Items99" xml:space="preserve">
-    <value>IL</value>
-  </data>
-  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="preferredNodes.Items36" xml:space="preserve">
-    <value>BY</value>
-  </data>
-  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="preferredNodes.Items49" xml:space="preserve">
-    <value>CR</value>
-  </data>
-  <data name="excludedNodes.Items9" xml:space="preserve">
-    <value>AO</value>
-  </data>
-  <data name="preferredNodes.Items119" xml:space="preserve">
-    <value>KW</value>
-  </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>%</value>
-  </data>
-  <data name="&gt;&gt;shapeContainer2.Name" xml:space="preserve">
-    <value>shapeContainer2</value>
-  </data>
-  <data name="SelectAllPre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 200</value>
-  </data>
-  <data name="&gt;&gt;selectAll.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;preferredNodes.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="excludedNodes.Items5" xml:space="preserve">
-    <value>AI</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="cancelButton.Text" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="preferredNodes.Items183" xml:space="preserve">
-    <value>RO</value>
-  </data>
-  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 310</value>
-  </data>
-  <data name="&gt;&gt;shapeContainer3.Name" xml:space="preserve">
-    <value>shapeContainer3</value>
-  </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SelectAllPre.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;opacitySelect.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 13</value>
-  </data>
-  <data name="preferredNodes.Items141" xml:space="preserve">
-    <value>MM</value>
-  </data>
-  <data name="excludedNodes.Items144" xml:space="preserve">
-    <value>MP</value>
-  </data>
-  <data name="preferredNodes.Items120" xml:space="preserve">
-    <value>KY</value>
-  </data>
-  <data name="preferredNodes.Items220" xml:space="preserve">
-    <value>UG</value>
-  </data>
-  <data name="excludedNodes.Items114" xml:space="preserve">
-    <value>KI</value>
-  </data>
-  <data name="excludedNodes.Items104" xml:space="preserve">
-    <value>IR</value>
-  </data>
-  <data name="excludedNodes.Items134" xml:space="preserve">
-    <value>MC</value>
-  </data>
-  <data name="excludedNodes.Items124" xml:space="preserve">
-    <value>LC</value>
-  </data>
-  <data name="preferredNodes.Items14" xml:space="preserve">
-    <value>AT</value>
-  </data>
-  <data name="excludedNodes.Items154" xml:space="preserve">
-    <value>MZ</value>
-  </data>
-  <data name="excludedNodes.Items171" xml:space="preserve">
-    <value>PG</value>
-  </data>
-  <data name="excludedNodes.Items184" xml:space="preserve">
-    <value>RS</value>
-  </data>
-  <data name="excludedNodes.Items164" xml:space="preserve">
-    <value>NR</value>
-  </data>
-  <data name="preferredNodes.Items64" xml:space="preserve">
-    <value>ER</value>
-  </data>
-  <data name="preferredNodes.Items74" xml:space="preserve">
-    <value>GA</value>
-  </data>
-  <data name="excludedNodes.Items120" xml:space="preserve">
-    <value>KY</value>
-  </data>
-  <data name="excludedNodes.Items127" xml:space="preserve">
-    <value>LR</value>
-  </data>
-  <data name="excludedNodes.Items218" xml:space="preserve">
-    <value>TZ</value>
-  </data>
-  <data name="excludedNodes.Items208" xml:space="preserve">
-    <value>TJ</value>
-  </data>
-  <data name="excludedNodes.Items238" xml:space="preserve">
-    <value>ZM</value>
-  </data>
-  <data name="excludedNodes.Items228" xml:space="preserve">
-    <value>VG</value>
-  </data>
-  <data name="preferredNodes.Items165" xml:space="preserve">
-    <value>NU</value>
-  </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;updateIn.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-  </data>
-  <data name="label11.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="excludedNodes.Items194" xml:space="preserve">
-    <value>SK</value>
-  </data>
-  <data name="excludedNodes.Items174" xml:space="preserve">
-    <value>PL</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="selectAll.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 26</value>
-  </data>
-  <data name="preferredNodes.Items109" xml:space="preserve">
-    <value>JO</value>
-  </data>
-  <data name="preferredNodes.Items209" xml:space="preserve">
-    <value>TK</value>
-  </data>
-  <data name="shapeContainer1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;preferredNodes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="advOutput.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="shapeContainer3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="loggingCheck.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="excludedNodes.Items97" xml:space="preserve">
-    <value>ID</value>
-  </data>
-  <data name="&gt;&gt;updateIn.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;controlPort.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="preferredNodes.Items197" xml:space="preserve">
-    <value>SN</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="opacitySelect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 20</value>
-  </data>
-  <data name="excludedNodes.Items153" xml:space="preserve">
-    <value>MY</value>
-  </data>
-  <data name="excludedNodes.Items143" xml:space="preserve">
-    <value>MO</value>
-  </data>
-  <data name="preferredNodes.Items110" xml:space="preserve">
-    <value>JP</value>
-  </data>
-  <data name="preferredNodes.Items210" xml:space="preserve">
-    <value>TL</value>
-  </data>
-  <data name="excludedNodes.Items113" xml:space="preserve">
-    <value>KH</value>
-  </data>
-  <data name="excludedNodes.Items103" xml:space="preserve">
-    <value>IQ</value>
-  </data>
-  <data name="excludedNodes.Items133" xml:space="preserve">
-    <value>MA</value>
-  </data>
-  <data name="excludedNodes.Items123" xml:space="preserve">
-    <value>LB</value>
-  </data>
-  <data name="excludedNodes.Items193" xml:space="preserve">
-    <value>SI</value>
-  </data>
-  <data name="excludedNodes.Items183" xml:space="preserve">
-    <value>RO</value>
-  </data>
-  <data name="preferredNodes.Items87" xml:space="preserve">
-    <value>GT</value>
-  </data>
-  <data name="lineShape1.BorderColor" type="System.Drawing.Color, System.Drawing">
-    <value>Highlight</value>
-  </data>
-  <data name="preferredNodes.Items132" xml:space="preserve">
-    <value>LY</value>
-  </data>
-  <data name="preferredNodes.Items232" xml:space="preserve">
-    <value>WF</value>
-  </data>
-  <data name="preferredNodes.Items135" xml:space="preserve">
-    <value>MD</value>
-  </data>
-  <data name="excludedNodes.Items217" xml:space="preserve">
-    <value>TW</value>
-  </data>
-  <data name="excludedNodes.Items207" xml:space="preserve">
-    <value>TH</value>
-  </data>
-  <data name="excludedNodes.Items237" xml:space="preserve">
-    <value>ZA</value>
-  </data>
-  <data name="excludedNodes.Items227" xml:space="preserve">
-    <value>VE</value>
-  </data>
-  <data name="preferredNodes.Items155" xml:space="preserve">
-    <value>NA</value>
-  </data>
-  <data name="preferredNodes.Items134" xml:space="preserve">
-    <value>MC</value>
-  </data>
-  <data name="preferredNodes.Items234" xml:space="preserve">
-    <value>XX</value>
-  </data>
-  <data name="shapeContainer2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="excludedNodes.Items" xml:space="preserve">
-    <value>AC</value>
-  </data>
-  <data name="&gt;&gt;shapeContainer1.Type" xml:space="preserve">
-    <value>Microsoft.VisualBasic.PowerPacks.ShapeContainer, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 261</value>
-  </data>
-  <data name="preferredNodes.Items179" xml:space="preserve">
-    <value>PW</value>
-  </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>GeoLock Configuration</value>
-  </data>
-  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 13</value>
-  </data>
-  <data name="&gt;&gt;label12.Name" xml:space="preserve">
-    <value>label12</value>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
   </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="okButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 321</value>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;shapeContainer2.Type" xml:space="preserve">
-    <value>Microsoft.VisualBasic.PowerPacks.ShapeContainer, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="&gt;&gt;okButton.Name" xml:space="preserve">
-    <value>okButton</value>
-  </data>
-  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="ontop.Text" xml:space="preserve">
-    <value>Keep on top of other windows</value>
-  </data>
-  <data name="lookupHost.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;loggingCheck.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="opacitySelect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 259</value>
-  </data>
-  <data name="preferredNodes.Items187" xml:space="preserve">
-    <value>SA</value>
-  </data>
-  <data name="&gt;&gt;shapeContainer3.Type" xml:space="preserve">
-    <value>Microsoft.VisualBasic.PowerPacks.ShapeContainer, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="preferredNodes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 26</value>
-  </data>
-  <data name="excludedNodes.Items152" xml:space="preserve">
-    <value>MX</value>
-  </data>
-  <data name="excludedNodes.Items142" xml:space="preserve">
-    <value>MN</value>
-  </data>
-  <data name="excludedNodes.Items172" xml:space="preserve">
-    <value>PH</value>
-  </data>
-  <data name="excludedNodes.Items162" xml:space="preserve">
-    <value>NO</value>
-  </data>
-  <data name="excludedNodes.Items112" xml:space="preserve">
-    <value>KG</value>
-  </data>
-  <data name="excludedNodes.Items102" xml:space="preserve">
-    <value>IO</value>
-  </data>
-  <data name="excludedNodes.Items132" xml:space="preserve">
-    <value>LY</value>
-  </data>
-  <data name="excludedNodes.Items122" xml:space="preserve">
-    <value>LA</value>
-  </data>
-  <data name="excludedNodes.Items192" xml:space="preserve">
-    <value>SG</value>
-  </data>
-  <data name="excludedNodes.Items182" xml:space="preserve">
-    <value>RE</value>
-  </data>
-  <data name="preferredNodes.Items122" xml:space="preserve">
-    <value>LA</value>
-  </data>
-  <data name="preferredNodes.Items" xml:space="preserve">
-    <value>AC</value>
-  </data>
-  <data name="excludedNodes.Items216" xml:space="preserve">
-    <value>TV</value>
-  </data>
-  <data name="excludedNodes.Items206" xml:space="preserve">
-    <value>TG</value>
-  </data>
-  <data name="excludedNodes.Items156" xml:space="preserve">
-    <value>NC</value>
-  </data>
-  <data name="excludedNodes.Items226" xml:space="preserve">
-    <value>VC</value>
-  </data>
-  <data name="preferredNodes.Items84" xml:space="preserve">
-    <value>GP</value>
-  </data>
-  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="preferredNodes.Items124" xml:space="preserve">
-    <value>LC</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 7</value>
   </data>
-  <data name="preferredNodes.Items224" xml:space="preserve">
-    <value>UZ</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 13</value>
   </data>
-  <data name="excludedNodes.Items126" xml:space="preserve">
-    <value>LK</value>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Preferred Countries</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Excluded Countries</value>
   </data>
-  <data name="lineShape2.BorderColor" type="System.Drawing.Color, System.Drawing">
-    <value>Highlight</value>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
   </data>
-  <data name="excludedNodes.Items186" xml:space="preserve">
-    <value>RW</value>
-  </data>
-  <data name="preferredNodes.Items24" xml:space="preserve">
-    <value>BG</value>
-  </data>
-  <data name="preferredNodes.Items169" xml:space="preserve">
-    <value>PE</value>
-  </data>
-  <data name="preferredNodes.Items100" xml:space="preserve">
-    <value>IM</value>
-  </data>
-  <data name="preferredNodes.Items200" xml:space="preserve">
-    <value>ST</value>
-  </data>
-  <data name="&gt;&gt;taskBar.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="preferredNodes.Items4" xml:space="preserve">
-    <value>AG</value>
-  </data>
-  <data name="preferredNodes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 244</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 13</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>tabPage1</value>
   </data>
-  <data name="okButton.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="taskBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 194</value>
-  </data>
-  <data name="&gt;&gt;lookupHost.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;excludedNodes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 284</value>
-  </data>
-  <data name="preferredNodes.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>minute(s). [1-300]</value>
-  </data>
-  <data name="excludedNodes.Items151" xml:space="preserve">
-    <value>MW</value>
-  </data>
-  <data name="excludedNodes.Items141" xml:space="preserve">
-    <value>MM</value>
-  </data>
-  <data name="preferredNodes.Items170" xml:space="preserve">
-    <value>PF</value>
-  </data>
-  <data name="excludedNodes.Items161" xml:space="preserve">
-    <value>NL</value>
-  </data>
-  <data name="excludedNodes.Items111" xml:space="preserve">
-    <value>KE</value>
-  </data>
-  <data name="excludedNodes.Items101" xml:space="preserve">
-    <value>IN</value>
-  </data>
-  <data name="excludedNodes.Items131" xml:space="preserve">
-    <value>LV</value>
-  </data>
-  <data name="excludedNodes.Items121" xml:space="preserve">
-    <value>KZ</value>
-  </data>
-  <data name="preferredNodes.Items19" xml:space="preserve">
-    <value>BA</value>
-  </data>
-  <data name="preferredNodes.Items29" xml:space="preserve">
-    <value>BN</value>
-  </data>
-  <data name="preferredNodes.Items39" xml:space="preserve">
-    <value>CD</value>
-  </data>
-  <data name="excludedNodes.Items181" xml:space="preserve">
-    <value>QA</value>
-  </data>
-  <data name="preferredNodes.Items59" xml:space="preserve">
-    <value>DO</value>
-  </data>
-  <data name="preferredNodes.Items69" xml:space="preserve">
-    <value>FJ</value>
-  </data>
-  <data name="preferredNodes.Items79" xml:space="preserve">
-    <value>GH</value>
-  </data>
-  <data name="preferredNodes.Items112" xml:space="preserve">
-    <value>KG</value>
-  </data>
-  <data name="preferredNodes.Items212" xml:space="preserve">
-    <value>TN</value>
-  </data>
-  <data name="excludedNodes.Items215" xml:space="preserve">
-    <value>TT</value>
-  </data>
-  <data name="excludedNodes.Items205" xml:space="preserve">
-    <value>TD</value>
-  </data>
-  <data name="excludedNodes.Items235" xml:space="preserve">
-    <value>YE</value>
-  </data>
-  <data name="excludedNodes.Items225" xml:space="preserve">
-    <value>VA</value>
-  </data>
-  <data name="&gt;&gt;clearAll.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="preferredNodes.Items95" xml:space="preserve">
-    <value>HT</value>
-  </data>
-  <data name="preferredNodes.Items114" xml:space="preserve">
-    <value>KI</value>
-  </data>
-  <data name="preferredNodes.Items214" xml:space="preserve">
-    <value>TR</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>287, 351</value>
-  </data>
-  <data name="advOutput.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 36</value>
-  </data>
-  <data name="preferredNodes.Items136" xml:space="preserve">
-    <value>ME</value>
-  </data>
-  <data name="preferredNodes.Items25" xml:space="preserve">
-    <value>BH</value>
-  </data>
-  <data name="preferredNodes.Items35" xml:space="preserve">
-    <value>BW</value>
-  </data>
-  <data name="preferredNodes.Items45" xml:space="preserve">
-    <value>CL</value>
-  </data>
-  <data name="preferredNodes.Items55" xml:space="preserve">
-    <value>DE</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>178, 36</value>
-  </data>
-  <data name="preferredNodes.Items236" xml:space="preserve">
-    <value>YT</value>
-  </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="ontop.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="preferredNodes.Items138" xml:space="preserve">
-    <value>MH</value>
-  </data>
-  <data name="preferredNodes.Items238" xml:space="preserve">
-    <value>ZM</value>
-  </data>
-  <data name="preferredNodes.Items98" xml:space="preserve">
-    <value>IE</value>
-  </data>
-  <data name="okButton.Text" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="shapeContainer2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="preferredNodes.Items219" xml:space="preserve">
-    <value>UA</value>
-  </data>
-  <data name="lineShape5.Y1" type="System.Int32, mscorlib">
-    <value>155</value>
-  </data>
-  <data name="&gt;&gt;ontop.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="excludedNodes.Items15" xml:space="preserve">
-    <value>AU</value>
-  </data>
-  <data name="excludedNodes.Items14" xml:space="preserve">
-    <value>AT</value>
-  </data>
-  <data name="excludedNodes.Items17" xml:space="preserve">
-    <value>AX</value>
-  </data>
-  <data name="excludedNodes.Items16" xml:space="preserve">
-    <value>AW</value>
-  </data>
-  <data name="excludedNodes.Items11" xml:space="preserve">
-    <value>AQ</value>
-  </data>
-  <data name="excludedNodes.Items10" xml:space="preserve">
-    <value>AP</value>
-  </data>
-  <data name="excludedNodes.Items6" xml:space="preserve">
-    <value>AL</value>
-  </data>
-  <data name="excludedNodes.Items12" xml:space="preserve">
-    <value>AR</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;opacitySelect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="excludedNodes.Items19" xml:space="preserve">
-    <value>BA</value>
-  </data>
-  <data name="excludedNodes.Items18" xml:space="preserve">
-    <value>AZ</value>
-  </data>
-  <data name="preferredNodes.Items159" xml:space="preserve">
-    <value>NG</value>
-  </data>
-  <data name="excludedNodes.Items2" xml:space="preserve">
-    <value>AE</value>
-  </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 5</value>
-  </data>
-  <data name="selectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="label13.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;clearAll.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="excludedNodes.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="preferredNodes.Items88" xml:space="preserve">
-    <value>GU</value>
-  </data>
-  <data name="preferredNodes.Items160" xml:space="preserve">
-    <value>NI</value>
-  </data>
-  <data name="excludedNodes.Items160" xml:space="preserve">
-    <value>NI</value>
-  </data>
-  <data name="excludedNodes.Items110" xml:space="preserve">
-    <value>JP</value>
-  </data>
-  <data name="excludedNodes.Items100" xml:space="preserve">
-    <value>IM</value>
-  </data>
-  <data name="excludedNodes.Items130" xml:space="preserve">
-    <value>LU</value>
-  </data>
-  <data name="&gt;&gt;ontop.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="preferredNodes.Items18" xml:space="preserve">
-    <value>AZ</value>
-  </data>
-  <data name="&gt;&gt;preferredNodes.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="excludedNodes.Items190" xml:space="preserve">
-    <value>SD</value>
-  </data>
-  <data name="lookupHost.Text" xml:space="preserve">
-    <value>Lookup hostname</value>
-  </data>
-  <data name="preferredNodes.Items58" xml:space="preserve">
-    <value>DM</value>
-  </data>
-  <data name="preferredNodes.Items68" xml:space="preserve">
-    <value>FI</value>
-  </data>
-  <data name="preferredNodes.Items78" xml:space="preserve">
-    <value>GF</value>
-  </data>
-  <data name="preferredNodes.Items102" xml:space="preserve">
-    <value>IO</value>
-  </data>
-  <data name="preferredNodes.Items202" xml:space="preserve">
-    <value>SY</value>
-  </data>
-  <data name="excludedNodes.Items214" xml:space="preserve">
-    <value>TR</value>
-  </data>
-  <data name="excludedNodes.Items204" xml:space="preserve">
-    <value>TC</value>
-  </data>
-  <data name="excludedNodes.Items234" xml:space="preserve">
-    <value>XX</value>
-  </data>
-  <data name="excludedNodes.Items224" xml:space="preserve">
-    <value>UZ</value>
-  </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 284</value>
-  </data>
-  <data name="preferredNodes.Items96" xml:space="preserve">
-    <value>HU</value>
-  </data>
-  <data name="preferredNodes.Items104" xml:space="preserve">
-    <value>IR</value>
-  </data>
-  <data name="preferredNodes.Items204" xml:space="preserve">
-    <value>TC</value>
-  </data>
-  <data name="excludedNodes.Items198" xml:space="preserve">
-    <value>SO</value>
-  </data>
-  <data name="taskBar.Text" xml:space="preserve">
-    <value>Show icon in the system tray</value>
-  </data>
-  <data name="excludedNodes.Items116" xml:space="preserve">
-    <value>KN</value>
-  </data>
-  <data name="clearAll.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 229</value>
-  </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 262</value>
-  </data>
-  <data name="preferredNodes.Items126" xml:space="preserve">
-    <value>LK</value>
-  </data>
-  <data name="preferredNodes.Items226" xml:space="preserve">
-    <value>VC</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 171</value>
-  </data>
-  <data name="preferredNodes.Items149" xml:space="preserve">
-    <value>MU</value>
-  </data>
-  <data name="preferredNodes.Items128" xml:space="preserve">
-    <value>LS</value>
-  </data>
-  <data name="preferredNodes.Items228" xml:space="preserve">
-    <value>VG</value>
-  </data>
-  <data name="&gt;&gt;defaultButton.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="excludedNodes.Items8" xml:space="preserve">
-    <value>AN</value>
-  </data>
-  <data name="&gt;&gt;loggingCheck.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="excludedNodes.Items65" xml:space="preserve">
-    <value>ES</value>
-  </data>
-  <data name="excludedNodes.Items60" xml:space="preserve">
-    <value>DZ</value>
-  </data>
-  <data name="&gt;&gt;preferredNodes.Name" xml:space="preserve">
-    <value>preferredNodes</value>
-  </data>
-  <data name="&gt;&gt;lineShape4.Name" xml:space="preserve">
-    <value>lineShape4</value>
-  </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 284</value>
-  </data>
-  <data name="ClearAllPre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 229</value>
-  </data>
-  <data name="defaultButton.Text" xml:space="preserve">
-    <value>Defaults</value>
-  </data>
-  <data name="preferredNodes.Items154" xml:space="preserve">
-    <value>MZ</value>
-  </data>
-  <data name="&gt;&gt;defaultButton.Name" xml:space="preserve">
-    <value>defaultButton</value>
-  </data>
-  <data name="shapeContainer3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 278</value>
-  </data>
-  <data name="lineShape4.X2" type="System.Int32, mscorlib">
-    <value>258</value>
-  </data>
-  <data name="&gt;&gt;ClearAllPre.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lineShape2.X1" type="System.Int32, mscorlib">
-    <value>104</value>
-  </data>
-  <data name="preferredNodes.Items158" xml:space="preserve">
-    <value>NF</value>
-  </data>
-  <data name="&gt;&gt;lineShape5.Type" xml:space="preserve">
-    <value>Microsoft.VisualBasic.PowerPacks.LineShape, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
-  </data>
-  <data name="preferredNodes.Items150" xml:space="preserve">
-    <value>MV</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="preferredNodes.Items133" xml:space="preserve">
-    <value>MA</value>
-  </data>
-  <data name="preferredNodes.Items233" xml:space="preserve">
-    <value>WS</value>
-  </data>
-  <data name="ClearAllPre.Text" xml:space="preserve">
-    <value>Clear All</value>
-  </data>
-  <data name="lineShape2.Y2" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="preferredNodes.Items81" xml:space="preserve">
-    <value>GL</value>
-  </data>
-  <data name="preferredNodes.Items172" xml:space="preserve">
-    <value>PH</value>
-  </data>
-  <data name="&gt;&gt;ontop.Name" xml:space="preserve">
-    <value>ontop</value>
-  </data>
-  <data name="excludedNodes.Items213" xml:space="preserve">
-    <value>TO</value>
-  </data>
-  <data name="excludedNodes.Items203" xml:space="preserve">
-    <value>SZ</value>
-  </data>
-  <data name="excludedNodes.Items233" xml:space="preserve">
-    <value>WS</value>
-  </data>
-  <data name="excludedNodes.Items223" xml:space="preserve">
-    <value>UY</value>
-  </data>
-  <data name="preferredNodes.Items195" xml:space="preserve">
-    <value>SL</value>
-  </data>
-  <data name="preferredNodes.Items97" xml:space="preserve">
-    <value>ID</value>
-  </data>
-  <data name="preferredNodes.Items174" xml:space="preserve">
-    <value>PL</value>
-  </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="preferredNodes.Items17" xml:space="preserve">
-    <value>AX</value>
-  </data>
-  <data name="preferredNodes.Items37" xml:space="preserve">
-    <value>BZ</value>
-  </data>
-  <data name="preferredNodes.Items47" xml:space="preserve">
-    <value>CN</value>
-  </data>
-  <data name="preferredNodes.Items116" xml:space="preserve">
-    <value>KN</value>
-  </data>
-  <data name="preferredNodes.Items216" xml:space="preserve">
-    <value>TV</value>
-  </data>
-  <data name="lineShape5.BorderColor" type="System.Drawing.Color, System.Drawing">
-    <value>Highlight</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="excludedNodes.Items200" xml:space="preserve">
-    <value>ST</value>
-  </data>
-  <data name="preferredNodes.Items218" xml:space="preserve">
-    <value>TZ</value>
-  </data>
-  <data name="preferredNodes.Items89" xml:space="preserve">
-    <value>GW</value>
-  </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Excluded Nodes</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;shapeContainer1.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="excludedNodes.Items85" xml:space="preserve">
-    <value>GQ</value>
-  </data>
-  <data name="excludedNodes.Items84" xml:space="preserve">
-    <value>GP</value>
-  </data>
-  <data name="excludedNodes.Items87" xml:space="preserve">
-    <value>GT</value>
-  </data>
-  <data name="excludedNodes.Items86" xml:space="preserve">
-    <value>GR</value>
-  </data>
-  <data name="excludedNodes.Items81" xml:space="preserve">
-    <value>GL</value>
-  </data>
-  <data name="excludedNodes.Items80" xml:space="preserve">
-    <value>GI</value>
-  </data>
-  <data name="excludedNodes.Items83" xml:space="preserve">
-    <value>GN</value>
-  </data>
-  <data name="taskBar.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="excludedNodes.Items89" xml:space="preserve">
-    <value>GW</value>
-  </data>
-  <data name="excludedNodes.Items88" xml:space="preserve">
-    <value>GU</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="excludedNodes.Items45" xml:space="preserve">
-    <value>CL</value>
-  </data>
-  <data name="excludedNodes.Items44" xml:space="preserve">
-    <value>CK</value>
-  </data>
-  <data name="excludedNodes.Items47" xml:space="preserve">
-    <value>CN</value>
-  </data>
-  <data name="excludedNodes.Items46" xml:space="preserve">
-    <value>CM</value>
-  </data>
-  <data name="forceIdent.Text" xml:space="preserve">
-    <value>Force new identity even if conditions met</value>
-  </data>
-  <data name="excludedNodes.Items40" xml:space="preserve">
-    <value>CF</value>
-  </data>
-  <data name="excludedNodes.Items43" xml:space="preserve">
-    <value>CI</value>
-  </data>
-  <data name="excludedNodes.Items42" xml:space="preserve">
-    <value>CH</value>
-  </data>
-  <data name="preferredNodes.Items130" xml:space="preserve">
-    <value>LU</value>
-  </data>
-  <data name="preferredNodes.Items230" xml:space="preserve">
-    <value>VN</value>
-  </data>
-  <data name="excludedNodes.Items49" xml:space="preserve">
-    <value>CR</value>
-  </data>
-  <data name="excludedNodes.Items48" xml:space="preserve">
-    <value>CO</value>
-  </data>
-  <data name="&gt;&gt;lineShape3.Type" xml:space="preserve">
-    <value>Microsoft.VisualBasic.PowerPacks.LineShape, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="taskBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 17</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;lineShape2.Name" xml:space="preserve">
-    <value>lineShape2</value>
-  </data>
-  <data name="preferredNodes.Items140" xml:space="preserve">
-    <value>ML</value>
-  </data>
-  <data name="preferredNodes.Items123" xml:space="preserve">
-    <value>LB</value>
-  </data>
-  <data name="preferredNodes.Items223" xml:space="preserve">
-    <value>UY</value>
-  </data>
-  <data name="preferredNodes.Items113" xml:space="preserve">
-    <value>KH</value>
-  </data>
-  <data name="&gt;&gt;shapeContainer3.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="preferredNodes.Items162" xml:space="preserve">
-    <value>NO</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="excludedNodes.Items212" xml:space="preserve">
-    <value>TN</value>
-  </data>
-  <data name="excludedNodes.Items202" xml:space="preserve">
-    <value>SY</value>
-  </data>
-  <data name="excludedNodes.Items232" xml:space="preserve">
-    <value>WF</value>
-  </data>
-  <data name="excludedNodes.Items222" xml:space="preserve">
-    <value>US</value>
-  </data>
-  <data name="preferredNodes.Items80" xml:space="preserve">
-    <value>GI</value>
-  </data>
-  <data name="preferredNodes.Items90" xml:space="preserve">
-    <value>GY</value>
-  </data>
-  <data name="preferredNodes.Items164" xml:space="preserve">
-    <value>NR</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>303, 389</value>
-  </data>
-  <data name="preferredNodes.Items106" xml:space="preserve">
-    <value>IT</value>
-  </data>
-  <data name="preferredNodes.Items206" xml:space="preserve">
-    <value>TG</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 13</value>
-  </data>
-  <data name="controlPort.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="preferredNodes.Items108" xml:space="preserve">
-    <value>JM</value>
-  </data>
-  <data name="preferredNodes.Items208" xml:space="preserve">
-    <value>TJ</value>
-  </data>
-  <data name="excludedNodes.Items221" xml:space="preserve">
-    <value>UM</value>
-  </data>
-  <data name="lineShape2.Y1" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;controlPort.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;controlPort.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Control Port:</value>
-  </data>
-  <data name="ClearAllPre.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="lookupHost.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="advOutput.Text" xml:space="preserve">
-    <value>Display advanced output (requires restart)</value>
-  </data>
-  <data name="&gt;&gt;advOutput.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;advOutput.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;excludedNodes.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>303, 389</value>
-  </data>
-  <data name="&gt;&gt;lookupHost.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="okButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="preferredNodes.Items213" xml:space="preserve">
-    <value>TO</value>
-  </data>
-  <data name="SelectAllPre.Text" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="excludedNodes.Items41" xml:space="preserve">
-    <value>CG</value>
-  </data>
-  <data name="&gt;&gt;cancelButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="preferredNodes.Items101" xml:space="preserve">
-    <value>IN</value>
-  </data>
-  <data name="preferredNodes.Items152" xml:space="preserve">
-    <value>MX</value>
-  </data>
-  <data name="excludedNodes.Items211" xml:space="preserve">
-    <value>TM</value>
-  </data>
-  <data name="excludedNodes.Items201" xml:space="preserve">
-    <value>SV</value>
-  </data>
-  <data name="excludedNodes.Items231" xml:space="preserve">
-    <value>VU</value>
-  </data>
-  <data name="preferredNodes.Items118" xml:space="preserve">
-    <value>KR</value>
+  <metadata name="lineShape1.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>104, 11, 202, 0</value>
+  </metadata>
+  <metadata name="lineShape1.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>104, 11</value>
+  </metadata>
+  <metadata name="lineShape1.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>202, 0</value>
+  </metadata>
+  <data name="shapeContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="shapeContainer1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="shapeContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 278</value>
   </data>
   <data name="shapeContainer1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="preferredNodes.Items91" xml:space="preserve">
-    <value>HK</value>
+  <data name="&gt;&gt;shapeContainer1.Name" xml:space="preserve">
+    <value>shapeContainer1</value>
   </data>
-  <data name="advOutput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 17</value>
+  <data name="&gt;&gt;shapeContainer1.Type" xml:space="preserve">
+    <value>Microsoft.VisualBasic.PowerPacks.ShapeContainer, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;shapeContainer1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
-  <data name="preferredNodes.Items137" xml:space="preserve">
-    <value>MG</value>
+  <data name="&gt;&gt;shapeContainer1.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="preferredNodes.Items237" xml:space="preserve">
-    <value>ZA</value>
+  <metadata name="lineShape1.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>104, 11, 202, 0</value>
+  </metadata>
+  <metadata name="lineShape1.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>104, 11</value>
+  </metadata>
+  <metadata name="lineShape1.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>202, 0</value>
+  </metadata>
+  <data name="lineShape1.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Highlight</value>
   </data>
-  <data name="&gt;&gt;controlPort.Name" xml:space="preserve">
-    <value>controlPort</value>
+  <data name="lineShape1.X1" type="System.Int32, mscorlib">
+    <value>104</value>
   </data>
-  <data name="preferredNodes.Items40" xml:space="preserve">
-    <value>CF</value>
-  </data>
-  <data name="&gt;&gt;loggingCheck.Name" xml:space="preserve">
-    <value>loggingCheck</value>
-  </data>
-  <data name="preferredNodes.Items176" xml:space="preserve">
-    <value>PR</value>
-  </data>
-  <data name="preferredNodes.Items199" xml:space="preserve">
-    <value>SR</value>
-  </data>
-  <data name="preferredNodes.Items185" xml:space="preserve">
-    <value>RU</value>
-  </data>
-  <data name="preferredNodes.Items178" xml:space="preserve">
-    <value>PT</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 244</value>
-  </data>
-  <data name="&gt;&gt;advOutput.Name" xml:space="preserve">
-    <value>advOutput</value>
-  </data>
-  <data name="SelectAllPre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="lineShape3.Y1" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="lineShape3.Y2" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 13</value>
-  </data>
-  <data name="lookupHost.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 79</value>
-  </data>
-  <data name="excludedNodes.Items64" xml:space="preserve">
-    <value>ER</value>
-  </data>
-  <data name="excludedNodes.Items67" xml:space="preserve">
-    <value>EU</value>
-  </data>
-  <data name="excludedNodes.Items66" xml:space="preserve">
-    <value>ET</value>
-  </data>
-  <data name="excludedNodes.Items61" xml:space="preserve">
-    <value>EC</value>
-  </data>
-  <data name="&gt;&gt;ClearAllPre.Name" xml:space="preserve">
-    <value>ClearAllPre</value>
-  </data>
-  <data name="excludedNodes.Items63" xml:space="preserve">
-    <value>EG</value>
-  </data>
-  <data name="excludedNodes.Items62" xml:space="preserve">
-    <value>EE</value>
-  </data>
-  <data name="excludedNodes.Items69" xml:space="preserve">
-    <value>FJ</value>
-  </data>
-  <data name="excludedNodes.Items68" xml:space="preserve">
-    <value>FI</value>
-  </data>
-  <data name="excludedNodes.Items25" xml:space="preserve">
-    <value>BH</value>
-  </data>
-  <data name="excludedNodes.Items24" xml:space="preserve">
-    <value>BG</value>
-  </data>
-  <data name="excludedNodes.Items27" xml:space="preserve">
-    <value>BJ</value>
-  </data>
-  <data name="excludedNodes.Items26" xml:space="preserve">
-    <value>BI</value>
-  </data>
-  <data name="excludedNodes.Items21" xml:space="preserve">
-    <value>BD</value>
-  </data>
-  <data name="excludedNodes.Items20" xml:space="preserve">
-    <value>BB</value>
-  </data>
-  <data name="excludedNodes.Items7" xml:space="preserve">
-    <value>AM</value>
-  </data>
-  <data name="excludedNodes.Items22" xml:space="preserve">
-    <value>BE</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="excludedNodes.Items1" xml:space="preserve">
-    <value>AD</value>
-  </data>
-  <data name="excludedNodes.Items29" xml:space="preserve">
-    <value>BN</value>
-  </data>
-  <data name="&gt;&gt;ClearAllPre.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="shapeContainer3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;okButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="excludedNodes.Items3" xml:space="preserve">
-    <value>AF</value>
-  </data>
-  <data name="updateIn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 33</value>
-  </data>
-  <data name="preferredNodes.Items103" xml:space="preserve">
-    <value>IQ</value>
-  </data>
-  <data name="preferredNodes.Items203" xml:space="preserve">
-    <value>SZ</value>
+  <data name="lineShape1.X2" type="System.Int32, mscorlib">
+    <value>306</value>
   </data>
   <data name="lineShape1.Y1" type="System.Int32, mscorlib">
     <value>11</value>
@@ -1885,107 +1505,1549 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
   <data name="lineShape1.Y2" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="&gt;&gt;lookupHost.Name" xml:space="preserve">
-    <value>lookupHost</value>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 26</value>
   </data>
-  <data name="shapeContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 278</value>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 171</value>
   </data>
-  <data name="preferredNodes.Items142" xml:space="preserve">
-    <value>MN</value>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="excludedNodes.Items210" xml:space="preserve">
-    <value>TL</value>
+  <data name="label4.Text" xml:space="preserve">
+    <value>GeoLock will only use exit nodes in these countries when choosing an exit node.
+
+Note: While attempting to find a new exit node, GeoLock may visit nodes located within other countries. However, it will continue to search until it finds a country that is preferred.</value>
   </data>
-  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
   </data>
-  <data name="excludedNodes.Items230" xml:space="preserve">
-    <value>VN</value>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="excludedNodes.Items220" xml:space="preserve">
-    <value>UG</value>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
-  <data name="excludedNodes.Items199" xml:space="preserve">
-    <value>SR</value>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="preferredNodes.Items144" xml:space="preserve">
-    <value>MP</value>
+  <data name="ClearAllPre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 229</value>
+  </data>
+  <data name="ClearAllPre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="ClearAllPre.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="ClearAllPre.Text" xml:space="preserve">
+    <value>Clear All</value>
+  </data>
+  <data name="&gt;&gt;ClearAllPre.Name" xml:space="preserve">
+    <value>ClearAllPre</value>
+  </data>
+  <data name="&gt;&gt;ClearAllPre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ClearAllPre.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;ClearAllPre.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="SelectAllPre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 200</value>
+  </data>
+  <data name="SelectAllPre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="SelectAllPre.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="SelectAllPre.Text" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="&gt;&gt;SelectAllPre.Name" xml:space="preserve">
+    <value>SelectAllPre</value>
+  </data>
+  <data name="&gt;&gt;SelectAllPre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SelectAllPre.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;SelectAllPre.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 7</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Preferred Countries</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="preferredNodes.Items" xml:space="preserve">
+    <value>AC</value>
+  </data>
+  <data name="preferredNodes.Items1" xml:space="preserve">
+    <value>AD</value>
+  </data>
+  <data name="preferredNodes.Items2" xml:space="preserve">
+    <value>AE</value>
+  </data>
+  <data name="preferredNodes.Items3" xml:space="preserve">
+    <value>AF</value>
+  </data>
+  <data name="preferredNodes.Items4" xml:space="preserve">
+    <value>AG</value>
+  </data>
+  <data name="preferredNodes.Items5" xml:space="preserve">
+    <value>AI</value>
+  </data>
+  <data name="preferredNodes.Items6" xml:space="preserve">
+    <value>AL</value>
+  </data>
+  <data name="preferredNodes.Items7" xml:space="preserve">
+    <value>AM</value>
+  </data>
+  <data name="preferredNodes.Items8" xml:space="preserve">
+    <value>AN</value>
+  </data>
+  <data name="preferredNodes.Items9" xml:space="preserve">
+    <value>AO</value>
+  </data>
+  <data name="preferredNodes.Items10" xml:space="preserve">
+    <value>AP</value>
+  </data>
+  <data name="preferredNodes.Items11" xml:space="preserve">
+    <value>AQ</value>
+  </data>
+  <data name="preferredNodes.Items12" xml:space="preserve">
+    <value>AR</value>
+  </data>
+  <data name="preferredNodes.Items13" xml:space="preserve">
+    <value>AS</value>
+  </data>
+  <data name="preferredNodes.Items14" xml:space="preserve">
+    <value>AT</value>
+  </data>
+  <data name="preferredNodes.Items15" xml:space="preserve">
+    <value>AU</value>
+  </data>
+  <data name="preferredNodes.Items16" xml:space="preserve">
+    <value>AW</value>
+  </data>
+  <data name="preferredNodes.Items17" xml:space="preserve">
+    <value>AX</value>
+  </data>
+  <data name="preferredNodes.Items18" xml:space="preserve">
+    <value>AZ</value>
+  </data>
+  <data name="preferredNodes.Items19" xml:space="preserve">
+    <value>BA</value>
+  </data>
+  <data name="preferredNodes.Items20" xml:space="preserve">
+    <value>BB</value>
+  </data>
+  <data name="preferredNodes.Items21" xml:space="preserve">
+    <value>BD</value>
+  </data>
+  <data name="preferredNodes.Items22" xml:space="preserve">
+    <value>BE</value>
+  </data>
+  <data name="preferredNodes.Items23" xml:space="preserve">
+    <value>BF</value>
+  </data>
+  <data name="preferredNodes.Items24" xml:space="preserve">
+    <value>BG</value>
+  </data>
+  <data name="preferredNodes.Items25" xml:space="preserve">
+    <value>BH</value>
+  </data>
+  <data name="preferredNodes.Items26" xml:space="preserve">
+    <value>BI</value>
+  </data>
+  <data name="preferredNodes.Items27" xml:space="preserve">
+    <value>BJ</value>
+  </data>
+  <data name="preferredNodes.Items28" xml:space="preserve">
+    <value>BM</value>
+  </data>
+  <data name="preferredNodes.Items29" xml:space="preserve">
+    <value>BN</value>
+  </data>
+  <data name="preferredNodes.Items30" xml:space="preserve">
+    <value>BO</value>
+  </data>
+  <data name="preferredNodes.Items31" xml:space="preserve">
+    <value>BR</value>
+  </data>
+  <data name="preferredNodes.Items32" xml:space="preserve">
+    <value>BS</value>
+  </data>
+  <data name="preferredNodes.Items33" xml:space="preserve">
+    <value>BT</value>
+  </data>
+  <data name="preferredNodes.Items34" xml:space="preserve">
+    <value>BV</value>
+  </data>
+  <data name="preferredNodes.Items35" xml:space="preserve">
+    <value>BW</value>
+  </data>
+  <data name="preferredNodes.Items36" xml:space="preserve">
+    <value>BY</value>
+  </data>
+  <data name="preferredNodes.Items37" xml:space="preserve">
+    <value>BZ</value>
+  </data>
+  <data name="preferredNodes.Items38" xml:space="preserve">
+    <value>CA</value>
+  </data>
+  <data name="preferredNodes.Items39" xml:space="preserve">
+    <value>CD</value>
+  </data>
+  <data name="preferredNodes.Items40" xml:space="preserve">
+    <value>CF</value>
+  </data>
+  <data name="preferredNodes.Items41" xml:space="preserve">
+    <value>CG</value>
+  </data>
+  <data name="preferredNodes.Items42" xml:space="preserve">
+    <value>CH</value>
+  </data>
+  <data name="preferredNodes.Items43" xml:space="preserve">
+    <value>CI</value>
+  </data>
+  <data name="preferredNodes.Items44" xml:space="preserve">
+    <value>CK</value>
+  </data>
+  <data name="preferredNodes.Items45" xml:space="preserve">
+    <value>CL</value>
+  </data>
+  <data name="preferredNodes.Items46" xml:space="preserve">
+    <value>CM</value>
+  </data>
+  <data name="preferredNodes.Items47" xml:space="preserve">
+    <value>CN</value>
+  </data>
+  <data name="preferredNodes.Items48" xml:space="preserve">
+    <value>CO</value>
+  </data>
+  <data name="preferredNodes.Items49" xml:space="preserve">
+    <value>CR</value>
+  </data>
+  <data name="preferredNodes.Items50" xml:space="preserve">
+    <value>CU</value>
+  </data>
+  <data name="preferredNodes.Items51" xml:space="preserve">
+    <value>CV</value>
+  </data>
+  <data name="preferredNodes.Items52" xml:space="preserve">
+    <value>CX</value>
+  </data>
+  <data name="preferredNodes.Items53" xml:space="preserve">
+    <value>CY</value>
+  </data>
+  <data name="preferredNodes.Items54" xml:space="preserve">
+    <value>CZ</value>
+  </data>
+  <data name="preferredNodes.Items55" xml:space="preserve">
+    <value>DE</value>
+  </data>
+  <data name="preferredNodes.Items56" xml:space="preserve">
+    <value>DJ</value>
+  </data>
+  <data name="preferredNodes.Items57" xml:space="preserve">
+    <value>DK</value>
+  </data>
+  <data name="preferredNodes.Items58" xml:space="preserve">
+    <value>DM</value>
+  </data>
+  <data name="preferredNodes.Items59" xml:space="preserve">
+    <value>DO</value>
+  </data>
+  <data name="preferredNodes.Items60" xml:space="preserve">
+    <value>DZ</value>
+  </data>
+  <data name="preferredNodes.Items61" xml:space="preserve">
+    <value>EC</value>
+  </data>
+  <data name="preferredNodes.Items62" xml:space="preserve">
+    <value>EE</value>
+  </data>
+  <data name="preferredNodes.Items63" xml:space="preserve">
+    <value>EG</value>
+  </data>
+  <data name="preferredNodes.Items64" xml:space="preserve">
+    <value>ER</value>
+  </data>
+  <data name="preferredNodes.Items65" xml:space="preserve">
+    <value>ES</value>
+  </data>
+  <data name="preferredNodes.Items66" xml:space="preserve">
+    <value>ET</value>
+  </data>
+  <data name="preferredNodes.Items67" xml:space="preserve">
+    <value>EU</value>
+  </data>
+  <data name="preferredNodes.Items68" xml:space="preserve">
+    <value>FI</value>
+  </data>
+  <data name="preferredNodes.Items69" xml:space="preserve">
+    <value>FJ</value>
+  </data>
+  <data name="preferredNodes.Items70" xml:space="preserve">
+    <value>FK</value>
+  </data>
+  <data name="preferredNodes.Items71" xml:space="preserve">
+    <value>FM</value>
+  </data>
+  <data name="preferredNodes.Items72" xml:space="preserve">
+    <value>FO</value>
+  </data>
+  <data name="preferredNodes.Items73" xml:space="preserve">
+    <value>FR</value>
+  </data>
+  <data name="preferredNodes.Items74" xml:space="preserve">
+    <value>GA</value>
+  </data>
+  <data name="preferredNodes.Items75" xml:space="preserve">
+    <value>GB</value>
+  </data>
+  <data name="preferredNodes.Items76" xml:space="preserve">
+    <value>GD</value>
+  </data>
+  <data name="preferredNodes.Items77" xml:space="preserve">
+    <value>GE</value>
+  </data>
+  <data name="preferredNodes.Items78" xml:space="preserve">
+    <value>GF</value>
+  </data>
+  <data name="preferredNodes.Items79" xml:space="preserve">
+    <value>GH</value>
+  </data>
+  <data name="preferredNodes.Items80" xml:space="preserve">
+    <value>GI</value>
+  </data>
+  <data name="preferredNodes.Items81" xml:space="preserve">
+    <value>GL</value>
+  </data>
+  <data name="preferredNodes.Items82" xml:space="preserve">
+    <value>GM</value>
+  </data>
+  <data name="preferredNodes.Items83" xml:space="preserve">
+    <value>GN</value>
+  </data>
+  <data name="preferredNodes.Items84" xml:space="preserve">
+    <value>GP</value>
+  </data>
+  <data name="preferredNodes.Items85" xml:space="preserve">
+    <value>GQ</value>
+  </data>
+  <data name="preferredNodes.Items86" xml:space="preserve">
+    <value>GR</value>
+  </data>
+  <data name="preferredNodes.Items87" xml:space="preserve">
+    <value>GT</value>
+  </data>
+  <data name="preferredNodes.Items88" xml:space="preserve">
+    <value>GU</value>
+  </data>
+  <data name="preferredNodes.Items89" xml:space="preserve">
+    <value>GW</value>
+  </data>
+  <data name="preferredNodes.Items90" xml:space="preserve">
+    <value>GY</value>
+  </data>
+  <data name="preferredNodes.Items91" xml:space="preserve">
+    <value>HK</value>
+  </data>
+  <data name="preferredNodes.Items92" xml:space="preserve">
+    <value>HM</value>
+  </data>
+  <data name="preferredNodes.Items93" xml:space="preserve">
+    <value>HN</value>
+  </data>
+  <data name="preferredNodes.Items94" xml:space="preserve">
+    <value>HR</value>
+  </data>
+  <data name="preferredNodes.Items95" xml:space="preserve">
+    <value>HT</value>
+  </data>
+  <data name="preferredNodes.Items96" xml:space="preserve">
+    <value>HU</value>
+  </data>
+  <data name="preferredNodes.Items97" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="preferredNodes.Items98" xml:space="preserve">
+    <value>IE</value>
+  </data>
+  <data name="preferredNodes.Items99" xml:space="preserve">
+    <value>IL</value>
+  </data>
+  <data name="preferredNodes.Items100" xml:space="preserve">
+    <value>IM</value>
+  </data>
+  <data name="preferredNodes.Items101" xml:space="preserve">
+    <value>IN</value>
+  </data>
+  <data name="preferredNodes.Items102" xml:space="preserve">
+    <value>IO</value>
+  </data>
+  <data name="preferredNodes.Items103" xml:space="preserve">
+    <value>IQ</value>
+  </data>
+  <data name="preferredNodes.Items104" xml:space="preserve">
+    <value>IR</value>
+  </data>
+  <data name="preferredNodes.Items105" xml:space="preserve">
+    <value>IS</value>
+  </data>
+  <data name="preferredNodes.Items106" xml:space="preserve">
+    <value>IT</value>
+  </data>
+  <data name="preferredNodes.Items107" xml:space="preserve">
+    <value>JE</value>
+  </data>
+  <data name="preferredNodes.Items108" xml:space="preserve">
+    <value>JM</value>
+  </data>
+  <data name="preferredNodes.Items109" xml:space="preserve">
+    <value>JO</value>
+  </data>
+  <data name="preferredNodes.Items110" xml:space="preserve">
+    <value>JP</value>
+  </data>
+  <data name="preferredNodes.Items111" xml:space="preserve">
+    <value>KE</value>
+  </data>
+  <data name="preferredNodes.Items112" xml:space="preserve">
+    <value>KG</value>
+  </data>
+  <data name="preferredNodes.Items113" xml:space="preserve">
+    <value>KH</value>
+  </data>
+  <data name="preferredNodes.Items114" xml:space="preserve">
+    <value>KI</value>
+  </data>
+  <data name="preferredNodes.Items115" xml:space="preserve">
+    <value>KM</value>
+  </data>
+  <data name="preferredNodes.Items116" xml:space="preserve">
+    <value>KN</value>
+  </data>
+  <data name="preferredNodes.Items117" xml:space="preserve">
+    <value>KP</value>
+  </data>
+  <data name="preferredNodes.Items118" xml:space="preserve">
+    <value>KR</value>
+  </data>
+  <data name="preferredNodes.Items119" xml:space="preserve">
+    <value>KW</value>
+  </data>
+  <data name="preferredNodes.Items120" xml:space="preserve">
+    <value>KY</value>
+  </data>
+  <data name="preferredNodes.Items121" xml:space="preserve">
+    <value>KZ</value>
+  </data>
+  <data name="preferredNodes.Items122" xml:space="preserve">
+    <value>LA</value>
+  </data>
+  <data name="preferredNodes.Items123" xml:space="preserve">
+    <value>LB</value>
+  </data>
+  <data name="preferredNodes.Items124" xml:space="preserve">
+    <value>LC</value>
+  </data>
+  <data name="preferredNodes.Items125" xml:space="preserve">
+    <value>LI</value>
+  </data>
+  <data name="preferredNodes.Items126" xml:space="preserve">
+    <value>LK</value>
   </data>
   <data name="preferredNodes.Items127" xml:space="preserve">
     <value>LR</value>
   </data>
-  <data name="preferredNodes.Items227" xml:space="preserve">
-    <value>VE</value>
+  <data name="preferredNodes.Items128" xml:space="preserve">
+    <value>LS</value>
   </data>
-  <data name="excludedNodes.Items148" xml:space="preserve">
+  <data name="preferredNodes.Items129" xml:space="preserve">
+    <value>LT</value>
+  </data>
+  <data name="preferredNodes.Items130" xml:space="preserve">
+    <value>LU</value>
+  </data>
+  <data name="preferredNodes.Items131" xml:space="preserve">
+    <value>LV</value>
+  </data>
+  <data name="preferredNodes.Items132" xml:space="preserve">
+    <value>LY</value>
+  </data>
+  <data name="preferredNodes.Items133" xml:space="preserve">
+    <value>MA</value>
+  </data>
+  <data name="preferredNodes.Items134" xml:space="preserve">
+    <value>MC</value>
+  </data>
+  <data name="preferredNodes.Items135" xml:space="preserve">
+    <value>MD</value>
+  </data>
+  <data name="preferredNodes.Items136" xml:space="preserve">
+    <value>ME</value>
+  </data>
+  <data name="preferredNodes.Items137" xml:space="preserve">
+    <value>MG</value>
+  </data>
+  <data name="preferredNodes.Items138" xml:space="preserve">
+    <value>MH</value>
+  </data>
+  <data name="preferredNodes.Items139" xml:space="preserve">
+    <value>MK</value>
+  </data>
+  <data name="preferredNodes.Items140" xml:space="preserve">
+    <value>ML</value>
+  </data>
+  <data name="preferredNodes.Items141" xml:space="preserve">
+    <value>MM</value>
+  </data>
+  <data name="preferredNodes.Items142" xml:space="preserve">
+    <value>MN</value>
+  </data>
+  <data name="preferredNodes.Items143" xml:space="preserve">
+    <value>MO</value>
+  </data>
+  <data name="preferredNodes.Items144" xml:space="preserve">
+    <value>MP</value>
+  </data>
+  <data name="preferredNodes.Items145" xml:space="preserve">
+    <value>MQ</value>
+  </data>
+  <data name="preferredNodes.Items146" xml:space="preserve">
+    <value>MR</value>
+  </data>
+  <data name="preferredNodes.Items147" xml:space="preserve">
+    <value>MS</value>
+  </data>
+  <data name="preferredNodes.Items148" xml:space="preserve">
     <value>MT</value>
   </data>
-  <data name="excludedNodes.Items168" xml:space="preserve">
-    <value>PA</value>
+  <data name="preferredNodes.Items149" xml:space="preserve">
+    <value>MU</value>
+  </data>
+  <data name="preferredNodes.Items150" xml:space="preserve">
+    <value>MV</value>
+  </data>
+  <data name="preferredNodes.Items151" xml:space="preserve">
+    <value>MW</value>
+  </data>
+  <data name="preferredNodes.Items152" xml:space="preserve">
+    <value>MX</value>
+  </data>
+  <data name="preferredNodes.Items153" xml:space="preserve">
+    <value>MY</value>
+  </data>
+  <data name="preferredNodes.Items154" xml:space="preserve">
+    <value>MZ</value>
+  </data>
+  <data name="preferredNodes.Items155" xml:space="preserve">
+    <value>NA</value>
+  </data>
+  <data name="preferredNodes.Items156" xml:space="preserve">
+    <value>NC</value>
+  </data>
+  <data name="preferredNodes.Items157" xml:space="preserve">
+    <value>NE</value>
+  </data>
+  <data name="preferredNodes.Items158" xml:space="preserve">
+    <value>NF</value>
+  </data>
+  <data name="preferredNodes.Items159" xml:space="preserve">
+    <value>NG</value>
+  </data>
+  <data name="preferredNodes.Items160" xml:space="preserve">
+    <value>NI</value>
+  </data>
+  <data name="preferredNodes.Items161" xml:space="preserve">
+    <value>NL</value>
+  </data>
+  <data name="preferredNodes.Items162" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="preferredNodes.Items163" xml:space="preserve">
+    <value>NP</value>
+  </data>
+  <data name="preferredNodes.Items164" xml:space="preserve">
+    <value>NR</value>
+  </data>
+  <data name="preferredNodes.Items165" xml:space="preserve">
+    <value>NU</value>
   </data>
   <data name="preferredNodes.Items166" xml:space="preserve">
     <value>NZ</value>
   </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 98</value>
-  </data>
-  <data name="preferredNodes.Items189" xml:space="preserve">
-    <value>SC</value>
+  <data name="preferredNodes.Items167" xml:space="preserve">
+    <value>OM</value>
   </data>
   <data name="preferredNodes.Items168" xml:space="preserve">
     <value>PA</value>
   </data>
-  <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="preferredNodes.Items169" xml:space="preserve">
+    <value>PE</value>
   </data>
-  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 151</value>
+  <data name="preferredNodes.Items170" xml:space="preserve">
+    <value>PF</value>
   </data>
-  <data name="&gt;&gt;lineShape3.Name" xml:space="preserve">
-    <value>lineShape3</value>
+  <data name="preferredNodes.Items171" xml:space="preserve">
+    <value>PG</value>
   </data>
-  <data name="&gt;&gt;shapeContainer2.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="preferredNodes.Items172" xml:space="preserve">
+    <value>PH</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
+  <data name="preferredNodes.Items173" xml:space="preserve">
+    <value>PK</value>
   </data>
-  <data name="&gt;&gt;forceIdent.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="preferredNodes.Items174" xml:space="preserve">
+    <value>PL</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="preferredNodes.Items175" xml:space="preserve">
+    <value>PM</value>
   </data>
-  <data name="selectAll.Text" xml:space="preserve">
-    <value>Select All</value>
+  <data name="preferredNodes.Items176" xml:space="preserve">
+    <value>PR</value>
   </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>17</value>
+  <data name="preferredNodes.Items177" xml:space="preserve">
+    <value>PS</value>
   </data>
-  <data name="loggingCheck.Text" xml:space="preserve">
-    <value>Enable logging</value>
+  <data name="preferredNodes.Items178" xml:space="preserve">
+    <value>PT</value>
   </data>
-  <data name="lineShape4.BorderColor" type="System.Drawing.Color, System.Drawing">
-    <value>Highlight</value>
+  <data name="preferredNodes.Items179" xml:space="preserve">
+    <value>PW</value>
   </data>
-  <data name="selectAll.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 200</value>
+  <data name="preferredNodes.Items180" xml:space="preserve">
+    <value>PY</value>
   </data>
-  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+  <data name="preferredNodes.Items181" xml:space="preserve">
+    <value>QA</value>
   </data>
-  <data name="ontop.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="preferredNodes.Items182" xml:space="preserve">
+    <value>RE</value>
   </data>
-  <data name="shapeContainer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 278</value>
+  <data name="preferredNodes.Items183" xml:space="preserve">
+    <value>RO</value>
+  </data>
+  <data name="preferredNodes.Items184" xml:space="preserve">
+    <value>RS</value>
+  </data>
+  <data name="preferredNodes.Items185" xml:space="preserve">
+    <value>RU</value>
+  </data>
+  <data name="preferredNodes.Items186" xml:space="preserve">
+    <value>RW</value>
+  </data>
+  <data name="preferredNodes.Items187" xml:space="preserve">
+    <value>SA</value>
+  </data>
+  <data name="preferredNodes.Items188" xml:space="preserve">
+    <value>SB</value>
+  </data>
+  <data name="preferredNodes.Items189" xml:space="preserve">
+    <value>SC</value>
   </data>
   <data name="preferredNodes.Items190" xml:space="preserve">
     <value>SD</value>
   </data>
-  <data name="preferredNodes.Items173" xml:space="preserve">
-    <value>PK</value>
+  <data name="preferredNodes.Items191" xml:space="preserve">
+    <value>SE</value>
+  </data>
+  <data name="preferredNodes.Items192" xml:space="preserve">
+    <value>SG</value>
+  </data>
+  <data name="preferredNodes.Items193" xml:space="preserve">
+    <value>SI</value>
+  </data>
+  <data name="preferredNodes.Items194" xml:space="preserve">
+    <value>SK</value>
+  </data>
+  <data name="preferredNodes.Items195" xml:space="preserve">
+    <value>SL</value>
+  </data>
+  <data name="preferredNodes.Items196" xml:space="preserve">
+    <value>SM</value>
+  </data>
+  <data name="preferredNodes.Items197" xml:space="preserve">
+    <value>SN</value>
+  </data>
+  <data name="preferredNodes.Items198" xml:space="preserve">
+    <value>SO</value>
+  </data>
+  <data name="preferredNodes.Items199" xml:space="preserve">
+    <value>SR</value>
+  </data>
+  <data name="preferredNodes.Items200" xml:space="preserve">
+    <value>ST</value>
+  </data>
+  <data name="preferredNodes.Items201" xml:space="preserve">
+    <value>SV</value>
+  </data>
+  <data name="preferredNodes.Items202" xml:space="preserve">
+    <value>SY</value>
+  </data>
+  <data name="preferredNodes.Items203" xml:space="preserve">
+    <value>SZ</value>
+  </data>
+  <data name="preferredNodes.Items204" xml:space="preserve">
+    <value>TC</value>
+  </data>
+  <data name="preferredNodes.Items205" xml:space="preserve">
+    <value>TD</value>
+  </data>
+  <data name="preferredNodes.Items206" xml:space="preserve">
+    <value>TG</value>
+  </data>
+  <data name="preferredNodes.Items207" xml:space="preserve">
+    <value>TH</value>
+  </data>
+  <data name="preferredNodes.Items208" xml:space="preserve">
+    <value>TJ</value>
+  </data>
+  <data name="preferredNodes.Items209" xml:space="preserve">
+    <value>TK</value>
+  </data>
+  <data name="preferredNodes.Items210" xml:space="preserve">
+    <value>TL</value>
+  </data>
+  <data name="preferredNodes.Items211" xml:space="preserve">
+    <value>TM</value>
+  </data>
+  <data name="preferredNodes.Items212" xml:space="preserve">
+    <value>TN</value>
+  </data>
+  <data name="preferredNodes.Items213" xml:space="preserve">
+    <value>TO</value>
+  </data>
+  <data name="preferredNodes.Items214" xml:space="preserve">
+    <value>TR</value>
+  </data>
+  <data name="preferredNodes.Items215" xml:space="preserve">
+    <value>TT</value>
+  </data>
+  <data name="preferredNodes.Items216" xml:space="preserve">
+    <value>TV</value>
+  </data>
+  <data name="preferredNodes.Items217" xml:space="preserve">
+    <value>TW</value>
+  </data>
+  <data name="preferredNodes.Items218" xml:space="preserve">
+    <value>TZ</value>
+  </data>
+  <data name="preferredNodes.Items219" xml:space="preserve">
+    <value>UA</value>
+  </data>
+  <data name="preferredNodes.Items220" xml:space="preserve">
+    <value>UG</value>
+  </data>
+  <data name="preferredNodes.Items221" xml:space="preserve">
+    <value>UM</value>
+  </data>
+  <data name="preferredNodes.Items222" xml:space="preserve">
+    <value>US</value>
+  </data>
+  <data name="preferredNodes.Items223" xml:space="preserve">
+    <value>UY</value>
+  </data>
+  <data name="preferredNodes.Items224" xml:space="preserve">
+    <value>UZ</value>
+  </data>
+  <data name="preferredNodes.Items225" xml:space="preserve">
+    <value>VA</value>
+  </data>
+  <data name="preferredNodes.Items226" xml:space="preserve">
+    <value>VC</value>
+  </data>
+  <data name="preferredNodes.Items227" xml:space="preserve">
+    <value>VE</value>
+  </data>
+  <data name="preferredNodes.Items228" xml:space="preserve">
+    <value>VG</value>
+  </data>
+  <data name="preferredNodes.Items229" xml:space="preserve">
+    <value>VI</value>
+  </data>
+  <data name="preferredNodes.Items230" xml:space="preserve">
+    <value>VN</value>
+  </data>
+  <data name="preferredNodes.Items231" xml:space="preserve">
+    <value>VU</value>
+  </data>
+  <data name="preferredNodes.Items232" xml:space="preserve">
+    <value>WF</value>
+  </data>
+  <data name="preferredNodes.Items233" xml:space="preserve">
+    <value>WS</value>
+  </data>
+  <data name="preferredNodes.Items234" xml:space="preserve">
+    <value>XX</value>
+  </data>
+  <data name="preferredNodes.Items235" xml:space="preserve">
+    <value>YE</value>
+  </data>
+  <data name="preferredNodes.Items236" xml:space="preserve">
+    <value>YT</value>
+  </data>
+  <data name="preferredNodes.Items237" xml:space="preserve">
+    <value>ZA</value>
+  </data>
+  <data name="preferredNodes.Items238" xml:space="preserve">
+    <value>ZM</value>
+  </data>
+  <data name="preferredNodes.Items239" xml:space="preserve">
+    <value>ZW</value>
+  </data>
+  <data name="preferredNodes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 26</value>
+  </data>
+  <data name="preferredNodes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 244</value>
+  </data>
+  <data name="preferredNodes.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;preferredNodes.Name" xml:space="preserve">
+    <value>preferredNodes</value>
+  </data>
+  <data name="&gt;&gt;preferredNodes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;preferredNodes.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;preferredNodes.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="lineShape2.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>104, 11, 202, 0</value>
+  </metadata>
+  <metadata name="lineShape2.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>104, 11</value>
+  </metadata>
+  <metadata name="lineShape2.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>202, 0</value>
+  </metadata>
+  <data name="shapeContainer2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="shapeContainer2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="shapeContainer2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 278</value>
+  </data>
+  <data name="shapeContainer2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;shapeContainer2.Name" xml:space="preserve">
+    <value>shapeContainer2</value>
+  </data>
+  <data name="&gt;&gt;shapeContainer2.Type" xml:space="preserve">
+    <value>Microsoft.VisualBasic.PowerPacks.ShapeContainer, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;shapeContainer2.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;shapeContainer2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="lineShape2.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>104, 11, 202, 0</value>
+  </metadata>
+  <metadata name="lineShape2.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>104, 11</value>
+  </metadata>
+  <metadata name="lineShape2.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>202, 0</value>
+  </metadata>
+  <data name="lineShape2.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Highlight</value>
+  </data>
+  <data name="lineShape2.X1" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="lineShape2.X2" type="System.Int32, mscorlib">
+    <value>306</value>
+  </data>
+  <data name="lineShape2.Y1" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lineShape2.Y2" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lookupHost.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lookupHost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 79</value>
+  </data>
+  <data name="lookupHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 17</value>
+  </data>
+  <data name="lookupHost.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lookupHost.Text" xml:space="preserve">
+    <value>Lookup hostname</value>
+  </data>
+  <data name="&gt;&gt;lookupHost.Name" xml:space="preserve">
+    <value>lookupHost</value>
+  </data>
+  <data name="&gt;&gt;lookupHost.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lookupHost.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;lookupHost.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="advOutput.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="advOutput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 236</value>
+  </data>
+  <data name="advOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 17</value>
+  </data>
+  <data name="advOutput.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="advOutput.Text" xml:space="preserve">
+    <value>Display advanced output (requires restart)</value>
+  </data>
+  <data name="&gt;&gt;advOutput.Name" xml:space="preserve">
+    <value>advOutput</value>
+  </data>
+  <data name="&gt;&gt;advOutput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;advOutput.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;advOutput.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="loggingCheck.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="loggingCheck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 215</value>
+  </data>
+  <data name="loggingCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 17</value>
+  </data>
+  <data name="loggingCheck.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="loggingCheck.Text" xml:space="preserve">
+    <value>Enable logging</value>
+  </data>
+  <data name="&gt;&gt;loggingCheck.Name" xml:space="preserve">
+    <value>loggingCheck</value>
+  </data>
+  <data name="&gt;&gt;loggingCheck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loggingCheck.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;loggingCheck.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 262</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 13</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 261</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Opacity</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="opacitySelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 259</value>
+  </data>
+  <data name="opacitySelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="opacitySelect.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;opacitySelect.Name" xml:space="preserve">
+    <value>opacitySelect</value>
+  </data>
+  <data name="&gt;&gt;opacitySelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;opacitySelect.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;opacitySelect.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="taskBar.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="taskBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 194</value>
+  </data>
+  <data name="taskBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 17</value>
+  </data>
+  <data name="taskBar.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="taskBar.Text" xml:space="preserve">
+    <value>Show icon in the system tray</value>
+  </data>
+  <data name="&gt;&gt;taskBar.Name" xml:space="preserve">
+    <value>taskBar</value>
+  </data>
+  <data name="&gt;&gt;taskBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;taskBar.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;taskBar.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ontop.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ontop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 172</value>
+  </data>
+  <data name="ontop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 17</value>
+  </data>
+  <data name="ontop.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="ontop.Text" xml:space="preserve">
+    <value>Keep on top of other windows</value>
+  </data>
+  <data name="&gt;&gt;ontop.Name" xml:space="preserve">
+    <value>ontop</value>
+  </data>
+  <data name="&gt;&gt;ontop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ontop.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;ontop.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 151</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 13</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Behavior/Appearance</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="forceIdent.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="forceIdent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 59</value>
+  </data>
+  <data name="forceIdent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 17</value>
+  </data>
+  <data name="forceIdent.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="forceIdent.Text" xml:space="preserve">
+    <value>Force new identity even if conditions met</value>
+  </data>
+  <data name="&gt;&gt;forceIdent.Name" xml:space="preserve">
+    <value>forceIdent</value>
+  </data>
+  <data name="&gt;&gt;forceIdent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;forceIdent.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;forceIdent.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="defaultButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 255</value>
+  </data>
+  <data name="defaultButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="defaultButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="defaultButton.Text" xml:space="preserve">
+    <value>Defaults</value>
+  </data>
+  <data name="&gt;&gt;defaultButton.Name" xml:space="preserve">
+    <value>defaultButton</value>
+  </data>
+  <data name="&gt;&gt;defaultButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;defaultButton.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;defaultButton.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="controlPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 122</value>
+  </data>
+  <data name="controlPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="controlPort.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;controlPort.Name" xml:space="preserve">
+    <value>controlPort</value>
+  </data>
+  <data name="&gt;&gt;controlPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;controlPort.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;controlPort.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 125</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Control Port:</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 98</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 13</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Connection</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 36</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>minute(s). [1-300]</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="updateIn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 33</value>
+  </data>
+  <data name="updateIn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="updateIn.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;updateIn.Name" xml:space="preserve">
+    <value>updateIn</value>
+  </data>
+  <data name="&gt;&gt;updateIn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;updateIn.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;updateIn.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 36</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 13</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Update IP every</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 7</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 13</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Update Frequency</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <metadata name="lineShape5.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>119, 155, 187, 0</value>
+  </metadata>
+  <metadata name="lineShape5.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>119, 155</value>
+  </metadata>
+  <metadata name="lineShape5.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>187, 0</value>
+  </metadata>
+  <metadata name="lineShape4.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>65, 102, 241, 0</value>
+  </metadata>
+  <metadata name="lineShape4.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>65, 102</value>
+  </metadata>
+  <metadata name="lineShape4.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>241, 0</value>
+  </metadata>
+  <metadata name="lineShape3.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>101, 11, 205, 0</value>
+  </metadata>
+  <metadata name="lineShape3.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>101, 11</value>
+  </metadata>
+  <metadata name="lineShape3.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>205, 0</value>
+  </metadata>
+  <data name="shapeContainer3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="shapeContainer3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="shapeContainer3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 278</value>
+  </data>
+  <data name="shapeContainer3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;shapeContainer3.Name" xml:space="preserve">
+    <value>shapeContainer3</value>
+  </data>
+  <data name="&gt;&gt;shapeContainer3.Type" xml:space="preserve">
+    <value>Microsoft.VisualBasic.PowerPacks.ShapeContainer, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;shapeContainer3.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;shapeContainer3.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <metadata name="lineShape5.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>119, 155, 187, 0</value>
+  </metadata>
+  <metadata name="lineShape5.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>119, 155</value>
+  </metadata>
+  <metadata name="lineShape5.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>187, 0</value>
+  </metadata>
+  <data name="lineShape5.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Highlight</value>
+  </data>
+  <data name="lineShape5.X1" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="lineShape5.X2" type="System.Int32, mscorlib">
+    <value>306</value>
+  </data>
+  <data name="lineShape5.Y1" type="System.Int32, mscorlib">
+    <value>155</value>
+  </data>
+  <data name="lineShape5.Y2" type="System.Int32, mscorlib">
+    <value>155</value>
+  </data>
+  <metadata name="lineShape4.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>65, 102, 241, 0</value>
+  </metadata>
+  <metadata name="lineShape4.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>65, 102</value>
+  </metadata>
+  <metadata name="lineShape4.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>241, 0</value>
+  </metadata>
+  <data name="lineShape4.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Highlight</value>
+  </data>
+  <data name="lineShape4.X1" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="lineShape4.X2" type="System.Int32, mscorlib">
+    <value>306</value>
+  </data>
+  <data name="lineShape4.Y1" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="lineShape4.Y2" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <metadata name="lineShape3.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>101, 11, 205, 0</value>
+  </metadata>
+  <metadata name="lineShape3.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>101, 11</value>
+  </metadata>
+  <metadata name="lineShape3.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>205, 0</value>
+  </metadata>
+  <data name="lineShape3.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>Highlight</value>
+  </data>
+  <data name="lineShape3.X1" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="lineShape3.X2" type="System.Int32, mscorlib">
+    <value>306</value>
+  </data>
+  <data name="lineShape3.Y1" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lineShape3.Y2" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="okButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 321</value>
+  </data>
+  <data name="okButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="okButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="okButton.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;okButton.Name" xml:space="preserve">
+    <value>okButton</value>
+  </data>
+  <data name="&gt;&gt;okButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;okButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;okButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 321</value>
+  </data>
+  <data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="cancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="cancelButton.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Name" xml:space="preserve">
+    <value>cancelButton</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>327, 351</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2243,685 +3305,43 @@ Note: While attempting to find a new exit node, GeoLock may visit nodes located 
         AACAAwAAgAMAAMAHAADABwAA8B8AAPx/AAA=
 </value>
   </data>
-  <data name="preferredNodes.Items222" xml:space="preserve">
-    <value>US</value>
-  </data>
-  <data name="defaultButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 255</value>
-  </data>
-  <data name="lineShape5.Y2" type="System.Int32, mscorlib">
-    <value>155</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="opacitySelect.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="preferredNodes.Items83" xml:space="preserve">
-    <value>GN</value>
-  </data>
-  <data name="&gt;&gt;ontop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="preferredNodes.Items117" xml:space="preserve">
-    <value>KP</value>
-  </data>
-  <data name="preferredNodes.Items217" xml:space="preserve">
-    <value>TW</value>
-  </data>
-  <data name="preferredNodes.Items85" xml:space="preserve">
-    <value>GQ</value>
-  </data>
-  <data name="preferredNodes.Items94" xml:space="preserve">
-    <value>HR</value>
-  </data>
-  <data name="preferredNodes.Items156" xml:space="preserve">
-    <value>NC</value>
-  </data>
-  <data name="preferredNodes.Items131" xml:space="preserve">
-    <value>LV</value>
-  </data>
-  <data name="preferredNodes.Items231" xml:space="preserve">
-    <value>VU</value>
-  </data>
-  <data name="preferredNodes.Items93" xml:space="preserve">
-    <value>HN</value>
-  </data>
-  <data name="preferredNodes.Items34" xml:space="preserve">
-    <value>BV</value>
-  </data>
-  <data name="preferredNodes.Items44" xml:space="preserve">
-    <value>CK</value>
-  </data>
-  <data name="preferredNodes.Items54" xml:space="preserve">
-    <value>CZ</value>
-  </data>
-  <data name="lineShape3.BorderColor" type="System.Drawing.Color, System.Drawing">
-    <value>Highlight</value>
-  </data>
-  <data name="lineShape4.Y1" type="System.Int32, mscorlib">
-    <value>102</value>
-  </data>
-  <data name="lineShape4.Y2" type="System.Int32, mscorlib">
-    <value>102</value>
-  </data>
-  <data name="preferredNodes.Items13" xml:space="preserve">
-    <value>AS</value>
-  </data>
-  <data name="preferredNodes.Items23" xml:space="preserve">
-    <value>BF</value>
-  </data>
-  <data name="preferredNodes.Items33" xml:space="preserve">
-    <value>BT</value>
-  </data>
-  <data name="preferredNodes.Items43" xml:space="preserve">
-    <value>CI</value>
-  </data>
-  <data name="preferredNodes.Items53" xml:space="preserve">
-    <value>CY</value>
-  </data>
-  <data name="preferredNodes.Items63" xml:space="preserve">
-    <value>EG</value>
-  </data>
-  <data name="preferredNodes.Items73" xml:space="preserve">
-    <value>FR</value>
-  </data>
-  <data name="controlPort.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
-  </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="excludedNodes.Items95" xml:space="preserve">
-    <value>HT</value>
-  </data>
-  <data name="excludedNodes.Items94" xml:space="preserve">
-    <value>HR</value>
-  </data>
-  <data name="label12.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="excludedNodes.Items96" xml:space="preserve">
-    <value>HU</value>
-  </data>
-  <data name="shapeContainer2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="excludedNodes.Items90" xml:space="preserve">
-    <value>GY</value>
-  </data>
-  <data name="excludedNodes.Items93" xml:space="preserve">
-    <value>HN</value>
-  </data>
-  <data name="excludedNodes.Items92" xml:space="preserve">
-    <value>HM</value>
-  </data>
-  <data name="excludedNodes.Items99" xml:space="preserve">
-    <value>IL</value>
-  </data>
-  <data name="excludedNodes.Items98" xml:space="preserve">
-    <value>IE</value>
-  </data>
-  <data name="shapeContainer3.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="preferredNodes.Items181" xml:space="preserve">
-    <value>QA</value>
-  </data>
-  <data name="excludedNodes.Items55" xml:space="preserve">
-    <value>DE</value>
-  </data>
-  <data name="excludedNodes.Items54" xml:space="preserve">
-    <value>CZ</value>
-  </data>
-  <data name="excludedNodes.Items57" xml:space="preserve">
-    <value>DK</value>
-  </data>
-  <data name="excludedNodes.Items56" xml:space="preserve">
-    <value>DJ</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 26</value>
-  </data>
-  <data name="excludedNodes.Items50" xml:space="preserve">
-    <value>CU</value>
-  </data>
-  <data name="excludedNodes.Items53" xml:space="preserve">
-    <value>CY</value>
-  </data>
-  <data name="excludedNodes.Items52" xml:space="preserve">
-    <value>CX</value>
-  </data>
-  <data name="preferredNodes.Items180" xml:space="preserve">
-    <value>PY</value>
-  </data>
-  <data name="excludedNodes.Items58" xml:space="preserve">
-    <value>DM</value>
-  </data>
-  <data name="preferredNodes.Items163" xml:space="preserve">
-    <value>NP</value>
-  </data>
-  <data name="&gt;&gt;forceIdent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="loggingCheck.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 17</value>
-  </data>
-  <data name="preferredNodes.Items107" xml:space="preserve">
-    <value>JE</value>
-  </data>
-  <data name="preferredNodes.Items207" xml:space="preserve">
-    <value>TH</value>
-  </data>
-  <data name="&gt;&gt;SelectAllPre.Name" xml:space="preserve">
-    <value>SelectAllPre</value>
-  </data>
-  <data name="advOutput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 236</value>
-  </data>
-  <data name="excludedNodes.Items159" xml:space="preserve">
-    <value>NG</value>
-  </data>
-  <data name="excludedNodes.Items149" xml:space="preserve">
-    <value>MU</value>
-  </data>
-  <data name="excludedNodes.Items179" xml:space="preserve">
-    <value>PW</value>
-  </data>
-  <data name="&gt;&gt;selectAll.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="preferredNodes.Items146" xml:space="preserve">
-    <value>MR</value>
-  </data>
-  <data name="preferredNodes.Items121" xml:space="preserve">
-    <value>KZ</value>
-  </data>
-  <data name="preferredNodes.Items82" xml:space="preserve">
-    <value>GM</value>
-  </data>
-  <data name="preferredNodes.Items92" xml:space="preserve">
-    <value>HM</value>
-  </data>
-  <data name="excludedNodes.Items189" xml:space="preserve">
-    <value>SC</value>
-  </data>
-  <data name="preferredNodes.Items86" xml:space="preserve">
-    <value>GR</value>
-  </data>
-  <data name="ontop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 17</value>
-  </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Advanced</value>
-  </data>
-  <data name="preferredNodes.Items148" xml:space="preserve">
-    <value>MT</value>
-  </data>
-  <data name="preferredNodes.Items12" xml:space="preserve">
-    <value>AR</value>
-  </data>
-  <data name="preferredNodes.Items22" xml:space="preserve">
-    <value>BE</value>
-  </data>
-  <data name="preferredNodes.Items32" xml:space="preserve">
-    <value>BS</value>
-  </data>
-  <data name="preferredNodes.Items42" xml:space="preserve">
-    <value>CH</value>
-  </data>
-  <data name="preferredNodes.Items52" xml:space="preserve">
-    <value>CX</value>
-  </data>
-  <data name="preferredNodes.Items62" xml:space="preserve">
-    <value>EE</value>
-  </data>
-  <data name="preferredNodes.Items72" xml:space="preserve">
-    <value>FO</value>
-  </data>
-  <data name="defaultButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="excludedNodes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 244</value>
-  </data>
-  <data name="clearAll.Text" xml:space="preserve">
-    <value>Clear All</value>
-  </data>
-  <data name="loggingCheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 215</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lineShape4.Type" xml:space="preserve">
-    <value>Microsoft.VisualBasic.PowerPacks.LineShape, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="&gt;&gt;updateIn.Name" xml:space="preserve">
-    <value>updateIn</value>
-  </data>
-  <data name="&gt;&gt;defaultButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="updateIn.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;opacitySelect.Name" xml:space="preserve">
-    <value>opacitySelect</value>
-  </data>
-  <data name="&gt;&gt;defaultButton.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;cancelButton.Name" xml:space="preserve">
-    <value>cancelButton</value>
-  </data>
-  <data name="clearAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;opacitySelect.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="excludedNodes.Items73" xml:space="preserve">
-    <value>FR</value>
-  </data>
-  <data name="preferredNodes.Items191" xml:space="preserve">
-    <value>SE</value>
-  </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Preferred Nodes</value>
-  </data>
-  <data name="excludedNodes.Items79" xml:space="preserve">
-    <value>GH</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="preferredNodes.Items153" xml:space="preserve">
-    <value>MY</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>GeoLock Configuration</value>
+  </data>
+  <data name="&gt;&gt;lineShape1.Name" xml:space="preserve">
+    <value>lineShape1</value>
   </data>
   <data name="&gt;&gt;lineShape1.Type" xml:space="preserve">
     <value>Microsoft.VisualBasic.PowerPacks.LineShape, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="preferredNodes.Items192" xml:space="preserve">
-    <value>SG</value>
-  </data>
-  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="preferredNodes.Items194" xml:space="preserve">
-    <value>SK</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="preferredNodes.Items177" xml:space="preserve">
-    <value>PS</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;forceIdent.Name" xml:space="preserve">
-    <value>forceIdent</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="lookupHost.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 17</value>
-  </data>
-  <data name="preferredNodes.Items111" xml:space="preserve">
-    <value>KE</value>
-  </data>
-  <data name="preferredNodes.Items211" xml:space="preserve">
-    <value>TM</value>
-  </data>
-  <data name="&gt;&gt;selectAll.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="excludedNodes.Items169" xml:space="preserve">
-    <value>PE</value>
-  </data>
-  <data name="excludedNodes.Items119" xml:space="preserve">
-    <value>KW</value>
-  </data>
-  <data name="excludedNodes.Items109" xml:space="preserve">
-    <value>JO</value>
-  </data>
-  <data name="excludedNodes.Items139" xml:space="preserve">
-    <value>MK</value>
-  </data>
-  <data name="excludedNodes.Items129" xml:space="preserve">
-    <value>LT</value>
-  </data>
-  <data name="preferredNodes.Items11" xml:space="preserve">
-    <value>AQ</value>
-  </data>
-  <data name="preferredNodes.Items21" xml:space="preserve">
-    <value>BD</value>
-  </data>
-  <data name="preferredNodes.Items31" xml:space="preserve">
-    <value>BR</value>
-  </data>
-  <data name="preferredNodes.Items41" xml:space="preserve">
-    <value>CG</value>
-  </data>
-  <data name="preferredNodes.Items51" xml:space="preserve">
-    <value>CV</value>
-  </data>
-  <data name="preferredNodes.Items61" xml:space="preserve">
-    <value>EC</value>
-  </data>
-  <data name="preferredNodes.Items71" xml:space="preserve">
-    <value>FM</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 13</value>
-  </data>
-  <data name="ClearAllPre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="preferredNodes.Items235" xml:space="preserve">
-    <value>YE</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="forceIdent.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 59</value>
+  <data name="&gt;&gt;lineShape2.Name" xml:space="preserve">
+    <value>lineShape2</value>
   </data>
   <data name="&gt;&gt;lineShape2.Type" xml:space="preserve">
     <value>Microsoft.VisualBasic.PowerPacks.LineShape, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
+  <data name="&gt;&gt;lineShape5.Name" xml:space="preserve">
+    <value>lineShape5</value>
   </data>
-  <data name="lineShape3.X1" type="System.Int32, mscorlib">
-    <value>101</value>
+  <data name="&gt;&gt;lineShape5.Type" xml:space="preserve">
+    <value>Microsoft.VisualBasic.PowerPacks.LineShape, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lineShape3.X2" type="System.Int32, mscorlib">
-    <value>258</value>
+  <data name="&gt;&gt;lineShape4.Name" xml:space="preserve">
+    <value>lineShape4</value>
   </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;lineShape4.Type" xml:space="preserve">
+    <value>Microsoft.VisualBasic.PowerPacks.LineShape, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="excludedNodes.Items75" xml:space="preserve">
-    <value>GB</value>
+  <data name="&gt;&gt;lineShape3.Name" xml:space="preserve">
+    <value>lineShape3</value>
   </data>
-  <data name="excludedNodes.Items74" xml:space="preserve">
-    <value>GA</value>
+  <data name="&gt;&gt;lineShape3.Type" xml:space="preserve">
+    <value>Microsoft.VisualBasic.PowerPacks.LineShape, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="excludedNodes.Items77" xml:space="preserve">
-    <value>GE</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ExitNode</value>
   </data>
-  <data name="excludedNodes.Items76" xml:space="preserve">
-    <value>GD</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="excludedNodes.Items71" xml:space="preserve">
-    <value>FM</value>
-  </data>
-  <data name="excludedNodes.Items70" xml:space="preserve">
-    <value>FK</value>
-  </data>
-  <data name="excludedNodes.Items4" xml:space="preserve">
-    <value>AG</value>
-  </data>
-  <data name="excludedNodes.Items72" xml:space="preserve">
-    <value>FO</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="clearAll.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;shapeContainer1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="excludedNodes.Items78" xml:space="preserve">
-    <value>GF</value>
-  </data>
-  <data name="cancelButton.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="excludedNodes.Items35" xml:space="preserve">
-    <value>BW</value>
-  </data>
-  <data name="excludedNodes.Items34" xml:space="preserve">
-    <value>BV</value>
-  </data>
-  <data name="excludedNodes.Items37" xml:space="preserve">
-    <value>BZ</value>
-  </data>
-  <data name="excludedNodes.Items36" xml:space="preserve">
-    <value>BY</value>
-  </data>
-  <data name="lineShape2.X2" type="System.Int32, mscorlib">
-    <value>258</value>
-  </data>
-  <data name="excludedNodes.Items30" xml:space="preserve">
-    <value>BO</value>
-  </data>
-  <data name="excludedNodes.Items33" xml:space="preserve">
-    <value>BT</value>
-  </data>
-  <data name="excludedNodes.Items32" xml:space="preserve">
-    <value>BS</value>
-  </data>
-  <data name="excludedNodes.Items39" xml:space="preserve">
-    <value>CD</value>
-  </data>
-  <data name="excludedNodes.Items38" xml:space="preserve">
-    <value>CA</value>
-  </data>
-  <data name="preferredNodes.Items143" xml:space="preserve">
-    <value>MO</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;shapeContainer2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="preferredNodes.Items182" xml:space="preserve">
-    <value>RE</value>
-  </data>
-  <data name="lineShape1.X1" type="System.Int32, mscorlib">
-    <value>104</value>
-  </data>
-  <data name="lineShape1.X2" type="System.Int32, mscorlib">
-    <value>258</value>
-  </data>
-  <data name="preferredNodes.Items184" xml:space="preserve">
-    <value>RS</value>
-  </data>
-  <data name="&gt;&gt;okButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="preferredNodes.Items167" xml:space="preserve">
-    <value>OM</value>
-  </data>
-  <data name="forceIdent.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="excludedNodes.Items158" xml:space="preserve">
-    <value>NF</value>
-  </data>
-  <data name="preferredNodes.Items201" xml:space="preserve">
-    <value>SV</value>
-  </data>
-  <data name="excludedNodes.Items178" xml:space="preserve">
-    <value>PT</value>
-  </data>
-  <data name="&gt;&gt;shapeContainer3.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="excludedNodes.Items118" xml:space="preserve">
-    <value>KR</value>
-  </data>
-  <data name="excludedNodes.Items108" xml:space="preserve">
-    <value>JM</value>
-  </data>
-  <data name="excludedNodes.Items138" xml:space="preserve">
-    <value>MH</value>
-  </data>
-  <data name="excludedNodes.Items128" xml:space="preserve">
-    <value>LS</value>
-  </data>
-  <data name="preferredNodes.Items10" xml:space="preserve">
-    <value>AP</value>
-  </data>
-  <data name="preferredNodes.Items20" xml:space="preserve">
-    <value>BB</value>
-  </data>
-  <data name="preferredNodes.Items30" xml:space="preserve">
-    <value>BO</value>
-  </data>
-  <data name="excludedNodes.Items188" xml:space="preserve">
-    <value>SB</value>
-  </data>
-  <data name="preferredNodes.Items50" xml:space="preserve">
-    <value>CU</value>
-  </data>
-  <data name="preferredNodes.Items60" xml:space="preserve">
-    <value>DZ</value>
-  </data>
-  <data name="preferredNodes.Items70" xml:space="preserve">
-    <value>FK</value>
-  </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>Opacity</value>
-  </data>
-  <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 321</value>
-  </data>
-  <data name="excludedNodes.Items150" xml:space="preserve">
-    <value>MV</value>
-  </data>
-  <data name="excludedNodes.Items140" xml:space="preserve">
-    <value>ML</value>
-  </data>
-  <data name="excludedNodes.Items170" xml:space="preserve">
-    <value>PF</value>
-  </data>
-  <data name="preferredNodes.Items125" xml:space="preserve">
-    <value>LI</value>
-  </data>
-  <data name="preferredNodes.Items225" xml:space="preserve">
-    <value>VA</value>
-  </data>
-  <data name="&gt;&gt;taskBar.Name" xml:space="preserve">
-    <value>taskBar</value>
-  </data>
-  <data name="excludedNodes.Items180" xml:space="preserve">
-    <value>PY</value>
-  </data>
-  <data name="&gt;&gt;selectAll.Name" xml:space="preserve">
-    <value>selectAll</value>
-  </data>
-  <data name="preferredNodes.Items8" xml:space="preserve">
-    <value>AN</value>
-  </data>
-  <data name="preferredNodes.Items9" xml:space="preserve">
-    <value>AO</value>
-  </data>
-  <data name="preferredNodes.Items1" xml:space="preserve">
-    <value>AD</value>
-  </data>
-  <data name="preferredNodes.Items2" xml:space="preserve">
-    <value>AE</value>
-  </data>
-  <data name="preferredNodes.Items3" xml:space="preserve">
-    <value>AF</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 7</value>
-  </data>
-  <data name="preferredNodes.Items5" xml:space="preserve">
-    <value>AI</value>
-  </data>
-  <data name="preferredNodes.Items6" xml:space="preserve">
-    <value>AL</value>
-  </data>
-  <data name="preferredNodes.Items7" xml:space="preserve">
-    <value>AM</value>
-  </data>
-  <data name="&gt;&gt;SelectAllPre.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <metadata name="lineShape4.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>193, 0</value>
-  </metadata>
-  <metadata name="lineShape1.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>104, 11, 154, 0</value>
-  </metadata>
-  <metadata name="lineShape5.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>119, 155</value>
-  </metadata>
-  <metadata name="lineShape4.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>65, 102, 193, 0</value>
-  </metadata>
-  <metadata name="lineShape2.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>104, 11, 154, 0</value>
-  </metadata>
-  <metadata name="lineShape3.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>101, 11</value>
-  </metadata>
-  <metadata name="lineShape5.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>119, 155, 139, 0</value>
-  </metadata>
-  <metadata name="lineShape2.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>154, 0</value>
-  </metadata>
-  <metadata name="lineShape5.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>139, 0</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>pt</value>
-  </metadata>
-  <metadata name="lineShape1.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>154, 0</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="lineShape4.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>65, 102</value>
-  </metadata>
-  <metadata name="lineShape3.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>101, 11, 157, 0</value>
-  </metadata>
-  <metadata name="lineShape1.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>104, 11</value>
-  </metadata>
-  <metadata name="lineShape3.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>157, 0</value>
-  </metadata>
-  <metadata name="lineShape2.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>104, 11</value>
-  </metadata>
 </root>
