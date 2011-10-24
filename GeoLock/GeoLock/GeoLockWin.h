@@ -73,7 +73,14 @@ bool getNewIdentity() {
 		if (adv) Console::WriteLine("Complete\n\tIdentity switch request sent to Tor.");
 	}
 	catch (Exception^ ex) {
-		if (adv) Console::WriteLine("FAIL");
+		if (adv) {
+			HANDLE hstdout = GetStdHandle(STD_OUTPUT_HANDLE);
+			CONSOLE_SCREEN_BUFFER_INFO csbi;
+			GetConsoleScreenBufferInfo(hstdout,&csbi);
+			SetConsoleTextAttribute(hstdout,0x0C);
+			Console::WriteLine("FAIL");
+			SetConsoleTextAttribute(hstdout,csbi.wAttributes);
+		}
 		return false;
 	}
 	return true;
@@ -135,6 +142,8 @@ namespace GeoLock {
 
 		//function to update IP address via wipmania's API and return either error or stream input
 		void updateIP() {
+			String^ advOut = System::Configuration::ConfigurationManager::AppSettings["advancedOutput"];
+			bool adv = (advOut == "true");
 			//load logging boolean
 			WebClient^ myWebClient = gcnew WebClient;
 			//random number must be appended to URL to ensure IP is current
@@ -149,7 +158,16 @@ namespace GeoLock {
 				myWebClient->DownloadStringCompleted += gcnew DownloadStringCompletedEventHandler(this,&GeoLock::GeoLockWin::downloadStringEventComplete);
 				myWebClient->DownloadStringAsync(siteUri);
 			}
-			catch (WebException ^ex) {}
+			catch (WebException ^ex) {
+				if (adv) {
+					HANDLE hstdout = GetStdHandle(STD_OUTPUT_HANDLE);
+					CONSOLE_SCREEN_BUFFER_INFO csbi;
+					GetConsoleScreenBufferInfo(hstdout,&csbi);
+					SetConsoleTextAttribute(hstdout,0x0C);
+					Console::WriteLine("FAIL");
+					SetConsoleTextAttribute(hstdout,csbi.wAttributes);
+				}
+			}
 		}
 
 		void downloadStringEventComplete(Object^ /*sender*/, DownloadStringCompletedEventArgs^ e) {
@@ -176,7 +194,14 @@ namespace GeoLock {
 					//if IP was not obtainable, display ?'s
 					ip = "??.??.??.??";
 					ct = "??";
-					if (adv) Console::WriteLine("FAIL");
+					if (adv) {
+						HANDLE hstdout = GetStdHandle(STD_OUTPUT_HANDLE);
+						CONSOLE_SCREEN_BUFFER_INFO csbi;
+						GetConsoleScreenBufferInfo(hstdout,&csbi);
+						SetConsoleTextAttribute(hstdout,0x0C);
+						Console::WriteLine("FAIL");
+						SetConsoleTextAttribute(hstdout,csbi.wAttributes);
+					}
 				}
 				//update IP and Country
 				this->toolStripLabel1->Text = L"IP: " + ip;
@@ -221,13 +246,24 @@ namespace GeoLock {
 					pwriter->Close();
 				}
 				updateTorIcon(true);
+				HANDLE hstdout = GetStdHandle(STD_OUTPUT_HANDLE);
+				CONSOLE_SCREEN_BUFFER_INFO csbi;
+				GetConsoleScreenBufferInfo(hstdout,&csbi);
 				if ((acceptState) == "Locked") {
 					//IP address updated and it is acceptable
-					if (adv) Console::WriteLine("\tState: Good");
+					if (adv) {
+						Console::Write("\tState: ");
+						SetConsoleTextAttribute(hstdout,0x0A);
+						Console::WriteLine("GOOD");
+						SetConsoleTextAttribute(hstdout,csbi.wAttributes);
+					}
 				}
 				else {
 					//or it was updated and is not acceptable
-					if (adv) Console::WriteLine("\tState: Bad");
+					if (adv) Console::Write("\tState: ");
+					SetConsoleTextAttribute(hstdout,0x0C);
+					Console::WriteLine("BAD");
+					SetConsoleTextAttribute(hstdout,csbi.wAttributes);
 					if(!getNewIdentity()) {
 						this->torStatusIcon->Text = resources->GetString(L"Comm");
 						this->torStatusIcon->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject("error")));
@@ -237,6 +273,14 @@ namespace GeoLock {
 			}
 			else {
 				updateTorIcon(false);
+				if (adv) {
+					HANDLE hstdout = GetStdHandle(STD_OUTPUT_HANDLE);
+					CONSOLE_SCREEN_BUFFER_INFO csbi;
+					GetConsoleScreenBufferInfo(hstdout,&csbi);
+					SetConsoleTextAttribute(hstdout,0x0C);
+					Console::WriteLine("FAIL");
+					SetConsoleTextAttribute(hstdout,csbi.wAttributes);
+				}
 			}
 			this->progressBar1->Visible = false;
 		}
