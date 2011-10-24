@@ -588,7 +588,7 @@ namespace GeoLock {
 			// timer
 			// 
 			this->timer->Enabled = true;
-			this->timer->Interval = 300000;
+			this->timer->Interval = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["updateFreq"])*60*1000);
 			this->timer->Tick += gcnew System::EventHandler(this, &GeoLockWin::GeoLockWin_Load);
 			// 
 			// timeStamp
@@ -788,6 +788,13 @@ namespace GeoLock {
 	private: System::Void addCurrentIP_Click(System::Object^  sender, System::EventArgs^  e) {
 				System::Configuration::Configuration ^config = 
 					System::Configuration::ConfigurationManager::OpenExeConfiguration(System::Configuration::ConfigurationUserLevel::None);
+				String^ advOut = System::Configuration::ConfigurationManager::AppSettings["advancedOutput"];
+				bool adv = (advOut == "true");
+				if (adv) {
+					SYSTEMTIME lt;
+					GetLocalTime(&lt);
+					Console::Write("[" + getPrettyDate(lt) + "]: Blocking current IP address...");
+				}
 				String^ managedBadIP = System::Configuration::ConfigurationManager::AppSettings["blockedIP"];
 				if (managedBadIP->Length > 0) managedBadIP += "," + (this->toolStripLabel1->Text)->Substring(3)->Trim();
 				else  managedBadIP += (this->toolStripLabel1->Text)->Substring(3)->Trim();
@@ -796,12 +803,22 @@ namespace GeoLock {
 				config->AppSettings->Settings->Add("blockedIP",managedBadIP);
 				config->Save(System::Configuration::ConfigurationSaveMode::Modified);
 				System::Configuration::ConfigurationManager::RefreshSection("appSettings");
+				if (adv) {
+					Console::WriteLine("Complete");
+				}
 				reinitialize();
 				updateIPandDisplay();
 			}
 	private: System::Void addCurrentHost_Click(System::Object^  sender, System::EventArgs^  e) {
 				System::Configuration::Configuration ^config = 
 					System::Configuration::ConfigurationManager::OpenExeConfiguration(System::Configuration::ConfigurationUserLevel::None);
+				String^ advOut = System::Configuration::ConfigurationManager::AppSettings["advancedOutput"];
+				bool adv = (advOut == "true");
+				if (adv) {
+					SYSTEMTIME lt;
+					GetLocalTime(&lt);
+					Console::Write("[" + getPrettyDate(lt) + "]: Blocking current hostname...");
+				}
 				String^ managedBadHost = System::Configuration::ConfigurationManager::AppSettings["blockedHost"];
 				if (managedBadHost->Length > 0) managedBadHost += "," + this->toolStripButton1->Text;
 				else managedBadHost += this->toolStripButton1->Text;
@@ -810,6 +827,9 @@ namespace GeoLock {
 				config->AppSettings->Settings->Add("blockedHost",managedBadHost);
 				config->Save(System::Configuration::ConfigurationSaveMode::Modified);
 				System::Configuration::ConfigurationManager::RefreshSection("appSettings");
+				if (adv) {
+					Console::WriteLine("Complete");
+				}
 				reinitialize();
 				updateIPandDisplay();
 			}
