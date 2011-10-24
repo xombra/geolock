@@ -1466,6 +1466,1446 @@
     <None Include="icons\ZW.ico">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AD.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AE.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AG.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AI.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AL.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AM.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AN.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AO.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AQ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AS.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AT.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AU.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AW.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AX.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AZ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BA.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BB.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BD.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BE.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BG.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BH.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BI.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BJ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BM.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BN.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BO.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BS.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BT.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BV.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BW.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BY.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BZ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CA.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CD.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CG.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CH.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CI.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CK.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CL.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CM.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CN.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CO.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CU.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CV.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CY.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CZ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\DE.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\DJ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\DK.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\DM.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\DO.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\DZ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\EC.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\EE.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\EG.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ER.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\error.gif">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ES.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ET.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\EU.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\fatal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\FI.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\FJ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\FK.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\FM.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\FO.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\FR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GA.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GB.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GD.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GE.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GH.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GI.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GL.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GM.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GN.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\good.gif">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GP.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GQ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GT.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GU.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GW.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GY.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\HK.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\HM.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\HN.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\HR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\HT.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\HU.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ID.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IE.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IL.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IM.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IN.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IO.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IQ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IS.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IT.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\JE.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\JM.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\JO.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\JP.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KE.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KG.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KH.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KI.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KM.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KN.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KP.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KW.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KY.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KZ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LA.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LB.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LC.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LI.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LK.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\Locked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LS.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LT.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LU.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LV.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LY.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MA.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MC.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MD.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ME.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MG.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MH.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MK.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ML.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MM.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MN.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MO.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MP.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MQ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MS.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MT.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MU.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MV.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MW.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MX.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MY.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MZ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NA.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NC.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NE.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NG.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NI.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NL.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NO.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\Not Locked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NP.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NU.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NZ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\OM.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PA.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PE.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PG.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PH.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PK.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PL.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PS.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PT.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PW.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PY.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\QA.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\RE.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\RO.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\RS.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\RU.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\RW.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SA.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SB.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SC.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SD.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SE.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SG.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SI.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SK.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SL.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SM.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SN.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SO.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ST.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SV.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SY.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SZ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TC.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TD.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TG.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TH.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TJ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TK.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TL.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TM.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TN.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TO.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TT.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TV.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TW.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TZ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\UA.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\UG.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\UM.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\US.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\UY.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\UZ.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\VA.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\VC.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\VE.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\VG.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\VI.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\VN.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\VU.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\WF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\WS.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\YE.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\YT.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ZA.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ZM.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ZW.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AD.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AF.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AG.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AI.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AL.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AM.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AN.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AO.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AQ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AR.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AS.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AT.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AU.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AW.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AX.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\AZ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BA.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BB.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BD.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BF.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BG.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BH.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BI.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BJ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BM.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BN.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BO.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BR.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BS.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BT.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BV.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BW.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BY.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\BZ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CA.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CD.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CF.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CG.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CH.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CI.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CK.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CL.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CM.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CN.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CO.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CR.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CU.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CV.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CY.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\CZ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\DE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\DJ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\DK.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\DM.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\DO.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\DZ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\EC.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\EE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\EG.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ER.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\error.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ES.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ET.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\EU.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\fatal.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\FI.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\FJ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\FK.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\FM.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\FO.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\FR.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GA.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GB.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GD.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GF.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GH.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GI.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GL.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GM.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GN.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\good.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GP.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GQ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GR.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GT.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GU.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GW.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\GY.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\HK.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\HM.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\HN.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\HR.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\HT.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\HU.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ID.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IL.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IM.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IN.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IO.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IQ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IR.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IS.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\IT.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\JE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\JM.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\JO.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\JP.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KG.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KH.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KI.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KM.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KN.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KP.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KR.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KW.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KY.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\KZ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LA.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LB.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LC.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LI.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LK.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\Locked.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LR.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LS.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LT.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LU.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LV.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\LY.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MA.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MC.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MD.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ME.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MG.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MH.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MK.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ML.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MM.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MN.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MO.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MP.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MQ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MR.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MS.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MT.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MU.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MV.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MW.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MX.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MY.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\MZ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NA.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NC.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NF.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NG.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NI.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NL.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NO.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\Not Locked.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NP.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NR.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NU.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\NZ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\OM.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PA.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PF.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PG.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PH.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PK.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PL.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PR.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PS.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PT.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PW.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\PY.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\QA.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\RE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\RO.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\RS.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\RU.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\RW.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SA.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SB.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SC.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SD.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SG.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SI.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SK.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SL.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SM.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SN.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SO.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SR.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ST.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SV.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SY.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\SZ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TC.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TD.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TG.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TH.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TJ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TK.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TL.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TM.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TN.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TO.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TR.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TT.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TV.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TW.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\TZ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\UA.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\UG.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\UM.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\US.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\UY.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\UZ.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\VA.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\VC.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\VE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\VG.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\VI.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\VN.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\VU.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\WF.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\WS.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\YE.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\YT.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ZA.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ZM.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\GeoLock\GeoLock\GeoLock\icons\ZW.ico">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeoLock.cpp">

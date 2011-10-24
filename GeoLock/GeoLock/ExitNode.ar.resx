@@ -158,6 +158,36 @@
   <data name="label3.Text" xml:space="preserve">
     <value>فضلت بلدان</value>
   </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>منعت الملكية الفكرية</value>
+  </data>
+  <data name="clearBlockedButton.Text" xml:space="preserve">
+    <value>واضح جميع</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 13</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>(منفصلة مع الفواصل)</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 13</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>حجب أسماء المضيفين</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 13</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>(منفصلة مع الفواصل)</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>حجب عناوين IP</value>
+  </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>متقدم</value>
   </data>

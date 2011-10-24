@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>除外されたノード</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="clearAll.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 23</value>
@@ -144,8 +141,8 @@
   <data name="label1.Text" xml:space="preserve">
     <value>除外された国</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>優先ノード</value>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>除外されたノード</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>出口ノードを選択する際にGeoLockにのみ、これらの国々での出口ノードを使用します。
@@ -170,8 +167,44 @@
   <data name="label3.Text" xml:space="preserve">
     <value>優先国</value>
   </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>高度な</value>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>優先ノード</value>
+  </data>
+  <data name="clearBlockedButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 248</value>
+  </data>
+  <data name="clearBlockedButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 23</value>
+  </data>
+  <data name="clearBlockedButton.Text" xml:space="preserve">
+    <value>すべてをクリア</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>（コンマで区切る）</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>ブロックされたホスト名</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>（コンマで区切る）</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 13</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>ブロックされたIPアドレス</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>ブロックされたIPアドレス</value>
   </data>
   <data name="lookupHost.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 17</value>
@@ -262,6 +295,9 @@
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>更新頻度</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>高度な</value>
   </data>
   <data name="cancelButton.Text" xml:space="preserve">
     <value>キャンセル</value>

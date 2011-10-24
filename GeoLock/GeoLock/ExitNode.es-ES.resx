@@ -170,6 +170,36 @@ Nota: Al intentar encontrar un nuevo nodo de salida, GeoLock puede visitar los n
   <data name="tabPage2.Text" xml:space="preserve">
     <value>Nodos Preferidos</value>
   </data>
+  <data name="clearBlockedButton.Text" xml:space="preserve">
+    <value>Borrar todos</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 13</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>(separar con comas)</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 13</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Nombres de host bloqueados</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 13</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>(separar con comas)</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>IPs bloqueadas</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>IPs bloqueadas</value>
+  </data>
   <data name="lookupHost.Size" type="System.Drawing.Size, System.Drawing">
     <value>165, 17</value>
   </data>

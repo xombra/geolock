@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="forceUpdateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 22</value>
+    <value>189, 22</value>
   </data>
   <data name="forceUpdateToolStripMenuItem.Text" xml:space="preserve">
     <value>強制アップデート</value>
@@ -128,7 +128,7 @@
     <value>新しいIDを強制的に</value>
   </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 22</value>
+    <value>189, 22</value>
   </data>
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
     <value>終了</value>
@@ -207,6 +207,12 @@
         LRI7JrtZdoDAo1XmbjMyD+tjSXxGcXRmnYg5ttD9QuxDhN0uUgDOmbvNTpPOJaGAo2K36cyaGZvOFIfd
         KlSA8/zRh9ABIDUG+1JpAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="blockedIP.Text" xml:space="preserve">
+    <value>ブロックされたIPアドレス：</value>
+  </data>
+  <data name="blockedHost.Text" xml:space="preserve">
+    <value>ブロックされたホスト：</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -463,5 +469,23 @@
         8w7///8A////AP///wD///8A////AP+BAAD4AQAA4AEAAMABAADAAQAAgAEAAIABAAAAAQAAAAEAAAAB
         AACAAwAAgAMAAMAHAADABwAA8B8AAPx/AAA=
 </value>
+  </data>
+  <data name="Comm" xml:space="preserve">
+    <value>エラー：Torと通信できません！コントロールポートの問題？</value>
+  </data>
+  <data name="Err" xml:space="preserve">
+    <value>エラー：Torが実行されていないか、正しく構成されていません！</value>
+  </data>
+  <data name="Torcookie" xml:space="preserve">
+    <value>エラー：Torはクッキー認証を使用しています</value>
+  </data>
+  <data name="TorOK" xml:space="preserve">
+    <value>TorのOK</value>
+  </data>
+  <data name="Torpw" xml:space="preserve">
+    <value>エラー：Torはパスワードを使用している</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>エラー：不明</value>
   </data>
 </root>

@@ -80,15 +80,24 @@ bool getNewIdentity() {
 }
 
 //function to verify if country code is acceptable based on user's settings
-System::String^ getAcceptState(String^ ct) {
+System::String^ getAcceptState(String^ ip,String^ ct,String^ hostname) {
 	//load excluded and preferred nodes from app.config
 	String^ managedExcluded = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
 	String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
+	//load blockedIPs and blockedHosts from app.config
+	String^ managedBadIP = System::Configuration::ConfigurationManager::AppSettings["blockedIP"];
+	String^ managedBadHost = System::Configuration::ConfigurationManager::AppSettings["blockedHost"];
 	//convert comma delimited list into array
 	array<String^>^ excludedList = managedExcluded->Split(',');
 	array<String^>^ exitList = managedExit->Split(',');
+	array<String^>^ badIPList = managedBadIP->Split(',');
+	array<String^>^ badHostList = managedBadHost->Split(',');
 	//if current country is anything on excluded, immediately fail
 	for (int i=0;i<excludedList->Length;i++) if (ct == excludedList[i]) return L"Not Locked";
+	//if current IP is blocked, immediately fail
+	for (int i=0;i<badIPList->Length;i++) if (ip == badIPList[i]) return L"Not Locked";
+	//if current hostname is blocked, immediately fail
+	for (int i=0;i<badHostList->Length;i++) if (hostname == badHostList[i]) return L"Not Locked";
 	//check preferred nodes (if necessary)
 	if (exitList->Length > 1) {
 		bool acceptable = false;
@@ -172,21 +181,21 @@ namespace GeoLock {
 				//update IP and Country
 				this->toolStripLabel1->Text = L"IP: " + ip;
 				this->toolStripLabel2->Text = ct;
-				//get acceptance state
-				String^ acceptState = getAcceptState(ct);
 				//set notification icon and tooltip
 				this->notifyIcon1->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject("$this.Icon")));
 				this->notifyIcon1->Text = ip + " | " + ct;
 				//load hostLookup boolean
 				String^ host = System::Configuration::ConfigurationManager::AppSettings["hostLookup"];
 				//attempt to resolve IP address to hostname if specified
+				String^ hostString = "";
 				if (host == "true") {
-					IPHostEntry^ host;
 					try {
+						IPHostEntry^ host;
 						host = Dns::GetHostEntry(ip);
 						this->toolStripButton1->Text = host->HostName;
 						if (adv) Console::WriteLine("\tHost: " + host->HostName);
 						this->notifyIcon1->Text += "\n" + host->HostName;
+						hostString = host->HostName;
 					}
 					catch (Exception^ ex) {
 						this->toolStripButton1->Text = "???";
@@ -197,6 +206,8 @@ namespace GeoLock {
 				else {
 					this->toolStripButton1->Text = "---";
 				}
+				//get acceptance state
+				String^ acceptState = getAcceptState(ip,ct,hostString);
 				//set flag icon
 				if (ipFull != "") this->toolStripButton1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(ct)));
 				//set acceptance icon and tooltip
@@ -266,6 +277,8 @@ namespace GeoLock {
 			bool adv = (advOut == "true");
 			String^ managedExclude = System::Configuration::ConfigurationManager::AppSettings["excludedExitNodes"];
 			String^ managedExit = System::Configuration::ConfigurationManager::AppSettings["exitNodes"];
+			String^ managedBadIP = System::Configuration::ConfigurationManager::AppSettings["blockedIP"];
+			String^ managedBadHost = System::Configuration::ConfigurationManager::AppSettings["blockedHost"];
 			String^ stayOnTop = System::Configuration::ConfigurationManager::AppSettings["persist"];
 			String^ taskbar = System::Configuration::ConfigurationManager::AppSettings["taskbar"];
 			//update their corresponding visual elements
@@ -273,10 +286,10 @@ namespace GeoLock {
 				SYSTEMTIME lt;
 				GetLocalTime(&lt);
 				Console::Write("[" + getPrettyDate(lt) + "]: Loading excluded nodes...");
-				}
+			}
 			if (managedExclude->Length > 0) {
 				resources->ApplyResources(this->excludeList, L"excludeList");
-				this->excludeList->Text += managedExclude;
+				this->excludeList->Text += " " + managedExclude;
 			}
 			else {
 				resources->ApplyResources(this->excludeList, L"excludeList");
@@ -290,11 +303,39 @@ namespace GeoLock {
 			}
 			if (managedExit->Length > 0) {
 				resources->ApplyResources(this->preferNodes, L"preferNodes");
-				this->preferNodes->Text += managedExit;
+				this->preferNodes->Text += " " + managedExit;
 			}
 			else {
 				resources->ApplyResources(this->preferNodes, L"preferNodes");
 				this->preferNodes->Text += " -";
+			}
+			if (adv) Console::WriteLine("Complete");
+			if (adv) {
+				SYSTEMTIME lt;
+				GetLocalTime(&lt);
+				Console::Write("[" + getPrettyDate(lt) + "]: Loading Blocked IPs...");
+			}
+			if (managedBadIP->Length > 0) {
+				resources->ApplyResources(this->blockedIP, L"blockedIP");
+				this->blockedIP->Text += " " + managedBadIP;
+			}
+			else {
+				resources->ApplyResources(this->blockedIP, L"blockedIP");
+				this->blockedIP->Text += " -";
+			}
+			if (adv) Console::WriteLine("Complete");
+			if (adv) {
+				SYSTEMTIME lt;
+				GetLocalTime(&lt);
+				Console::Write("[" + getPrettyDate(lt) + "]: Loading Blocked hostnames...");
+			}
+			if (managedBadHost->Length > 0) {
+				resources->ApplyResources(this->blockedHost, L"blockedHost");
+				this->blockedHost->Text += " " + managedBadHost;
+			}
+			else {
+				resources->ApplyResources(this->blockedHost, L"blockedHost");
+				this->blockedHost->Text += " -";
 			}
 			if (adv) Console::WriteLine("Complete");
 			if (stayOnTop == "true") this->TopMost = true;
@@ -388,6 +429,8 @@ namespace GeoLock {
 	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem1;
 	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem2;
 	private: System::Windows::Forms::ProgressBar^  progressBar1;
+	private: System::Windows::Forms::Label^  blockedIP;
+	private: System::Windows::Forms::Label^  blockedHost;
 	private: System::ComponentModel::IContainer^  components;
 
 #pragma region Windows Form Designer generated code
@@ -420,6 +463,8 @@ namespace GeoLock {
 			this->toolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->progressBar1 = (gcnew System::Windows::Forms::ProgressBar());
+			this->blockedIP = (gcnew System::Windows::Forms::Label());
+			this->blockedHost = (gcnew System::Windows::Forms::Label());
 			this->menuStrip1->SuspendLayout();
 			this->toolStrip1->SuspendLayout();
 			this->contextMenuStrip1->SuspendLayout();
@@ -427,59 +472,59 @@ namespace GeoLock {
 			// 
 			// menuStrip1
 			// 
+			resources->ApplyResources(this->menuStrip1, L"menuStrip1");
 			this->menuStrip1->BackColor = System::Drawing::SystemColors::Control;
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {this->fileToolStripMenuItem, 
 				this->settingsToolStripMenuItem});
-			resources->ApplyResources(this->menuStrip1, L"menuStrip1");
 			this->menuStrip1->Name = L"menuStrip1";
 			// 
 			// fileToolStripMenuItem
 			// 
+			resources->ApplyResources(this->fileToolStripMenuItem, L"fileToolStripMenuItem");
 			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {this->forceUpdateToolStripMenuItem, 
 				this->exitToolStripMenuItem});
 			this->fileToolStripMenuItem->Name = L"fileToolStripMenuItem";
-			resources->ApplyResources(this->fileToolStripMenuItem, L"fileToolStripMenuItem");
 			// 
 			// forceUpdateToolStripMenuItem
 			// 
-			this->forceUpdateToolStripMenuItem->Name = L"forceUpdateToolStripMenuItem";
 			resources->ApplyResources(this->forceUpdateToolStripMenuItem, L"forceUpdateToolStripMenuItem");
+			this->forceUpdateToolStripMenuItem->Name = L"forceUpdateToolStripMenuItem";
 			this->forceUpdateToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::forceUpdateToolStripMenuItem_Click);
 			// 
 			// exitToolStripMenuItem
 			// 
-			this->exitToolStripMenuItem->Name = L"exitToolStripMenuItem";
 			resources->ApplyResources(this->exitToolStripMenuItem, L"exitToolStripMenuItem");
+			this->exitToolStripMenuItem->Name = L"exitToolStripMenuItem";
 			this->exitToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::exitToolStripMenuItem_Click);
 			// 
 			// settingsToolStripMenuItem
 			// 
+			resources->ApplyResources(this->settingsToolStripMenuItem, L"settingsToolStripMenuItem");
 			this->settingsToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) {this->excludeExitNodesToolStripMenuItem});
 			this->settingsToolStripMenuItem->Name = L"settingsToolStripMenuItem";
-			resources->ApplyResources(this->settingsToolStripMenuItem, L"settingsToolStripMenuItem");
 			// 
 			// excludeExitNodesToolStripMenuItem
 			// 
-			this->excludeExitNodesToolStripMenuItem->Name = L"excludeExitNodesToolStripMenuItem";
 			resources->ApplyResources(this->excludeExitNodesToolStripMenuItem, L"excludeExitNodesToolStripMenuItem");
+			this->excludeExitNodesToolStripMenuItem->Name = L"excludeExitNodesToolStripMenuItem";
 			this->excludeExitNodesToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::excludeExitNodesToolStripMenuItem_Click);
 			// 
 			// excludeList
 			// 
-			this->excludeList->AutoEllipsis = true;
 			resources->ApplyResources(this->excludeList, L"excludeList");
+			this->excludeList->AutoEllipsis = true;
 			this->excludeList->Name = L"excludeList";
 			// 
 			// preferNodes
 			// 
-			this->preferNodes->AutoEllipsis = true;
 			resources->ApplyResources(this->preferNodes, L"preferNodes");
+			this->preferNodes->AutoEllipsis = true;
 			this->preferNodes->Name = L"preferNodes";
 			// 
 			// timer
 			// 
 			this->timer->Enabled = true;
-			this->timer->Interval = (System::Int32::Parse(System::Configuration::ConfigurationManager::AppSettings["updateFreq"])*60*1000);
+			this->timer->Interval = 300000;
 			this->timer->Tick += gcnew System::EventHandler(this, &GeoLockWin::GeoLockWin_Load);
 			// 
 			// timeStamp
@@ -498,37 +543,37 @@ namespace GeoLock {
 			// 
 			// toolStripLabel1
 			// 
-			this->toolStripLabel1->Name = L"toolStripLabel1";
 			resources->ApplyResources(this->toolStripLabel1, L"toolStripLabel1");
+			this->toolStripLabel1->Name = L"toolStripLabel1";
 			// 
 			// toolStripSeparator1
 			// 
-			this->toolStripSeparator1->Name = L"toolStripSeparator1";
 			resources->ApplyResources(this->toolStripSeparator1, L"toolStripSeparator1");
+			this->toolStripSeparator1->Name = L"toolStripSeparator1";
 			// 
 			// toolStripLabel2
 			// 
-			this->toolStripLabel2->Name = L"toolStripLabel2";
 			resources->ApplyResources(this->toolStripLabel2, L"toolStripLabel2");
+			this->toolStripLabel2->Name = L"toolStripLabel2";
 			// 
 			// toolStripButton1
 			// 
-			this->toolStripButton1->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
 			resources->ApplyResources(this->toolStripButton1, L"toolStripButton1");
+			this->toolStripButton1->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
 			this->toolStripButton1->Name = L"toolStripButton1";
 			// 
 			// toolStripButton2
 			// 
+			resources->ApplyResources(this->toolStripButton2, L"toolStripButton2");
 			this->toolStripButton2->Alignment = System::Windows::Forms::ToolStripItemAlignment::Right;
 			this->toolStripButton2->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			resources->ApplyResources(this->toolStripButton2, L"toolStripButton2");
 			this->toolStripButton2->Name = L"toolStripButton2";
 			// 
 			// torStatusIcon
 			// 
+			resources->ApplyResources(this->torStatusIcon, L"torStatusIcon");
 			this->torStatusIcon->Alignment = System::Windows::Forms::ToolStripItemAlignment::Right;
 			this->torStatusIcon->DisplayStyle = System::Windows::Forms::ToolStripItemDisplayStyle::Image;
-			resources->ApplyResources(this->torStatusIcon, L"torStatusIcon");
 			this->torStatusIcon->Name = L"torStatusIcon";
 			// 
 			// shapeContainer1
@@ -551,44 +596,58 @@ namespace GeoLock {
 			// 
 			// notifyIcon1
 			// 
-			this->notifyIcon1->ContextMenuStrip = this->contextMenuStrip1;
 			resources->ApplyResources(this->notifyIcon1, L"notifyIcon1");
+			this->notifyIcon1->ContextMenuStrip = this->contextMenuStrip1;
 			this->notifyIcon1->DoubleClick += gcnew System::EventHandler(this, &GeoLockWin::notifyIcon1_DoubleClick);
 			// 
 			// contextMenuStrip1
 			// 
+			resources->ApplyResources(this->contextMenuStrip1, L"contextMenuStrip1");
 			this->contextMenuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {this->toolStripMenuItem1, 
 				this->toolStripMenuItem2});
 			this->contextMenuStrip1->Name = L"contextMenuStrip1";
-			resources->ApplyResources(this->contextMenuStrip1, L"contextMenuStrip1");
 			// 
 			// toolStripMenuItem1
 			// 
-			this->toolStripMenuItem1->Name = L"toolStripMenuItem1";
 			resources->ApplyResources(this->toolStripMenuItem1, L"toolStripMenuItem1");
+			this->toolStripMenuItem1->Name = L"toolStripMenuItem1";
 			this->toolStripMenuItem1->Click += gcnew System::EventHandler(this, &GeoLockWin::forceUpdateToolStripMenuItem_Click);
 			// 
 			// toolStripMenuItem2
 			// 
-			this->toolStripMenuItem2->Name = L"toolStripMenuItem2";
 			resources->ApplyResources(this->toolStripMenuItem2, L"toolStripMenuItem2");
+			this->toolStripMenuItem2->Name = L"toolStripMenuItem2";
 			this->toolStripMenuItem2->Click += gcnew System::EventHandler(this, &GeoLockWin::exitToolStripMenuItem_Click);
 			// 
 			// progressBar1
 			// 
-			this->progressBar1->BackColor = System::Drawing::SystemColors::Control;
 			resources->ApplyResources(this->progressBar1, L"progressBar1");
+			this->progressBar1->BackColor = System::Drawing::SystemColors::Control;
 			this->progressBar1->Name = L"progressBar1";
 			this->progressBar1->Style = System::Windows::Forms::ProgressBarStyle::Marquee;
+			// 
+			// blockedIP
+			// 
+			resources->ApplyResources(this->blockedIP, L"blockedIP");
+			this->blockedIP->AutoEllipsis = true;
+			this->blockedIP->Name = L"blockedIP";
+			// 
+			// blockedHost
+			// 
+			resources->ApplyResources(this->blockedHost, L"blockedHost");
+			this->blockedHost->AutoEllipsis = true;
+			this->blockedHost->Name = L"blockedHost";
 			// 
 			// GeoLockWin
 			// 
 			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Controls->Add(this->preferNodes);
+			this->Controls->Add(this->blockedHost);
+			this->Controls->Add(this->blockedIP);
 			this->Controls->Add(this->progressBar1);
 			this->Controls->Add(this->toolStrip1);
 			this->Controls->Add(this->timeStamp);
-			this->Controls->Add(this->preferNodes);
 			this->Controls->Add(this->excludeList);
 			this->Controls->Add(this->menuStrip1);
 			this->Controls->Add(this->shapeContainer1);

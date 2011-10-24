@@ -118,11 +118,26 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 20</value>
+  </data>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Datei</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Optionen</value>
+  </data>
   <data name="forceUpdateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 22</value>
   </data>
   <data name="forceUpdateToolStripMenuItem.Text" xml:space="preserve">
     <value>Zwingen Aktualisierung</value>
+  </data>
+  <data name="forceUpdateToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Forces eine neue Identität</value>
   </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 22</value>
@@ -130,23 +145,11 @@
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
     <value>Beenden</value>
   </data>
-  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 20</value>
-  </data>
-  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Datei</value>
-  </data>
   <data name="excludeExitNodesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 22</value>
   </data>
   <data name="excludeExitNodesToolStripMenuItem.Text" xml:space="preserve">
     <value>Konfiguration...</value>
-  </data>
-  <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 20</value>
-  </data>
-  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Optionen</value>
   </data>
   <data name="excludeList.Text" xml:space="preserve">
     <value>Ausschließen: </value>
@@ -207,6 +210,12 @@
         LRI7JrtZdoDAo1XmbjMyD+tjSXxGcXRmnYg5ttD9QuxDhN0uUgDOmbvNTpPOJaGAo2K36cyaGZvOFIfd
         KlSA8/zRh9ABIDUG+1JpAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="blockedIP.Text" xml:space="preserve">
+    <value>Blockierte IPs:</value>
+  </data>
+  <data name="blockedHost.Text" xml:space="preserve">
+    <value>Blockierte Hosts:</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -464,7 +473,7 @@
         AACAAwAAgAMAAMAHAADABwAA8B8AAPx/AAA=
 </value>
   </data>
-  <data name="Comm" xml:space="preserve">
+    <data name="Comm" xml:space="preserve">
     <value>Fehler: Kann nicht mit Tor zu kommunizieren! Control-Port Problem?</value>
   </data>
   <data name="Err" xml:space="preserve">

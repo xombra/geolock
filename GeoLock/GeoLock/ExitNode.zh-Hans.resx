@@ -158,6 +158,36 @@
   <data name="tabPage2.Text" xml:space="preserve">
     <value>首选的节点</value>
   </data>
+  <data name="clearBlockedButton.Text" xml:space="preserve">
+    <value>全部清除</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>（用逗号分隔）</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>封锁的主机名</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>（用逗号分隔）</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>被封IP地址</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>封锁的IP地址</value>
+  </data>
   <data name="lookupHost.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 17</value>
   </data>

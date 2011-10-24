@@ -185,6 +185,42 @@ Remarque: En essayant de trouver un noeud de sortie de nouveaux GeoLock peuvent 
   <data name="label3.Text" xml:space="preserve">
     <value>Pays préférés</value>
   </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>IP bloquées</value>
+  </data>
+  <data name="clearBlockedButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 248</value>
+  </data>
+  <data name="clearBlockedButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 23</value>
+  </data>
+  <data name="clearBlockedButton.Text" xml:space="preserve">
+    <value>Effacer tous les</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 13</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>(séparés par des virgules)</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Hostnames bloqués</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 13</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>(séparés par des virgules)</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 13</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Adresses IP bloquées</value>
+  </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Avancée</value>
   </data>

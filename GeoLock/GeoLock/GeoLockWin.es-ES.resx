@@ -124,6 +124,9 @@
   <data name="forceUpdateToolStripMenuItem.Text" xml:space="preserve">
     <value>Fuerza de Actualización</value>
   </data>
+  <data name="forceUpdateToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Las fuerzas de una nueva identidad</value>
+  </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>214, 22</value>
   </data>
@@ -204,6 +207,12 @@
         LRI7JrtZdoDAo1XmbjMyD+tjSXxGcXRmnYg5ttD9QuxDhN0uUgDOmbvNTpPOJaGAo2K36cyaGZvOFIfd
         KlSA8/zRh9ABIDUG+1JpAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="blockedIP.Text" xml:space="preserve">
+    <value>IPs bloqueadas:</value>
+  </data>
+  <data name="blockedHost.Text" xml:space="preserve">
+    <value>Anfitriones del bloqueo:</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -465,21 +474,18 @@
     <value>Error: No se puede comunicar con Tor! Control de emisión del puerto?</value>
   </data>
   <data name="Err" xml:space="preserve">
-    <value>Error: Tor no está funcionando o no está configurado correctamente!</value>
+    <value>Error: Tor no funciona o no está configurado correctamente!</value>
   </data>
   <data name="Torcookie" xml:space="preserve">
-    <value>Error: Tor está utilizando autenticación de cookies!</value>
+    <value>Error: Tor está utilizando autenticación de cookies</value>
   </data>
   <data name="TorOK" xml:space="preserve">
-    <value>Tor OK</value>
+    <value>Tor Aceptar</value>
   </data>
   <data name="Torpw" xml:space="preserve">
-    <value>Error: Tor está utilizando una contraseña!</value>
+    <value>Error: Tor está utilizando una contraseña</value>
   </data>
   <data name="Unknown" xml:space="preserve">
     <value>Error: Desconocido</value>
-  </data>
-  <data name="forceUpdateToolStripMenuItem.ToolTipText" xml:space="preserve">
-    <value>Las fuerzas de una nueva identidad</value>
   </data>
 </root>
