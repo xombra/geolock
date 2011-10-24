@@ -139,6 +139,18 @@
   <data name="forceUpdateToolStripMenuItem.ToolTipText" xml:space="preserve">
     <value>Forces eine neue Identität</value>
   </data>
+  <data name="addCurrentIP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 22</value>
+  </data>
+  <data name="addCurrentIP.Text" xml:space="preserve">
+    <value>Block aktuelle IP-Adresse</value>
+  </data>
+  <data name="addCurrentHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 22</value>
+  </data>
+  <data name="addCurrentHost.Text" xml:space="preserve">
+    <value>Block aktuellen hostanem</value>
+  </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 22</value>
   </data>
@@ -210,6 +222,33 @@
         LRI7JrtZdoDAo1XmbjMyD+tjSXxGcXRmnYg5ttD9QuxDhN0uUgDOmbvNTpPOJaGAo2K36cyaGZvOFIfd
         KlSA8/zRh9ABIDUG+1JpAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 92</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>Zwingen Aktualisierung</value>
+  </data>
+  <data name="blockCurrentIPn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="blockCurrentIPn.Text" xml:space="preserve">
+    <value>Block aktuelle IP-Adresse</value>
+  </data>
+  <data name="blockCurrentHostn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="blockCurrentHostn.Text" xml:space="preserve">
+    <value>Block aktuellen hostanem</value>
+  </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 22</value>
+  </data>
+  <data name="toolStripMenuItem2.Text" xml:space="preserve">
+    <value>Beenden</value>
   </data>
   <data name="blockedIP.Text" xml:space="preserve">
     <value>Blockierte IPs:</value>

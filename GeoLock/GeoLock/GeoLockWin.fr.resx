@@ -118,21 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="forceUpdateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="forceUpdateToolStripMenuItem.Text" xml:space="preserve">
-    <value>Forcer mise à jour</value>
-  </data>
-  <data name="forceUpdateToolStripMenuItem.ToolTipText" xml:space="preserve">
-    <value>Forces d'une nouvelle identité</value>
-  </data>
-  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
-    <value>Sortir</value>
-  </data>
   <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 20</value>
   </data>
@@ -144,6 +129,33 @@
   </data>
   <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
     <value>Réglages</value>
+  </data>
+  <data name="forceUpdateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="forceUpdateToolStripMenuItem.Text" xml:space="preserve">
+    <value>Forcer mise à jour</value>
+  </data>
+  <data name="forceUpdateToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Forces d'une nouvelle identité</value>
+  </data>
+  <data name="addCurrentIP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="addCurrentIP.Text" xml:space="preserve">
+    <value>Bloc IP actuelle</value>
+  </data>
+  <data name="addCurrentHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="addCurrentHost.Text" xml:space="preserve">
+    <value>Bloc hôte actuel</value>
+  </data>
+  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sortir</value>
   </data>
   <data name="excludeList.Text" xml:space="preserve">
     <value>Exclure:</value>
@@ -201,6 +213,33 @@
         LRI7JrtZdoDAo1XmbjMyD+tjSXxGcXRmnYg5ttD9QuxDhN0uUgDOmbvNTpPOJaGAo2K36cyaGZvOFIfd
         KlSA8/zRh9ABIDUG+1JpAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 22</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>Forcer mise à jour</value>
+  </data>
+  <data name="blockCurrentIPn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 22</value>
+  </data>
+  <data name="blockCurrentIPn.Text" xml:space="preserve">
+    <value>Bloc IP actuelle</value>
+  </data>
+  <data name="blockCurrentHostn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 22</value>
+  </data>
+  <data name="blockCurrentHostn.Text" xml:space="preserve">
+    <value>Bloc hôte actuel</value>
+  </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 22</value>
+  </data>
+  <data name="toolStripMenuItem2.Text" xml:space="preserve">
+    <value>Sortir</value>
+  </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 92</value>
   </data>
   <data name="blockedIP.Text" xml:space="preserve">
     <value>IP bloqués:</value>
@@ -464,7 +503,7 @@
         AACAAwAAgAMAAMAHAADABwAA8B8AAPx/AAA=
 </value>
   </data>
-  <data name="Comm" xml:space="preserve">
+    <data name="Comm" xml:space="preserve">
     <value>Erreur: Impossible de communiquer avec Tor! Question de port de contrôle?</value>
   </data>
   <data name="Err" xml:space="preserve">

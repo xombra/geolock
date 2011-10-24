@@ -475,6 +475,10 @@ namespace GeoLock {
 	private: System::Windows::Forms::ProgressBar^  progressBar1;
 	private: System::Windows::Forms::Label^  blockedIP;
 	private: System::Windows::Forms::Label^  blockedHost;
+	private: System::Windows::Forms::ToolStripMenuItem^  addCurrentIP;
+	private: System::Windows::Forms::ToolStripMenuItem^  addCurrentHost;
+	private: System::Windows::Forms::ToolStripMenuItem^  blockCurrentIPn;
+	private: System::Windows::Forms::ToolStripMenuItem^  blockCurrentHostn;
 	private: System::ComponentModel::IContainer^  components;
 
 #pragma region Windows Form Designer generated code
@@ -485,6 +489,8 @@ namespace GeoLock {
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->fileToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->forceUpdateToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->addCurrentIP = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->addCurrentHost = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->exitToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->settingsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->excludeExitNodesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -505,6 +511,8 @@ namespace GeoLock {
 			this->notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
 			this->contextMenuStrip1 = (gcnew System::Windows::Forms::ContextMenuStrip(this->components));
 			this->toolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->blockCurrentIPn = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->blockCurrentHostn = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->progressBar1 = (gcnew System::Windows::Forms::ProgressBar());
 			this->blockedIP = (gcnew System::Windows::Forms::Label());
@@ -525,8 +533,8 @@ namespace GeoLock {
 			// fileToolStripMenuItem
 			// 
 			resources->ApplyResources(this->fileToolStripMenuItem, L"fileToolStripMenuItem");
-			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {this->forceUpdateToolStripMenuItem, 
-				this->exitToolStripMenuItem});
+			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {this->forceUpdateToolStripMenuItem, 
+				this->addCurrentIP, this->addCurrentHost, this->exitToolStripMenuItem});
 			this->fileToolStripMenuItem->Name = L"fileToolStripMenuItem";
 			// 
 			// forceUpdateToolStripMenuItem
@@ -534,6 +542,18 @@ namespace GeoLock {
 			resources->ApplyResources(this->forceUpdateToolStripMenuItem, L"forceUpdateToolStripMenuItem");
 			this->forceUpdateToolStripMenuItem->Name = L"forceUpdateToolStripMenuItem";
 			this->forceUpdateToolStripMenuItem->Click += gcnew System::EventHandler(this, &GeoLockWin::forceUpdateToolStripMenuItem_Click);
+			// 
+			// addCurrentIP
+			// 
+			resources->ApplyResources(this->addCurrentIP, L"addCurrentIP");
+			this->addCurrentIP->Name = L"addCurrentIP";
+			this->addCurrentIP->Click += gcnew System::EventHandler(this, &GeoLockWin::addCurrentIP_Click);
+			// 
+			// addCurrentHost
+			// 
+			resources->ApplyResources(this->addCurrentHost, L"addCurrentHost");
+			this->addCurrentHost->Name = L"addCurrentHost";
+			this->addCurrentHost->Click += gcnew System::EventHandler(this, &GeoLockWin::addCurrentHost_Click);
 			// 
 			// exitToolStripMenuItem
 			// 
@@ -647,8 +667,8 @@ namespace GeoLock {
 			// contextMenuStrip1
 			// 
 			resources->ApplyResources(this->contextMenuStrip1, L"contextMenuStrip1");
-			this->contextMenuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {this->toolStripMenuItem1, 
-				this->toolStripMenuItem2});
+			this->contextMenuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {this->toolStripMenuItem1, 
+				this->blockCurrentIPn, this->blockCurrentHostn, this->toolStripMenuItem2});
 			this->contextMenuStrip1->Name = L"contextMenuStrip1";
 			// 
 			// toolStripMenuItem1
@@ -656,6 +676,18 @@ namespace GeoLock {
 			resources->ApplyResources(this->toolStripMenuItem1, L"toolStripMenuItem1");
 			this->toolStripMenuItem1->Name = L"toolStripMenuItem1";
 			this->toolStripMenuItem1->Click += gcnew System::EventHandler(this, &GeoLockWin::forceUpdateToolStripMenuItem_Click);
+			// 
+			// blockCurrentIPn
+			// 
+			resources->ApplyResources(this->blockCurrentIPn, L"blockCurrentIPn");
+			this->blockCurrentIPn->Name = L"blockCurrentIPn";
+			this->blockCurrentIPn->Click += gcnew System::EventHandler(this, &GeoLockWin::addCurrentIP_Click);
+			// 
+			// blockCurrentHostn
+			// 
+			resources->ApplyResources(this->blockCurrentHostn, L"blockCurrentHostn");
+			this->blockCurrentHostn->Name = L"blockCurrentHostn";
+			this->blockCurrentHostn->Click += gcnew System::EventHandler(this, &GeoLockWin::addCurrentHost_Click);
 			// 
 			// toolStripMenuItem2
 			// 
@@ -752,6 +784,34 @@ namespace GeoLock {
 	private: System::Void notifyIcon1_DoubleClick(System::Object^  sender, System::EventArgs^  e) {
 			    //restore window from minimized state when notification icon is double clicked
 				this->WindowState = System::Windows::Forms::FormWindowState::Normal;
+			}
+	private: System::Void addCurrentIP_Click(System::Object^  sender, System::EventArgs^  e) {
+				System::Configuration::Configuration ^config = 
+					System::Configuration::ConfigurationManager::OpenExeConfiguration(System::Configuration::ConfigurationUserLevel::None);
+				String^ managedBadIP = System::Configuration::ConfigurationManager::AppSettings["blockedIP"];
+				if (managedBadIP->Length > 0) managedBadIP += "," + (this->toolStripLabel1->Text)->Substring(3)->Trim();
+				else  managedBadIP += (this->toolStripLabel1->Text)->Substring(3)->Trim();
+				//write blockedIPs
+				config->AppSettings->Settings->Remove("blockedIP");
+				config->AppSettings->Settings->Add("blockedIP",managedBadIP);
+				config->Save(System::Configuration::ConfigurationSaveMode::Modified);
+				System::Configuration::ConfigurationManager::RefreshSection("appSettings");
+				reinitialize();
+				updateIPandDisplay();
+			}
+	private: System::Void addCurrentHost_Click(System::Object^  sender, System::EventArgs^  e) {
+				System::Configuration::Configuration ^config = 
+					System::Configuration::ConfigurationManager::OpenExeConfiguration(System::Configuration::ConfigurationUserLevel::None);
+				String^ managedBadHost = System::Configuration::ConfigurationManager::AppSettings["blockedHost"];
+				if (managedBadHost->Length > 0) managedBadHost += "," + this->toolStripButton1->Text;
+				else managedBadHost += this->toolStripButton1->Text;
+				//write blockedHosts
+				config->AppSettings->Settings->Remove("blockedHost");
+				config->AppSettings->Settings->Add("blockedHost",managedBadHost);
+				config->Save(System::Configuration::ConfigurationSaveMode::Modified);
+				System::Configuration::ConfigurationManager::RefreshSection("appSettings");
+				reinitialize();
+				updateIPandDisplay();
 			}
 };
 }

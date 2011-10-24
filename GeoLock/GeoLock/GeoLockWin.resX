@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;addCurrentIP.Name" xml:space="preserve">
+    <value>addCurrentIP</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Name" xml:space="preserve">
+    <value>exitToolStripMenuItem</value>
+  </data>
   <data name="forceUpdateToolStripMenuItem.ToolTipText" xml:space="preserve">
     <value>Forces a new identity</value>
   </data>
@@ -136,8 +142,8 @@
   <data name="&gt;&gt;blockedIP.Name" xml:space="preserve">
     <value>blockedIP</value>
   </data>
-  <data name="&gt;&gt;lineShape2.Type" xml:space="preserve">
-    <value>Microsoft.VisualBasic.PowerPacks.LineShape, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="blockCurrentIPn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 22</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="timeStamp.TabIndex" type="System.Int32, mscorlib">
@@ -152,6 +158,9 @@
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="&gt;&gt;lineShape2.Type" xml:space="preserve">
+    <value>Microsoft.VisualBasic.PowerPacks.LineShape, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="&gt;&gt;fileToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -161,8 +170,8 @@
   <data name="blockedIP.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
+    <value>toolStrip1</value>
   </data>
   <data name="torStatusIcon.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -185,14 +194,17 @@
   <data name="toolStripButton2.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
+  <data name="&gt;&gt;blockCurrentIPn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>303, 24</value>
   </data>
   <data name="&gt;&gt;toolStripButton2.Name" xml:space="preserve">
     <value>toolStripButton2</value>
   </data>
-  <data name="excludeList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 13</value>
+  <data name="&gt;&gt;torStatusIcon.Name" xml:space="preserve">
+    <value>torStatusIcon</value>
   </data>
   <data name="&gt;&gt;timeStamp.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -209,6 +221,9 @@
   <data name="&gt;&gt;blockedHost.Name" xml:space="preserve">
     <value>blockedHost</value>
   </data>
+  <data name="blockCurrentHostn.Text" xml:space="preserve">
+    <value>Block Current Host</value>
+  </data>
   <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
     <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -219,8 +234,8 @@
   <data name="$this.Text" xml:space="preserve">
     <value>GeoLock</value>
   </data>
-  <data name="&gt;&gt;exitToolStripMenuItem.Name" xml:space="preserve">
-    <value>exitToolStripMenuItem</value>
+  <data name="addCurrentHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 22</value>
   </data>
   <data name="toolStripLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>22, 22</value>
@@ -236,9 +251,6 @@
   </data>
   <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lineShape2.Y1" type="System.Int32, mscorlib">
-    <value>24</value>
   </data>
   <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -532,32 +544,38 @@
         KlSA8/zRh9ABIDUG+1JpAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="&gt;&gt;lineShape2.Name" xml:space="preserve">
-    <value>lineShape2</value>
+  <data name="&gt;&gt;blockCurrentHostn.Name" xml:space="preserve">
+    <value>blockCurrentHostn</value>
   </data>
-  <data name="&gt;&gt;torStatusIcon.Name" xml:space="preserve">
-    <value>torStatusIcon</value>
+  <data name="addCurrentIP.Text" xml:space="preserve">
+    <value>Block Current IP</value>
+  </data>
+  <data name="addCurrentHost.Text" xml:space="preserve">
+    <value>Block Current Host</value>
   </data>
   <data name="&gt;&gt;blockedIP.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 22</value>
+    <value>171, 22</value>
   </data>
   <data name="torStatusIcon.Text" xml:space="preserve">
     <value>toolStripButton3</value>
   </data>
+  <data name="&gt;&gt;shapeContainer1.Name" xml:space="preserve">
+    <value>shapeContainer1</value>
+  </data>
   <data name="toolStripMenuItem1.Text" xml:space="preserve">
     <value>Force Update</value>
-  </data>
-  <data name="timeStamp.Text" xml:space="preserve">
-    <value>Last Updated: </value>
   </data>
   <data name="toolStripButton1.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="blockedHost.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 107</value>
+  </data>
+  <data name="&gt;&gt;addCurrentIP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -586,11 +604,8 @@
   <data name="&gt;&gt;excludeList.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
   </data>
   <data name="&gt;&gt;preferNodes.Parent" xml:space="preserve">
     <value>$this</value>
@@ -616,8 +631,8 @@
   <data name="excludeList.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 32</value>
   </data>
-  <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 20</value>
+  <data name="lineShape2.Y1" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>GeoLockWin</value>
@@ -631,14 +646,17 @@
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
     <value>File</value>
   </data>
+  <data name="&gt;&gt;blockCurrentHostn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addCurrentHost.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
   <data name="forceUpdateToolStripMenuItem.ShortcutKeyDisplayString" xml:space="preserve">
     <value>F5</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lineShape1.Name" xml:space="preserve">
     <value>lineShape1</value>
@@ -657,6 +675,9 @@
   </data>
   <data name="&gt;&gt;excludeExitNodesToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="preferNodes.Text" xml:space="preserve">
     <value>Prefer:</value>
@@ -683,7 +704,10 @@
     <value>0</value>
   </data>
   <data name="forceUpdateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 22</value>
+    <value>171, 22</value>
+  </data>
+  <data name="&gt;&gt;blockCurrentIPn.Name" xml:space="preserve">
+    <value>blockCurrentIPn</value>
   </data>
   <data name="&gt;&gt;toolStripLabel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -693,6 +717,9 @@
   </data>
   <data name="&gt;&gt;toolStripButton2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timeStamp.Name" xml:space="preserve">
+    <value>timeStamp</value>
   </data>
   <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -709,17 +736,26 @@
   <data name="&gt;&gt;excludeList.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;shapeContainer1.Name" xml:space="preserve">
-    <value>shapeContainer1</value>
+  <data name="&gt;&gt;lineShape2.Name" xml:space="preserve">
+    <value>lineShape2</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="preferNodes.Size" type="System.Drawing.Size, System.Drawing">
     <value>279, 13</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="preferNodes.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="blockCurrentHostn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 22</value>
   </data>
   <data name="&gt;&gt;toolStripButton1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -737,16 +773,13 @@
     <value>303, 178</value>
   </data>
   <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 22</value>
+    <value>171, 22</value>
   </data>
   <data name="forceUpdateToolStripMenuItem.Text" xml:space="preserve">
     <value>Force Update</value>
   </data>
   <data name="preferNodes.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 57</value>
-  </data>
-  <data name="toolStripMenuItem2.Text" xml:space="preserve">
-    <value>Exit</value>
   </data>
   <data name="notifyIcon1.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -763,9 +796,6 @@
   <data name="toolStrip1.Text" xml:space="preserve">
     <value>toolStrip1</value>
   </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
   <data name="&gt;&gt;torStatusIcon.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -778,11 +808,20 @@
   <data name="&gt;&gt;preferNodes.Name" xml:space="preserve">
     <value>preferNodes</value>
   </data>
+  <data name="&gt;&gt;timer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="exitToolStripMenuItem.ShortcutKeyDisplayString" xml:space="preserve">
     <value>Alt+F4</value>
   </data>
+  <data name="addCurrentIP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 22</value>
+  </data>
   <data name="&gt;&gt;shapeContainer1.ZOrder" xml:space="preserve">
     <value>9</value>
+  </data>
+  <data name="blockCurrentIPn.Text" xml:space="preserve">
+    <value>Block Current IP</value>
   </data>
   <data name="&gt;&gt;preferNodes.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -808,8 +847,11 @@
   <data name="timeStamp.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 132</value>
   </data>
-  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
-    <value>toolStripSeparator1</value>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 20</value>
   </data>
   <data name="&gt;&gt;blockedIP.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -823,14 +865,20 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>303, 178</value>
   </data>
-  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="excludeList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>279, 13</value>
+  </data>
+  <data name="&gt;&gt;timer.Name" xml:space="preserve">
+    <value>timer</value>
+  </data>
+  <data name="timeStamp.Text" xml:space="preserve">
+    <value>Last Updated: </value>
   </data>
   <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
     <value>progressBar1</value>
   </data>
-  <data name="&gt;&gt;timer.Name" xml:space="preserve">
-    <value>timer</value>
+  <data name="toolStripMenuItem2.Text" xml:space="preserve">
+    <value>Exit</value>
   </data>
   <data name="&gt;&gt;shapeContainer1.Type" xml:space="preserve">
     <value>Microsoft.VisualBasic.PowerPacks.ShapeContainer, Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -838,17 +886,17 @@
   <data name="&gt;&gt;forceUpdateToolStripMenuItem.Name" xml:space="preserve">
     <value>forceUpdateToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;timeStamp.Name" xml:space="preserve">
-    <value>timeStamp</value>
+  <data name="&gt;&gt;addCurrentHost.Name" xml:space="preserve">
+    <value>addCurrentHost</value>
   </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 22</value>
+    <value>171, 22</value>
   </data>
   <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 153</value>
   </data>
   <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 48</value>
+    <value>172, 92</value>
   </data>
   <data name="&gt;&gt;excludeList.Name" xml:space="preserve">
     <value>excludeList</value>
@@ -874,8 +922,8 @@
   <data name="lineShape2.X2" type="System.Int32, mscorlib">
     <value>303</value>
   </data>
-  <data name="&gt;&gt;timer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="blockedIP.Size" type="System.Drawing.Size, System.Drawing">
     <value>279, 13</value>
@@ -910,9 +958,6 @@
   <data name="lineShape2.Location" type="System.Drawing.Point, System.Drawing">
     <value>-1, 24</value>
   </data>
-  <data name="$this.Language" type="System.Globalization.CultureInfo, mscorlib">
-    <value>sv</value>
-  </data>
   <data name="lineShape1.Size" type="System.Drawing.Size, System.Drawing">
     <value>304, 0</value>
   </data>
@@ -934,1444 +979,724 @@
   <data name="AD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AD.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="AE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AE.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AF1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AF.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="AG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AG.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AI" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AI1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AI.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="AL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AL1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AL.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="AN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AN.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AO.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="AQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AQ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AQ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AQ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AR.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="AS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AS1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AS.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AT.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="AU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AU1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AU.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AW1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AW.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="AX" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AX1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AX.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AZ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\AZ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BA.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BB1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BB.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BD.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BE.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BF1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BF.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BG.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BH" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BH1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BH.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BI" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BI1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BI.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BJ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BJ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BJ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BN.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BO.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BR.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BS1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BS.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BT.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BV" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BV1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BV.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BW1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BW.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BY" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BY1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BY.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BZ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\BZ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CA.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CD.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CF1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CF.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CG.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CH" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CH1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CH.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CI" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CI1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CI.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CK1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CK.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CL1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CL.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CN.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CO.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CR.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CU1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CU.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CV" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CV1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CV.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CY" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CY1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CY.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CZ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\CZ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\DE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\DE.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="DJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\DJ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DJ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\DJ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\DK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DK1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\DK.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="DM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\DM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\DM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\DO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\DO.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="DZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\DZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DZ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\DZ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="EC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\EC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="EC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\EC.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="EE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\EE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="EE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\EE.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="EG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\EG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="EG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\EG.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ER" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ER1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ER.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\error.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="error1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\error.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ES" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ES.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ES1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ES.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ET" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ET.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ET1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ET.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="EU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\EU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="EU1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\EU.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fatal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\fatal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fatal1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\fatal.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="FI" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\FI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FI1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\FI.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\FJ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FJ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\FJ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="FK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\FK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FK1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\FK.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\FM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\FM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="FO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\FO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\FO.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\FR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\FR.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="GA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GA.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GB1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GB.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="GD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GD.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GE.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="GF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GF1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GF.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GH" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GH1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GH.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="GI" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GI1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GI.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GL1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GL.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="GM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GN.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="good" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\good.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="good1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\good.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GP" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GP.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="GQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GQ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GQ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GQ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GR.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="GT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GT.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GU1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GU.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="GW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GW1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GW.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GY" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GY1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\GY.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="HK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\HK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HK1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\HK.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\HM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\HM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="HN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\HN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\HN.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\HR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\HR.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="HT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\HT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\HT.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\HU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HU1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\HU.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ID" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ID.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ID1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ID.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IE.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="IL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IL1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IL.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="IN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IN.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IO.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="IQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IQ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IQ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IQ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IR.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="IS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IS1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IS.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\IT.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="JE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\JE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="JE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\JE.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="JM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\JM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="JM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\JM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="JO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\JO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="JO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\JO.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="JP" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\JP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="JP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\JP.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="KE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="KE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KE.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KG.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="KH" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="KH1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KH.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KI" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KI1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KI.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="KM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="KM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KN.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="KP" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="KP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KP.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KR.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="KW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="KW1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KW.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KY" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KY1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KY.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="KZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="KZ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\KZ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LA.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="LB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LB1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LB.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LC.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="LI" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LI1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LI.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LK1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LK.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Locked1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\Locked.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LR.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="LS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LS1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LS.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LT.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="LU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LU1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LU.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LV" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LV1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LV.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="LY" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LY1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\LY.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MA.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MC.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MD.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ME" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ME.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ME1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ME.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MG.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MH" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MH1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MH.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MK1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MK.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ML" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ML.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ML1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ML.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MN.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MO.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MP" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MP.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MQ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MQ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MQ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MR.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MS1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MS.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MT.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MU1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MU.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MV" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MV1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MV.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MW1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MW.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MX" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MX1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MX.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MY" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MY1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MY.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MZ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\MZ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NA.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="NC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NC.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NE.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="NF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NF1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NF.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NG.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="NI" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NI1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NI.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NL1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NL.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="NO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NO.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Not Locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\Not Locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Not Locked1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\Not Locked.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="NP" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NP.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NR.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="NU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NU1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NU.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NZ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\NZ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="OM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\OM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\OM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PA.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="PE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PE.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PF1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PF.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="PG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PG.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PH" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PH1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PH.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="PK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PK1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PK.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PL1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PL.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="PR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PR.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PS1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PS.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="PT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PT.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PW1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PW.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="PY" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PY1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\PY.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="QA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\QA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="QA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\QA.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="RE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\RE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\RE.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\RO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\RO.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="RS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\RS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RS1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\RS.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\RU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RU1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\RU.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="RW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\RW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RW1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\RW.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SA.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="SB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SB1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SB.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SC.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="SD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SD.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SE.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="SG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SG.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SI" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SI1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SI.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="SK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SK1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SK.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SL1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SL.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="SM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SN.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="SO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SO.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SR.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ST" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ST.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ST1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ST.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SV" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SV1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SV.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="SY" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SY1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SY.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SZ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\SZ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="TC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TC.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TD.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="TG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TG.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TH" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TH1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TH.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="TJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TJ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TJ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TJ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TK1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TK.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="TL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TL1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TL.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="TN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TN.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TO1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TO.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="TR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TR.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TT.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="TV" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TV1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TV.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TW1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TW.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="TZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TZ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\TZ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="UA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\UA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\UA.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="UG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\UG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\UG.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="UM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\UM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\UM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="US" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\US.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="US1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\US.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="UY" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\UY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UY1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\UY.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="UZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\UZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UZ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\UZ.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="VA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\VA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="VA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\VA.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="VC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\VC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="VC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\VC.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="VE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\VE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="VE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\VE.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="VG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\VG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="VG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\VG.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="VI" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\VI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="VI1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\VI.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="VN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\VN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="VN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\VN.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="VU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\VU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="VU1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\VU.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="WF1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\WF.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\WS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WS1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\WS.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="YE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\YE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="YE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\YE.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="YT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\YT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="YT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\YT.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ZA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ZA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ZA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ZA.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ZM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ZM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ZM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ZM.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ZW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ZW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ZW1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\GeoLock\GeoLock\GeoLock\icons\ZW.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-    <data name="Comm" xml:space="preserve">
+      <data name="Comm" xml:space="preserve">
     <value>Error: Cannot communicate with Tor! Control port issue?</value>
   </data>
   <data name="Err" xml:space="preserve">
