@@ -1,0 +1,3 @@
+GeoLock is for advanced users of Tor that wish to control their exit node geolocation. Sometimes it is advantageous or desirable to change the country of your exit node or prevent it from using exit nodes in certain countries.
+
+GeoLock will refresh every 5 minutes to check the user's external IP address and geolocation and check to see if it fits the user's requirements. If it doesn't, a hook in the Tor software will request a new identity until the user's requirements are met.
